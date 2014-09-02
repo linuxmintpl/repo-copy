@@ -1,0 +1,1352 @@
+Package: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 6883
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.12.17-1~qiana
+Recommends: gnumeric-doc (>= 1.12.17-1~qiana), evince | evince-gtk, lp-solve
+Replaces: gnumeric-common (<< 1.12.2)
+Suggests: gnumeric-plugins-extra, fonts-liberation | ttf-mscorefonts-installer
+Depends: gnumeric-common (= 1.12.17-1~qiana), debconf (>= 0.5) | debconf-2.0, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.4.10), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgoffice-0.10-10 (>= 0.10.14), libgsf-1-114 (>= 1.14.24), libgtk-3-0 (>= 3.2.1), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), gsfonts, procps
+Pre-Depends: debconf
+Breaks: gnumeric-common (<< 1.12.2), gnumeric-doc (<< 1.12.17-1~qiana)
+Filename: pool/main/g/gnumeric/gnumeric_1.12.17-1~qiana_i386.deb
+Size: 2202054
+MD5sum: 016b51c0dc00442df8f6a2ce0f5f6683
+SHA1: 1175428c9c239273f905da6b1879f0febbe54f4e
+SHA256: 35437950ceb449182edeeb94f08fc7802bedc3c56901059634bd987d5d264fc9
+Description: spreadsheet application for GNOME - main program
+Description-md5: 9b8a585a61f0a8a432e65772bf9548c1
+
+Package: gnumeric-common
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 14983
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.17-1~qiana
+Replaces: gnumeric (<= 1.2.6-1)
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/g/gnumeric/gnumeric-common_1.12.17-1~qiana_all.deb
+Size: 2287952
+MD5sum: 216f607dba9b755441a62ad6a6bad222
+SHA1: abc5574590e7b3abbf6ff994909f0d899973521a
+SHA256: 54be5f1271c4bba079b98e63650ff987a11a73a12bb9ec4d66cc28b435856395
+Description: spreadsheet application for GNOME - common files
+Description-md5: 3749931255266b5bbbc512b3833e7c03
+
+Package: gnumeric-doc
+Source: gnumeric
+Priority: optional
+Section: doc
+Installed-Size: 13485
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.17-1~qiana
+Recommends: gnome-desktop-data
+Replaces: docbook-xsl, gnumeric (<< 1.2.9-1)
+Suggests: gnumeric (>= 1.12.17-1~qiana), docbook-xsl
+Depends: yelp
+Breaks: gnumeric (<< 1.2.9-1)
+Filename: pool/main/g/gnumeric/gnumeric-doc_1.12.17-1~qiana_all.deb
+Size: 11298744
+MD5sum: 6cd7da0292ae710bf06af76cafc80c07
+SHA1: 0e35d1f052a752bd542f3da4ab459f72468a6df8
+SHA256: 5698835328012399c7222ddfbbe334e197b9f941be456d0d62d947cd3be84151
+Description: spreadsheet application for GNOME - documentation
+Description-md5: 1a2c472dd4a01f8bf6179550d830e0b6
+
+Package: gnumeric-plugins-extra
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 300
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.12.17-1~qiana
+Replaces: gnumeric (<= 1.3.92-1)
+Depends: gnumeric (= 1.12.17-1~qiana), libc6 (>= 2.4), libglib2.0-0 (>= 2.28.0), libperl5.18 (>= 5.18.2), libpython2.7 (>= 2.7), pxlib1 (>= 0.5.0), perl, python-gtk2
+Breaks: gnumeric (<= 1.3.92-1)
+Filename: pool/main/g/gnumeric/gnumeric-plugins-extra_1.12.17-1~qiana_i386.deb
+Size: 85258
+MD5sum: c1ba48f5ea34fa12cdc10f604fd5cf15
+SHA1: 95c736c9aa99318d0e8f714a501f22c026f42ce3
+SHA256: 4c6baeeb7deb938c31dba8394c14900b1af58d4cdd5d3c00a03bbe41656d46ae
+Description: spreadsheet application for GNOME - additional plugins
+Description-md5: 78689bf0fd30870813136efc8ecb1f1b
+
+Package: htop
+Priority: optional
+Section: utils
+Installed-Size: 194
+Maintainer: Eugene V. Lyubimkin <jackyf@debian.org>
+Architecture: i386
+Version: 1.0.3-1+qiana
+Suggests: strace, ltrace
+Depends: libc6 (>= 2.15), libncursesw5 (>= 5.6+20070908), libtinfo5
+Filename: pool/main/h/htop/htop_1.0.3-1+qiana_i386.deb
+Size: 67270
+MD5sum: d4c4e53ebed2dd22553f81f8a99f6d64
+SHA1: 0a51be1023ef697044bdfa378d585b251d206256
+SHA256: f185b7eb82792116b019e0888764d467e25ec626777739c61a444edb8fe489c5
+Description: interactive processes viewer
+Description-md5: 8eb5aa19b3c92a975dc78e2165f6688d
+
+Package: mc
+Priority: optional
+Section: utils
+Installed-Size: 1425
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 3:4.8.12-1+qiana
+Recommends: mime-support, perl, unzip
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, file, genisoimage, gv, imagemagick, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, xpdf | pdf-viewer, zip
+Provides: mcedit
+Depends: e2fslibs (>= 1.37), libc6 (>= 2.15), libglib2.0-0 (>= 2.35.9), libgpm2 (>= 1.20.4), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.5), mc-data (= 3:4.8.12-1+qiana)
+Filename: pool/main/m/mc/mc_4.8.12-1+qiana_i386.deb
+Size: 500770
+MD5sum: d01a783654e1349f15f822ce6c3dbe51
+SHA1: c3359ed688548ebe352bed2cc63e56bc47d22475
+SHA256: 6e172ae37e80b14613149063a9ed3b43948e9e884edddd4a04ec0f17d102384d
+Description: Midnight Commander - a powerful file manager
+Description-md5: 252a5c5aeeb7425db45357d4ab8aa55f
+
+Package: synaptic
+Priority: optional
+Section: admin
+Installed-Size: 7650
+Maintainer: Michael Vogt <mvo@debian.org>
+Architecture: i386
+Version: 0.81.2~qiana
+Recommends: gksu | kdebase-bin | policykit-1, libgtk2-perl (>= 1:1.130), rarian-compat
+Suggests: dwww, menu, deborphan, apt-xapian-index, tasksel, software-properties-gtk
+Depends: libapt-inst1.5 (>= 0.8.16~exp12), libapt-pkg4.12 (>= 0.9.11), libc6 (>= 2.4), libept1.4.12, libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.14.0), libgtk-3-0 (>= 3.0.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libvte-2.90-9 (>= 1:0.27.2), libx11-6, libxapian22, hicolor-icon-theme
+Conflicts: menu (<< 2.1.11)
+Filename: pool/main/s/synaptic/synaptic_0.81.2~qiana_i386.deb
+Size: 1524072
+MD5sum: e27704553d96ceda74449e25fca2d13b
+SHA1: 8219f2bf517f5a6cfc9c00276a3c698ba9a962ce
+SHA256: 06b203db53dcb484636d1abfc7376e1df8ae64455e8d8b8d3ff2bd727bda53a0
+Description: Graphical package manager
+Description-md5: 6229da34f8b00f4d964612dc16b0ed7b
+
+Package: xterm
+Priority: optional
+Section: x11
+Installed-Size: 1632
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Version: 303-1
+Recommends: x11-utils
+Suggests: xfonts-cyrillic
+Provides: x-terminal-emulator
+Depends: xbitmaps, libc6 (>= 2.15), libfontconfig1 (>= 2.9.0), libice6 (>= 1:1.0.0), libtinfo5, libutempter0 (>= 1.1.5), libx11-6, libxaw7, libxft2 (>> 2.1.1), libxmu6, libxpm4, libxt6
+Filename: pool/main/x/xterm/xterm_303-1_i386.deb
+Size: 584048
+MD5sum: f70976d84f56f3d3e787320f65cc8e88
+SHA1: 47115475bbb178ed1378dfcb6651771324e9a065
+SHA256: c05cb99978f8d1bc147696edc4f7ec7e7f2435881f10dd9f802f11cb66e6291d
+Description: X terminal emulator
+Description-md5: c1e47d60a01948be9aae7a2a4f63a0fe
+Multi-Arch: foreign
+
+Package: pcmanfm
+Priority: optional
+Section: utils
+Installed-Size: 1761
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.1-1~qiana
+Recommends: gvfs-backends, gvfs-fuse, lxde-icon-theme | gnome-icon-theme | oxygen-icon-theme | tango-icon-theme
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 1.2.0), libfm4 (>= 1.2.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6
+Filename: pool/main/p/pcmanfm/pcmanfm_1.2.1-1~qiana_i386.deb
+Size: 260412
+MD5sum: c3451adec1ec44a51d28f6a27ecd2cef
+SHA1: 180ddd1a81cbc3a4be1d91a21d889820b1bbf417
+SHA256: 40d8c6e20deb54a494e385b8de0bba44537c7d8026c49bf25dc9ed38612a8210
+Description: extremely fast and lightweight file manager
+Description-md5: d9a3f6478340d0d2f7bcfc00c73cf5df
+
+Package: virtualbox
+Priority: optional
+Section: misc
+Installed-Size: 59910
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.3.14-dfsg-1~qiana
+Recommends: virtualbox-dkms (= 4.3.14-dfsg-1~qiana) | virtualbox-source (= 4.3.14-dfsg-1~qiana), virtualbox-qt (= 4.3.14-dfsg-1~qiana), libgl1-mesa-glx | libgl1, libqt4-opengl (>= 4:4.5.3), libqtcore4 (>= 4:4.5.3), libqtgui4 (>= 4:4.5.3)
+Suggests: virtualbox-guest-additions-iso, vde2
+Depends: libc6 (>= 2.15), libcurl3 (>= 7.16.2), libgcc1 (>= 1:4.1.1), libgsoap4, libpng12-0 (>= 1.2.13-4), libpython2.7 (>= 2.7), libsdl1.2debian (>= 1.2.11), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), libvncserver0, libvpx1 (>= 1.0.0), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxml2 (>= 2.7.4), libxmu6, libxt6, zlib1g (>= 1:1.1.4), python (>= 2.7), python (<< 2.8), python:any (>= 2.7.1-0ubuntu2), python2.7, adduser
+Conflicts: virtualbox-2.0, virtualbox-2.1, virtualbox-2.2, virtualbox-3.0, virtualbox-4.2
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox_4.3.14-dfsg-1~qiana_i386.deb
+Size: 15878806
+MD5sum: e7aab238a5e9d12e779a04c4ad0d3ded
+SHA1: 11c10b59ccc6c25d21323dcf9ee862df8428cccf
+SHA256: 158ce42085c93fc6c531d48b1961022d46e7b8cf5c36ecb5dda48d84a3776e92
+Description: x86 virtualization solution - base binaries
+Description-md5: 30f96d22c1a6ca04db16bdc1e79ad965
+
+Package: virtualbox-source
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 764
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: build-essential, debhelper (>= 9), bzip2, kbuild, module-assistant
+Filename: pool/main/v/virtualbox/virtualbox-source_4.3.14-dfsg-1~qiana_all.deb
+Size: 685964
+MD5sum: cc55802ba56b4f22d7c1037a15488218
+SHA1: 9063e7f3030c38682592203074d26294833b03fe
+SHA256: 4f034eccec93e95e66d9afcc09a082112a6f1e6a2aa9e7ed3266eb9397e4ed10
+Description: x86 virtualization solution - kernel module source
+Description-md5: acc86918ad52775dbe11e2ad558ba197
+
+Package: lxpanel
+Priority: optional
+Section: x11
+Installed-Size: 3308
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.6.2-0ubuntu1~qiana1
+Recommends: xterm | pavucontrol | gnome-alsamixer
+Suggests: lxsession | menu, iceweasel | www-browser
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libiw30 (>= 30~pre1), libmenu-cache3 (>= 0.3.2), libwnck22 (>= 1:2.22), libx11-6, lxmenu-data
+Filename: pool/main/l/lxpanel/lxpanel_0.6.2-0ubuntu1~qiana1_i386.deb
+Size: 1128606
+MD5sum: c3aa8d24104dc3ff467c9b4b975efde2
+SHA1: 448bd5299a9361110110891c9c15203e5789936e
+SHA256: 20a81171757f7967bbfaddca65e7c780a3de6d6f90bcbcb4973590aa55c8dcf9
+Description: LXDE panel
+Description-md5: 17879e93d2a734829aa5b6907da68d3f
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: mc-dbg
+Source: mc
+Priority: extra
+Section: debug
+Installed-Size: 1403
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 3:4.8.12-1+qiana
+Suggests: gdb
+Depends: mc (= 3:4.8.12-1+qiana)
+Filename: pool/main/m/mc/mc-dbg_4.8.12-1+qiana_i386.deb
+Size: 1271686
+MD5sum: 9207a3ec833006f967f82e3bc17078c9
+SHA1: 46fbe0e0f14d6b214d7cd9a4b3dee8d04b534b0a
+SHA256: 54aef00b04c34f426cfd160e3474d77409d1333664a58d82602d5533c45008af
+Description: Midnight Commander - a powerful file manager - debug package
+Description-md5: 5320221d5e81a7551404cf7ff3b525cb
+
+Package: libgoffice-dbg
+Source: goffice
+Priority: extra
+Section: debug
+Installed-Size: 2750
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.14-1
+Depends: libgoffice-0.10-10 (= 0.10.14-1)
+Filename: pool/main/g/goffice/libgoffice-dbg_0.10.14-1_i386.deb
+Size: 2413776
+MD5sum: d29c8a4cbc98bfb914ec434d54b1f861
+SHA1: d1c7febda5b79d281721e7835c9a0012a7681cdb
+SHA256: 717097a4095152239c1d38139b610801ab1ac69d5682a52f332edf2dd6a0da6a
+Description: Document centric objects library - debugging files
+Description-md5: a13f34aadaeb75336e4e1dd89507b568
+
+Package: lxshortcut
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 63
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: libc6 (>= 2.3.6-6~), libfm-gtk4 (>= 1.2.0), libfm4 (>= 0.1.99), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.12.0)
+Filename: pool/main/libf/libfm/lxshortcut_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 14612
+MD5sum: a102b6c58ef1e07bbb3abc47f1ab16f6
+SHA1: a83954141d49a70d0513542083af9ad1c39c06b8
+SHA256: 5d980cc10c621880f389d492829f723d34fbd8479d7107dc5f2f48945857a1f4
+Description: LXDE application shortcut editor
+Description-md5: f3100c1d8ffaa49c43c2cb40948f458a
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libmenu-cache-dev
+Source: menu-cache
+Priority: optional
+Section: libdevel
+Installed-Size: 132
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.6.1-1~qiana
+Replaces: libmenu-cache1-dev
+Suggests: libmenu-cache-doc
+Depends: libmenu-cache3 (= 0.6.1-1~qiana)
+Conflicts: libmenu-cache1-dev
+Filename: pool/main/m/menu-cache/libmenu-cache-dev_0.6.1-1~qiana_i386.deb
+Size: 33250
+MD5sum: c5ea5ddf99c8f5498cb25e44ddf18fe9
+SHA1: 5b30dc7690a5de9203a9ccb6c13210be01b3d48a
+SHA256: d0d2f92f61f813680ba83fbbb08acea2b202cf79efe768edf618b5abc3a21492
+Description: LXDE implementation of the freedesktop Menu's cache (devel)
+Description-md5: 9176db60f0bc3d4cc5dea61f3800257e
+Multi-Arch: same
+
+Package: libfm-dev
+Source: libfm
+Priority: optional
+Section: libdevel
+Installed-Size: 283
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Suggests: libfm-doc
+Depends: libfm4 (= 1.2.1-0ubuntu1~qiana), libfm-extra4 (= 1.2.1-0ubuntu1~qiana)
+Filename: pool/main/libf/libfm/libfm-dev_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 45528
+MD5sum: f3366bff81f18d4498e75e7aad367f27
+SHA1: 41976ab29443ebf5e5021730662c2f71f59c5b1e
+SHA256: 8f25d1744eb6c0b16f02d7d9a98f58e63f4bdd4c6966bb33b81a5f598090ab79
+Description: file management support (core development files)
+Description-md5: 75488852ab7ec38683a32ff37f37963a
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: deadbeef
+Priority: extra
+Section: sound
+Installed-Size: 7029
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.6.1-1
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libavcodec54 (>= 6:9.1-1) | libavcodec-extra-54 (>= 6:9.11), libavformat54 (>= 6:9.1-1), libavutil52 (>= 6:9.1-1), libc6 (>= 2.15), libcairo2 (>= 1.2.4), libcddb2, libcdio13 (>= 0.83), libcurl3-gnutls (>= 7.16.2), libdbus-1-3 (>= 1.0.2), libfaad2 (>= 2.7), libflac8 (>= 1.3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libimlib2 (>= 1.4.5), libmad0 (>= 0.15.1b-3), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpulse0 (>= 1:0.99.1), libsamplerate0 (>= 0.1.7), libsndfile1 (>= 1.0.20), libstdc++6 (>= 4.1.1), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwavpack1 (>= 4.40.0), libx11-6, libzip2 (>= 0.10), zlib1g (>= 1:1.1.4)
+Filename: pool/main/d/deadbeef/deadbeef_0.6.1-1_i386.deb
+Size: 2187542
+MD5sum: f08b7e625766fa471b8127ddd230020a
+SHA1: ddf03fd9ae7ec63bb80248bfa23cbeab9ef11493
+SHA256: 36f6b17cb5a7caccb3228f4c75ebcc6a2d8eff1682c3fdc10f3c7cb5bac61013
+Description: Ultimate music player for GNU/Linux systems
+Description-md5: 02d8825f5ace8f92ef09741eb875ecaa
+
+Package: deadbeef-plugins-dev
+Source: deadbeef
+Priority: extra
+Section: libdevel
+Installed-Size: 101
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.6.1-1
+Filename: pool/main/d/deadbeef/deadbeef-plugins-dev_0.6.1-1_all.deb
+Size: 19138
+MD5sum: 02bf1ec683fcf2c2ba5f05b8321daa64
+SHA1: 765b9f96cc44a534476d613ca2834be1b2c7fb99
+SHA256: ede28333f8e8c42a478a38f188329234ef6556e2c8a7003fd82ea76e0ae7f8fc
+Description: Ultimate music player for GNU/Linux systems - development files
+Description-md5: 03353cf2b39bcba5949dfb90f5c73d0f
+
+Package: pcmanfm-dbg
+Source: pcmanfm
+Priority: extra
+Section: debug
+Installed-Size: 354
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.1-1~qiana
+Depends: pcmanfm (= 1.2.1-1~qiana)
+Filename: pool/main/p/pcmanfm/pcmanfm-dbg_1.2.1-1~qiana_i386.deb
+Size: 284102
+MD5sum: 89f308c4459a6c0fbeb3ee73728eea20
+SHA1: b4880b0edda46be37583e427d4d79309941af646
+SHA256: 132be2649f6c3a09b2e4567f255090c0c6d64c275e9b05fde03992ad8c852b87
+Description: extremely fast and lightweight file manager (debug)
+Description-md5: 62e0cfdfad04b582e769e2900dd36879
+
+Package: lxpanel-indicator-applet-plugin
+Source: lxpanel
+Priority: optional
+Section: x11
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.6.2-0ubuntu1~qiana1
+Suggests: indicator-application-gtk2, indicator-messages-gtk2, indicator-sound-gtk2
+Provides: indicator-renderer
+Depends: lxpanel, libc6 (>= 2.4), libglib2.0-0 (>= 2.22.0), libgtk2.0-0 (>= 2.18.0), libindicator7 (>= 0.4.90)
+Filename: pool/main/l/lxpanel/lxpanel-indicator-applet-plugin_0.6.2-0ubuntu1~qiana1_i386.deb
+Size: 19684
+MD5sum: 34c0a1221b21deae5d5e29b786f51637
+SHA1: a64fb6b001d89038534400023c295fbd4d003cc9
+SHA256: 6224d35639c421283304f79b135551926684d1e77d468f4971dbc6418ee89660
+Description: lxpanel indicator applet
+Description-md5: 024966b158c474c5b43eabec8ae4a7ff
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: deadbeef-dbg
+Source: deadbeef
+Priority: extra
+Section: debug
+Installed-Size: 5074
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.6.1-1
+Depends: deadbeef (= 0.6.1-1)
+Filename: pool/main/d/deadbeef/deadbeef-dbg_0.6.1-1_i386.deb
+Size: 4398144
+MD5sum: f1c7dab8a7a3c999c1ff4cb3a65713fe
+SHA1: 9753d82c94667ca81d909c61cda78c1b15b47a83
+SHA256: a26e49f086052c666f6f9a0400cd3aee4ca51e0874513de3946da7dbda43562c
+Description: Ultimate music player for GNU/Linux systems - debug files
+Description-md5: 5a90a437e51770795d4f1fffa09aca85
+
+Package: lxappearance-obconf
+Priority: extra
+Section: utils
+Installed-Size: 722
+Maintainer: Julien Lavergne <gilir@ubuntu.com>
+Architecture: i386
+Version: 0.2.2~git201401281747
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.12.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libx11-6, libxml2 (>= 2.7.4), gtk2-engines
+Filename: pool/main/l/lxappearance-obconf/lxappearance-obconf_0.2.2~git201401281747_i386.deb
+Size: 52566
+MD5sum: 746be992148660dba5daff4d43b1b2bd
+SHA1: 9a53e770a478bac42b749b2ed00315f1e89f4ed4
+SHA256: 9be82078ee249f59b68c28f8d78dd2674261a761eda036253c959c6cd082befb
+Description: a plugin for lxappearance to modify openbox themes
+Description-md5: b20bc062067b99c92a98f2d84fee04e1
+
+Package: lxappearance-obconf-dbg
+Source: lxappearance-obconf
+Priority: extra
+Section: debug
+Installed-Size: 187
+Maintainer: Julien Lavergne <gilir@ubuntu.com>
+Architecture: i386
+Version: 0.2.2~git201401281747
+Depends: lxappearance-obconf (= 0.2.2~git201401281747)
+Filename: pool/main/l/lxappearance-obconf/lxappearance-obconf-dbg_0.2.2~git201401281747_i386.deb
+Size: 52366
+MD5sum: 8d10acd4b875cc9ea1916cf120bbeb9e
+SHA1: d52815ec7b26989bdc860725416ba3520cf3b363
+SHA256: fb5c2135247f9ee1ad1b3533b3d24ff2bff3eb45f20c890149abe684f79b48fb
+Description: a plugin for lxappearance to modify openbox themes - debug package
+Description-md5: a8ce70bb5acfd96941ae7259dea3a89c
+
+Package: lxpanel-dbg
+Source: lxpanel
+Priority: extra
+Section: debug
+Installed-Size: 935
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.6.2-0ubuntu1~qiana1
+Depends: lxpanel (= 0.6.2-0ubuntu1~qiana1)
+Filename: pool/main/l/lxpanel/lxpanel-dbg_0.6.2-0ubuntu1~qiana1_i386.deb
+Size: 736808
+MD5sum: 2919a82a157e3c64628e01d38309662e
+SHA1: e45a4f861ad195a762316b302d3f1302bdc1866e
+SHA256: c68429bf204fec81557c0e9122a8631baefef452d845c714e0d817eefd9012c3
+Description: LXDE panel (debug)
+Description-md5: b16e483c91bd0f9fd4417a286e5488f4
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: inxi
+Priority: extra
+Section: misc
+Installed-Size: 476
+Maintainer: Unit 193 <unit193@ubuntu.com>
+Architecture: all
+Version: 2.1.16-1
+Recommends: dmidecode, file, hddtemp, iproute2, lm-sensors, mesa-utils, module-init-tools, net-tools, sudo, usbutils, x11-utils, x11-xserver-utils
+Depends: bash (>= 3.0), gawk, pciutils, procps
+Filename: pool/main/i/inxi/inxi_2.1.16-1_all.deb
+Size: 122048
+MD5sum: 2c19ca88db2c5b2ce6fbeeaf22d12cb2
+SHA1: 04cecbfbead71a0db067c9fcc77f0e6cf97a1dc6
+SHA256: c6428a7a17ee42a66a7529ac374d839da1dd7267e3047fa234858bfd1ea7274c
+Description: full featured system information script
+Description-md5: 13277f07e950aaf291de2de69ab2684c
+
+Package: virtualbox-qt
+Source: virtualbox
+Priority: optional
+Section: misc
+Installed-Size: 20639
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.3.14-dfsg-1~qiana
+Replaces: virtualbox (<< 4.1.6-dfsg-2~)
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqt4-network (>= 4:4.5.3), libqt4-opengl (>= 4:4.7.2), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.6), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxinerama1, virtualbox (= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: virtualbox (<< 4.1.6-dfsg-2~)
+Filename: pool/main/v/virtualbox/virtualbox-qt_4.3.14-dfsg-1~qiana_i386.deb
+Size: 4583832
+MD5sum: 2bdd74b1d68acc77f3f45c2c8a23f3d6
+SHA1: 67e52c35b211cd512077ab09a2eba93fdf392eb5
+SHA256: 3d6fafd3f22790f5167b6a468faa0f8594b6fc4e6f331817e29a0c9c26168c8a
+Description: x86 virtualization solution - Qt based user interface
+Description-md5: 41ed29f36ba23b3ce0155f9a8efcff60
+
+Package: virtualbox-dbg
+Source: virtualbox
+Priority: extra
+Section: debug
+Installed-Size: 289347
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.3.14-dfsg-1~qiana
+Depends: virtualbox (= 4.3.14-dfsg-1~qiana) | virtualbox-guest-utils (= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-dbg_4.3.14-dfsg-1~qiana_i386.deb
+Size: 60202334
+MD5sum: 78a8a94a83cd93b11d91d94facf794a5
+SHA1: 44d42c3537ca84861e301b2391660ea8ed8eb11b
+SHA256: 08ee56145fb3012ca8b4cf69ee0ab35fefd66d9112a2e1db537062a21fc85f82
+Description: x86 virtualization solution - debugging symbols
+Description-md5: b271b8956187eca407d52354cf368938
+
+Package: virtualbox-dkms
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 4389
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: dkms (>= 2.1.0.0), virtualbox (>= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-dkms_4.3.14-dfsg-1~qiana_all.deb
+Size: 574874
+MD5sum: 6c056c2648d4ae2b6842ee13d6710e13
+SHA1: 77a598a46aef480d8482c02501da8c65aacd56b9
+SHA256: 6d2329f1e1e283b1df09488f326ec932a7d177947fbbf3c426704da6384a1e12
+Description: x86 virtualization solution - kernel module sources for dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+
+Package: virtualbox-guest-dkms
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 3671
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: dkms (>= 2.1.0.0), virtualbox-guest-utils (>= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-dkms_4.3.14-dfsg-1~qiana_all.deb
+Size: 486102
+MD5sum: a43d80784236671704d3c256a2d0de13
+SHA1: 7babcff0d9619661bd55a1eb96f1b1bb3618a7cb
+SHA256: dcd70fef818669b1dd24eeb79af6905c8e45c2ecd7ff4b4e90c795e45f853ac6
+Description: x86 virtualization solution - guest addition module source for dkms
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+
+Package: virtualbox-guest-x11
+Source: virtualbox
+Priority: optional
+Section: x11
+Installed-Size: 5937
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.3.14-dfsg-1~qiana
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.15), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxmu6, libxrandr2, libxt6, xorg-video-abi-15, xserver-xorg-core (>= 2:1.14.99.902), virtualbox-guest-utils (= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-x11_4.3.14-dfsg-1~qiana_i386.deb
+Size: 964910
+MD5sum: 9dd9dd1b8b126d890261c9626632be69
+SHA1: d81e627cbe19ff8ad82a854223cb322edefc0ce1
+SHA256: 7a9faedaa80f067cbb55841bab6df9297aca178f0c9481b62968ee3780b34e06
+Description: x86 virtualization solution - X11 guest utilities
+Description-md5: 3487afde0b114ec7e205b11f1dd3f7a5
+
+Package: virtualbox-guest-utils
+Source: virtualbox
+Priority: optional
+Section: misc
+Installed-Size: 1803
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.3.14-dfsg-1~qiana
+Recommends: virtualbox-guest-dkms (= 4.3.14-dfsg-1~qiana) | virtualbox-guest-source (= 4.3.14-dfsg-1~qiana), virtualbox-guest-x11 (= 4.3.14-dfsg-1~qiana)
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), adduser, pciutils
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-utils_4.3.14-dfsg-1~qiana_i386.deb
+Size: 387510
+MD5sum: f52d481c9a1d09f288d85d0391a293c7
+SHA1: 0ef1f0c25d8fd1d9d26489d8e02ff8faa82099d4
+SHA256: 80c470aed4467866d345617088963c47fe4acaff114b367e45afc0ed01f409e2
+Description: x86 virtualization solution - non-X11 guest utilities
+Description-md5: 0c420aa026ad03a572b15c6e38dbebf7
+
+Package: virtualbox-guest-additions-iso
+Priority: extra
+Section: misc
+Installed-Size: 64438
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-1~qiana
+Recommends: virtualbox (>= 4.3.14)
+Replaces: virtualbox-guest-additions (<< 4.0.6-1~)
+Conflicts: virtualbox-2.0, virtualbox-2.1, virtualbox-2.2, virtualbox-3.0, virtualbox-3.1, virtualbox-3.2, virtualbox-4.0, virtualbox-4.1, virtualbox-4.2
+Breaks: virtualbox-guest-additions (<< 4.0.6-1~)
+Filename: pool/main/v/virtualbox-guest-additions-iso/virtualbox-guest-additions-iso_4.3.14-1~qiana_all.deb
+Size: 45996404
+MD5sum: 2be83ab5072d1de963ab9305e3e05415
+SHA1: c4123c4bdc7333670f6de1333666a6c0f0d3c89b
+SHA256: 2b2034bb88b8bc47dfc9d9041a02fc4686013c2449431945e70e215fc5cc9a46
+Description: guest additions iso image for VirtualBox
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+
+Package: virtualbox-guest-source
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 666
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: build-essential, debhelper (>= 9), bzip2, kbuild, module-assistant
+Filename: pool/main/v/virtualbox/virtualbox-guest-source_4.3.14-dfsg-1~qiana_all.deb
+Size: 585986
+MD5sum: 5c6a98402822f59bf99d848b4b90083c
+SHA1: fe121c1de8a91173ce5f3e9622eeb66f0aaf4a9a
+SHA256: 6eb0b94c1bc101496058c8d7f2ca67976a5313706ac38adb2b29f213ddd32d40
+Description: x86 virtualization solution - guest addition module source
+Description-md5: fd60384a9f99f9f360a9dcc85b3fd6cc
+
+Package: libfm-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 1670
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.1-0ubuntu1~qiana
+Replaces: libfm0, libfm1
+Breaks: libfm0, libfm1
+Filename: pool/main/libf/libfm/libfm-data_1.2.1-0ubuntu1~qiana_all.deb
+Size: 201668
+MD5sum: 82a572a4eee4be62549fb5d607979de9
+SHA1: 641afb2d2c3aa4738a24579c3340cc2747d132a8
+SHA256: fe9df57646d84e948ded5a7dffe13616f408d598c71a5ce1b0ae3feb3b524dc5
+Description: file management support (common data)
+Description-md5: b06249e439eae5ef0506c244cb25003f
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-gtk-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 167
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.1-0ubuntu1~qiana
+Replaces: libfm-gtk0
+Breaks: libfm-data (<< 1.2.0-1ubuntu1), libfm-gtk-bin (<< 1.0), libfm-gtk0
+Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.1-0ubuntu1~qiana_all.deb
+Size: 21384
+MD5sum: 6854b17ffa1b605f8b6909ca00b918b9
+SHA1: d5ceda22289a3dc31b5fc05645e50122c994e0bb
+SHA256: 17b1feccc394bbd3af77a1ee9ccf55a76f20274d917ff3b849c9d4aedf6c571a
+Description: file management support (GTK+ library common data)
+Description-md5: 264dbbfbd5080fc520e27c05ae458939
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: mc-data
+Source: mc
+Priority: optional
+Section: utils
+Installed-Size: 5375
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 3:4.8.12-1+qiana
+Replaces: mc (<< 3:4.8.1)
+Breaks: mc (<< 3:4.8.1)
+Filename: pool/main/m/mc/mc-data_4.8.12-1+qiana_all.deb
+Size: 1186434
+MD5sum: 5867f0e763ba0c50ff1b757c79206ce3
+SHA1: 6f5b4d3557fc0bffc77783b2a2351a00a668648b
+SHA256: 146b7a6977e45addc1e4c10e5d309876db613d5104803126d914626f60d8d169
+Description: Midnight Commander - a powerful file manager -- data files
+Description-md5: a1815081eaa82c881147140e5d7479f3
+Multi-Arch: foreign
+
+Package: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 1042
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~trusty4
+Recommends: qpdfview-djvu-plugin (= 0.4.9-1~trusty4), qpdfview-ps-plugin (= 0.4.9-1~trusty4), qpdfview-translations (= 0.4.9-1~trusty4)
+Depends: libc6 (>= 2.3.6-6~), libcups2 (>= 1.4.0), libgcc1 (>= 1:4.1.1), libpoppler-qt5-1 (>= 0.24.5), libqt5core5a (>= 5.2.0), libqt5dbus5 (>= 5.0.2), libqt5gui5 (>= 5.0.2), libqt5printsupport5 (>= 5.0.2), libqt5sql5 (>= 5.0.2), libqt5widgets5 (>= 5.2.0), libqt5xml5 (>= 5.0.2), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.2.3.4), libqt5sql5-sqlite, libqt5svg5
+Filename: pool/main/q/qpdfview/qpdfview_0.4.9-1~trusty4_i386.deb
+Size: 300280
+MD5sum: 4a009215092d8b6f596e56bb7c79468e
+SHA1: 93b22efd06c3c82c8ec40ae2f7da5d4a2fe0666a
+SHA256: 04d333264bf96c4cccde32825da0e64bd1a6080783f361a20a034472cee7bd24
+Description: tabbed document viewer
+Description-md5: ca79729f979630fee76788726c336fb6
+
+Package: lxshortcut-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 65
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: lxshortcut (= 1.2.1-0ubuntu1~qiana)
+Filename: pool/main/libf/libfm/lxshortcut-dbg_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 20850
+MD5sum: 4525eda80a93203040c5c31f7382a5d1
+SHA1: 2266213b5a44e7cae97eda41bc0a15132cad1a49
+SHA256: aa0e982b5fea8e5237c4418daceef8f8b83f8b0fad0e572720cff0238366c0c3
+Description: LXDE application shortcut editor - debug
+Description-md5: 9e4501ace60f873962ef4b405755a4c9
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: compton
+Priority: extra
+Section: x11
+Installed-Size: 251
+Maintainer: Scott Leggett <scott@sl.id.au>
+Architecture: i386
+Version: 0.1~beta2+git20140326-0linuxmint1
+Depends: libc6 (>= 2.15), libconfig9, libdbus-1-3 (>= 1.1.1), libgl1-mesa-glx | libgl1, libpcre3, libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6 (>= 2:1.3.0), libxfixes3, libxinerama1, libxrandr2 (>= 4.3), libxrender1
+Filename: pool/main/c/compton/compton_0.1~beta2+git20140326-0linuxmint1_i386.deb
+Size: 88060
+MD5sum: 455292be40bee81f14f939501dc9707e
+SHA1: a29d30de6a6e9b5459421abdec69235791155aab
+SHA256: 7614de5afc86b8108068f3fc4cce8b9ff8f502183a8ff8ce5e198f3310ebed41
+Description: compositor for X11, based on xcompmgr
+Description-md5: fa288ef1618c96c3b712753c01a39a37
+
+Package: libfm-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 474
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Replaces: libfm1-dbg
+Depends: libfm4 (= 1.2.1-0ubuntu1~qiana), libfm-extra4 (= 1.2.1-0ubuntu1~qiana)
+Breaks: libfm1-dbg
+Filename: pool/main/libf/libfm/libfm-dbg_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 380958
+MD5sum: 19dc3b79883923dadcdfa39805139f49
+SHA1: 44352170e870877ba5fa7364b16f6c6999369734
+SHA256: 095ee81fdfe77962b3a0fc2fec72aa49c3acc18488c34228aa9dc6bb9b264f01
+Description: file management support (libfm debug)
+Description-md5: c42de5d56327e9ae8d7a57a83e8e0c46
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-tools
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 64
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Replaces: libfm-gtk-bin
+Provides: libfm-gtk-bin
+Depends: libc6 (>= 2.3.6-6~), libfm-gtk4 (>= 0.1.99), libfm4 (>= 0.1.99), libglib2.0-0 (>= 2.28.0), libgtk2.0-0 (>= 2.12.0)
+Conflicts: libfm-gtk-bin
+Filename: pool/main/libf/libfm/libfm-tools_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 14258
+MD5sum: 7a7215d44ba321a52d1d6b96486e56d0
+SHA1: e9a77bfc7238c202187e1e824851c94c994c0785
+SHA256: 2970325e88317beca26d57b92687352bd7f3d69cb25782169690ae7aa85808bf
+Description: file management support (utilities)
+Description-md5: 4aa420ccad92ac9ab33b8bf09945f364
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-doc
+Source: libfm
+Priority: optional
+Section: doc
+Installed-Size: 2189
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.1-0ubuntu1~qiana
+Recommends: libglib2.0-doc, libgtk-3-doc
+Replaces: libfm-dev (<< 1.1.1)
+Breaks: libfm-dev (<< 1.1.1)
+Filename: pool/main/libf/libfm/libfm-doc_1.2.1-0ubuntu1~qiana_all.deb
+Size: 145154
+MD5sum: 48b8b052f1b76829c9d98eb3fa83ffce
+SHA1: 2e303b2f404f0ad15b2e030dac3385ef4db5dc63
+SHA256: 3169cb77a12cdff307b42061fce4e9dd41b66787d2529aab01e773bd0c8cc213
+Description: file management support (development documentation)
+Description-md5: 7938076b0ea5a3c6d795f5f506fa27df
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 353
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Recommends: libfm-modules
+Depends: libc6 (>= 2.7), libdbus-glib-1-2 (>= 0.78), libexif12, libglib2.0-0 (>= 2.37.3), libmenu-cache3 (>= 0.5.0), libfm-data (>= 1.2.0~), lxmenu-data
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm4_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 119534
+MD5sum: 71f68aaeb0b8d4162d0ac43d2bff1943
+SHA1: a578c3b8734e7f4a57115a1773134bcc06042adf
+SHA256: 5d1ace31c40940468e008cca203d3831371d92adaeaf7fdb18b2f70f751ab7dd
+Description: file management support (core library)
+Description-md5: 2b58085e04bd6495197d07ffae4153a6
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-gtk4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 526
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Suggests: libfm-tools, nautilus-actions
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfm4 (= 1.2.1-0ubuntu1~qiana), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libmenu-cache3 (>= 0.4.0), libpango-1.0-0 (>= 1.20.0), libfm-gtk-data (>= 1.2.0~)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-gtk4_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 163238
+MD5sum: 29832c4cdba952749c16ed3c29fe8890
+SHA1: 5775831f1906185915e67b99df3ee4027db4ea33
+SHA256: a34955a7acdcfd1c802e91a95e0341c6e335bf8d2b8f4209dd7eabcaf2120c6c
+Description: file management support (GTK+ 2.0 GUI library)
+Description-md5: dda7d66405310e47d775426a99f99ffc
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libmenu-cache-doc
+Source: menu-cache
+Priority: optional
+Section: doc
+Installed-Size: 171
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 0.6.1-1~qiana
+Recommends: libglib2.0-doc
+Filename: pool/main/m/menu-cache/libmenu-cache-doc_0.6.1-1~qiana_all.deb
+Size: 16926
+MD5sum: 4b90e32261a7c814a20f09ee6b3d57b4
+SHA1: e7e771262e03813d197f02eea2292034e078781e
+SHA256: 81acbb3e454d6e2ae086ba130a87e96c4535ebbf5a0dd887d5966336aa8e90fb
+Description: LXDE implementation of the freedesktop Menu's cache (docs)
+Description-md5: c863cdc802b3b4239d7d47d2183fe47e
+
+Package: libmenu-cache-dbg
+Source: menu-cache
+Priority: extra
+Section: debug
+Installed-Size: 72
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.6.1-1~qiana
+Depends: libmenu-cache3 (= 0.6.1-1~qiana)
+Filename: pool/main/m/menu-cache/libmenu-cache-dbg_0.6.1-1~qiana_i386.deb
+Size: 25498
+MD5sum: 82d3c29198e970dfa1a401cf1c07e520
+SHA1: 2f0f323f0b8b37611518cbcbb0c551c26cf2077d
+SHA256: 39bfd4ba0c73642a0442ce992dd83df14055540a5997730cba6e39df54b25c3d
+Description: LXDE implementation of the freedesktop Menu's cache (debug)
+Description-md5: 40c0bfc71faefcc760c88a4aa9472d96
+Multi-Arch: same
+
+Package: mint-lxde-default-settings
+Priority: required
+Section: admin
+Installed-Size: 355
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 17.0~rc1.3
+Recommends: openbox | xfwm4, pcmanfm | spacefm, peppermint-control-center
+Depends: mintsystem, lxpanel, mint-artwork-lxde, lxsession, fonts-liberation, lxsession-logout, scrot
+Filename: pool/main/m/mint-lxde-default-settings/mint-lxde-default-settings_17.0~rc1.3_all.deb
+Size: 28182
+MD5sum: 04b30f01b5be50050e5e697bfcb2b438
+SHA1: 6ddf848562718c06fc0ca09e65bbc3ee5c750a0c
+SHA256: cc2f3ddf30afb94c316a0a287bc67568c18f5271b71d3779abbe6926afe6d631
+Description: This Package contains the default system settings for Linux Mint LXDE Edition.
+Description-md5: 074b94ca71f1dcf8821541ec02bdf6e2
+
+Package: mint-artwork-lxde
+Priority: optional
+Section: x11
+Installed-Size: 5337
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 17.0~rc1.1
+Depends: mint-backgrounds-qiana, lubuntu-artwork
+Filename: pool/main/m/mint-artwork-lxde/mint-artwork-lxde_17.0~rc1.1_all.deb
+Size: 4475212
+MD5sum: e46cfbf95c38c6aa1faad3c11964e5aa
+SHA1: 177c739d258dd41ff51bfc94607912c1dd509264
+SHA256: 06f7fa5b3cc279e42adff7eff5d819766dad63be3cfd459982d0b4beedca4b3c
+Description: Artwork for Linux Mint LXDE
+Description-md5: b13ff03f861bcfe3066ebc94edc74d5c
+
+Package: libgoffice-0.10-dev
+Source: goffice
+Priority: optional
+Section: libdevel
+Installed-Size: 4820
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.14-1
+Suggests: libgoffice-0.10-doc
+Depends: gir1.2-goffice-0.10 (= 0.10.14-1), libgoffice-0.10-10 (= 0.10.14-1), libglib2.0-dev, libxml2-dev, libgtk-3-dev, libglade2-dev, libcairo2-dev, libgconf2-dev, libgsf-1-dev (>= 1.14.25-2)
+Filename: pool/main/g/goffice/libgoffice-0.10-dev_0.10.14-1_i386.deb
+Size: 835868
+MD5sum: 4efd2715d34709191beaf25f930f9ac0
+SHA1: e2dffd4e25529739f9f7fd0a3566b8cd05460434
+SHA256: aa212a4b478315d9ebc749266c89a725b9eb30f6c581a60439b237943db8d019
+Description: Document centric objects library - development files
+Description-md5: 21974f31eff592b6ddf62810ac0c69ec
+
+Package: libgoffice-0.10-10
+Source: goffice
+Priority: optional
+Section: libs
+Installed-Size: 5277
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.14-1
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.10.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgsf-1-114 (>= 1.14.23), libgtk-3-0 (>= 3.3.16), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), librsvg2-2 (>= 2.14.4), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), libgoffice-0.10-10-common (>= 0.10.14-1)
+Filename: pool/main/g/goffice/libgoffice-0.10-10_0.10.14-1_i386.deb
+Size: 1399236
+MD5sum: a6a0abad63f06b34bf7f403cc3fa01cd
+SHA1: 4da2293f3d3c4df4fc67f82a11a27565449e9bc6
+SHA256: 0fc23229509bfceeff7e29db603154d50b5a15f34c4bf235ccec278027fa66e8
+Description: Document centric objects library - runtime files
+Description-md5: b7d4abcfd1ea6c42fd13392cbd81b11e
+
+Package: gir1.2-goffice-0.10
+Source: goffice
+Priority: optional
+Section: introspection
+Installed-Size: 286
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.14-1
+Depends: gir1.2-freedesktop, gir1.2-glib-2.0, gir1.2-gsf-1, gir1.2-gtk-3.0, gir1.2-pango-1.0, libgoffice-0.10-10 (>= 0.10.14)
+Filename: pool/main/g/goffice/gir1.2-goffice-0.10_0.10.14-1_i386.deb
+Size: 67620
+MD5sum: 730f5b2561d2231211544c3795e6690c
+SHA1: 7725eb1841bec233afc681a05765123ca3366daa
+SHA256: 7161f4e446477d60ddfd57735ed3b0d33facdeb76262e387b12fc84f3599ba66
+Description: GObject introspection data for the GOffice library
+Description-md5: 26d1fc91df62af54233351294de2591e
+
+Package: libgoffice-0.10-10-common
+Source: goffice
+Priority: optional
+Section: libs
+Installed-Size: 3876
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 0.10.14-1
+Filename: pool/main/g/goffice/libgoffice-0.10-10-common_0.10.14-1_all.deb
+Size: 584524
+MD5sum: 022beadd8d45408272e5cffca737c5cd
+SHA1: 55f4efde7893b49a8716f3e574a3739d3c3a4567
+SHA256: c0e3783ef1c2862ab2788a827ac18b44bb169bed26c4b9096203b3b8ff1399a2
+Description: Document centric objects library - common files
+Description-md5: 37455cde2fc87041c4adf8dabb4678de
+
+Package: gir1.2-gnumeric
+Source: gnumeric
+Priority: optional
+Section: introspection
+Installed-Size: 2197
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.12.17-1~qiana
+Filename: pool/main/g/gnumeric/gir1.2-gnumeric_1.12.17-1~qiana_i386.deb
+Size: 219690
+MD5sum: b7cfcd303036b31bae097d54f07a6674
+SHA1: 1b389cc18719adaee9878a92042a4a3010efe620
+SHA256: fc105009468d9700ba8ab366c54aacf269bb40da9cadf8500b5ec58af1a5ceff
+Description: GObject introspection data for the Gnumeric spreadsheet
+Description-md5: b3f5baac1cd2d2f1a57cf8e15ff9f294
+
+Package: mint-info-cinnamon
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2014.04.04+lxde2
+Replaces: mint-info-kde, mint-info-lxde, mint-info-mate, mint-info-xfce
+Provides: mint-info
+Breaks: mint-info-kde, mint-info-lxde, mint-info-mate, mint-info-xfce
+Filename: pool/main/m/mint-info/mint-info-cinnamon_2014.04.04+lxde2_i386.deb
+Size: 2316
+MD5sum: ed11acb25aec9948929fc788f083d3be
+SHA1: e7c6af270d0969dfae914c473b87faedc2fb55c6
+SHA256: 5924aa189255325b35ec719ee5274969c2ab15454598a66dd3db8878b901f36a
+Description: Necessary information about the Linux Mint release and edition.
+Description-md5: d7e1e9b77067063b173218a695f59a26
+
+Package: mint-info-mate
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2014.04.04+lxde2
+Replaces: mint-info-cinnamon, mint-info-kde, mint-info-lxde, mint-info-xfce
+Provides: mint-info
+Breaks: mint-info-cinnamon, mint-info-kde, mint-info-lxde, mint-info-xfce
+Filename: pool/main/m/mint-info/mint-info-mate_2014.04.04+lxde2_i386.deb
+Size: 2312
+MD5sum: 5415510bde1cd3668c396beebd652dec
+SHA1: a0e14b56c63f112e3056bf3483488d9a51dd78d0
+SHA256: cf9867150a656f392a4b3c37f168bba3904141b1c5aaf136c5c9602e3570a455
+Description: Necessary information about the Linux Mint release and edition.
+Description-md5: d7e1e9b77067063b173218a695f59a26
+
+Package: mint-info-kde
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2014.04.04+lxde2
+Replaces: mint-info-cinnamon, mint-info-lxde, mint-info-mate, mint-info-xfce
+Provides: mint-info
+Breaks: mint-info-cinnamon, mint-info-lxde, mint-info-mate, mint-info-xfce
+Filename: pool/main/m/mint-info/mint-info-kde_2014.04.04+lxde2_i386.deb
+Size: 2306
+MD5sum: fb5615493e8e048f58674ffbe14ff347
+SHA1: 55bfaf04acefe8a60694a3933cbd0941e6151a9d
+SHA256: b2662728b15c9865de9bf80bf520ab6a380fa03348057975d1a5f4dc00de7ad7
+Description: Necessary information about the Linux Mint release and edition.
+Description-md5: d7e1e9b77067063b173218a695f59a26
+
+Package: mint-info-xfce
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2014.04.04+lxde2
+Replaces: mint-info-cinnamon, mint-info-kde, mint-info-lxde, mint-info-mate
+Provides: mint-info
+Breaks: mint-info-cinnamon, mint-info-kde, mint-info-lxde, mint-info-mate
+Filename: pool/main/m/mint-info/mint-info-xfce_2014.04.04+lxde2_i386.deb
+Size: 2314
+MD5sum: 08a85d717c948eec5939cb35c86395b1
+SHA1: bfade75596c1f9b642675f77063dfd0673ba55c1
+SHA256: 9c0ccceac5cf866a8077f4b518668e8b4a0af763c7818c78d2c3363e3cb79e21
+Description: Necessary information about the Linux Mint release and edition.
+Description-md5: d7e1e9b77067063b173218a695f59a26
+
+Package: mint-info-lxde
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2014.04.04+lxde2
+Replaces: mint-info-cinnamon, mint-info-kde, mint-info-mate, mint-info-xfce
+Provides: mint-info
+Breaks: mint-info-cinnamon, mint-info-kde, mint-info-mate, mint-info-xfce
+Filename: pool/main/m/mint-info/mint-info-lxde_2014.04.04+lxde2_i386.deb
+Size: 2314
+MD5sum: 2977d28e6e1d59365f5406891d9a9eea
+SHA1: 2e74bd8fb10b46fb57f61acd1e2dc82e45a9c5c8
+SHA256: d6f289f47f0160c013f6e821ea3723454a40bbaf70f3c23e212450c1bccdafba
+Description: Necessary information about the Linux Mint release and edition.
+Description-md5: d7e1e9b77067063b173218a695f59a26
+
+Package: qpdfview-djvu-plugin
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 103
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~trusty4
+Depends: libc6 (>= 2.1.3), libdjvulibre21 (>= 3.5.25.4), libgcc1 (>= 1:4.1.1), libqt5core5a (>= 5.0.2), libqt5gui5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 4.1.1), qpdfview (= 0.4.9-1~trusty4)
+Filename: pool/main/q/qpdfview/qpdfview-djvu-plugin_0.4.9-1~trusty4_i386.deb
+Size: 28882
+MD5sum: 841c0be9da6d6a21785106337ea299b9
+SHA1: 053da8fb42b608b904e859392588200cfa3c8709
+SHA256: 87d541833ba91e6e5f412b8b8a7d2ff6a28f3cdd472c78bfc37da7b9bb4cd339
+Description: tabbed document viewer - DjVu plugin
+Description-md5: bd4190e3187c52de4b09810f1a7b67ee
+
+Package: qpdfview-ps-plugin
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 91
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~trusty4
+Depends: libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libqt5core5a (>= 5.0.2), libqt5gui5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libspectre1 (>= 0.2.3), libstdc++6 (>= 4.1.1), qpdfview (= 0.4.9-1~trusty4)
+Filename: pool/main/q/qpdfview/qpdfview-ps-plugin_0.4.9-1~trusty4_i386.deb
+Size: 23596
+MD5sum: 1d4b8ddbe401982ae31baf7fb567a3f4
+SHA1: 44bbb2254c0ea42a83728a4668f28bf87cdbf7cd
+SHA256: 80eebc4333ae3bb454e57c155fec50d21f810f275c1e9ef8d19c7534c2629db9
+Description: tabbed document viewer - PostScript plugin
+Description-md5: 3c97ed3feb446590dd2aeba3ef2d546b
+
+Package: libmenu-cache-bin
+Source: menu-cache
+Priority: optional
+Section: libs
+Installed-Size: 154
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.6.1-1~qiana
+Replaces: libmenu-cache1
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.24.0)
+Breaks: libmenu-cache1, libmenu-cache3 (<< 0.6.0)
+Filename: pool/main/m/menu-cache/libmenu-cache-bin_0.6.1-1~qiana_i386.deb
+Size: 45796
+MD5sum: 12ca8fc5924cd7338e910359a0be9ba1
+SHA1: 00c71c54c42845c1e0bdd4248957e63ea46ca5ee
+SHA256: 34bb6c47fe7d3f652e1763d8bdad4e29db2c016d00312dda5db29a2528a81822
+Description: LXDE implementation of the freedesktop Menu's cache (libexec)
+Description-md5: 725d65d225e430ba8faeb2a194b5ea8f
+Multi-Arch: foreign
+
+Package: libfm-extra4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 68
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-extra4_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 19208
+MD5sum: dd762cb40a7d6a8ea6c58c315981e6ca
+SHA1: d07f023fec797c5650bd6a4e1c91679ffdd483a8
+SHA256: ff5a7b28aeff1c1399e04cf245e99c6d54a339ef40f39ab1accf4b5ad6ba65d7
+Description: file management support (extra library)
+Description-md5: 8c79543a5f26ade86c30a98c2b6306a8
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-modules
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 165
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: libc6 (>= 2.7), libfm-extra4 (>= 1.2.0), libfm4 (>= 1.0.2), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.18.0), libmenu-cache3 (>= 0.5.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-modules_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 38552
+MD5sum: 0607be827e91df3327ec36a46e029a17
+SHA1: f4881afa3780ce5111d3072547eafb26131b7fdf
+SHA256: 1604f43fbf768aee8541a309ab680dfe8dae6dad71766bc362d16007cd2ede1b
+Description: file management support (loadable modules for library)
+Description-md5: 1198e23e5d9f4f99e4bb94b85ff85c8f
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libmenu-cache3
+Source: menu-cache
+Priority: optional
+Section: libs
+Installed-Size: 65
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.6.1-1~qiana
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.31.8), libmenu-cache-bin (>= 0.6.0)
+Conflicts: libmenu-cache1
+Pre-Depends: multiarch-support
+Filename: pool/main/m/menu-cache/libmenu-cache3_0.6.1-1~qiana_i386.deb
+Size: 14244
+MD5sum: ccdb6ae9a7b646b376a6acfee1267edc
+SHA1: c7daff3d10faa22682ae59128994c5f73fc5034f
+SHA256: 5afdf7ef91f6de52ee6d5f8b846d3f9061c5f5f01b8020df4e54af5dd5ba60d2
+Description: LXDE implementation of the freedesktop Menu's cache
+Description-md5: d8d1a8a6d218622dc8a4c4530d271e5a
+Multi-Arch: same
+
+Package: libfm-gtk-dev
+Source: libfm
+Priority: optional
+Section: libdevel
+Installed-Size: 46
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: libfm-dev (= 1.2.1-0ubuntu1~qiana), libfm-gtk4 (= 1.2.1-0ubuntu1~qiana)
+Breaks: libfm-dev (<< 1.0.2)
+Filename: pool/main/libf/libfm/libfm-gtk-dev_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 8778
+MD5sum: 8ca82883a1a899a1583e28c8577759c7
+SHA1: 60962791a8bb45d516fa5bad86fc3f82828596fb
+SHA256: 5c91d5d015aa280cfe670a5a4819ae84b5fe7f9f1c282cf26cf8e6ea14cbecce
+Description: file management support (GTK+ GUI development files)
+Description-md5: 726ead770a8653169cf1ffa80dc955da
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-gtk-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 746
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: libfm-gtk4 (= 1.2.1-0ubuntu1~qiana)
+Breaks: libfm-dbg (<< 1.0.2)
+Filename: pool/main/libf/libfm/libfm-gtk-dbg_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 634110
+MD5sum: e5d46d19b97d46e902979194c62d2fbb
+SHA1: 8f479365ac52ea57768fc91aabee30ad37c9e265
+SHA256: e0dbd3f2a407b1bb959da04e8c5f9e5cab65c02301d4d692873d7cd33088a360
+Description: file management support (libfm-gtk debug)
+Description-md5: 86e71f9e4234169c5e92eca8f2beb3dc
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libgoffice-0.10-doc
+Source: goffice
+Priority: optional
+Section: doc
+Installed-Size: 3541
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 0.10.14-1
+Replaces: libgoffice-0.10-dev (<< 0.10.4)
+Breaks: libgoffice-0.10-dev (<< 0.10.4)
+Filename: pool/main/g/goffice/libgoffice-0.10-doc_0.10.14-1_all.deb
+Size: 239348
+MD5sum: 48fc4527ea0ebacea08acede36684afd
+SHA1: 258b2c3e1121378d0eaebaf3ed6ed092ee133a7a
+SHA256: 0f20d125a11b873a8f6d11bb5d99887d36798f9dc8c91f08cf5ae7622fd1d4d5
+Description: Document centric objects library - documentation
+Description-md5: eef950950a4c265be49aff0c19d0328f
+
+Package: qpdfview-translations
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 1216
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~trusty4
+Replaces: qpdfview-languages
+Depends: qpdfview (= 0.4.9-1~trusty4)
+Filename: pool/main/q/qpdfview/qpdfview-translations_0.4.9-1~trusty4_i386.deb
+Size: 155532
+MD5sum: 72a493d93cc48fd49faacd5f735fe12c
+SHA1: 6feb9fec54d8ed7f7b1f1fe94e40b4e2afa99633
+SHA256: c176eef33661cf82df348f6a6807c7f9f8fb5657d6efcba8c3de354efcda8df5
+Description: tabbed document viewer - translations
+Description-md5: 3745d23264355e44bf7e2d3a398f5486
+
+Package: libfm-modules-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 226
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.1-0ubuntu1~qiana
+Depends: libfm-modules (= 1.2.1-0ubuntu1~qiana)
+Filename: pool/main/libf/libfm/libfm-modules-dbg_1.2.1-0ubuntu1~qiana_i386.deb
+Size: 132274
+MD5sum: c804c2930dff2bfbf8c53c49a5948090
+SHA1: b86177aa9b03cccd097a4c59b96cbdd1e39bb743
+SHA256: 05ebef9f3ad65f5d470088284b075b2a8f52193572aedcd02d74dccbffc34f06
+Description: file management support (libfm-modules debug)
+Description-md5: bb713f5ee744bce1a5f214db5a392cd8
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: peppermint-control-center
+Priority: required
+Section: x11
+Installed-Size: 220
+Maintainer: Kendall Weaver <kendall@peppermintos.com>
+Architecture: all
+Version: 0.2.1
+Depends: python3, python3-gi, xfwm4, xbindkeys
+Conflicts: xbindkeys-config
+Filename: pool/main/p/peppermint-control-center/peppermint-control-center_0.2.1_all.deb
+Size: 55716
+MD5sum: 1358e183f7057be855edf4121b95c2cf
+SHA1: 7f08a90fec944f2436e2ec1c280c52a0938995a7
+SHA256: b83772e4f8828bf85edc299a30e950cd5af56b5e85f43f605ae01d52bf4a3c5f
+Description: Window manager and input settings for Peppermint OS.
+Description-md5: f34d4af42cdc9b19e34c3b08c7c07293
+
+Package: lilyterm
+Priority: optional
+Section: x11
+Installed-Size: 740
+Maintainer: ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
+Architecture: i386
+Version: 0.9.9.4-3
+Provides: x-terminal-emulator
+Depends: libc6 (>= 2.3.6-6~), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.14.0), libgtk2.0-0 (>= 2.20.0), libpango-1.0-0 (>= 1.14.0), libvte9 (>= 1:0.28.0), libx11-6
+Filename: pool/main/l/lilyterm/lilyterm_0.9.9.4-3_i386.deb
+Size: 160204
+MD5sum: 243996f528cd3f45a5d1ca48e46d9ccf
+SHA1: 94a48bf326687a76c899c0b6f2c198d8a6804d02
+SHA256: 5ce016493c615f322f6e4b4d44c728343430b747616cd36850d66faf231aaf19
+Description: Light and eazy-to-use terminal emulator for X
+Description-md5: 1bf14d3e39047628684c002e72258d86
+
+Package: lilyterm-dbg
+Source: lilyterm
+Priority: extra
+Section: debug
+Installed-Size: 289
+Maintainer: ChangZhuo Chen (陳昌倬) <czchen@gmail.com>
+Architecture: i386
+Version: 0.9.9.4-3
+Depends: lilyterm (= 0.9.9.4-3)
+Filename: pool/main/l/lilyterm/lilyterm-dbg_0.9.9.4-3_i386.deb
+Size: 232400
+MD5sum: e98ddafdcafda620d78ab6826ec72911
+SHA1: cbf4d4c7ec37cfd4c1cdbbb4493d28770829a723
+SHA256: bb2f09222fbd18fbd0aaaf601cd7f96abca35ebd5bcbe9c5ebb043fd7ff1a3f4
+Description: Debug symbols for lilyterm
+Description-md5: a893200fa34b6438dc65002e3f77ef04
+
+Package: libmenu-cache-bin-dbg
+Source: menu-cache
+Priority: extra
+Section: debug
+Installed-Size: 201
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.6.1-1~qiana
+Depends: libmenu-cache-bin (= 0.6.1-1~qiana)
+Filename: pool/main/m/menu-cache/libmenu-cache-bin-dbg_0.6.1-1~qiana_i386.deb
+Size: 136138
+MD5sum: 6a61f377785ee85dbe9d3983e10fef49
+SHA1: 358b868607eb745443a6df0b394f3e1bd312754f
+SHA256: bf1b6baa9a52b76309ced4948b97b7673c376080ddf9001c724fc5bbc3e4a8fd
+Description: LXDE implementation of the freedesktop Menu's cache (libexec debug)
+Description-md5: 935e0ff26fc7102a18e080f071dbb2e8
+Multi-Arch: same
+

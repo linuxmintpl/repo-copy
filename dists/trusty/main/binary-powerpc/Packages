@@ -1,0 +1,340 @@
+Package: gnumeric-common
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 14983
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.17-1~qiana
+Replaces: gnumeric (<= 1.2.6-1)
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/g/gnumeric/gnumeric-common_1.12.17-1~qiana_all.deb
+Size: 2287952
+MD5sum: 216f607dba9b755441a62ad6a6bad222
+SHA1: abc5574590e7b3abbf6ff994909f0d899973521a
+SHA256: 54be5f1271c4bba079b98e63650ff987a11a73a12bb9ec4d66cc28b435856395
+Description: spreadsheet application for GNOME - common files
+Description-md5: 3749931255266b5bbbc512b3833e7c03
+
+Package: gnumeric-doc
+Source: gnumeric
+Priority: optional
+Section: doc
+Installed-Size: 13485
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.17-1~qiana
+Recommends: gnome-desktop-data
+Replaces: docbook-xsl, gnumeric (<< 1.2.9-1)
+Suggests: gnumeric (>= 1.12.17-1~qiana), docbook-xsl
+Depends: yelp
+Breaks: gnumeric (<< 1.2.9-1)
+Filename: pool/main/g/gnumeric/gnumeric-doc_1.12.17-1~qiana_all.deb
+Size: 11298744
+MD5sum: 6cd7da0292ae710bf06af76cafc80c07
+SHA1: 0e35d1f052a752bd542f3da4ab459f72468a6df8
+SHA256: 5698835328012399c7222ddfbbe334e197b9f941be456d0d62d947cd3be84151
+Description: spreadsheet application for GNOME - documentation
+Description-md5: 1a2c472dd4a01f8bf6179550d830e0b6
+
+Package: virtualbox-source
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 764
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: build-essential, debhelper (>= 9), bzip2, kbuild, module-assistant
+Filename: pool/main/v/virtualbox/virtualbox-source_4.3.14-dfsg-1~qiana_all.deb
+Size: 685964
+MD5sum: cc55802ba56b4f22d7c1037a15488218
+SHA1: 9063e7f3030c38682592203074d26294833b03fe
+SHA256: 4f034eccec93e95e66d9afcc09a082112a6f1e6a2aa9e7ed3266eb9397e4ed10
+Description: x86 virtualization solution - kernel module source
+Description-md5: acc86918ad52775dbe11e2ad558ba197
+
+Package: deadbeef-plugins-dev
+Source: deadbeef
+Priority: extra
+Section: libdevel
+Installed-Size: 101
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.6.1-1
+Filename: pool/main/d/deadbeef/deadbeef-plugins-dev_0.6.1-1_all.deb
+Size: 19138
+MD5sum: 02bf1ec683fcf2c2ba5f05b8321daa64
+SHA1: 765b9f96cc44a534476d613ca2834be1b2c7fb99
+SHA256: ede28333f8e8c42a478a38f188329234ef6556e2c8a7003fd82ea76e0ae7f8fc
+Description: Ultimate music player for GNU/Linux systems - development files
+Description-md5: 03353cf2b39bcba5949dfb90f5c73d0f
+
+Package: inxi
+Priority: extra
+Section: misc
+Installed-Size: 476
+Maintainer: Unit 193 <unit193@ubuntu.com>
+Architecture: all
+Version: 2.1.16-1
+Recommends: dmidecode, file, hddtemp, iproute2, lm-sensors, mesa-utils, module-init-tools, net-tools, sudo, usbutils, x11-utils, x11-xserver-utils
+Depends: bash (>= 3.0), gawk, pciutils, procps
+Filename: pool/main/i/inxi/inxi_2.1.16-1_all.deb
+Size: 122048
+MD5sum: 2c19ca88db2c5b2ce6fbeeaf22d12cb2
+SHA1: 04cecbfbead71a0db067c9fcc77f0e6cf97a1dc6
+SHA256: c6428a7a17ee42a66a7529ac374d839da1dd7267e3047fa234858bfd1ea7274c
+Description: full featured system information script
+Description-md5: 13277f07e950aaf291de2de69ab2684c
+
+Package: virtualbox-dkms
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 4389
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: dkms (>= 2.1.0.0), virtualbox (>= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-dkms_4.3.14-dfsg-1~qiana_all.deb
+Size: 574874
+MD5sum: 6c056c2648d4ae2b6842ee13d6710e13
+SHA1: 77a598a46aef480d8482c02501da8c65aacd56b9
+SHA256: 6d2329f1e1e283b1df09488f326ec932a7d177947fbbf3c426704da6384a1e12
+Description: x86 virtualization solution - kernel module sources for dkms
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
+
+Package: virtualbox-guest-dkms
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 3671
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: dkms (>= 2.1.0.0), virtualbox-guest-utils (>= 4.3.14-dfsg-1~qiana)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-dkms_4.3.14-dfsg-1~qiana_all.deb
+Size: 486102
+MD5sum: a43d80784236671704d3c256a2d0de13
+SHA1: 7babcff0d9619661bd55a1eb96f1b1bb3618a7cb
+SHA256: dcd70fef818669b1dd24eeb79af6905c8e45c2ecd7ff4b4e90c795e45f853ac6
+Description: x86 virtualization solution - guest addition module source for dkms
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+
+Package: virtualbox-guest-additions-iso
+Priority: extra
+Section: misc
+Installed-Size: 64438
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-1~qiana
+Recommends: virtualbox (>= 4.3.14)
+Replaces: virtualbox-guest-additions (<< 4.0.6-1~)
+Conflicts: virtualbox-2.0, virtualbox-2.1, virtualbox-2.2, virtualbox-3.0, virtualbox-3.1, virtualbox-3.2, virtualbox-4.0, virtualbox-4.1, virtualbox-4.2
+Breaks: virtualbox-guest-additions (<< 4.0.6-1~)
+Filename: pool/main/v/virtualbox-guest-additions-iso/virtualbox-guest-additions-iso_4.3.14-1~qiana_all.deb
+Size: 45996404
+MD5sum: 2be83ab5072d1de963ab9305e3e05415
+SHA1: c4123c4bdc7333670f6de1333666a6c0f0d3c89b
+SHA256: 2b2034bb88b8bc47dfc9d9041a02fc4686013c2449431945e70e215fc5cc9a46
+Description: guest additions iso image for VirtualBox
+Description-md5: 11a9eaac064138ec238f7c2ee4c018df
+
+Package: virtualbox-guest-source
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 666
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.3.14-dfsg-1~qiana
+Depends: build-essential, debhelper (>= 9), bzip2, kbuild, module-assistant
+Filename: pool/main/v/virtualbox/virtualbox-guest-source_4.3.14-dfsg-1~qiana_all.deb
+Size: 585986
+MD5sum: 5c6a98402822f59bf99d848b4b90083c
+SHA1: fe121c1de8a91173ce5f3e9622eeb66f0aaf4a9a
+SHA256: 6eb0b94c1bc101496058c8d7f2ca67976a5313706ac38adb2b29f213ddd32d40
+Description: x86 virtualization solution - guest addition module source
+Description-md5: fd60384a9f99f9f360a9dcc85b3fd6cc
+
+Package: libfm-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 1670
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.1-0ubuntu1~qiana
+Replaces: libfm0, libfm1
+Breaks: libfm0, libfm1
+Filename: pool/main/libf/libfm/libfm-data_1.2.1-0ubuntu1~qiana_all.deb
+Size: 201668
+MD5sum: 82a572a4eee4be62549fb5d607979de9
+SHA1: 641afb2d2c3aa4738a24579c3340cc2747d132a8
+SHA256: fe9df57646d84e948ded5a7dffe13616f408d598c71a5ce1b0ae3feb3b524dc5
+Description: file management support (common data)
+Description-md5: b06249e439eae5ef0506c244cb25003f
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libfm-gtk-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 167
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.1-0ubuntu1~qiana
+Replaces: libfm-gtk0
+Breaks: libfm-data (<< 1.2.0-1ubuntu1), libfm-gtk-bin (<< 1.0), libfm-gtk0
+Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.1-0ubuntu1~qiana_all.deb
+Size: 21384
+MD5sum: 6854b17ffa1b605f8b6909ca00b918b9
+SHA1: d5ceda22289a3dc31b5fc05645e50122c994e0bb
+SHA256: 17b1feccc394bbd3af77a1ee9ccf55a76f20274d917ff3b849c9d4aedf6c571a
+Description: file management support (GTK+ library common data)
+Description-md5: 264dbbfbd5080fc520e27c05ae458939
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: mc-data
+Source: mc
+Priority: optional
+Section: utils
+Installed-Size: 5375
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 3:4.8.12-1+qiana
+Replaces: mc (<< 3:4.8.1)
+Breaks: mc (<< 3:4.8.1)
+Filename: pool/main/m/mc/mc-data_4.8.12-1+qiana_all.deb
+Size: 1186434
+MD5sum: 5867f0e763ba0c50ff1b757c79206ce3
+SHA1: 6f5b4d3557fc0bffc77783b2a2351a00a668648b
+SHA256: 146b7a6977e45addc1e4c10e5d309876db613d5104803126d914626f60d8d169
+Description: Midnight Commander - a powerful file manager -- data files
+Description-md5: a1815081eaa82c881147140e5d7479f3
+Multi-Arch: foreign
+
+Package: libfm-doc
+Source: libfm
+Priority: optional
+Section: doc
+Installed-Size: 2189
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.2.1-0ubuntu1~qiana
+Recommends: libglib2.0-doc, libgtk-3-doc
+Replaces: libfm-dev (<< 1.1.1)
+Breaks: libfm-dev (<< 1.1.1)
+Filename: pool/main/libf/libfm/libfm-doc_1.2.1-0ubuntu1~qiana_all.deb
+Size: 145154
+MD5sum: 48b8b052f1b76829c9d98eb3fa83ffce
+SHA1: 2e303b2f404f0ad15b2e030dac3385ef4db5dc63
+SHA256: 3169cb77a12cdff307b42061fce4e9dd41b66787d2529aab01e773bd0c8cc213
+Description: file management support (development documentation)
+Description-md5: 7938076b0ea5a3c6d795f5f506fa27df
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libmenu-cache-doc
+Source: menu-cache
+Priority: optional
+Section: doc
+Installed-Size: 171
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 0.6.1-1~qiana
+Recommends: libglib2.0-doc
+Filename: pool/main/m/menu-cache/libmenu-cache-doc_0.6.1-1~qiana_all.deb
+Size: 16926
+MD5sum: 4b90e32261a7c814a20f09ee6b3d57b4
+SHA1: e7e771262e03813d197f02eea2292034e078781e
+SHA256: 81acbb3e454d6e2ae086ba130a87e96c4535ebbf5a0dd887d5966336aa8e90fb
+Description: LXDE implementation of the freedesktop Menu's cache (docs)
+Description-md5: c863cdc802b3b4239d7d47d2183fe47e
+
+Package: mint-lxde-default-settings
+Priority: required
+Section: admin
+Installed-Size: 355
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 17.0~rc1.3
+Recommends: openbox | xfwm4, pcmanfm | spacefm, peppermint-control-center
+Depends: mintsystem, lxpanel, mint-artwork-lxde, lxsession, fonts-liberation, lxsession-logout, scrot
+Filename: pool/main/m/mint-lxde-default-settings/mint-lxde-default-settings_17.0~rc1.3_all.deb
+Size: 28182
+MD5sum: 04b30f01b5be50050e5e697bfcb2b438
+SHA1: 6ddf848562718c06fc0ca09e65bbc3ee5c750a0c
+SHA256: cc2f3ddf30afb94c316a0a287bc67568c18f5271b71d3779abbe6926afe6d631
+Description: This Package contains the default system settings for Linux Mint LXDE Edition.
+Description-md5: 074b94ca71f1dcf8821541ec02bdf6e2
+
+Package: mint-artwork-lxde
+Priority: optional
+Section: x11
+Installed-Size: 5337
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 17.0~rc1.1
+Depends: mint-backgrounds-qiana, lubuntu-artwork
+Filename: pool/main/m/mint-artwork-lxde/mint-artwork-lxde_17.0~rc1.1_all.deb
+Size: 4475212
+MD5sum: e46cfbf95c38c6aa1faad3c11964e5aa
+SHA1: 177c739d258dd41ff51bfc94607912c1dd509264
+SHA256: 06f7fa5b3cc279e42adff7eff5d819766dad63be3cfd459982d0b4beedca4b3c
+Description: Artwork for Linux Mint LXDE
+Description-md5: b13ff03f861bcfe3066ebc94edc74d5c
+
+Package: libgoffice-0.10-10-common
+Source: goffice
+Priority: optional
+Section: libs
+Installed-Size: 3876
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 0.10.14-1
+Filename: pool/main/g/goffice/libgoffice-0.10-10-common_0.10.14-1_all.deb
+Size: 584524
+MD5sum: 022beadd8d45408272e5cffca737c5cd
+SHA1: 55f4efde7893b49a8716f3e574a3739d3c3a4567
+SHA256: c0e3783ef1c2862ab2788a827ac18b44bb169bed26c4b9096203b3b8ff1399a2
+Description: Document centric objects library - common files
+Description-md5: 37455cde2fc87041c4adf8dabb4678de
+
+Package: libgoffice-0.10-doc
+Source: goffice
+Priority: optional
+Section: doc
+Installed-Size: 3541
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 0.10.14-1
+Replaces: libgoffice-0.10-dev (<< 0.10.4)
+Breaks: libgoffice-0.10-dev (<< 0.10.4)
+Filename: pool/main/g/goffice/libgoffice-0.10-doc_0.10.14-1_all.deb
+Size: 239348
+MD5sum: 48fc4527ea0ebacea08acede36684afd
+SHA1: 258b2c3e1121378d0eaebaf3ed6ed092ee133a7a
+SHA256: 0f20d125a11b873a8f6d11bb5d99887d36798f9dc8c91f08cf5ae7622fd1d4d5
+Description: Document centric objects library - documentation
+Description-md5: eef950950a4c265be49aff0c19d0328f
+
+Package: peppermint-control-center
+Priority: required
+Section: x11
+Installed-Size: 220
+Maintainer: Kendall Weaver <kendall@peppermintos.com>
+Architecture: all
+Version: 0.2.1
+Depends: python3, python3-gi, xfwm4, xbindkeys
+Conflicts: xbindkeys-config
+Filename: pool/main/p/peppermint-control-center/peppermint-control-center_0.2.1_all.deb
+Size: 55716
+MD5sum: 1358e183f7057be855edf4121b95c2cf
+SHA1: 7f08a90fec944f2436e2ec1c280c52a0938995a7
+SHA256: b83772e4f8828bf85edc299a30e950cd5af56b5e85f43f605ae01d52bf4a3c5f
+Description: Window manager and input settings for Peppermint OS.
+Description-md5: f34d4af42cdc9b19e34c3b08c7c07293
+

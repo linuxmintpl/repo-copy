@@ -1,0 +1,1563 @@
+Package: abiword
+Binary: abiword-common, abiword, abiword-plugin-grammar, abiword-plugin-mathview, libabiword-3.0, libabiword-3.0-dev, abiword-dbg
+Version: 3.0.0-4~petra1
+Section: gnome
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, quilt, imagemagick, bison, flex, libaiksaurus-1.2-dev, libaiksaurusgtk-1.2-dev, libasio-dev, libchamplain-gtk-0.12-dev, libebook1.2-dev, libecal1.2-dev, libenchant-dev, libfribidi-dev, libgoffice-0.10-dev, libgtk2.0-dev, libglib2.0-dev, libgtk-3-dev, libgtkmathview-dev, libjpeg8-dev, liblink-grammar4-dev, libloudmouth1-dev, libots-dev, libpng-dev, librdf0-dev, libreadline-dev, librsvg2-dev, libsoup2.4-dev, libtelepathy-glib-dev, libtidy-dev, libwmf-dev, libwpg-dev, libwps-dev, libwv-dev, libxslt-dev | libxslt1-dev, subversion, svn2cl | subversion-tools (<< 1.7.5), valgrind [amd64 armhf i386 powerpc]
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/a/abiword
+Files:
+ 8d9c41cff3a8fbef8d0c835c65600e65 10956892 abiword_3.0.0.orig.tar.gz
+ bcb1defd446d20991dca692e9df265ed 44412 abiword_3.0.0-4~petra1.debian.tar.xz
+ 149153ca11fddd885202abe867fc2bb3 2470 abiword_3.0.0-4~petra1.dsc
+Checksums-Sha1:
+ 563126a052e346d39ef0c6133367e15028b23813 10956892 abiword_3.0.0.orig.tar.gz
+ 92e3f9cb2f20863e5bf9c9a9d675bd16910ee0ea 44412 abiword_3.0.0-4~petra1.debian.tar.xz
+ d302c5b0d14fd0d4e6ff2fd990a1fc6b08da6bf4 2470 abiword_3.0.0-4~petra1.dsc
+Checksums-Sha256:
+ d17e318c00ff4eb353e0e7994b098b1d4f9ddd8712ac0261a0e38b89081fac01 10956892 abiword_3.0.0.orig.tar.gz
+ bb71cba4f7667b2960de4d211b2804b7010d12da876b8d797cc0317426dc14ff 44412 abiword_3.0.0-4~petra1.debian.tar.xz
+ 1a7191f255422c1f55f3f55a3a7f3c070d0e821940ab4455c4b8e152958e280a 2470 abiword_3.0.0-4~petra1.dsc
+Homepage: http://www.abisource.com/
+Package-List: abiword deb editors optional
+ abiword-common deb editors optional
+ abiword-dbg deb debug extra
+ abiword-plugin-grammar deb editors optional
+ abiword-plugin-mathview deb editors optional
+ libabiword-3.0 deb libs optional
+ libabiword-3.0-dev deb libdevel optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/abiword.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/abiword.git
+
+Package: autoconf
+Binary: autoconf, autoconf-doc
+Version: 2.69-1ubuntu1~maya
+Section: devel
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Build-Depends-Indep: texinfo (>= 4.6), m4 (>= 1.4.13), texlive-base, texlive-generic-recommended, texlive-latex-base, texlive-latex-recommended
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/a/autoconf
+Files:
+ 50f97f4159805e374639a73e2636f22e 1214744 autoconf_2.69.orig.tar.xz
+ 0931246b9774835b41cc458563dc0f45 26439 autoconf_2.69-1ubuntu1~maya.debian.tar.gz
+ 0bee04446b701db6070a742eb96c1546 1679 autoconf_2.69-1ubuntu1~maya.dsc
+Checksums-Sha1:
+ e891c3193029775e83e0534ac0ee0c4c711f6d23 1214744 autoconf_2.69.orig.tar.xz
+ 7392f312399bed6353b4e3d784cfb236b2fc3de3 26439 autoconf_2.69-1ubuntu1~maya.debian.tar.gz
+ d3f3b735fb35a9b9aeb68887054aea3a70043ca3 1679 autoconf_2.69-1ubuntu1~maya.dsc
+Checksums-Sha256:
+ 64ebcec9f8ac5b2487125a86a7760d2591ac9e1d3dbd59489633f9de62a57684 1214744 autoconf_2.69.orig.tar.xz
+ 3cccb1bd6b3d4bd85d524c8c9f6e9b95d018a8d66d2efda7af3424f2fa099099 26439 autoconf_2.69-1ubuntu1~maya.debian.tar.gz
+ a2617870cda2c6e6ac1ec292b2b75665033b8bb31b774f97475e3d2ec7cd5ee1 1679 autoconf_2.69-1ubuntu1~maya.dsc
+Homepage: http://www.gnu.org/software/autoconf/
+Package-List: autoconf deb devel optional
+ autoconf-doc deb doc optional
+Original-Maintainer: Ben Pfaff <pfaffben@debian.org>
+
+Package: gimp
+Binary: libgimp2.0, gimp, gimp-data, libgimp2.0-dev, libgimp2.0-doc, gimp-dbg
+Version: 2.8.6-1~maya
+Section: graphics
+Maintainer: Ari Pollak <ari@debian.org>
+Build-Depends: debhelper (>= 8), cdbs (>= 0.4.97), autotools-dev, gettext, gnome-pkg-tools, gtk-doc-tools (>= 1.0), intltool (>= 0.40.1), iso-codes, libaa1-dev, libart-2.0-dev, libasound2-dev (>= 1.0.0) [linux-any], libatk1.0-dev (>= 2.2.0), libbabl-dev (>= 0.1.10), libbz2-dev, libcairo2-dev (>= 1.10.2), libcurl4-gnutls-dev (>= 7.15.1), libdbus-glib-1-dev (>= 0.70), libexif-dev (>= 0.6.15), libfreetype6-dev (>= 2.2), libfontconfig1-dev (>= 2.2.0), libglib2.0-dev (>= 2.30.2), libglib2.0-doc, libgegl-dev (>= 0.2.0), libgtk2.0-dev (>= 2.24.10), libgtk2.0-doc, libgdk-pixbuf2.0-dev (>= 2.24.1), libgdk-pixbuf2.0-doc, libgs-dev, libgudev-1.0-dev (>= 167) [linux-any], libice-dev, libjasper-dev, libjpeg-dev, liblcms1-dev (>= 1.16) | liblcms-dev, libmng-dev, libpango1.0-dev (>= 1.29.4), libpng-dev, libpoppler-glib-dev (>= 0.12.4), librsvg2-dev (>= 2.14.0), libsm-dev, libtiff4-dev, libwebkitgtk-dev (>= 1.6.1), libwmf-dev (>= 0.2.8), libx11-dev, libxcursor-dev, libxmu-dev, libxpm-dev, libxt-dev, zlib1g-dev, patchutils, python-dev (>= 2.6.6-3), python-gtk2-dev (>= 2.10.4), xsltproc
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/g/gimp
+Files:
+ 12b3fdf33d1f07ae79b412a9e38b9693 20306442 gimp_2.8.6.orig.tar.bz2
+ cf71edec7a9eb56eca8c09fc0b5d249a 45855 gimp_2.8.6-1~maya.debian.tar.gz
+ 82401d8bb62d6cd2000439a0908070d0 2790 gimp_2.8.6-1~maya.dsc
+Checksums-Sha1:
+ 5f94e39b05a0b892f6d4f8b2d773d97d8ea95731 20306442 gimp_2.8.6.orig.tar.bz2
+ 33accbdd39ab97c2194d0fe8fd07241d67bbec7e 45855 gimp_2.8.6-1~maya.debian.tar.gz
+ 49b891f08ff3c4adc64087f27579691df34023a0 2790 gimp_2.8.6-1~maya.dsc
+Checksums-Sha256:
+ 215865b0ff4534bbced551995ae3093ede1918246ead914984603a5c1a5be845 20306442 gimp_2.8.6.orig.tar.bz2
+ 8ee849556a431e194106e0bd69d6b2006ac3cdc71d07bb338b520e98087fef91 45855 gimp_2.8.6-1~maya.debian.tar.gz
+ c4b99e567c37309b26c8f70cef657664879bba1ff0e369d1319cd68425028e64 2790 gimp_2.8.6-1~maya.dsc
+Homepage: http://www.gimp.org/
+Uploaders: Jordi Mallach <jordi@debian.org>
+Package-List: gimp deb graphics optional
+ gimp-data deb graphics optional
+ gimp-dbg deb debug extra
+ libgimp2.0 deb libs optional
+ libgimp2.0-dev deb libdevel optional
+ libgimp2.0-doc deb doc optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/gimp.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/gimp.git
+
+Package: gnumeric
+Binary: gnumeric, gnumeric-common, gnumeric-doc, gnumeric-plugins-extra, gir1.2-gnumeric
+Version: 1.12.9-1~maya
+Section: math
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, dh-buildinfo, po-debconf, imagemagick, dpkg-dev (>= 1.16.1.1), bison, flex, gettext, intltool, libart-2.0-dev, libglib2.0-dev (>= 2.28.0), libgirepository1.0-dev, libgoffice-0.10-dev (>= 0.10.9), libgsf-1-dev (>= 1.14.24), libgtk-3-dev, libpango1.0-dev, libperl-dev, libxml-parser-perl, libxml2-dev, python-dev, python-gi-dev, pxlib-dev, rarian-compat | scrollkeeper, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/g/gnumeric
+Files:
+ 0b82baf8b432ac59364e3c0f9156db7a 17083264 gnumeric_1.12.9.orig.tar.xz
+ ca2c4624c6eb7c62af72bdf9d46876d9 40712 gnumeric_1.12.9-1~maya.debian.tar.xz
+ 398a4c2dce29fdf6c08b360586c85f20 2142 gnumeric_1.12.9-1~maya.dsc
+Checksums-Sha1:
+ f6b85391c3c124cd4f3ba58db420e114ac9ea87a 17083264 gnumeric_1.12.9.orig.tar.xz
+ c80c09714ea539366892fbef306697ee9faed9f3 40712 gnumeric_1.12.9-1~maya.debian.tar.xz
+ 90f1247d31cb54e240a84710e9ef4a838efd5717 2142 gnumeric_1.12.9-1~maya.dsc
+Checksums-Sha256:
+ 4cd3ad5d9fc27a86ef62dbb6bf793b27fad9b6736bb8e988fa11dc6cb88b62e7 17083264 gnumeric_1.12.9.orig.tar.xz
+ 7952f959493a91b309b970d0f300922c1bdb36087aac21e79507adc3281f03af 40712 gnumeric_1.12.9-1~maya.debian.tar.xz
+ eb9cbc428f543d9a1c75c3b3c1db3e5730327a4f0a2464b12ae1d5f1a40611e4 2142 gnumeric_1.12.9-1~maya.dsc
+Homepage: http://www.gnumeric.org/
+Package-List: gir1.2-gnumeric deb introspection optional
+ gnumeric deb math optional
+ gnumeric-common deb math optional
+ gnumeric-doc deb doc optional
+ gnumeric-plugins-extra deb math optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/gnumeric.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/gnumeric.git
+
+Package: libgsf
+Binary: gir1.2-gsf-1, libgsf-1-114, libgsf-1-114-dbg, libgsf-1-dev, libgsf-1-common, libgsf-bin
+Version: 1.14.28-1~maya
+Section: libs
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper (>= 9), dh-buildinfo, dh-autoreconf, gobject-introspection, gtk-doc-tools, libbz2-dev, libgirepository1.0-dev, libglib2.0-dev, libglib2.0-doc, libgtk2.0-dev, libxml2-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/libg/libgsf
+Files:
+ 48cc1409951419c5e2be1a16f749adb2 557724 libgsf_1.14.28.orig.tar.xz
+ 2f050ba731491ee9b07a1adb9a921491 12556 libgsf_1.14.28-1~maya.debian.tar.xz
+ adda95477e192095f3b935c8ed4cac2e 1950 libgsf_1.14.28-1~maya.dsc
+Checksums-Sha1:
+ 6e361410a8922bd5970add23398868abab47608f 557724 libgsf_1.14.28.orig.tar.xz
+ 8016aba2a5377fc030fde426e5b70bc212854a8d 12556 libgsf_1.14.28-1~maya.debian.tar.xz
+ 819cafad0aa6f239a55d689096fc6def8ca36d1e 1950 libgsf_1.14.28-1~maya.dsc
+Checksums-Sha256:
+ ea94914f1fdaa5d4eb49149f0228ae6e41a54bdeb8caf52a7dd8acaa329fcbe4 557724 libgsf_1.14.28.orig.tar.xz
+ cd155a0864b2ef54099e1a0558b451ace154070f563cb00eb74412ed40f29b74 12556 libgsf_1.14.28-1~maya.debian.tar.xz
+ 50291f9ba8c2dc1d64b4fae3ea3ff836cf8c21ae9d8e91026c3be56e2518cebb 1950 libgsf_1.14.28-1~maya.dsc
+Homepage: http://projects.gnome.org/libgsf/
+Package-List: gir1.2-gsf-1 deb introspection optional
+ libgsf-1-114 deb libs optional
+ libgsf-1-114-dbg deb debug extra
+ libgsf-1-common deb libs optional
+ libgsf-1-dev deb libdevel optional
+ libgsf-bin deb gnome optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/libgsf.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/libgsf.git
+
+Package: htop
+Binary: htop
+Version: 1.0.2-1+maya3
+Section: utils
+Maintainer: Eugene V. Lyubimkin <jackyf@debian.org>
+Build-Depends: debhelper (>= 7), libncurses5-dev, libncursesw5-dev, autotools-dev, quilt (>= 0.40), python-minimal, libhwloc-dev [!linux-any], dpkg-dev (>= 1.16.1)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/main/h/htop
+Files:
+ 0d01cca8df3349c74569cefebbd9919e 388499 htop_1.0.2.orig.tar.gz
+ 64c4e330e9660ef563ec87c160c867bd 9705 htop_1.0.2-1+maya3.diff.gz
+ f3adeb17c962741f9360b31a92db5af5 1450 htop_1.0.2-1+maya3.dsc
+Checksums-Sha1:
+ 07893b93fe8109610f8e9976b3934ae4bb7a925d 388499 htop_1.0.2.orig.tar.gz
+ 421389112ad4511321f2636edd8c3ef5b8a9f9bf 9705 htop_1.0.2-1+maya3.diff.gz
+ 2b23b1e7d11b19a485b8093c498add3d320d6687 1450 htop_1.0.2-1+maya3.dsc
+Checksums-Sha256:
+ ee60657b044ece0df096c053060df7abf3cce3a568ab34d260049e6a37ccd8a1 388499 htop_1.0.2.orig.tar.gz
+ 209de44bf6cb1272de433dd810902a463d37e6f5ae6ce71fc1136a46a892224a 9705 htop_1.0.2-1+maya3.diff.gz
+ 8f03523a30312b17dbc2f4aeac9c7391d3f69cef4f3840353839bc1b7ac593d1 1450 htop_1.0.2-1+maya3.dsc
+Homepage: http://htop.sourceforge.net
+Package-List: htop deb utils optional
+
+Package: links2
+Binary: links2, links
+Version: 2.8-1~maya
+Section: web
+Maintainer: Axel Beckert <abe@debian.org>
+Build-Depends: autotools-dev, debhelper (>= 9~), dh-exec, libbz2-dev, libdirectfb-dev, libgpm-dev [linux-any], libjpeg8-dev | libjpeg-dev, liblzma-dev, libpng12-dev | libpng-dev, libsdl1.2-dev, libssl-dev, libtiff4-dev, libx11-dev, libxau-dev, libxdmcp-dev, libxt-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/l/links2
+Files:
+ d5fb7c45ca41dad2b20f5c056498ea07 4102643 links2_2.8.orig.tar.bz2
+ ee070daed408643572f3c8efc3c6d3e0 12229 links2_2.8-1~maya.debian.tar.gz
+ 36e480ea5fc14ffd09fb1a0b584cc9ca 1739 links2_2.8-1~maya.dsc
+Checksums-Sha1:
+ a808d80d910b7d3ad86f4c5089e64f35113b69f2 4102643 links2_2.8.orig.tar.bz2
+ 559cab4e6859c2f9a7315674aac494c4766074f6 12229 links2_2.8-1~maya.debian.tar.gz
+ 050838a52bc94aba0525afb963e1584daf59cb96 1739 links2_2.8-1~maya.dsc
+Checksums-Sha256:
+ 7950da386fa2014d75edc23abfaeed1b1f171ebc73bf0f557352948f12390096 4102643 links2_2.8.orig.tar.bz2
+ 6e012c1c5d9dd7975426e71c6f3fa55adfc6addc5e40d370d8aa85a853996855 12229 links2_2.8-1~maya.debian.tar.gz
+ 54029be9a3af96be3ae42bdc81b1726b83500ca5c30f2900350facbbdeaad419 1739 links2_2.8-1~maya.dsc
+Homepage: http://links.twibright.com/
+Package-List: links deb web optional
+ links2 deb web optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/links2.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/links2.git
+
+Package: mc
+Binary: mc, mc-data, mc-dbg
+Version: 3:4.8.11-1~maya
+Section: utils
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, autopoint, intltool, bison, check, e2fslibs-dev, gettext, libaspell-dev, libglib2.0-dev, libgpm-dev [linux-any], libslang2-dev, libssh2-1-dev, libx11-dev, unzip
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/m/mc
+Files:
+ 1a2d74b75ddbff0b0d6cdc04bf4a7d31 2211144 mc_4.8.11.orig.tar.xz
+ 9597f617ce1a8f9aad4b671cd8887891 43136 mc_4.8.11-1~maya.debian.tar.xz
+ 3abc28ba85eb810ca326b022e254242a 1895 mc_4.8.11-1~maya.dsc
+Checksums-Sha1:
+ 54535f5b143b085a201c670b36872937154a4508 2211144 mc_4.8.11.orig.tar.xz
+ 204a468d2089390cf024678535f9e7c57fc22cf7 43136 mc_4.8.11-1~maya.debian.tar.xz
+ f407a6b6d31b0d9e20e612c9881a53e69e403700 1895 mc_4.8.11-1~maya.dsc
+Checksums-Sha256:
+ 1877ea844f9d71e133b9e03ca3bebcd7b10b9ba5b419b8d268e255816fe1993a 2211144 mc_4.8.11.orig.tar.xz
+ 6e40c9963ff9d6b8a61340cc4971d8e82a5206f9b3f11a51f4b29d2a7258b5a0 43136 mc_4.8.11-1~maya.debian.tar.xz
+ e852ef35b970b22f49e24548370bffe59fcd352280ae1ed4fe201aa42ba77689 1895 mc_4.8.11-1~maya.dsc
+Homepage: http://www.midnight-commander.org
+Uploaders: Patrick Winnertz <winnie@debian.org>, Yury V. Zaytsev <yury@shurup.com>, Andreas Tille <tille@debian.org>, Dmitry Smirnov <onlyjob@debian.org>
+Package-List: mc deb utils optional
+ mc-data deb utils optional
+ mc-dbg deb debug extra
+Vcs-Git: git://anonscm.debian.org/collab-maint/mc.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/mc.git
+
+Package: obconf
+Binary: obconf
+Version: 1:2.0.4-2~maya
+Section: x11
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 9), dh-autoreconf, autopoint, gettext, libglade2-dev, libgtk2.0-dev, libimlib2-dev, libsm-dev, libstartup-notification0-dev, openbox-dev (>= 3.5.2)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/o/obconf
+Files:
+ 9271c5d2dc366d61f73665a5e8bceabc 456523 obconf_2.0.4.orig.tar.gz
+ cebf3d8c8d68ffc0455ba378ff65e4fc 8359 obconf_2.0.4-2~maya.debian.tar.gz
+ 330d7f1d5e78c68a3aceebca79cd94f9 1623 obconf_2.0.4-2~maya.dsc
+Checksums-Sha1:
+ 90638645b53275fda175281a1826c8c4c01746df 456523 obconf_2.0.4.orig.tar.gz
+ f10a78595441b082ca10e8a4972777eff033f147 8359 obconf_2.0.4-2~maya.debian.tar.gz
+ 9ff3d5bd245fe9e798f69074f437fe3514f90004 1623 obconf_2.0.4-2~maya.dsc
+Checksums-Sha256:
+ 71a3e5f4ee246a27421ba85044f09d449f8de22680944ece9c471cd46a9356b9 456523 obconf_2.0.4.orig.tar.gz
+ f28970b5f94ff9d5f4ada0dd454e225c1f123a513d58cbbf53a9424248c4c1f2 8359 obconf_2.0.4-2~maya.debian.tar.gz
+ b2a319944d3bf21a1fc1807484df7b2ad494fe96a6fc6335a327436243a0bccc 1623 obconf_2.0.4-2~maya.dsc
+Homepage: http://www.openbox.org/wiki/ObConf:About
+Package-List: obconf deb x11 optional
+Vcs-Git: git://github.com/mati75/obconf-debian.git
+Vcs-Browser: https://github.com/mati75/obconf-debian.git
+
+Package: openbox
+Binary: openbox, libobt2, libobrender29, openbox-dev, gnome-panel-control, openbox-gnome-session, openbox-kde-session
+Version: 3.5.2-6~maya
+Section: x11
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 9), gettext, libstartup-notification0-dev, libxrender-dev, pkg-config, libglib2.0-dev, libxml2-dev (>= 2.6.0), perl, libxt-dev, libxinerama-dev, libxrandr-dev, libpango1.0-dev, libx11-dev, autoconf, automake (>= 1:1.11), python-xdg, libimlib2-dev, dh-autoreconf, autopoint, librsvg2-dev, libxi-dev
+Architecture: any all
+Standards-Version: 3.9.5.0
+Format: 3.0 (quilt)
+Directory: pool/main/o/openbox
+Files:
+ 93df606606053b7e8578a5c116afb8ec 972751 openbox_3.5.2.orig.tar.gz
+ 8e5b2c2fe8c295306d8488a3e2c4dc46 40856 openbox_3.5.2-6~maya.debian.tar.xz
+ 0baf8ec05fa20290482183752856a5ab 2078 openbox_3.5.2-6~maya.dsc
+Checksums-Sha1:
+ 6573516107f8cdb83842aac25a430e3f9f966bad 972751 openbox_3.5.2.orig.tar.gz
+ 929360d8fc505ffe7285aba652fe80907475dd9b 40856 openbox_3.5.2-6~maya.debian.tar.xz
+ 533c021d752825ac76ae938d96a3e3205bc4872a 2078 openbox_3.5.2-6~maya.dsc
+Checksums-Sha256:
+ 128fb4ef11f83f6edb1685cfc04f44a16a5322082fc519f9d7cac84fc658af33 972751 openbox_3.5.2.orig.tar.gz
+ 8b38068ee4a90076d4dc321f2c4114ee49e6e1071ca3344b4269b7cb671003c7 40856 openbox_3.5.2-6~maya.debian.tar.xz
+ 249efff33c49773d83c4e78e91e27cba7a8a1c2af2bd5e5beffeb2c131e5eea9 2078 openbox_3.5.2-6~maya.dsc
+Homepage: http://www.openbox.org
+Package-List: gnome-panel-control deb x11 optional
+ libobrender29 deb libs optional
+ libobt2 deb libs optional
+ openbox deb x11 optional
+ openbox-dev deb libdevel optional
+ openbox-gnome-session deb x11 optional
+ openbox-kde-session deb x11 optional
+Vcs-Git: git://github.com/mati75/openbox-debian
+Vcs-Browser: https://github.com/mati75/openbox-debian
+
+Package: vlc
+Binary: libvlc-dev, libvlc5, libvlccore-dev, libvlccore5, vlc, vlc-data, vlc-dbg, vlc-nox, vlc-plugin-fluidsynth, vlc-plugin-jack, vlc-plugin-notify, vlc-plugin-pulse, vlc-plugin-sdl, vlc-plugin-svg, vlc-plugin-zvbi
+Version: 2.0.8-1~maya
+Section: video
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Build-Depends: autopoint, debhelper (>= 8), dh-autoreconf, dh-buildinfo, gettext, liba52-0.7.4-dev, libaa1-dev, libasound2-dev (>= 1.0.16) [linux-any], libass-dev (>= 0.9.8), libavahi-client-dev, libavc1394-dev [linux-any], libavcodec-dev (>= 4:0.6), libavformat-dev (>= 4:0.6), libbluray-dev (>= 1:0.2.1), libcaca-dev (>= 0.99.beta4), libcddb2-dev, libcdio-dev (>= 0.78.2), libcrystalhd-dev [amd64 i386], libdc1394-22-dev (>= 2.1.0) [linux-any], libdca-dev, libdirac-dev, libdirectfb-dev, libdvbpsi-dev | libdvbpsi5-dev, libdvdnav-dev, libdvdread-dev (>= 0.9.5), libfaad-dev, libflac-dev (>= 1.1.2-3), libfluidsynth-dev, libfreetype6-dev, libfribidi-dev, libgl1-mesa-dev, libgnutls-dev (>= 2.0.0), libgtk2.0-dev, libiso9660-dev (>= 0.72), libjack-dev, libkate-dev (>= 0.3.0), liblircclient-dev, liblivemedia-dev (>= 2011.12.23), liblua5.1-0-dev, libmad0-dev, libmatroska-dev (>= 1.0.0), libmodplug-dev (>= 1:0.8.8.1), libmpcdec-dev, libmpeg2-4-dev, libmtp-dev (>= 1.0.0), libncursesw5-dev, libnotify-dev, libogg-dev (>= 1.0), libomxil-bellagio-dev [linux-any], libopus-dev, libpng-dev, libpostproc-dev (>= 4:0.6), libproxy-dev, libpulse-dev (>= 0.9.11), libqt4-dev (>= 4:4.6.0), libraw1394-dev (>= 2.0.1) [linux-any], libresid-builder-dev, librsvg2-dev, libsamplerate0-dev, libschroedinger-dev (>= 1.0.10), libsdl-image1.2-dev, libsdl1.2-dev (>= 1.2.10), libshout3-dev, libsidplay2-dev, libsmbclient-dev, libspeex-dev (>= 1.0.5), libspeexdsp-dev (>= 1.0.5), libssh2-1-dev, libswscale-dev (>= 4:0.6), libtag1-dev (>= 1.5), libtar-dev, libtheora-dev (>= 1.0), libtwolame-dev (>= 0.3.8), libudev-dev [linux-any], libupnp-dev, libv4l-dev [kfreebsd-any linux-any], libva-dev [linux-any], libvcdinfo-dev (>= 0.7.22), libvorbis-dev, libx11-dev, libx264-dev (>= 2:0.86), libxcb-composite0-dev, libxcb-keysyms1-dev (>= 0.3.4), libxcb-randr0-dev (>= 1.3), libxcb-shm0-dev, libxcb-xv0-dev (>= 1.1.90.1), libxcb1-dev (>= 1.6), libxext-dev, libxinerama-dev, libxml2-dev, libxpm-dev, libzvbi-dev (>= 0.2.28), lua5.1, pkg-config, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/v/vlc
+Files:
+ e5000677181406d026ffe448633d1ca0 18859964 vlc_2.0.8.orig.tar.xz
+ 5d5e5aee70eefdf185510796cd911d2a 65258 vlc_2.0.8-1~maya.debian.tar.gz
+ e9d3f57f54962bcc7198c5fba0c39388 4428 vlc_2.0.8-1~maya.dsc
+Checksums-Sha1:
+ dce3d05498c68c5aa86b6ed5db37f213a4bdd61c 18859964 vlc_2.0.8.orig.tar.xz
+ c71f92b101595d9c884352ebc2a75bb42d41b8ba 65258 vlc_2.0.8-1~maya.debian.tar.gz
+ e0e2accdea962af14ac3c82574726ce6d4721896 4428 vlc_2.0.8-1~maya.dsc
+Checksums-Sha256:
+ 05215f34c487723c84ebb54ab43b836fc70fb466326f7c601847141a499034d2 18859964 vlc_2.0.8.orig.tar.xz
+ bc7d7b8cd12a3960b647c2462ec9a1ed6f1e5325130e913c3970a071b215c925 65258 vlc_2.0.8-1~maya.debian.tar.gz
+ 39664b65e3947ab74a1e97158f72013f97fd4b7a730f92593cd60e8028ffdcc0 4428 vlc_2.0.8-1~maya.dsc
+Homepage: http://www.videolan.org/vlc/
+Uploaders: Clément Stenac <zorglub@debian.org>, Loic Minier <lool@dooz.org>, Christophe Mutricy <xtophe@videolan.org>, Mohammed Adnène Trojette <adn+deb@diwi.org>, Reinhard Tartler <siretart@tauware.de>, Benjamin Drung <bdrung@debian.org>
+Package-List: libvlc-dev deb libdevel optional
+ libvlc5 deb libs optional
+ libvlccore-dev deb libdevel optional
+ libvlccore5 deb libs optional
+ vlc deb video optional
+ vlc-data deb video optional
+ vlc-dbg deb debug extra
+ vlc-nox deb video optional
+ vlc-plugin-fluidsynth deb video optional
+ vlc-plugin-jack deb video optional
+ vlc-plugin-notify deb video optional
+ vlc-plugin-pulse deb video optional
+ vlc-plugin-sdl deb video optional
+ vlc-plugin-svg deb video optional
+ vlc-plugin-zvbi deb video optional
+Vcs-Git: git://anonscm.debian.org/pkg-multimedia/vlc.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-multimedia/vlc.git
+
+Package: casper
+Binary: casper, ubiquity-casper
+Version: 1.315.1linuxmint4
+Section: misc
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), lsb-release, libplymouth-dev (>= 0.8.0~-13), pkg-config
+Architecture: any all
+Standards-Version: 3.8.4
+Format: 3.0 (native)
+Directory: pool/main/c/casper
+Files:
+ 70ec4a22f88aac7c22ace977f4a28dfe 99124 casper_1.315.1linuxmint4.tar.gz
+ d442dfc166bc0a5543f917c1ebe0fe13 1249 casper_1.315.1linuxmint4.dsc
+Checksums-Sha1:
+ ffa6f135436c6bda0164cb4b804bf359184e334a 99124 casper_1.315.1linuxmint4.tar.gz
+ 732f155f679bfc24e3d0c6dfa51006324196c0ba 1249 casper_1.315.1linuxmint4.dsc
+Checksums-Sha256:
+ a06b0d1c582dd2b832985b0a46da80e05dc4a27714f6c2cf1759b8170517213f 99124 casper_1.315.1linuxmint4.tar.gz
+ 3f4b90c7b222be961d521674155205fd9d6cee61132f4247c9367dbedc4c221b 1249 casper_1.315.1linuxmint4.dsc
+Package-List: casper deb misc extra
+ ubiquity-casper deb misc optional
+Vcs-Bzr: lp:ubuntu/casper
+
+Package: goffice
+Binary: libgoffice-0.10-dev, libgoffice-dbg, libgoffice-0.10-10, libgoffice-0.10-10-common, gir1.2-goffice-0.10, libgoffice-0.10-doc
+Version: 0.10.9-1~maya
+Section: libs
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Build-Depends: debhelper (>= 9), dh-autoreconf, dpkg-dev (>= 1.16.1.1), gobject-introspection, gtk-doc-tools, libcairo2-dev (>= 1.10.0), libcairo2-doc, libgconf2-dev, libgirepository1.0-dev, libglib2.0-dev (>= 2.28.0), libglib2.0-doc, libgsf-1-dev (>= 1.14.25-2), libgtk-3-dev, libgtk-3-doc, libpango1.0-dev, libpango1.0-doc, librsvg2-dev, libxext-dev, libxml-parser-perl, libxml2-dev, libxml2-doc, libxrender-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/g/goffice
+Files:
+ 98e540dc4273eca088d31005fcf397d9 2214120 goffice_0.10.9.orig.tar.xz
+ 01dd09f37f12a64c9184c306e372fb3f 19704 goffice_0.10.9-1~maya.debian.tar.xz
+ 76023a31a9bdbcd7030c511b68936dce 2234 goffice_0.10.9-1~maya.dsc
+Checksums-Sha1:
+ b99b1cdc42b27533828ff963793e60c35eab5861 2214120 goffice_0.10.9.orig.tar.xz
+ 16a62248525d40afd5d992d028e16675fc42b0f4 19704 goffice_0.10.9-1~maya.debian.tar.xz
+ d582b92b75e30a0e290d638659c9259abfa252d3 2234 goffice_0.10.9-1~maya.dsc
+Checksums-Sha256:
+ 8f21cc656645dfe9da518a672350f5a5a5710b20278fa6a7a5af4d583d148875 2214120 goffice_0.10.9.orig.tar.xz
+ 2520b48c437278b2aa9aaa970b8dbd11567b391ceec2d6f8c7e3294424725438 19704 goffice_0.10.9-1~maya.debian.tar.xz
+ 7f76d68b529897fcd88a1dbdd6b36e98a1c54c74e78bc6049ee360775b9c1de2 2234 goffice_0.10.9-1~maya.dsc
+Homepage: http://wiki.gnome.org/GnomeOffice
+Package-List: gir1.2-goffice-0.10 deb introspection optional
+ libgoffice-0.10-10 deb libs optional
+ libgoffice-0.10-10-common deb libs optional
+ libgoffice-0.10-dev deb libdevel optional
+ libgoffice-0.10-doc deb doc optional
+ libgoffice-dbg deb debug extra
+Vcs-Git: git://anonscm.debian.org/collab-maint/goffice.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/goffice.git
+
+Package: xterm
+Binary: xterm
+Version: 300-1~maya
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Build-Depends: libncurses5-dev | libncurses-dev, libxft-dev (>> 2.1.2), libxrender-dev (>> 1:0.9.0), libxaw7-dev, libxkbfile-dev, libutempter-dev, libxcursor-dev, debhelper (>= 9), quilt, lynx-cur | lynx, xorg-docs-core, desktop-file-utils
+Architecture: any
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/main/x/xterm
+Files:
+ 6adc7c7f39ab2a71fd83747049d60358 1123519 xterm_300.orig.tar.gz
+ 47dc88df94d42a03e3103ac48d115f6a 93112 xterm_300-1~maya.diff.gz
+ 2c3b5b64ba6c3b8f01bde4214cb25872 1750 xterm_300-1~maya.dsc
+Checksums-Sha1:
+ 8329c73c728c31389cb8fab1830016aa94c197c7 1123519 xterm_300.orig.tar.gz
+ 3a30c8701a506b43703bbad7424b22907817c652 93112 xterm_300-1~maya.diff.gz
+ d5f824eeddabf9588ea593dfbe92d9ef20f3f5f0 1750 xterm_300-1~maya.dsc
+Checksums-Sha256:
+ 615095640cc357405ecae3521b00d8027b3016d21ea235e337f3bed0083e17cd 1123519 xterm_300.orig.tar.gz
+ 8e04367b0739c5385bb4b9689985015a69f662b8412e21bf160b57c229fed8a1 93112 xterm_300-1~maya.diff.gz
+ cd8dd24b88d4af2c4c3798c7e3bf98762a92f08ee5f10536aebf07393067c6f5 1750 xterm_300-1~maya.dsc
+Homepage: http://invisible-island.net/xterm/xterm.html
+Uploaders: Cyril Brulebois <kibi@debian.org>, Sven Joachim <svenjoac@gmx.de>
+Package-List: xterm deb x11 optional
+Vcs-Git: git://anonscm.debian.org/pkg-xorg/app/xterm
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-xorg/app/xterm.git
+
+Package: librsvg
+Binary: librsvg2-dev, librsvg2-2, librsvg2-common, librsvg2-doc, librsvg2-dbg, librsvg2-bin, gir1.2-rsvg-2.0
+Version: 2.36.4-2~maya
+Section: libdevel
+Maintainer: Josselin Mouette <joss@debian.org>
+Build-Depends: cdbs (>= 0.4.93), debhelper (>= 8.1.3), dh-autoreconf (>= 4), libxml2-dev (>= 2.7.0), libglib2.0-dev (>= 2.24.0), libcairo2-dev (>= 1.2.0), libpango1.0-dev (>= 1.16.0), libgdk-pixbuf2.0-dev (>= 2.23.5-2), libgtk2.0-dev (>= 2.21.5), libgtk-3-dev (>= 3.0.0), libgsf-1-dev (>= 1.13.2-2), gnome-pkg-tools (>= 0.10), libcroco3-dev (>= 0.6.1), gtk-doc-tools (>= 1.13), gobject-introspection (>= 0.10.8), libgirepository1.0-dev (>= 0.10.8), libglib2.0-doc, libgtk2.0-doc, libcairo2-doc, valac (>= 0.17.5)
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/libr/librsvg
+Files:
+ 3c94524c8ccf668e30b236f409239f54 513028 librsvg_2.36.4.orig.tar.xz
+ fbb892dced2e7bd099a6f1984fd59226 15468 librsvg_2.36.4-2~maya.debian.tar.gz
+ dcaf250afc614ffd68feeb484b97958a 2433 librsvg_2.36.4-2~maya.dsc
+Checksums-Sha1:
+ 1e0152e6745bac9632207252c67dda2299010db4 513028 librsvg_2.36.4.orig.tar.xz
+ eb321bcdbd09369adfa96f49f1fea3153aff1ec0 15468 librsvg_2.36.4-2~maya.debian.tar.gz
+ 8e0736bd9eea570f9e11e2deb17207459e9048d2 2433 librsvg_2.36.4-2~maya.dsc
+Checksums-Sha256:
+ 1021935204798f4f0ad3004a09b583668ea94a48593461b147fdcff68a18e6c2 513028 librsvg_2.36.4.orig.tar.xz
+ 0d7963ea2d3d7535fcd2d0cee9a6b6348cc2f688abaa20bd401d86d4e0912693 15468 librsvg_2.36.4-2~maya.debian.tar.gz
+ 99930ef445e07e05b9957e29334ec59ee2ee73282072fc1b378648fe47f1b76e 2433 librsvg_2.36.4-2~maya.dsc
+Homepage: http://librsvg.sourceforge.net/
+Uploaders: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>, Michael Biebl <biebl@debian.org>
+Vcs-Svn: svn://svn.debian.org/svn/pkg-gnome/desktop/unstable/librsvg
+Package-List: gir1.2-rsvg-2.0 deb introspection optional
+ librsvg2-2 deb libs optional
+ librsvg2-bin deb graphics optional
+ librsvg2-common deb libs optional
+ librsvg2-dbg deb debug extra
+ librsvg2-dev deb libdevel optional
+ librsvg2-doc deb doc optional
+Vcs-Browser: http://svn.debian.org/viewsvn/pkg-gnome/desktop/unstable/librsvg
+
+Package: xserver-xorg-video-dummy
+Binary: xserver-xorg-video-dummy
+Version: 1:0.3.7-1mint2
+Section: x11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Build-Depends: debhelper (>= 8), dh-autoreconf, quilt, pkg-config, xserver-xorg-dev (>= 2:1.11), x11proto-video-dev, x11proto-xf86dga-dev, x11proto-core-dev, x11proto-fonts-dev, x11proto-randr-dev, x11proto-render-dev, xutils-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/main/x/xserver-xorg-video-dummy
+Files:
+ 3871edac2a30fd8bb8018c87ec6423e8 346888 xserver-xorg-video-dummy_0.3.7.orig.tar.gz
+ 4564a741d8430c855b772f8a3cf389a9 5383 xserver-xorg-video-dummy_0.3.7-1mint2.diff.gz
+ abfa7fcfbbc0332d77a4dcf935fa40cd 1867 xserver-xorg-video-dummy_0.3.7-1mint2.dsc
+Checksums-Sha1:
+ ff72c4969ad7156016c3922b1717d70df12db1b8 346888 xserver-xorg-video-dummy_0.3.7.orig.tar.gz
+ 9174c8792241947a0f519ead39ce4bbb7a8b3bdd 5383 xserver-xorg-video-dummy_0.3.7-1mint2.diff.gz
+ f76a51bf013fd80ffdf853bf8dd049e9acd1681d 1867 xserver-xorg-video-dummy_0.3.7-1mint2.dsc
+Checksums-Sha256:
+ 19d1f55d2ffa5d7ef3ee62d06beb344d10f57c90de578c28850146eeb45206cd 346888 xserver-xorg-video-dummy_0.3.7.orig.tar.gz
+ f461bdb5d2933970c589677064daaae7b327d6810dc5c962c17a5c72034fda0c 5383 xserver-xorg-video-dummy_0.3.7-1mint2.diff.gz
+ ceea89a2047c2706693120214441e418bff6b2baea5c36f128198be51d58f569 1867 xserver-xorg-video-dummy_0.3.7-1mint2.dsc
+Uploaders: Cyril Brulebois <kibi@debian.org>
+Package-List: xserver-xorg-video-dummy deb x11 optional
+Vcs-Git: git://git.debian.org/git/pkg-xorg/driver/xserver-xorg-video-dummy
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-video-dummy.git
+
+Package: pcmanfm
+Binary: pcmanfm, pcmanfm-dbg
+Version: 1.2.0-0linuxmint1~maya
+Section: utils
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Build-Depends: debhelper (>= 9), intltool, pkg-config, libfm-gtk-dev (>= 1.2), libgtk2.0-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/p/pcmanfm
+Files:
+ 11d59a492c9802866279a6e7e2b3f49e 399548 pcmanfm_1.2.0.orig.tar.xz
+ e13defb999a36f0779b5cd373def786e 11036 pcmanfm_1.2.0-0linuxmint1~maya.debian.tar.xz
+ 73daba107e8be49139422c45042fbd3f 1760 pcmanfm_1.2.0-0linuxmint1~maya.dsc
+Checksums-Sha1:
+ d2a72a25d1f5a9fd6a245bfe5a8723969fa27e9a 399548 pcmanfm_1.2.0.orig.tar.xz
+ 4c09d5846f12b9c332cc81be6db160473e866353 11036 pcmanfm_1.2.0-0linuxmint1~maya.debian.tar.xz
+ 3e229363a1e338496ad5137dd1fa23f6f0622e8c 1760 pcmanfm_1.2.0-0linuxmint1~maya.dsc
+Checksums-Sha256:
+ 52d0eec6ee3dc3dce801c24db506c6a6556d030c8c9d9f90cdf9c9db8e9cbab2 399548 pcmanfm_1.2.0.orig.tar.xz
+ 32cf15b02d52e8d68e3cd1508d08f1409e9d0cf260912afb5aae6ceb15b5bcec 11036 pcmanfm_1.2.0-0linuxmint1~maya.debian.tar.xz
+ 02136acd1ba580a38fcbb8af7f36c5ac5efdceadafbf1d1a7605be45dba8d5d2 1760 pcmanfm_1.2.0-0linuxmint1~maya.dsc
+Homepage: http://pcmanfm.sourceforge.net/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Andriy Grytsenko <andrej@rep.kiev.ua>, Mateusz Łukasik <mati75@linuxmint.pl>
+Package-List: pcmanfm deb utils optional
+ pcmanfm-dbg deb debug extra
+Vcs-Git: git://git.lxde.org/git/debian/pcmanfm.git
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/pcmanfm.git
+
+Package: kadu
+Binary: kadu, kadu-common, kadu-dev, kadu-external-modules, kadu-themes
+Version: 0.12.3-2~maya
+Section: net
+Maintainer: Patryk Cisek <patryk@debian.org>
+Build-Depends: bzip2, cmake (>= 2.6), debhelper (>= 8.1.3), enchant, hardening-wrapper, libasound2-dev, libaudio-dev, libdbus-1-dev, libenchant-dev, libgadu-dev, libidn11-dev, libindicate-qt-dev, libmpdclient-dev, libphonon-dev, libqca2-dev, libqt4-dev, libqtwebkit-dev, libsndfile1-dev (>= 1.0), libsqlite3-dev, libxfixes-dev, libxss-dev, libxtst-dev, patchutils (>= 0.2.25), sharutils, x11proto-scrnsaver-dev, zlib1g-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/k/kadu
+Files:
+ 7d600cdbdacd0f59984ca0c03a72ff2c 656566 kadu_0.12.3.orig-externalplugins.tar.bz2
+ 0763bfc2e4270b0962ad3b6ba818de1e 4504937 kadu_0.12.3.orig-externalthemes.tar.bz2
+ c5d6f0bd384cd96090819ea018eb8ad8 5106482 kadu_0.12.3.orig.tar.bz2
+ 41ea54d2aef554627fc096a4d0ed151c 20476 kadu_0.12.3-2~maya.debian.tar.gz
+ 586a1eff0050096c3406cf748291df09 2600 kadu_0.12.3-2~maya.dsc
+Checksums-Sha1:
+ 447b47b652a344669222c7d52cfa5351bae7749e 656566 kadu_0.12.3.orig-externalplugins.tar.bz2
+ 266191db907647f323c90c41df1e923dc81511b3 4504937 kadu_0.12.3.orig-externalthemes.tar.bz2
+ 9377f74e10a57d920c3b5e41ce2e3e7fe4816013 5106482 kadu_0.12.3.orig.tar.bz2
+ 2165f22a8a0e217ae5421fdb0a486b7deab01e48 20476 kadu_0.12.3-2~maya.debian.tar.gz
+ 711ede2804d3a49a24937552d69b4ba79f6f2f9f 2600 kadu_0.12.3-2~maya.dsc
+Checksums-Sha256:
+ a8b977485487419ccf26b05218128d25d8dcbae24d2f738b9e1b89e99fc2909e 656566 kadu_0.12.3.orig-externalplugins.tar.bz2
+ aabe05e026791e5727b5a4c72802b61da57eb541b0dd6c7cf1c9117165c408f4 4504937 kadu_0.12.3.orig-externalthemes.tar.bz2
+ d607bbd0d00b01bfb70dd15f15c8be4076896a935041651e67a3887ad12ab8a8 5106482 kadu_0.12.3.orig.tar.bz2
+ f11df68ea48addf448cf48216bdcc10e36d4985d3fb1bd8ceeb7ff4ffe7d2a24 20476 kadu_0.12.3-2~maya.debian.tar.gz
+ 50053aa749ec41a0199368a2ae4feeb013c6579c405c8b7cfb156d5d858fae8f 2600 kadu_0.12.3-2~maya.dsc
+Homepage: http://kadu.net
+Package-List: kadu deb net optional
+ kadu-common deb net optional
+ kadu-dev deb net optional
+ kadu-external-modules deb net optional
+ kadu-themes deb net optional
+Vcs-Git: git://git.debian.org/users/patryk/kadu.git
+Vcs-Browser: http://git.debian.org/?p=users/patryk/kadu.git
+
+Package: kbuild
+Binary: kbuild
+Version: 1:0.1.9998svn2577+dfsg-3~maya
+Section: devel
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9), autoconf, automake, autopoint, byacc, flex, libacl1-dev, texinfo
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/k/kbuild
+Files:
+ 3b6ea9ae450ead38b709541e3471f94b 1588416 kbuild_0.1.9998svn2577+dfsg.orig.tar.xz
+ 2436b01052c450cfaba004d5d49189fb 14473 kbuild_0.1.9998svn2577+dfsg-3~maya.debian.tar.gz
+ e14f398e30932b205e036f3ba7f8f154 1780 kbuild_0.1.9998svn2577+dfsg-3~maya.dsc
+Checksums-Sha1:
+ 07d54c563ee49047cd2ff96105f771a8a10d1527 1588416 kbuild_0.1.9998svn2577+dfsg.orig.tar.xz
+ 590b2f7ce0cf01853dadc0128bab197b8694774c 14473 kbuild_0.1.9998svn2577+dfsg-3~maya.debian.tar.gz
+ ba5261a0c4f9996889ee1cf6cb97c1d89914d6af 1780 kbuild_0.1.9998svn2577+dfsg-3~maya.dsc
+Checksums-Sha256:
+ 9e7fa457af5b13a924a2e2b49c81b31bb9ed2c1edb25fe60d2521c65540ff1fb 1588416 kbuild_0.1.9998svn2577+dfsg.orig.tar.xz
+ 02a285ab01415c93a9bf472d0c99177431fe03b9263a786ebcca96930b8081d2 14473 kbuild_0.1.9998svn2577+dfsg-3~maya.debian.tar.gz
+ 91d3f20bc4eb1ed7203cb622d3c14b6f53f8496ba169c3195535133016c5b0b6 1780 kbuild_0.1.9998svn2577+dfsg-3~maya.dsc
+Homepage: http://svn.netlabs.org/kbuild
+Uploaders: Michael Meskes <meskes@debian.org>, Felix Geyer <fgeyer@debian.org>
+Package-List: kbuild deb devel extra
+Vcs-Git: git://anonscm.debian.org/pkg-virtualbox/kbuild.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-virtualbox/kbuild.git
+
+Package: virtualbox
+Binary: virtualbox-qt, virtualbox, virtualbox-dbg, virtualbox-dkms, virtualbox-source, virtualbox-guest-dkms, virtualbox-guest-source, virtualbox-guest-x11, virtualbox-guest-utils
+Version: 4.2.16-dfsg-3~maya
+Section: misc
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Build-Depends: bzip2, debhelper (>= 7.2.7~), default-jdk, dkms (>= 2.1.1.1), docbook-xml, docbook-xsl, dpkg-dev (>= 1.15.6~), g++-multilib [amd64], genisoimage, gsoap, iasl, imagemagick, kbuild (>= 1:0.1.9998svn2577), libasound2-dev, libcap-dev, libcurl4-openssl-dev, libdevmapper-dev, libdrm-dev, libgl1-mesa-dev, libglu1-mesa-dev, libidl-dev, libpam0g-dev, libpixman-1-dev, libpng-dev, libpulse-dev, libqt4-dev (>= 4.4.0), libqt4-opengl-dev (>= 4.4.0), libsdl1.2-dev, libssl-dev, libvncserver-dev, libx11-dev, libxcomposite-dev, libxcursor-dev, libxdamage-dev, libxext-dev, libxi-dev, libxinerama-dev, libxmu-dev, libxrandr-dev, libxrender-dev, libxslt1-dev, lsb-release, lynx-cur, makeself, python-dev (>= 2.6.6-3~), texlive-fonts-extra, texlive-fonts-recommended, texlive-latex-extra, texlive-latex-recommended, uuid-dev, x11proto-gl-dev, x11proto-xf86dri-dev, xserver-xorg-dev, xsltproc, yasm (>= 0.7.0), zlib1g-dev
+Architecture: amd64 i386 all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/v/virtualbox
+Files:
+ 647c5c91a3652c083a28c3fde6742d12 34934068 virtualbox_4.2.16-dfsg.orig.tar.xz
+ 0999ba27259e77ec8dffe3eb51cc9be5 90160 virtualbox_4.2.16-dfsg-3~maya.debian.tar.gz
+ b7e349b5f586ae78220a10418b56a3df 3138 virtualbox_4.2.16-dfsg-3~maya.dsc
+Checksums-Sha1:
+ 7603aede177fb9bf25552151b221afea79fbfe48 34934068 virtualbox_4.2.16-dfsg.orig.tar.xz
+ 817e5a71dee46c60c77f89f15735c51b159ce41f 90160 virtualbox_4.2.16-dfsg-3~maya.debian.tar.gz
+ d9e551805a93b516d4dfec680ea31f68b783676d 3138 virtualbox_4.2.16-dfsg-3~maya.dsc
+Checksums-Sha256:
+ b1d79f15be471a3663caeda52b6ae93eb0e3aab6982dda2e0719a2f0dfeedd85 34934068 virtualbox_4.2.16-dfsg.orig.tar.xz
+ 2ff2d210678ee278df3bd9bc341cac5a1405446e6a8a4c9455b03e314ebe16fa 90160 virtualbox_4.2.16-dfsg-3~maya.debian.tar.gz
+ 9748f0065d9c1dc6b6567301ce99bd4cf4a0cd0f6f59bef511d936bcc3d35b09 3138 virtualbox_4.2.16-dfsg-3~maya.dsc
+Homepage: http://www.virtualbox.org/
+Uploaders: Michael Meskes <meskes@debian.org>, Felix Geyer <fgeyer@debian.org>
+Package-List: virtualbox deb contrib/misc optional
+ virtualbox-dbg deb contrib/debug extra
+ virtualbox-dkms deb contrib/kernel optional
+ virtualbox-guest-dkms deb contrib/kernel optional
+ virtualbox-guest-source deb contrib/kernel optional
+ virtualbox-guest-utils deb contrib/misc optional
+ virtualbox-guest-x11 deb contrib/x11 optional
+ virtualbox-qt deb contrib/misc optional
+ virtualbox-source deb contrib/kernel optional
+Vcs-Git: git://anonscm.debian.org/pkg-virtualbox/virtualbox.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-virtualbox/virtualbox.git
+
+Package: terminator
+Binary: terminator
+Version: 0.97+1481~ubuntu12.04.1
+Section: misc
+Maintainer: Nicolas Valcárcel Scerpella <nvalcarcel@canonical.com>
+Build-Depends: debhelper (>= 5.0.62), python, cdbs (>= 0.4.49), intltool
+Build-Depends-Indep: python-support (>= 0.5.3)
+Architecture: all
+Standards-Version: 3.8.2
+Format: 1.0
+Directory: pool/main/t/terminator
+Files:
+ 21c465fbec86fd62d356fc027077760f 369605 terminator_0.97+1481~ubuntu12.04.1.tar.gz
+ 0e5a965b0b051e5205699855c77c26dd 1037 terminator_0.97+1481~ubuntu12.04.1.dsc
+Checksums-Sha1:
+ ee63afb81ff56fea35703b5545c7a7c98bc938f3 369605 terminator_0.97+1481~ubuntu12.04.1.tar.gz
+ bcc8e828932bf61266ea044e1477cb83738a33ee 1037 terminator_0.97+1481~ubuntu12.04.1.dsc
+Checksums-Sha256:
+ 7467a9aa5805e40aedf9a175965740b785160593b51bd595dd50b2f29cec8881 369605 terminator_0.97+1481~ubuntu12.04.1.tar.gz
+ 883273f8e85b8f8dc99b1fa5b1c61819749159b7cf35420ede055692f4626381 1037 terminator_0.97+1481~ubuntu12.04.1.dsc
+Homepage: http://www.tenshu.net/terminator/
+Uploaders: Rudy Godoy Guillén <rudy@debian.org>, Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Python-Version: >=2.5
+Vcs-Svn: svn://svn.debian.org/python-apps/packages/terminator/trunk/
+Package-List: terminator deb misc optional
+Vcs-Browser: http://svn.debian.org/viewsvn/python-apps/packages/terminator/trunk/
+
+Package: babl
+Binary: libbabl-0.1-0, libbabl-dev, libbabl-doc, libbabl-0.1-0-dbg
+Version: 0.1.10-1maya1
+Section: libs
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Build-Depends: autotools-dev, cdbs (>= 0.4.93~), debhelper (>= 8.1.3), gobject-introspection, libgirepository1.0-dev, pkg-config
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/b/babl
+Files:
+ 9e1542ab5c0b12ea3af076a9a2f02d79 449537 babl_0.1.10.orig.tar.bz2
+ 9525afa14ab089357f7958659ed33e02 4502 babl_0.1.10-1maya1.debian.tar.gz
+ a60d44e43090a7b8060810fbcda8f461 1735 babl_0.1.10-1maya1.dsc
+Checksums-Sha1:
+ ee60089e8e9d9390e730d3ae5e41074549928b7a 449537 babl_0.1.10.orig.tar.bz2
+ c8e008bccb002bd8aebb6f5615d3bbef209dea4c 4502 babl_0.1.10-1maya1.debian.tar.gz
+ 1649ff0cfb5545a372db2c6b4beba11875233f7f 1735 babl_0.1.10-1maya1.dsc
+Checksums-Sha256:
+ 943fc36ceac7dd25bc928256bc7b535a42989c6b971578146869eee5fe5955f4 449537 babl_0.1.10.orig.tar.bz2
+ fbb628216fd52f2a196ef90c8854bc2afbff606eb3f0dccb8a0c5659c52c9178 4502 babl_0.1.10-1maya1.debian.tar.gz
+ 77c8eaad48802ae39e85df1d49aaa2954df96558dfe5067353093856b47ec345 1735 babl_0.1.10-1maya1.dsc
+Homepage: http://gegl.org/babl/
+Package-List: libbabl-0.1-0 deb libs optional
+ libbabl-0.1-0-dbg deb debug extra
+ libbabl-dev deb libdevel optional
+ libbabl-doc deb doc optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/babl.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/babl.git
+
+Package: gegl
+Binary: gegl, libgegl-0.2-0, libgegl-dev, libgegl-doc, libgegl-0.2-0-dbg
+Version: 0.2.0-2+nmu1maya1
+Section: libs
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Build-Depends: autotools-dev, cdbs (>= 0.4.93~), debhelper (>= 8.1.3), gnome-pkg-tools, gtk-doc-tools (>= 1.0), intltool (>= 0.40.1), libavcodec-dev, libavformat-dev, libbabl-dev (>= 0.1.10), libcairo2-dev, libexiv2-dev, libgdk-pixbuf2.0-dev (>= 2.18.0), libglib2.0-dev (>= 2.28.0), libgtk2.0-dev (>= 2.8.6), libjasper-dev (>= 1.900.1), libjpeg-dev, libopenexr-dev, libopenraw-dev (>= 0.0.5), libpango1.0-dev, libpng-dev, librsvg2-dev (>= 2.14.0), libsdl1.2-dev, libspiro-dev, libsuitesparse-dev, pkg-config, valac-0.16
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/g/gegl
+Files:
+ 32b00002f1f1e316115c4ed922e1dec8 7502040 gegl_0.2.0.orig.tar.bz2
+ d4adff21b1e021bc190d349270c8b536 9084 gegl_0.2.0-2+nmu1maya1.debian.tar.gz
+ 375e80dcc98eedee66a24ffb94d2e10d 2167 gegl_0.2.0-2+nmu1maya1.dsc
+Checksums-Sha1:
+ 764cc66cb3c7b261b8fc18a6268a0e264a91d573 7502040 gegl_0.2.0.orig.tar.bz2
+ d544471bce1695e91b86bae271b4f9f412ea7b0c 9084 gegl_0.2.0-2+nmu1maya1.debian.tar.gz
+ 36351b36250cb04642e45052121ca5244cbbb93d 2167 gegl_0.2.0-2+nmu1maya1.dsc
+Checksums-Sha256:
+ df2e6a0d9499afcbc4f9029c18d9d1e0dd5e8710a75e17c9b1d9a6480dd8d426 7502040 gegl_0.2.0.orig.tar.bz2
+ 32f6918d5b16890d932aa20e483e8bfa6de6ef2d602a3ab4a576813254c89e63 9084 gegl_0.2.0-2+nmu1maya1.debian.tar.gz
+ ebf6b03afe45c8ea435cb048fa5de82d93de2997a7fd813024dacb4d15b4e86a 2167 gegl_0.2.0-2+nmu1maya1.dsc
+Homepage: http://gegl.org/
+Package-List: gegl deb libs optional
+ libgegl-0.2-0 deb libs optional
+ libgegl-0.2-0-dbg deb debug extra
+ libgegl-dev deb libdevel optional
+ libgegl-doc deb doc optional
+Vcs-Git: git://anonscm.debian.org/collab-maint/gegl.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/gegl.git
+
+Package: gpicview
+Binary: gpicview, gpicview-dbg
+Version: 0.2.4-1~maya
+Section: graphics
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Build-Depends: debhelper (>= 9), intltool, libgtk2.0-dev, libjpeg-dev
+Architecture: any
+Standards-Version: 3.9.5.0
+Format: 3.0 (quilt)
+Directory: pool/main/g/gpicview
+Files:
+ b209e36531f89c48e3067b389699d4c7 488510 gpicview_0.2.4.orig.tar.gz
+ 1eac312f728affa246c1601fa7b9caf5 29768 gpicview_0.2.4-1~maya.debian.tar.xz
+ 758b479e95b5711ef6f6d577ad176fd7 1678 gpicview_0.2.4-1~maya.dsc
+Checksums-Sha1:
+ 423143c850390db9784ad9812b9f929c18dd51ea 488510 gpicview_0.2.4.orig.tar.gz
+ b05f5caa1d4bdae2fca9035ca914c10cc69c37e8 29768 gpicview_0.2.4-1~maya.debian.tar.xz
+ 1ac82d6fc8cc3ece835d4f76352ca60cad35141e 1678 gpicview_0.2.4-1~maya.dsc
+Checksums-Sha256:
+ 99beb7df6765b386cd3f65b3ff77e9a25027a009db432f02bd60be8558f06ceb 488510 gpicview_0.2.4.orig.tar.gz
+ 73a69f6e13c5ebcc10bc3a80ce67c1d9cfbdb9284df491ba6fb78364a41820d8 29768 gpicview_0.2.4-1~maya.debian.tar.xz
+ ae4d8d3b299481ec2e609d9c728373e5951c70e7a1b28477a57762d643411d05 1678 gpicview_0.2.4-1~maya.dsc
+Homepage: http://www.lxde.org/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Ulises Vitulli <dererk@debian.org>
+Package-List: gpicview deb graphics optional
+ gpicview-dbg deb debug extra
+Vcs-Git: git://git.lxde.org/git/debian/gpicview.git
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/gpicview.git
+
+Package: cairo
+Binary: libcairo2-dev, libcairo2, libcairo2-dbg, libcairo2-doc, libcairo-script-interpreter2, libcairo-gobject2, cairo-perf-utils, libcairo2-udeb
+Version: 1.12.16-0ubuntu1~maya1
+Section: libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.1.3), dpkg-dev (>= 1.14.13), dh-autoreconf, pkg-config (>= 0.19), libfontconfig1-dev (>= 2.2.95), libfreetype6-dev (>= 2.1.10), libxrender-dev (>= 1:0.9.5-2), libx11-dev (>= 2:1.3.3-2), libxext-dev, libpng-dev, libsm-dev, xutils-dev, libxt-dev, libpixman-1-dev (>= 0.22.0), libxcb1-dev (>= 1.6), libxcb-render0-dev (>= 1.6), libxcb-shm0-dev, libglib2.0-dev, zlib1g-dev, liblzo2-dev
+Architecture: any all
+Standards-Version: 3.8.4
+Format: 3.0 (quilt)
+Directory: pool/main/c/cairo
+Files:
+ a1304edcdc99282f478b995ee5f8f854 35889824 cairo_1.12.16.orig.tar.xz
+ 5ee87af82cce6f427d8dbbdfeb3cd896 33564 cairo_1.12.16-0ubuntu1~maya1.debian.tar.gz
+ 68264b5d19e191164a4e269f62cf7747 2493 cairo_1.12.16-0ubuntu1~maya1.dsc
+Checksums-Sha1:
+ 4f6e337d5d3edd7ea79d1426f575331552b003ec 35889824 cairo_1.12.16.orig.tar.xz
+ f6cf6ad4a2316b7082360f33a6fe2d24f4d3c387 33564 cairo_1.12.16-0ubuntu1~maya1.debian.tar.gz
+ 833a53706fd744059e105060abdfea66588f386f 2493 cairo_1.12.16-0ubuntu1~maya1.dsc
+Checksums-Sha256:
+ 2505959eb3f1de3e1841023b61585bfd35684b9733c7b6a3643f4f4cbde6d846 35889824 cairo_1.12.16.orig.tar.xz
+ 2fe70a6bfd8fe52895cf89886d0632fc5cebe4c14061100a36015c3654c745b2 33564 cairo_1.12.16-0ubuntu1~maya1.debian.tar.gz
+ 315d7015104ede716f7de81762621edadce80c01ee7c3b2289344ec14844f7ca 2493 cairo_1.12.16-0ubuntu1~maya1.dsc
+Homepage: http://cairographics.org/
+Uploaders: Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>
+Testsuite: autopkgtest
+Package-List: cairo-perf-utils deb misc optional
+ libcairo-gobject2 deb libs optional
+ libcairo-script-interpreter2 deb libs optional
+ libcairo2 deb libs optional
+ libcairo2-dbg deb debug extra
+ libcairo2-dev deb libdevel optional
+ libcairo2-doc deb doc optional
+ libcairo2-udeb udeb debian-installer optional
+Vcs-Git: git://git.debian.org/git/collab-maint/cairo.git
+Vcs-Browser: http://git.debian.org/?p=collab-maint/cairo.git
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: lxappearance
+Binary: lxappearance, lxappearance-dbg
+Version: 0.5.5-0ubuntu1~maya1
+Section: x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), autotools-dev, intltool, docbook-xml, docbook-xsl, libglib2.0-dev, libgtk2.0-dev, libx11-dev, libdbus-glib-1-dev, xsltproc
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/l/lxappearance
+Files:
+ a67113681d9d0a6d936289909aed5782 295756 lxappearance_0.5.5.orig.tar.xz
+ 3b147770ff0701cd3a19d8b435ea37ee 5396 lxappearance_0.5.5-0ubuntu1~maya1.debian.tar.xz
+ fbf6871964fa0807d5f9227e0d4213e7 1878 lxappearance_0.5.5-0ubuntu1~maya1.dsc
+Checksums-Sha1:
+ 5497886d84bfdac0c18709e076b4acd96caba912 295756 lxappearance_0.5.5.orig.tar.xz
+ 00e879438d9e22a12e7282561f0e71f1dd54f68d 5396 lxappearance_0.5.5-0ubuntu1~maya1.debian.tar.xz
+ b886ab47d356d3968c5d4ca90409b1585a032ff7 1878 lxappearance_0.5.5-0ubuntu1~maya1.dsc
+Checksums-Sha256:
+ 8cae82e6425ba8a0267774e4d10096df2d91b0597520058331684a5ece068b4c 295756 lxappearance_0.5.5.orig.tar.xz
+ 73a474c53e635a6cc3fdaf03ca67ea36d38ae50847f7b1db1dac23cbd89a307d 5396 lxappearance_0.5.5-0ubuntu1~maya1.debian.tar.xz
+ 78af4bbf398c38bc6c29821a4ee3579e703d705738fe63d303640cac737697cd 1878 lxappearance_0.5.5-0ubuntu1~maya1.dsc
+Homepage: http://www.lxde.org/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>
+Debian-Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/lxappearance.git
+Package-List: lxappearance deb x11 optional
+ lxappearance-dbg deb debug extra
+Debian-Vcs-Git: git://git.lxde.org/git/debian/lxappearance.git
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxpanel
+Binary: lxpanel, lxpanel-dbg, lxpanel-indicator-applet-plugin
+Version: 0.6.1-0ubuntu1~maya
+Section: x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), dh-autoreconf, autotools-dev, autopoint, docbook-xml, docbook-xsl, intltool, intltool-debian, libasound2-dev, libglib2.0-dev, libgtk2.0-dev (>= 2.16), libindicator-dev, libiw-dev [linux-any], libmenu-cache-dev, libwnck-dev, libxpm-dev, python, xsltproc
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/l/lxpanel
+Files:
+ e96e191c4ffb7b475a6ba06455ecf7fa 2094946 lxpanel_0.6.1.orig.tar.gz
+ b2a64c9f22b936736986345fb10c1165 15376 lxpanel_0.6.1-0ubuntu1~maya.debian.tar.xz
+ 91a97dd2f413b50875a0ba42b6146007 2067 lxpanel_0.6.1-0ubuntu1~maya.dsc
+Checksums-Sha1:
+ 3b2fb945a6c8c096b93311ae38624dadf8cebbfc 2094946 lxpanel_0.6.1.orig.tar.gz
+ 3c97b841d703c96f7dfda7ce99ed12c7f6d33d5c 15376 lxpanel_0.6.1-0ubuntu1~maya.debian.tar.xz
+ d5b3c78fe59c05e796d99f1a57cd75ccc8d0b0ae 2067 lxpanel_0.6.1-0ubuntu1~maya.dsc
+Checksums-Sha256:
+ a16a21b2186218c70ed98dc7875c54d6bb12ae7271825ff5060feb8d2a4e86cb 2094946 lxpanel_0.6.1.orig.tar.gz
+ c1d53fcb3059a5423a46e8acc3c92684db0a5527218d5c6d1bb4c381b89d2fc8 15376 lxpanel_0.6.1-0ubuntu1~maya.debian.tar.xz
+ 1d598f93b27fa77623afcb1f430435aec0b9d52c86d637b6b08dbd7403a14c47 2067 lxpanel_0.6.1-0ubuntu1~maya.dsc
+Homepage: http://www.lxde.org/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Daniel Baumann <daniel@debian.org>
+Package-List: lxpanel deb x11 optional
+ lxpanel-dbg deb debug extra
+ lxpanel-indicator-applet-plugin deb x11 optional
+Vcs-Git: git://git.lxde.org/git/debian/lxpanel.git
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/lxpanel.git
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxsession
+Binary: lxsession, lxsession-dbg, lxsession-data, lxsession-edit, lxpolkit, lxsession-logout, lxsession-default-apps
+Version: 0.4.9.2-0ubuntu6~maya
+Section: x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), autotools-dev, intltool, docbook-to-man, docbook-xml, docbook-xsl, libdbus-glib-1-dev (>= 0.31), libgtk2.0-dev (>= 2.6), xsltproc, libpolkit-agent-1-dev, libgee-dev, valac, dh-autoreconf
+Architecture: any all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/l/lxsession
+Files:
+ bc3eb71936dbdf813e9ac2f00ab948f0 745637 lxsession_0.4.9.2.orig.tar.gz
+ e27e81ef35dad174faa42acc8c2f5d33 23343 lxsession_0.4.9.2-0ubuntu6~maya.debian.tar.bz2
+ f1f0fdc238d90e8c7ecb5ffd0ffcd6d1 2198 lxsession_0.4.9.2-0ubuntu6~maya.dsc
+Checksums-Sha1:
+ 6d27d4df5a8c06ed144239365824256e56e23c1b 745637 lxsession_0.4.9.2.orig.tar.gz
+ 09137350978bc7fade04df530c0369cdc76f1b8e 23343 lxsession_0.4.9.2-0ubuntu6~maya.debian.tar.bz2
+ 2a036c448c2f105221c2ff2e1c4f4127b073df80 2198 lxsession_0.4.9.2-0ubuntu6~maya.dsc
+Checksums-Sha256:
+ eff03e573b561cabe81c5d015d825e3d998e98d6621040113d7df471c8b9cfb4 745637 lxsession_0.4.9.2.orig.tar.gz
+ 7c089228c698fa9eafef3c89bd46097b594c4fba80adcb04909080f814542567 23343 lxsession_0.4.9.2-0ubuntu6~maya.debian.tar.bz2
+ 6fe8ecebec3d3f3c6b5ad6c330e2d2ec8640d18e5b6dc59b2cfa45f18b5a8b52 2198 lxsession_0.4.9.2-0ubuntu6~maya.dsc
+Homepage: http://lxde.sf.net
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>
+Package-List: lxpolkit deb x11 optional
+ lxsession deb x11 optional
+ lxsession-data deb x11 optional
+ lxsession-dbg deb debug extra
+ lxsession-default-apps deb x11 optional
+ lxsession-edit deb x11 optional
+ lxsession-logout deb x11 optional
+Vcs-Git: git://git.debian.org/git/pkg-lxde/lxsession.git
+Vcs-Browser: http://git.debian.org/?p=pkg-lxde/lxsession.git
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: lxlauncher
+Binary: lxlauncher, lxlauncher-dbg
+Version: 0.2.2-3ubuntu2~maya
+Section: x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), autoconf, autotools-dev, intltool, libgtk2.0-dev, libmenu-cache-dev, libstartup-notification0-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/l/lxlauncher
+Files:
+ 095ebd6da97eaf1eade853a2fee75fa3 178416 lxlauncher_0.2.2.orig.tar.xz
+ a807ad02d4d2b9ee34bc08d9c0afb0b1 15236 lxlauncher_0.2.2-3ubuntu2~maya.debian.tar.xz
+ d7f10f0d707351b468773a11f6a563b7 1865 lxlauncher_0.2.2-3ubuntu2~maya.dsc
+Checksums-Sha1:
+ eb8048b30ad16c5278076d423d8e04d0f761aa33 178416 lxlauncher_0.2.2.orig.tar.xz
+ 744591bb58eefc34e905faf6a6615d511b50ba89 15236 lxlauncher_0.2.2-3ubuntu2~maya.debian.tar.xz
+ 1eb3f148147374130e1aea78d218c2a996ad7c26 1865 lxlauncher_0.2.2-3ubuntu2~maya.dsc
+Checksums-Sha256:
+ 89ccf7c01d923ac8edde26a925bf78bdc96a618b025e0ddc25838300a8237ec5 178416 lxlauncher_0.2.2.orig.tar.xz
+ 444c815b329ff5b762aa94d1499e05685642c89ad69ae6da8a2c2aa03607746c 15236 lxlauncher_0.2.2-3ubuntu2~maya.debian.tar.xz
+ e7131753f0094d3b6de18f118b13525701a6c60e3065e9b0ad5598abeaa3c80b 1865 lxlauncher_0.2.2-3ubuntu2~maya.dsc
+Homepage: http://www.lxde.org/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Daniel Baumann <daniel@debian.org>
+Package-List: lxlauncher deb x11 optional
+ lxlauncher-dbg deb debug extra
+Vcs-Git: git://git.lxde.org/git/debian/lxlauncher.git
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/lxlauncher.git
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: bleachbit
+Binary: bleachbit
+Version: 0.9.6-1~maya
+Section: admin
+Maintainer: Luca Falavigna <dktrkranz@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: python (>= 2.6.6-3~), gettext
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/b/bleachbit
+Files:
+ 56000debf212a72a13216ff8ab99500b 688693 bleachbit_0.9.6.orig.tar.gz
+ 4f20889ab2934687ee2732a9fcdedfbe 10441 bleachbit_0.9.6-1~maya.debian.tar.gz
+ 7d8b70774f2219d513dba0f42e5e8f27 1688 bleachbit_0.9.6-1~maya.dsc
+Checksums-Sha1:
+ 3478566530235c6410028d8ce02de55f293b00cc 688693 bleachbit_0.9.6.orig.tar.gz
+ 935cc2b2c419059e5ad9ed30844ddce05e2b2083 10441 bleachbit_0.9.6-1~maya.debian.tar.gz
+ adf50d64ddeba5b8951e16b9bee7d301865f4887 1688 bleachbit_0.9.6-1~maya.dsc
+Checksums-Sha256:
+ 902993c5ac92e5e21aad7d6aec3d778a726bfe8e705e7907e822efcc96bb03da 688693 bleachbit_0.9.6.orig.tar.gz
+ 8e537f4d8cff3d4a6e5c98e13cc1be668c9d16c7ecd178296bd7f9863d40cf19 10441 bleachbit_0.9.6-1~maya.debian.tar.gz
+ c23b593ef9459e9cfc12f22380b088f2a3718d11a6b59e7d79966f326f8511b4 1688 bleachbit_0.9.6-1~maya.dsc
+Homepage: http://bleachbit.sourceforge.net
+Uploaders: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Vcs-Svn: svn://anonscm.debian.org/python-apps/packages/bleachbit/trunk/
+Package-List: bleachbit deb admin optional
+Vcs-Browser: http://anonscm.debian.org/viewsvn/python-apps/packages/bleachbit/trunk/
+
+Package: menu-cache
+Binary: libmenu-cache3, libmenu-cache-dev
+Version: 0.5.0-1~maya
+Section: libs
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Build-Depends: debhelper (>= 9), autotools-dev, intltool, libglib2.0-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/m/menu-cache
+Files:
+ 3a757b0a8a668081eb8685140c0e69e8 406105 menu-cache_0.5.0.orig.tar.gz
+ f4665110a2079f91cef84784c1bc015c 3544 menu-cache_0.5.0-1~maya.debian.tar.xz
+ c2e1004385358deeaf41bde61e113d24 1718 menu-cache_0.5.0-1~maya.dsc
+Checksums-Sha1:
+ 0f107e62f50f0ea37b9d984ddd7e2ef042ce64c1 406105 menu-cache_0.5.0.orig.tar.gz
+ c84a415851777fd7aebbf7120d55e6943d7603c9 3544 menu-cache_0.5.0-1~maya.debian.tar.xz
+ 6e88af099e1dacc35e457367ac991a932cf35c97 1718 menu-cache_0.5.0-1~maya.dsc
+Checksums-Sha256:
+ 875a7441b34bb24debc1c8017d74d59987d7a704c4c023e81a0b4ebcc2d7904a 406105 menu-cache_0.5.0.orig.tar.gz
+ e5e97352db569f28414bc8fc28acdafeda7437659e7fc45c319c84b2eba14368 3544 menu-cache_0.5.0-1~maya.debian.tar.xz
+ 93ca073c5294b580a6360e83cc964f74e6b9c779b89a52cb3f25f0c5c29dcdaa 1718 menu-cache_0.5.0-1~maya.dsc
+Homepage: http://www.lxde.org/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Daniel Baumann <daniel@debian.org>
+Package-List: libmenu-cache-dev deb libdevel optional
+ libmenu-cache3 deb libs optional
+Vcs-Git: git://git.lxde.org/git/debian/menu-cache.git
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/menu-cache.git
+
+Package: libdvdcss
+Binary: libdvdcss-dev, libdvdcss2
+Version: 1.2.13-0.0linuxmint1
+Section: libs
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/libd/libdvdcss
+Files:
+ 53cfc52a60a156763c425572e5179273 338588 libdvdcss_1.2.13.orig.tar.bz2
+ 026312e613bd91c9fdc9e337fa10cdf7 2487 libdvdcss_1.2.13-0.0linuxmint1.debian.tar.gz
+ e27bd1b6333728f384d09125ba229875 1563 libdvdcss_1.2.13-0.0linuxmint1.dsc
+Checksums-Sha1:
+ 1a4a5e55c7529da46386c1c333340eee2c325a77 338588 libdvdcss_1.2.13.orig.tar.bz2
+ bd1d0db59ec759141c725a6438e2753e213895cb 2487 libdvdcss_1.2.13-0.0linuxmint1.debian.tar.gz
+ 888358f58548c29bf1d2e08593f8fc35e1e597ca 1563 libdvdcss_1.2.13-0.0linuxmint1.dsc
+Checksums-Sha256:
+ 84f1bba6cfef1df87f774fceaefc8e73c4cda32e8f6700b224ad0acb5511ba2c 338588 libdvdcss_1.2.13.orig.tar.bz2
+ 143bdcb10ae7c5150d31a9a6d7bb112364e1e229ba4fd10810d6ce08517c130f 2487 libdvdcss_1.2.13-0.0linuxmint1.debian.tar.gz
+ e53b23e3e84b539cbe1dbcd0cc18a1766a9b5fe637153ed44dea584773fa770f 1563 libdvdcss_1.2.13-0.0linuxmint1.dsc
+Homepage: http://download.videolan.org/
+Package-List: libdvdcss-dev deb libdevel extra
+ libdvdcss2 deb libs extra
+Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
+
+Package: mdm
+Binary: mdm
+Version: 1.0.8+maya1
+Section: gnome
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: libpam0g-dev, libdbus-glib-1-dev (>= 0.30), libglib2.0-dev (>= 2.12.0), libgtk2.0-dev (>= 2.6.0), libpango1.0-dev (>= 1.3.0), libglade2-dev (>= 1:1.99.2), libgnomecanvas2-dev, librsvg2-dev, libxml2-dev (>= 2.4.12), libart-2.0-dev (>= 2.3.11), libwrap0-dev, debhelper (>= 5), gettext, intltool (>= 0.35.0), libselinux1-dev [linux-any], libattr1-dev, x11proto-core-dev, x11proto-input-dev, libxau-dev, libxt-dev, libxdmcp-dev, libxinerama-dev, libdmx-dev, gnome-doc-utils, sharutils, gnome-pkg-tools, quilt, zenity, libpopt-dev, xserver-xorg
+Architecture: any
+Standards-Version: 3.9.0
+Format: 1.0
+Directory: pool/main/m/mdm
+Files:
+ e0b734c81d73b9e3bca9c33f3a6487f8 6137124 mdm_1.0.8+maya1.tar.gz
+ 907509aabd4a0fb88c16693ab7474dad 1561 mdm_1.0.8+maya1.dsc
+Checksums-Sha1:
+ 965c5abddbb3194dbdfcbdbb54bab317640235b8 6137124 mdm_1.0.8+maya1.tar.gz
+ b3385aa49b192fe003c6a40d8d215bdeb11ffae8 1561 mdm_1.0.8+maya1.dsc
+Checksums-Sha256:
+ a998d2e1e44e6682472dbcefbdeda78476edb51a539eb2465cbb537b5bfa37ab 6137124 mdm_1.0.8+maya1.tar.gz
+ 4ed860ff72e180a1920da4f5cb5d028b0aeae11edfcee1a3541fcf2201b94b8e 1561 mdm_1.0.8+maya1.dsc
+Package-List: mdm deb gnome optional
+
+Package: w32codecs
+Binary: w32codecs
+Version: 1:20110131-0.2linuxmint1
+Section: graphics
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Build-Depends: debhelper (>= 9)
+Architecture: i386
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/w/w32codecs
+Files:
+ 05a17a642577a68a0d0b2b15bf7b6ece 26931813 w32codecs_20110131.orig.tar.gz
+ 984b74ed027f908712274d7090615166 2731 w32codecs_20110131-0.2linuxmint1.diff.gz
+ ddc28995bfd56b8d0255bf63001f008e 1460 w32codecs_20110131-0.2linuxmint1.dsc
+Checksums-Sha1:
+ 15ad657e4fc0cd29e53b0333b00ec8f162b4f21e 26931813 w32codecs_20110131.orig.tar.gz
+ f379a626441cae43c6572ce955fbae99ee56ed45 2731 w32codecs_20110131-0.2linuxmint1.diff.gz
+ 79531561b417db5f02755e98593ec24f07782e78 1460 w32codecs_20110131-0.2linuxmint1.dsc
+Checksums-Sha256:
+ ca628699be3c0f5f6439cab5f73c791cdffc5289024f10db235b1e6354a22d26 26931813 w32codecs_20110131.orig.tar.gz
+ 30d4def55a80669ae887fb677324835a20a1d1320acfb16d47687cd8ae289d35 2731 w32codecs_20110131-0.2linuxmint1.diff.gz
+ 96a7591ce54deb3dd7832da514a1729e3c595f707f467eb329458d10b07ff58c 1460 w32codecs_20110131-0.2linuxmint1.dsc
+Homepage: http://www1.mplayerhq.hu/MPlayer/releases/codecs/
+Package-List: w32codecs deb non-free/graphics optional
+
+Package: libfm
+Binary: libfm4, libfm-extra4, libfm-dev, libfm-gtk-dev, libfm-doc, libfm-dbg, libfm-gtk-dbg, libfm-modules-dbg, libfm-data, libfm-gtk-data, libfm-gtk4, libfm-gtk-bin, libfm-tools, libfm-modules
+Version: 1.2.0-0linuxmint1~maya
+Section: libs
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Build-Depends: debhelper (>= 9), gtk-doc-tools, intltool, libdbus-glib-1-dev, libglib2.0-dev, libgtk2.0-dev, libexif-dev, libmenu-cache-dev (>= 0.5.0), libtool, pkg-config, valac, libglib2.0-doc, libgtk-3-doc, autotools-dev
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/libf/libfm
+Files:
+ 07d1361bc008db46b0fd4c775f5696de 890064 libfm_1.2.0.orig.tar.xz
+ c3abcdb4870b08a7365e1f7e50fe13eb 12496 libfm_1.2.0-0linuxmint1~maya.debian.tar.xz
+ 96fcb167a9c0cbf05b5e23de5c50bbf3 2419 libfm_1.2.0-0linuxmint1~maya.dsc
+Checksums-Sha1:
+ f4da9f73111364291501bfc752c50d43a17f17cf 890064 libfm_1.2.0.orig.tar.xz
+ 28f278c4cde5c0ab82aa8d7b13a7d6f8f186307b 12496 libfm_1.2.0-0linuxmint1~maya.debian.tar.xz
+ b6ba00bfa68dab523ca032c7f84e687a5d7f7b5b 2419 libfm_1.2.0-0linuxmint1~maya.dsc
+Checksums-Sha256:
+ f0513484e43dcc576097508b7d666f7eb72530963e5a21692034a7ea6a6efc22 890064 libfm_1.2.0.orig.tar.xz
+ 2190710a9be9154e44b71f42426d18664e39fc30e21fb0c45c0f688ec9e4202a 12496 libfm_1.2.0-0linuxmint1~maya.debian.tar.xz
+ 9f661e096d49b06adebba0329d5c4f857631103559776245cd342aa7fe6b4fed 2419 libfm_1.2.0-0linuxmint1~maya.dsc
+Homepage: http://pcmanfm.sourceforge.net/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Martin Bagge <brother@bsnet.se>, Mateusz Łukasik <mati75@linuxmint.pl>
+Package-List: libfm-data deb misc optional
+ libfm-dbg deb debug extra
+ libfm-dev deb libdevel optional
+ libfm-doc deb doc optional
+ libfm-extra4 deb libs optional
+ libfm-gtk-bin deb oldlibs extra
+ libfm-gtk-data deb misc optional
+ libfm-gtk-dbg deb debug extra
+ libfm-gtk-dev deb libdevel optional
+ libfm-gtk4 deb libs optional
+ libfm-modules deb libs optional
+ libfm-modules-dbg deb debug extra
+ libfm-tools deb misc optional
+ libfm4 deb libs optional
+Vcs-Git: git://git.lxde.org/git/debian/libfm.git
+Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/libfm.git
+
+Package: simpleburn
+Binary: simpleburn
+Version: 1.6.5-1~maya
+Section: utils
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 9), cmake (>= 2.6), pkg-config, libudev-dev, libburn-dev, libgtk2.0-dev (>= 2.12)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/s/simpleburn
+Files:
+ 0755449b9b4da8dca8c9ed45ce702c5f 42760 simpleburn_1.6.5.orig.tar.xz
+ cf3d181260bc34b9c85d207b69eba9c1 9024 simpleburn_1.6.5-1~maya.debian.tar.xz
+ 85ef8580d7802e1981bba45d58fe0972 1572 simpleburn_1.6.5-1~maya.dsc
+Checksums-Sha1:
+ eb413efae965a880c0eaf35eb563ab456cacd4f5 42760 simpleburn_1.6.5.orig.tar.xz
+ d4a140d138a52ffad2f004cdb9d16d826474e901 9024 simpleburn_1.6.5-1~maya.debian.tar.xz
+ 78a83747b7518e09b8019b71276f4ab86a7976ce 1572 simpleburn_1.6.5-1~maya.dsc
+Checksums-Sha256:
+ fddf29bb25c939d1e1b1d1adb202f96bb49f037c0fc03fd37f393ae849b43aad 42760 simpleburn_1.6.5.orig.tar.xz
+ 96a04d040ceae9b4fa49663ce05b8c8212f5d18d4ce6d862795437f1fc4f9dc5 9024 simpleburn_1.6.5-1~maya.debian.tar.xz
+ 39c1b1cc9ced861ba422c782f112012ff81874741ee989fd35c2d9d625907d1b 1572 simpleburn_1.6.5-1~maya.dsc
+Homepage: http://simpleburn.tuxfamily.org
+Package-List: simpleburn deb utils extra
+Vcs-Git: git://github.com/mati75/simpleburn.git
+Vcs-Browser: https://github.com/mati75/simpleburn.git
+
+Package: deadbeef
+Binary: deadbeef-plugins-dev, deadbeef, deadbeef-dbg
+Version: 0.5.6-1
+Section: sound
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 7.0.50), quilt (>= 0.46.7), intltool (>= 0.40.0), autotools-dev, libasound2-dev, libcddb2-dev, libcdio-dev, libcurl4-gnutls-dev, libflac-dev, libgtk2.0-dev, libmad0-dev, libogg-dev, libsamplerate0-dev, libsndfile1-dev, libvorbis-dev, libwavpack-dev, libavformat-dev, libavcodec-dev, libavutil-dev, libpulse-dev, libdbus-1-dev, libpango1.0-dev, libfaad-dev, libimlib2-dev, libzip-dev, zlib1g-dev, libx11-dev, yasm
+Architecture: any all
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/main/d/deadbeef
+Files:
+ 26b6036ca7e59c88267d3de4f42c4d01 3279899 deadbeef_0.5.6.orig.tar.bz2
+ 8ad04e640f2b21b9f876eb4e2c331165 6395 deadbeef_0.5.6-1.debian.tar.gz
+ 5a0d55d35b82f3c53535b22927d120bb 1890 deadbeef_0.5.6-1.dsc
+Checksums-Sha1:
+ eb371392ed9604045081ede87c2c9daed522eef0 3279899 deadbeef_0.5.6.orig.tar.bz2
+ 095b1cc7f309ec853f5d8ce87458cabe3921cb16 6395 deadbeef_0.5.6-1.debian.tar.gz
+ c4bf9b7d4ce86f46c14c9809e8d47a568b91d800 1890 deadbeef_0.5.6-1.dsc
+Checksums-Sha256:
+ 17c123eb50e33c89403d8d3035b9132463a227a6905fd42bcbb2a3a5616cea5b 3279899 deadbeef_0.5.6.orig.tar.bz2
+ 522ecb54db99faf09ce307218417d16171e184dcf232498162d69988e0487a0b 6395 deadbeef_0.5.6-1.debian.tar.gz
+ b9cccbe95465f759db0e684fe34af36beb6feb9a6e41f53703a52df4298e2437 1890 deadbeef_0.5.6-1.dsc
+Homepage: http://deadbeef.sourceforge.net/
+Package-List: deadbeef deb sound optional
+ deadbeef-dbg deb debug extra
+ deadbeef-plugins-dev deb libdevel optional
+
+Package: w64codecs
+Binary: w64codecs
+Version: 20071007-0.1linuxmint
+Section: libs
+Maintainer: Medibuntu Packaging Team <admin@lists.medibuntu.org>
+Build-Depends: debhelper (>= 7)
+Architecture: amd64
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/main/w/w64codecs
+Files:
+ 89b81d77144ce1b2acfd5936adf312b7 225476 w64codecs_20071007.orig.tar.gz
+ 7bfa168a285a31a0d0786779e8c7450b 11771 w64codecs_20071007-0.1linuxmint.diff.gz
+ e4c4fc5457da963fac8bc107e27f8574 1728 w64codecs_20071007-0.1linuxmint.dsc
+Checksums-Sha1:
+ c61250314934ae72c9bf3f4b17eb8ae9a001a59a 225476 w64codecs_20071007.orig.tar.gz
+ cb3d60e3e6ffe3592ac7ce2cdfb528350b2e30bb 11771 w64codecs_20071007-0.1linuxmint.diff.gz
+ b4a52a97bc21992e7421d4b9fed5cb98d58275ae 1728 w64codecs_20071007-0.1linuxmint.dsc
+Checksums-Sha256:
+ c2efaf290cae20319f8dd8d9078398f27484c6d76edf0bb30bc0ffb1efc59ea0 225476 w64codecs_20071007.orig.tar.gz
+ 2364dc4669d24a9c400690c48799392d65b547507bf3923f8d45cb6642007119 11771 w64codecs_20071007-0.1linuxmint.diff.gz
+ abf1103f7f40e050999b9a4d352e09254a9626340ef2fcaa82142f868fca7019 1728 w64codecs_20071007-0.1linuxmint.dsc
+Homepage: http://www.mplayerhq.hu/
+Uploaders: Lionel Le Folgoc <mrpouit@ubuntu.com>, Guillaume Martres <smarter@ubuntu.com>, Albin Tonnerre <lutin@ubuntu.com>
+Package-List: w64codecs deb libs optional
+Vcs-Browser: http://codebrowse.launchpad.net/~medibuntu-maintainers/medibuntu/w64codecs.intrepid
+Vcs-Bzr: http://bazaar.launchpad.net/~medibuntu-maintainers/medibuntu/w64codecs.intrepid
+
+Package: lxappearance-obconf
+Binary: lxappearance-obconf, lxappearance-obconf-dbg
+Version: 0.2.2~git20131220-0linuxmint1~maya
+Section: x11
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9), autotools-dev, intltool, docbook-xml, docbook-xsl, libglib2.0-dev, libgtk2.0-dev, libimlib2-dev, libmenu-cache-dev, libx11-dev, lxappearance (>= 0.5.2), openbox-dev (>= 3.5.2), xsltproc, dh-autoreconf
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/l/lxappearance-obconf
+Files:
+ 521f8df68142ad677bee4f0ab7d86a0f 292556 lxappearance-obconf_0.2.2~git20131220.orig.tar.xz
+ f1826cd9ec9b35790621c0e4d72c3e2a 2604 lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya.debian.tar.xz
+ da60d8c9ca8791530eed83b5af801114 2192 lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya.dsc
+Checksums-Sha1:
+ 98c8f802d1e1ecd59617364701becbc34564f2f3 292556 lxappearance-obconf_0.2.2~git20131220.orig.tar.xz
+ 94f55905d919502cb27825874babd6240d3b4a8c 2604 lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya.debian.tar.xz
+ 15afd2b9f153bffe4bcba9154bc1e4dcd8b5c88b 2192 lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya.dsc
+Checksums-Sha256:
+ e6b6f7717224a330f7cb706a8040b4f3dd314d582d33eb546b8999537e392549 292556 lxappearance-obconf_0.2.2~git20131220.orig.tar.xz
+ 637f6e5229cefdc4c930c404fc55848955875dee409dd462d5e0ba15675a739e 2604 lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya.debian.tar.xz
+ c94105e4ba2e297c425e891a615a145995ce202ac60ce634d17741da4ad91f18 2192 lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya.dsc
+Homepage: http://www.lxde.org/
+Uploaders: Andrew Lee (李健秋) <ajqlee@debian.org>, Daniel Baumann <daniel@debian.org>
+Debian-Vcs-Browser: http://git.lxde.org/gitweb/?p=debian/lxappearance-obconf.git
+Package-List: lxappearance-obconf deb x11 optional
+ lxappearance-obconf-dbg deb debug extra
+Debian-Vcs-Git: git://git.lxde.org/git/debian/lxappearance-obconf.git
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: inxi
+Binary: inxi
+Version: 1.9.17-1~maya
+Section: misc
+Maintainer: Unit 193 <unit193@ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/i/inxi
+Files:
+ 721547f67864f8be1bbfb7584018694c 133242 inxi_1.9.17.orig.tar.gz
+ 4c366bf53dc36b3112083ffeebaa6db5 2844 inxi_1.9.17-1~maya.debian.tar.gz
+ c66e308eab4c16749d16f1c715f9e5c3 1386 inxi_1.9.17-1~maya.dsc
+Checksums-Sha1:
+ df88bfb5a50b4b0cf50ac5a630f7b92923102bf2 133242 inxi_1.9.17.orig.tar.gz
+ fcd3733616dbf0dfc41d9a8a45200d6b35b107eb 2844 inxi_1.9.17-1~maya.debian.tar.gz
+ 0b4d0ba3743a07a370d33f5858a1efcae71af22f 1386 inxi_1.9.17-1~maya.dsc
+Checksums-Sha256:
+ 2632a2bc099d6d242a1049b38b7cc47dd09b070f78a56f4be7683513acee8e31 133242 inxi_1.9.17.orig.tar.gz
+ 04512c31dd59f19eac658e8cc30f8152a34c444a9433f1f45aaaf7ecf1d9b29c 2844 inxi_1.9.17-1~maya.debian.tar.gz
+ 6109afc00a0792904538b60b5d380adb0c59f77295430160514991955b06046f 1386 inxi_1.9.17-1~maya.dsc
+Homepage: http://code.google.com/p/inxi/
+Uploaders: Mateusz Łukasik <mati75@linuxmint.pl>
+Package-List: inxi deb misc extra
+
+Package: shimmer-themes
+Binary: shimmer-themes, shimmer-wallpapers
+Version: 1.3.0-0ubuntu1+linuxmint2
+Section: x11
+Maintainer: Xubuntu Developers <xubuntu-devel@lists.ubuntu.com>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/s/shimmer-themes
+Files:
+ 4cbdeb09addea84f42d2627fa526beb1 5364409 shimmer-themes_1.3.0.orig-albatross.tar.gz
+ 1becb6efd7be37740acf0f3db662caee 5609435 shimmer-themes_1.3.0.orig-bluebird.tar.gz
+ 4f0b0d695db566d13db45c2e01e176b9 2009442 shimmer-themes_1.3.0.orig-greybird.tar.gz
+ 723ac9cc5e07d368f65cf5b83e70f48a 65 shimmer-themes_1.3.0.orig.tar.gz
+ d94e40542aafdb1ece93aae4f3121863 5064 shimmer-themes_1.3.0-0ubuntu1+linuxmint2.debian.tar.gz
+ b359447fa976eac3c45fb3308e3fc7fb 2415 shimmer-themes_1.3.0-0ubuntu1+linuxmint2.dsc
+Checksums-Sha1:
+ 8b5a19dd4da3c90ee6575f9653f8f6564cba7181 5364409 shimmer-themes_1.3.0.orig-albatross.tar.gz
+ 9b904993f4456772137644530e04a4c435fa836c 5609435 shimmer-themes_1.3.0.orig-bluebird.tar.gz
+ 23d1bcfa7b09bd9303e2e74e1b4a3e4ca26bc719 2009442 shimmer-themes_1.3.0.orig-greybird.tar.gz
+ ab3311a31e796117f6c4ab8176ac1382aef100f3 65 shimmer-themes_1.3.0.orig.tar.gz
+ e5499f1e58c55c96cc512df671b69bda3d9d1767 5064 shimmer-themes_1.3.0-0ubuntu1+linuxmint2.debian.tar.gz
+ 00f5de3d3bfab79e01b288c9809fb3255f297a45 2415 shimmer-themes_1.3.0-0ubuntu1+linuxmint2.dsc
+Checksums-Sha256:
+ 52e51171a61a5535997f846ffa9aa22838a5aeda9016e30488914231818a7787 5364409 shimmer-themes_1.3.0.orig-albatross.tar.gz
+ fa071a3aef700cc0a18c0ee986ac319bc0d1f8ed9b0c892e3d98753bb2a29cd7 5609435 shimmer-themes_1.3.0.orig-bluebird.tar.gz
+ 030e9e2affc3f3a3c6dcbbbe0f59ff9d2963e2d7930d22d90f99e575e5bd2686 2009442 shimmer-themes_1.3.0.orig-greybird.tar.gz
+ cd75abc9f0dc4d5132ac6892dd023f7abc54cce38e6c825348e21585fbc67b95 65 shimmer-themes_1.3.0.orig.tar.gz
+ 8b15e47da44598e7a68a0174975afee588f3c9439feffd6846965fe936d0d54a 5064 shimmer-themes_1.3.0-0ubuntu1+linuxmint2.debian.tar.gz
+ 3fd3a511e232cab32255929383927ec6860cbd2a2efa8749330a8cea05c013ff 2415 shimmer-themes_1.3.0-0ubuntu1+linuxmint2.dsc
+Homepage: http://shimmerproject.org/
+Package-List: shimmer-themes deb x11 optional
+ shimmer-wallpapers deb x11 optional
+
+Package: qpdfview
+Binary: qpdfview, qpdfview-djvu-plugin, qpdfview-ps-plugin, qpdfview-translations
+Version: 0.4.9-1~precise1
+Section: graphics
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Build-Depends: debhelper (>= 9.0.0), libcups2-dev, libqt4-dev, libpoppler-qt4-dev, pkg-config, libspectre-dev, libdjvulibre-dev, libmagic-dev, dpkg-dev (>= 1.16.1.1)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/q/qpdfview
+Files:
+ ac936867ca560c13c437d7aa884cbd2e 490987 qpdfview_0.4.9.orig.tar.gz
+ 6d4b001d9c09b8ce43745441c295ebab 4484 qpdfview_0.4.9-1~precise1.debian.tar.xz
+ 7f779fe00c1b18b4b64f244c6e4d0f56 2053 qpdfview_0.4.9-1~precise1.dsc
+Checksums-Sha1:
+ 8cf76726445b3417d0fc0b9dfe304cbce8aa9c7d 490987 qpdfview_0.4.9.orig.tar.gz
+ 75f24977e69550d2bffeb01a336a879e94cef1de 4484 qpdfview_0.4.9-1~precise1.debian.tar.xz
+ 2ada6f8a1447d06866853fc22315a2d9b081b8b4 2053 qpdfview_0.4.9-1~precise1.dsc
+Checksums-Sha256:
+ 183f471f163b80ace32897aae34251c5f00f8a7cc568014474db95a0bea428b2 490987 qpdfview_0.4.9.orig.tar.gz
+ 715e9b95c7c8aaeb75ae81604a81eb23a90234f4e50bffe79ed940fa8f88b607 4484 qpdfview_0.4.9-1~precise1.debian.tar.xz
+ 835a4eb6bd84da1057cdf84ae97da44b075bbdc6d947f1e1035ef38fc34fa39b 2053 qpdfview_0.4.9-1~precise1.dsc
+Homepage: https://launchpad.net/qpdfview
+Package-List: qpdfview deb graphics optional
+ qpdfview-djvu-plugin deb graphics optional
+ qpdfview-ps-plugin deb graphics optional
+ qpdfview-translations deb graphics optional
+
+Package: nyancat
+Binary: nyancat, nyancat-server
+Version: 1.2.2-1~maya
+Section: misc
+Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
+Build-Depends: debhelper (>= 9)
+Architecture: any all
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/n/nyancat
+Files:
+ 3783375ef336a25f129cc974f930c8d9 14103 nyancat_1.2.2.orig.tar.gz
+ 2d45059b06ba85cba548f962ce1feda6 4725 nyancat_1.2.2-1~maya.debian.tar.gz
+ c63401033776fc73c7e65206ccf10199 1417 nyancat_1.2.2-1~maya.dsc
+Checksums-Sha1:
+ 958aee7609c610d27381926e32cf606527033acd 14103 nyancat_1.2.2.orig.tar.gz
+ f2750de928ec0fc555923c5ca96c09702191c306 4725 nyancat_1.2.2-1~maya.debian.tar.gz
+ acfc1733ad148255e08dda7c32ec702438fc0420 1417 nyancat_1.2.2-1~maya.dsc
+Checksums-Sha256:
+ 40712626535562bf3c62968f3830a92b0ac743894b5cbfcfa42abff52bcc5717 14103 nyancat_1.2.2.orig.tar.gz
+ e3567e44e2fe7fc214bfa2a5bc1738f7d5ea4f44fc7a92e587183af3558c171a 4725 nyancat_1.2.2-1~maya.debian.tar.gz
+ 16d968958d0bd9bef940c468e8c1304fab5912ea4f25fe751aeaa3fd8209a687 1417 nyancat_1.2.2-1~maya.dsc
+Homepage: https://github.com/klange/nyancat
+Package-List: nyancat deb misc extra
+ nyancat-server deb misc extra
+
+Package: fonts-freefont
+Binary: fonts-freefont-ttf, fonts-freefont-otf, fonts-freefont-udeb, ttf-freefont, otf-freefont
+Version: 20120503-1+maya1
+Section: fonts
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9~)
+Build-Depends-Indep: fontforge-nox | fontforge
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/f/fonts-freefont
+Files:
+ d4d335b9296a03ae47a283c649fad51c 5596485 fonts-freefont_20120503.orig.tar.bz2
+ bde747a8fdfae2791107d460e7818ce6 11526 fonts-freefont_20120503-1+maya1.debian.tar.gz
+ 4d1567da9e9df5fb755fc29b241a65f6 2067 fonts-freefont_20120503-1+maya1.dsc
+Checksums-Sha1:
+ 4e2ec0389ff0c7c3ae8740994baf702b9a8b8e09 5596485 fonts-freefont_20120503.orig.tar.bz2
+ 6f9b2251cac98cf00db91744210f0b55901742ea 11526 fonts-freefont_20120503-1+maya1.debian.tar.gz
+ a47d37af335d88ece29a0c8b05d44fad6060481d 2067 fonts-freefont_20120503-1+maya1.dsc
+Checksums-Sha256:
+ b0b907f0ad699c992a3fcdecaa721df24df1df6cc5a17586f8be1382e8a657ac 5596485 fonts-freefont_20120503.orig.tar.bz2
+ 7f09880b1f5cd4331278f400f1ac61124e1e4d3534d69e7aa37049a5ba186001 11526 fonts-freefont_20120503-1+maya1.debian.tar.gz
+ 077a29e3152832cc153f8ac3c9a2310c61e1f91cbf5926a7d7d69cb24479a20b 2067 fonts-freefont_20120503-1+maya1.dsc
+Homepage: http://savannah.gnu.org/projects/freefont/
+Uploaders: Davide Viti <zinosat@tiscali.it>, Christian Perrier <bubulle@debian.org>, Fabian Greffrath <fabian+debian@greffrath.com>
+Vcs-Svn: svn://svn.debian.org/pkg-fonts/packages/fonts-freefont/trunk
+Package-List: fonts-freefont-otf deb fonts optional
+ fonts-freefont-ttf deb fonts optional
+ fonts-freefont-udeb udeb debian-installer optional
+ otf-freefont deb oldlibs extra
+ ttf-freefont deb oldlibs extra
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-fonts/packages/fonts-freefont/trunk
+
+Package: opus
+Binary: libopus0, libopus-dev, libopus-dbg, libopus-doc
+Version: 1.1~alpha+20130512-1~maya
+Section: sound
+Maintainer: Ron Lee <ron@debian.org>
+Build-Depends: debhelper (>= 5), doxygen
+Architecture: any all
+Standards-Version: 3.9.4.0
+Format: 1.0
+Directory: pool/main/o/opus
+Files:
+ 129f44aa12abed234a9282f3b9ca6cf4 919216 opus_1.1~alpha+20130512.orig.tar.gz
+ f5c9338f0f502ac240d46c6d3b9f8228 5506 opus_1.1~alpha+20130512-1~maya.diff.gz
+ b2e0ab83226804349550d137082e8a87 1659 opus_1.1~alpha+20130512-1~maya.dsc
+Checksums-Sha1:
+ 9306cd3e341d812931578f2322f2152c3c7bfc18 919216 opus_1.1~alpha+20130512.orig.tar.gz
+ 9439880522c2aeb18df538b601d7bd7f1f4e1144 5506 opus_1.1~alpha+20130512-1~maya.diff.gz
+ 4534702e94c13d526f5992c650de72a0188b5c29 1659 opus_1.1~alpha+20130512-1~maya.dsc
+Checksums-Sha256:
+ a5db3020690716fdcd5fe0cfd1d4553094e579a1e91b490d3d5971674b1f79e3 919216 opus_1.1~alpha+20130512.orig.tar.gz
+ a27e7fa637fd0d133b17ad9a3ee96dbb7d8fb2ebb79ffcd84f7fe245f295fb2f 5506 opus_1.1~alpha+20130512-1~maya.diff.gz
+ db5094189b0264253cbfb0fa0c13a7edcdb55e3fe7e8297a97d7aa3669dafc33 1659 opus_1.1~alpha+20130512-1~maya.dsc
+Homepage: http://www.opus-codec.org
+Package-List: libopus-dbg deb debug extra
+ libopus-dev deb libdevel optional
+ libopus-doc deb doc optional
+ libopus0 deb libs optional
+Vcs-Git: git://git.debian.org/users/ron/opus.git
+Vcs-Browser: http://git.debian.org/?p=users/ron/opus.git;a=summary
+
+Package: compton-git
+Binary: compton-git
+Version: 20130828-1~maya1
+Section: x11
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 9), libx11-dev (>= 6.8.2.dfsg.1-11), libxcomposite-dev (>= 6.8.2.dfsg.1-11), libxfixes-dev (>= 6.8.2.dfsg.1-11), libxdamage-dev (>= 6.8.2.dfsg.1-11), libxrender-dev (>= 1:0.9.0-2), libxext-dev, libxrandr-dev, pkg-config, libpcre3-dev, libconfig-dev, libdrm-dev, libgl1-mesa-dev, asciidoc, libxml2-utils, xsltproc, xmlto, libdbus-1-dev, libxinerama-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/c/compton-git
+Files:
+ c2f7c3dfcf0204df1f304bea937e13a5 114812 compton-git_20130828.orig.tar.xz
+ 204208d2bb4be9c8bbe68150f95e8959 2568 compton-git_20130828-1~maya1.debian.tar.xz
+ 59cd160de499345952eb7a0818659bfb 1778 compton-git_20130828-1~maya1.dsc
+Checksums-Sha1:
+ 71dc88fb4af9527436f5c6350ecd21a490cfcedf 114812 compton-git_20130828.orig.tar.xz
+ 91809a232d27462e8734fb26e1f1c0f3c76a5d16 2568 compton-git_20130828-1~maya1.debian.tar.xz
+ 326723f27ab5c60c454e828d37727a8f08e2076f 1778 compton-git_20130828-1~maya1.dsc
+Checksums-Sha256:
+ 34a135598586b0167d8da2aa4c5eab361e2a1829d04a6540cbdeb06c40e052d3 114812 compton-git_20130828.orig.tar.xz
+ 71c243e74f47350f3a99f5b967211414d3abc6ea48755eeca52f18fae4c16952 2568 compton-git_20130828-1~maya1.debian.tar.xz
+ 57e41dffb160752fd8bb282108f27d5d9bb6eec9903aab41117fd3ca3796d225 1778 compton-git_20130828-1~maya1.dsc
+Homepage: https://github.com/chjj/compton
+Package-List: compton-git deb x11 optional
+
+Package: vala-0.20
+Binary: valac, valac-0.20, valac-0.20-vapi, vala-0.20-doc, libvala-0.20-0, libvala-0.20-dev, valac-0.20-dbg, libvala-0.20-0-dbg
+Version: 0.20.1-2~maya
+Section: devel
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7), libglib2.0-dev (>= 2.26), bison (>= 2.3), autotools-dev, flex, gnome-pkg-tools, xsltproc, libdbus-1-dev, dbus-x11, lsb-release, libgirepository1.0-dev
+Architecture: any all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/v/vala-0.20
+Files:
+ f285a90af17c400e5a4bcecb2b9c318a 2627808 vala-0.20_0.20.1.orig.tar.xz
+ 64aa5d050e2a6240cc9ce1c862544e06 22652 vala-0.20_0.20.1-2~maya.debian.tar.xz
+ f8ab7a7ec4b4d376b8b78bc542e919ab 2283 vala-0.20_0.20.1-2~maya.dsc
+Checksums-Sha1:
+ 6a453140ccc252a3d46d110ab03da005885754f7 2627808 vala-0.20_0.20.1.orig.tar.xz
+ 39b775d2f4fe6da51683f4edbac3fec66a0085f4 22652 vala-0.20_0.20.1-2~maya.debian.tar.xz
+ 7d85e69b00a47f8338e374e4eb2c8d2a0f8c5099 2283 vala-0.20_0.20.1-2~maya.dsc
+Checksums-Sha256:
+ 9cb7ecd18a23525e401c204d4d08341c7d911cd5d78078eee10b747ecb45e481 2627808 vala-0.20_0.20.1.orig.tar.xz
+ 719f8e99f6fac8b455bfc482a9d29dcdba7d4323a462d65455fe0322f5477c98 22652 vala-0.20_0.20.1-2~maya.debian.tar.xz
+ 1edd926fa628f81494e61da35a61902ae8e4aaac6f0979fa901f400123a122ce 2283 vala-0.20_0.20.1-2~maya.dsc
+Homepage: http://live.gnome.org/Vala/
+Uploaders: Marc-Andre Lureau <marcandre.lureau@gmail.com>, Loic Minier <lool@dooz.org>, Sebastian Dröge <slomo@debian.org>, Emilio Pozuelo Monfort <pochu@debian.org>, Sjoerd Simons <sjoerd@debian.org>, Sebastian Reichel <sre@debian.org>
+Package-List: libvala-0.20-0 deb libs optional
+ libvala-0.20-0-dbg deb debug extra
+ libvala-0.20-dev deb libdevel optional
+ vala-0.20-doc deb doc optional
+ valac deb devel optional
+ valac-0.20 deb devel optional
+ valac-0.20-dbg deb debug extra
+ valac-0.20-vapi deb devel optional
+Vcs-Git: git://git.debian.org/git/pkg-vala/vala.git
+Vcs-Browser: http://git.debian.org/?p=pkg-vala/vala.git
+
+Package: mint-lxde-default-settings
+Binary: mint-lxde-default-settings
+Version: 13.2.3
+Section: admin
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 9), intltool
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/m/mint-lxde-default-settings
+Files:
+ 771501fa61f6a597fc730e5a3be02f0d 30840 mint-lxde-default-settings_13.2.3.tar.xz
+ 09cd7d3ad412d470020114030b598c1a 1200 mint-lxde-default-settings_13.2.3.dsc
+Checksums-Sha1:
+ bb53d1e6cb11386b45ea6c14c05c220ca477f367 30840 mint-lxde-default-settings_13.2.3.tar.xz
+ 923804c9fe3e77143bdf5a53ab8d869f4a81dcab 1200 mint-lxde-default-settings_13.2.3.dsc
+Checksums-Sha256:
+ 7b330f73d3d3b3c4153d6237b4689f8322f92af25bedf7b2da2316e0725852d1 30840 mint-lxde-default-settings_13.2.3.tar.xz
+ a66b413099a226744ea748a6e7efce288cffb7bef479d699e20395f86ec1d536 1200 mint-lxde-default-settings_13.2.3.dsc
+Homepage: http://linuxmint.pl
+Package-List: mint-lxde-default-settings deb admin required
+
+Package: mint-artwork-lxde
+Binary: mint-artwork-lxde
+Version: 13.2.0
+Section: x11
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Build-Depends: debhelper (>= 9), intltool
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (native)
+Directory: pool/main/m/mint-artwork-lxde
+Files:
+ d3ddf7761bdf929493bc5cde8201c56b 4477880 mint-artwork-lxde_13.2.0.tar.xz
+ dfdb0ae3b49a8a57a9931972ccc52117 1156 mint-artwork-lxde_13.2.0.dsc
+Checksums-Sha1:
+ b27284493348e735ad508aeaeab1a0fa5a8ff547 4477880 mint-artwork-lxde_13.2.0.tar.xz
+ 2198bc1e61a94d0f2a76eb3b1aea0fd9d465abb3 1156 mint-artwork-lxde_13.2.0.dsc
+Checksums-Sha256:
+ d317b9565122acc763a8acb22f5489ca3737dc20a1f2f2484ce92cc6837b7305 4477880 mint-artwork-lxde_13.2.0.tar.xz
+ b38caf8387c065ad43cf0936366a5e5ba41c7084d8b9934b0912368e2f675a03 1156 mint-artwork-lxde_13.2.0.dsc
+Homepage: http://www.linuxmint.com/
+Package-List: mint-artwork-lxde deb x11 optional
+
+Package: mint-info
+Binary: mint-info-cinnamon, mint-info-mate, mint-info-kde, mint-info-xfce, mint-info-lxde
+Version: 2012.05.02-1
+Section: admin
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5)
+Architecture: any
+Standards-Version: 3.9.4
+Format: 1.0
+Directory: pool/main/m/mint-info
+Files:
+ 926607f4adb1d15d8cec2a2427f8498b 3305 mint-info_2012.05.02-1.tar.gz
+ 495cf658ae02518972836c14ddfe76e7 1289 mint-info_2012.05.02-1.dsc
+Checksums-Sha1:
+ c6946a508786a51768961ffe275eabc481e6b05a 3305 mint-info_2012.05.02-1.tar.gz
+ 511f5281633da630c37ab2dea6b13731305bc64d 1289 mint-info_2012.05.02-1.dsc
+Checksums-Sha256:
+ e1ee22fb8f657fcd3cefda6ec315e15df0db323395991cd5fcbf6ea76860f75a 3305 mint-info_2012.05.02-1.tar.gz
+ f93b2aba58eed1527d27b22a34069bf057695443b55adb59c48e4b1700a99862 1289 mint-info_2012.05.02-1.dsc
+Package-List: mint-info-cinnamon deb admin optional
+ mint-info-kde deb admin optional
+ mint-info-lxde deb admin optional
+ mint-info-mate deb admin optional
+ mint-info-xfce deb admin optional
+
+Package: nsnake
+Binary: nsnake
+Version: 1.5-1~maya
+Section: games
+Maintainer: Alexandre Dantas <alex.dantas92@gmail.com>
+Build-Depends: debhelper (>= 9), libncurses5-dev
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/n/nsnake
+Files:
+ ce03c49402b25efd33eea03caed2c828 47662 nsnake_1.5.orig.tar.gz
+ 03ab9855c1845218982d0275dcc0a1e1 2111 nsnake_1.5-1~maya.debian.tar.gz
+ 3a75bdb057c014964b3ce78c77ebe556 1474 nsnake_1.5-1~maya.dsc
+Checksums-Sha1:
+ cf320d1b7519890b7031ea2a334816537e0ea0a5 47662 nsnake_1.5.orig.tar.gz
+ 6579b78f7051a5d153d94447abe06350897ec166 2111 nsnake_1.5-1~maya.debian.tar.gz
+ e54d79d6477c8cc07f809e5d8e53c48c9163fdb3 1474 nsnake_1.5-1~maya.dsc
+Checksums-Sha256:
+ e95e5f35cf5f63d36c45c766fbb47fa892ac8b8a1d1ec670e5a8159ee6a0af11 47662 nsnake_1.5.orig.tar.gz
+ f2391a0fc76465f0540146bdc13308ad931acd9bbfdbc441305bd594f76f7968 2111 nsnake_1.5-1~maya.debian.tar.gz
+ a6a5ffc0dff9481ecd82903aa178b17d1edb7156e44dc9bc183f4cb6b1c3feb7 1474 nsnake_1.5-1~maya.dsc
+Homepage: http://www.alexdantas.net/projects/nsnake/
+Package-List: nsnake deb games optional
+Vcs-Git: git://github.com/alexdantas/nSnake.git
+Vcs-Browser: https://github.com/alexdantas/nSnake
+
+Package: mint-local-repository
+Binary: mint-local-repository
+Version: 1.0.7.1
+Section: admin
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Build-Depends: debhelper (>= 5)
+Architecture: any
+Standards-Version: 3.7.2
+Format: 1.0
+Directory: pool/main/m/mint-local-repository
+Files:
+ cd600d8fec9f823f739cedfaedc27a5b 14351878 mint-local-repository_1.0.7.1.tar.gz
+ 6f95391a12df246b821ed8211c2e6b64 1133 mint-local-repository_1.0.7.1.dsc
+Checksums-Sha1:
+ 8031fbba6b0b1eae830ad465bd52f33540f818d7 14351878 mint-local-repository_1.0.7.1.tar.gz
+ 03c316995f07f595f6f29fdd04aff02f76a76ba7 1133 mint-local-repository_1.0.7.1.dsc
+Checksums-Sha256:
+ d0e7eeb6954cd0ca64d7e1db76fa2a7fc8641303cda9a8fe5026d9189bed9d46 14351878 mint-local-repository_1.0.7.1.tar.gz
+ a689ea689e43e6ae106f329e25f6af0359fb51448839b73552e350e1cbbfd96d 1133 mint-local-repository_1.0.7.1.dsc
+Package-List: mint-local-repository deb admin optional
+
+Package: automake-1.14
+Binary: automake
+Version: 1:1.14-1~maya
+Section: devel
+Maintainer: Eric Dorland <eric@debian.org>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: autoconf (>= 2.65), autotools-dev (>= 20020320.1), install-info, autopoint, bison, cscope, dejagnu, emacs, expect, flex, gcj-jdk, gobjc, gobjc++, gfortran, help2man, libglib2.0-dev, libtool, lzip, ncompress, openjdk-7-jdk, python, python-docutils, python-virtualenv, pkg-config, sharutils, texlive, texinfo (>= 4.9), unzip, valac, xutils-dev, zip
+Architecture: all
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/a/automake-1.14
+Files:
+ cb3fba6d631cddf12e230fd0cc1890df 1485516 automake-1.14_1.14.orig.tar.xz
+ 3a27fbbca6382e215468f64656cbe51c 7770 automake-1.14_1.14-1~maya.debian.tar.gz
+ a51e3393577f177d2094ff2ebc4edd99 1908 automake-1.14_1.14-1~maya.dsc
+Checksums-Sha1:
+ 793881a445134b7561637d6f2a3ca611276e39fe 1485516 automake-1.14_1.14.orig.tar.xz
+ 2f9cfe0f50f1cd5893c5eec481506477e401c0ee 7770 automake-1.14_1.14-1~maya.debian.tar.gz
+ b84b7004dd18a89815d011b1c6dcc3c8d53d095c 1908 automake-1.14_1.14-1~maya.dsc
+Checksums-Sha256:
+ e1188f5d074374cf06946cabb2b9e70bee141637a8fd1fab9a660c8930fe8059 1485516 automake-1.14_1.14.orig.tar.xz
+ 4e51d83680874d20e3d8ef8053f79374023eb3277404be198a15e431fc0aa7d2 7770 automake-1.14_1.14-1~maya.debian.tar.gz
+ 6d1816c3989dbcc2ebf133bbdfb0ae3887d05f48482b68db24205fcf41732764 1908 automake-1.14_1.14-1~maya.dsc
+Homepage: http://www.gnu.org/software/automake/
+Package-List: automake deb devel optional
+Vcs-Git: git://anonscm.debian.org/users/eric/automake-1.14.git
+Vcs-Browser: http://git.debian.org/?p=users/eric/automake-1.14.git
+

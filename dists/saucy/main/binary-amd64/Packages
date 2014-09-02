@@ -1,0 +1,2707 @@
+Package: abiword
+Priority: optional
+Section: editors
+Installed-Size: 4541
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 3.0.0-4~petra
+Recommends: abiword-plugin-grammar, abiword-plugin-mathview, aspell-en | aspell-dictionary, poppler-utils, fonts-liberation
+Depends: libabiword-3.0 (>= 3.0.0), libc6 (>= 2.14), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libgcc1 (>= 1:4.1.1), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.16.0), libgnutls26 (>= 2.12.17-0), libgoffice-0.10-10 (>= 0.10.2), libgsf-1-114 (>= 1.14.9), libgtk-3-0 (>= 3.0.0), libjpeg8 (>= 8c), libloudmouth1-0 (>= 1.3.3), libots0, libpng12-0 (>= 1.2.13-4), librdf0 (>= 1.0.17), libreadline6 (>= 6.0), libsoup2.4-1 (>= 2.4.0), libstdc++6 (>= 4.6), libtelepathy-glib0 (>= 0.13.0), libtidy-0.99-0, libwmf0.2-7 (>= 0.2.8.4), libwpd-0.9-9, libwpg-0.2-2, libwps-0.2-2, libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), abiword-common (>= 3.0.0-4~petra), gsfonts
+Filename: pool/main/a/abiword/abiword_3.0.0-4~petra_amd64.deb
+Size: 1164832
+MD5sum: 9277156407385dd03baa8656a9185f4a
+SHA1: fdffb131a0bdf6f23877596fa6258328b0c688e3
+SHA256: e9a35ed2dedba528ba803595740980299f943c30bd7a752480d5331b7a102842
+Description: efficient, featureful word processor with collaboration
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package includes many of the available import/export plugins allowing
+ AbiWord to interact with ODT, WordPerfect, and other formats.  It also
+ includes tools plugins, offering live collaboration with AbiWord users
+ on Linux and Windows (using TCP or Jabber/XMPP), web translation and
+ dictionary support, and more.
+ .
+ Additional plugins that require significant amounts of extra software to
+ function are in the various abiword-plugin-* packages.
+
+Package: abiword-common
+Source: abiword
+Priority: optional
+Section: editors
+Installed-Size: 10905
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 3.0.0-4~petra
+Filename: pool/main/a/abiword/abiword-common_3.0.0-4~petra_all.deb
+Size: 1661186
+MD5sum: 1d640bf9ec61d5636db3ca36ff4293a1
+SHA1: 3999ed2ac9dd655385639494c864ccb21043166a
+SHA256: 0b66f14d2e300b4fe2d545846c89eeef97b870882921bf3832450a43e91fbd79
+Description: efficient, featureful word processor with collaboration -- common files
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains the common files that are used on all architectures
+ without modification.
+
+Package: gettext
+Priority: optional
+Section: devel
+Installed-Size: 6079
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.18.3.1-1ubuntu1~petra
+Recommends: curl | wget | lynx-cur, libasprintf-dev, libgettextpo-dev
+Suggests: gettext-doc
+Depends: libc6 (>= 2.17), libcroco3 (>= 0.6.2), libgomp1 (>= 4.2.1), libtinfo5, libunistring0, libxml2 (>= 2.7.4), gettext-base, dpkg (>= 1.15.4) | install-info
+Breaks: autopoint (<= 0.17-11)
+Filename: pool/main/g/gettext/gettext_0.18.3.1-1ubuntu1~petra_amd64.deb
+Size: 1900248
+MD5sum: 9144a4f21c38a6449e2ec6851062a794
+SHA1: 1fa4228244ebebd2365ea911de388221eaadd894
+SHA256: efb1c054c1a91a98a708e2e8446b9e25d73d4233a8a54c37e454bebdc2a7e0d8
+Description: GNU Internationalization utilities
+ Interesting for authors or maintainers of other packages or programs
+ which they want to see internationalized.
+Multi-Arch: foreign
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: gettext-base
+Source: gettext
+Priority: standard
+Section: utils
+Installed-Size: 930
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.18.3.1-1ubuntu1~petra
+Depends: libc6 (>= 2.14), libasprintf0c2 (>= 0.18.1.1-6)
+Filename: pool/main/g/gettext/gettext-base_0.18.3.1-1ubuntu1~petra_amd64.deb
+Size: 162346
+MD5sum: 0ed0acb8caaa499f6c94680fa25e54b1
+SHA1: 060bcaeb33ab6474cc7774ae6295fc882c1a7eae
+SHA256: e4e36634cee071e3970b2865b0ad98a682e3a8b652c1bed44d9f882f2f4ae531
+Description: GNU Internationalization utilities for the base system
+ This package includes the gettext and ngettext programs which allow
+ other packages to internationalize the messages given by shell scripts.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: gettext-doc
+Source: gettext
+Priority: optional
+Section: doc
+Installed-Size: 3917
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.18.3.1-1ubuntu1~petra
+Filename: pool/main/g/gettext/gettext-doc_0.18.3.1-1ubuntu1~petra_all.deb
+Size: 950028
+MD5sum: 37cc99cdafeed197452872adf701ae73
+SHA1: bb9a9e2425157d86c38e8bf4598a0ee73f4ab1e4
+SHA256: 1387bf12a049c9d2d119c6e5b22c25270c3b97484519fa2602b377303c7fc221
+Description: Documentation for GNU gettext
+ This package contains the HTML documentation for GNU gettext, as well as
+ simple "hello world" examples in several programming languages.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: gettext-el
+Source: gettext
+Priority: optional
+Section: lisp
+Installed-Size: 248
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.18.3.1-1ubuntu1~petra
+Depends: gettext, emacs24 | emacs23 | emacsen
+Filename: pool/main/g/gettext/gettext-el_0.18.3.1-1ubuntu1~petra_all.deb
+Size: 67124
+MD5sum: 7b25101c8de2f46986ecf5170a37632f
+SHA1: fc6212aaf7a042ab67bb11e5f039e5980147f548
+SHA256: a859be534865521eb429e1c0cbb09c0347b7c6074483efb4b19785407ed42329
+Description: Emacs po-mode for editing gettext .po files
+ This package contains po-mode.el for easy .po editing using emacs.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 6926
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 1.12.6-2~petra
+Recommends: gnumeric-doc (>= 1.12.6-2~petra), evince | evince-gtk, lp-solve
+Replaces: gnumeric-common (<< 1.12.2)
+Suggests: gnumeric-plugins-extra, fonts-liberation | ttf-mscorefonts-installer
+Depends: gnumeric-common (= 1.12.6-2~petra), debconf (>= 0.5) | debconf-2.0, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgoffice-0.10-10 (>= 0.10.3), libgsf-1-114 (>= 1.14.24), libgtk-3-0 (>= 3.2.1), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), gsfonts, procps
+Pre-Depends: debconf
+Breaks: gnumeric-common (<< 1.12.2), gnumeric-doc (<< 1.12.6-2~petra)
+Filename: pool/main/g/gnumeric/gnumeric_1.12.6-2~petra_amd64.deb
+Size: 2178606
+MD5sum: dcd628c4418ea4334bc0d4db58f6b518
+SHA1: 6d770425572b159f73086153be11ae39f2cbb7c9
+SHA256: 59d17744f9b1dd797362c0c61b387175d0938c9dd3f34da840a7c06fdf2d1ec0
+Description: spreadsheet application for GNOME - main program
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ The following formats can be imported and exported:
+ - Microsoft Excel 97/2000/XP (.xls);
+ - Microsoft Excel 95 (.xls);
+ - OASIS XML, OpenOffice.org XML, StarOffice (.sxc);
+ - Comma/Character Separated Values (.csv);
+ - Data Interchange Format (.dif);
+ - Applix version 4 (.as).
+ .
+ Additionally, the following formats can be imported:
+ - GNU Oleo (.oleo);
+ - Linear and integer program expression format (.mps);
+ - Lotus 1-2-3 (.wks, .wk1);
+ - MS MultiPlan SYLK (.sylk);
+ - WordPerfect family "Plan Perfect" (.pln);
+ - Quattro Pro (tm);
+ - XSpread or SC;
+ - XBase (.dbf).
+ .
+ Gnumeric can export to LaTeX 2e (.tex), TROFF (.me) and HTML as well.
+ .
+ Gnumeric should be easy to use, in particular for users familiar with
+ Excel.
+ .
+ Gnumeric is a GNOME application. GNOME (GNU Network Object Model Environment)
+ is a user-friendly set of applications and desktop tools to be used in
+ conjunction with a window manager for the X Window System.
+
+Package: gnumeric-common
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 14833
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.6-2~petra
+Replaces: gnumeric (<= 1.2.6-1)
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/g/gnumeric/gnumeric-common_1.12.6-2~petra_all.deb
+Size: 2262946
+MD5sum: 0af76ce68987953fc28ff5a1f0a6ac6a
+SHA1: 81b7e1623b4c7580a23a4e2d7a22975fb5072b9f
+SHA256: d1f482137c771409b8b3d09e339c082fce73886c5123773418e90fc96680b4a9
+Description: spreadsheet application for GNOME - common files
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ This package contains architecture-independent data files needed by
+ gnumeric.
+
+Package: gnumeric-doc
+Source: gnumeric
+Priority: optional
+Section: doc
+Installed-Size: 9607
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.6-2~petra
+Recommends: gnome-desktop-data
+Replaces: docbook-xsl, gnumeric (<< 1.1.17-2)
+Suggests: gnumeric (>= 1.12.6-2~petra), docbook-xsl
+Depends: yelp
+Breaks: gnumeric (<< 1.1.17-2)
+Filename: pool/main/g/gnumeric/gnumeric-doc_1.12.6-2~petra_all.deb
+Size: 7327970
+MD5sum: b9b0e82dbfd1aa75a5632e4fa3ce63ac
+SHA1: 8c8f4599633b5b4fe991e0fe05d7a4db329b3dc2
+SHA256: e5642bdbd691876ce8ab7f30fc3a1b60a84b03beeba2fc3254bd08222413ac27
+Description: spreadsheet application for GNOME - documentation
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ This package provides the user manual in GNOME Help
+ (DocBook XML) format.
+
+Package: gnumeric-plugins-extra
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 313
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 1.12.6-2~petra
+Replaces: gnumeric (<= 1.3.92-1)
+Depends: gnumeric (= 1.12.6-2~petra), libc6 (>= 2.4), libglib2.0-0 (>= 2.28.0), libperl5.14 (>= 5.14.2), libpython2.7 (>= 2.7), pxlib1 (>= 0.5.0), perl, python-gtk2
+Breaks: gnumeric (<= 1.3.92-1)
+Filename: pool/main/g/gnumeric/gnumeric-plugins-extra_1.12.6-2~petra_amd64.deb
+Size: 86784
+MD5sum: 76e915cc682109e90520c666c5547a4e
+SHA1: b2ec11a870cea6035b5ea21f438ea88a5a22cc9d
+SHA256: d54e6d8fe7012e2bf8da9bb21e49de9b4db5f98d89d8fb0ad8f0629800b2184c
+Description: spreadsheet application for GNOME - additional plugins
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ Some plugins shipped with gnumeric require additional packages to those
+ required by the main gnumeric program. These plugins are therefore
+ packaged separately.
+ .
+ This includes:
+ - Perl plugin;
+ - Python plugin;
+ - Python plugin loader;
+ - additional Python functions;
+ - GNOME glossary.
+
+Package: libasprintf-dev
+Source: gettext
+Priority: optional
+Section: libdevel
+Installed-Size: 75
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.18.3.1-1ubuntu1~petra
+Replaces: gettext (<< 0.18.1.1-10)
+Suggests: gettext-doc
+Depends: libasprintf0c2 (= 0.18.3.1-1ubuntu1~petra)
+Breaks: gettext (<< 0.18.1.1-10)
+Filename: pool/main/g/gettext/libasprintf-dev_0.18.3.1-1ubuntu1~petra_amd64.deb
+Size: 33032
+MD5sum: e6a94806047dde31448132c89afe11dc
+SHA1: 416643f5f9750da9150abae07127ee8fb7ecbedf
+SHA256: 1e69d22597e07f404311ffc4eee75b6829d57249d82a442e880a9e6fa4291f38
+Description: GNU Internationalization library development files
+ This package contains development files for the libasprintf library.
+Multi-Arch: same
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: libgettextpo-dev
+Source: gettext
+Priority: optional
+Section: libdevel
+Installed-Size: 693
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.18.3.1-1ubuntu1~petra
+Replaces: gettext (<< 0.18.1.1-10)
+Suggests: gettext-doc
+Depends: libgettextpo0 (= 0.18.3.1-1ubuntu1~petra)
+Breaks: gettext (<< 0.18.1.1-10)
+Filename: pool/main/g/gettext/libgettextpo-dev_0.18.3.1-1ubuntu1~petra_amd64.deb
+Size: 200358
+MD5sum: 9b18610473d00fc46fef52e8299f024f
+SHA1: 8a0c2f5bd645e956c7046879058dbda0af2e073f
+SHA256: c0aac1309390ab3ccfa76303ba4350feb9caf8b042c5d0d8b2ef63a81c6bbe6f
+Description: GNU Internationalization library development files
+ This package contains development files for the libgettextpo library.
+Multi-Arch: same
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: libgettextpo0
+Source: gettext
+Priority: optional
+Section: libs
+Installed-Size: 372
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.18.3.1-1ubuntu1~petra
+Replaces: gettext (<< 0.18.1.1-6)
+Depends: libc6 (>= 2.14), libunistring0
+Pre-Depends: multiarch-support
+Breaks: gettext (<< 0.18.1.1-6)
+Filename: pool/main/g/gettext/libgettextpo0_0.18.3.1-1ubuntu1~petra_amd64.deb
+Size: 156334
+MD5sum: 31a3e82a6f8acf545bb9c6ef71a5e8aa
+SHA1: 51cf7a32a8e21f2acc0fdbf78ac59711af31dc30
+SHA256: 58eefcd197ae99b5990c8d4066da964a18eed7011a0ab3199ce1da84f733faae
+Description: GNU Internationalization library
+ This package contains the libgettextpo shared library for interfacing
+ programmatically with GNU gettext .po files.
+Multi-Arch: same
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: links
+Source: links2
+Priority: optional
+Section: web
+Installed-Size: 1284
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.8-1ubuntu1~petra
+Provides: www-browser
+Depends: libbz2-1.0, libc6 (>= 2.15), libgpm2 (>= 1.20.4), liblzma5 (>= 5.1.1alpha+20120614), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/links2/links_2.8-1ubuntu1~petra_amd64.deb
+Size: 490006
+MD5sum: 1c1d3e975fc65fe36e7c858244bf3afc
+SHA1: ef0b3842c7022306a341720d488bc88fa02ba5d8
+SHA256: fb0b4b6b9f78f0d1ecd9dad9c62fef96aa2085ede808eed1f1ef095516a32943
+Description: Web browser running in text mode
+ Links is a text mode WWW browser, similar to Lynx. It displays tables,
+ frames, downloads on background, uses HTTP/1.1 keepalive connections.
+ .
+ This version is compiled without graphics mode. See the package
+ links2 for a version with graphics support compiled in.
+Original-Maintainer: Axel Beckert <abe@debian.org>
+
+Package: links2
+Priority: optional
+Section: web
+Installed-Size: 3211
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 2.8-1ubuntu1~petra
+Provides: www-browser
+Depends: libbz2-1.0, libc6 (>= 2.15), libdirectfb-1.2-9, libgpm2 (>= 1.20.4), libjpeg8 (>= 8c), liblzma5 (>= 5.1.1alpha+20120614), libpng12-0 (>= 1.2.13-4), libssl1.0.0 (>= 1.0.0), libtiff5 (>> 4.0.0-1~), libx11-6, zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/links2/links2_2.8-1ubuntu1~petra_amd64.deb
+Size: 2069344
+MD5sum: c1ca0ab3c2b29e472d4f290c1ad16ece
+SHA1: 4e261dfbd2e21e73c36e961b9d8586a9c1d80cbf
+SHA256: cf76d054b4e0d72c973a29699a6d448e28b0b9c0577ae9dc3dbbfeb991470d45
+Description: Web browser running in both graphics and text mode
+ Links is a graphics and text mode WWW browser, similar to Lynx. It displays
+ tables, frames, downloads on background, uses HTTP/1.1 keepalive connections.
+ In graphics mode it displays PNG, JPEG, GIF, TIFF, and XBM pictures, runs
+ external bindings on other types, and features anti-aliased font, smooth
+ image zooming, 48-bit dithering, and gamma and aspect ratio correction.
+Original-Maintainer: Axel Beckert <abe@debian.org>
+
+Package: mc
+Priority: optional
+Section: utils
+Installed-Size: 1391
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 3:4.8.11-1~petra
+Recommends: mime-support, perl, unzip
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, file, genisoimage, gv, imagemagick, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, xpdf | pdf-viewer, zip
+Provides: mcedit
+Depends: e2fslibs (>= 1.37), libc6 (>= 2.15), libglib2.0-0 (>= 2.35.9), libgpm2 (>= 1.20.4), libslang2 (>= 2.2.4), libssh2-1 (>= 1.2.5), mc-data (= 3:4.8.11-1~petra)
+Filename: pool/main/m/mc/mc_4.8.11-1~petra_amd64.deb
+Size: 496658
+MD5sum: d3a123127b0381f3c479173e7c86fb5a
+SHA1: 5bc416de8afd427a20c0b8183b6beae1173b5bcc
+SHA256: 43b3935a34f9fbd2fa154f1b6c8941b45618e0cdd011d99b3e31681dbf66a4fd
+Description: Midnight Commander - a powerful file manager
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+
+Package: obconf
+Priority: optional
+Section: x11
+Installed-Size: 1117
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: amd64
+Version: 1:2.0.4+git20130908-1~petra
+Recommends: openbox
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk-3-0 (>= 3.0.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libstartup-notification0 (>= 0.2), libx11-6, libxml2 (>= 2.7.4)
+Filename: pool/main/o/obconf/obconf_2.0.4+git20130908-1~petra_amd64.deb
+Size: 127068
+MD5sum: b2830bb3b7f3efe18c2cb4da9bbd0e1a
+SHA1: 6c8fe0242674fb305d7ea8cf68a911190a4fd752
+SHA256: de4894eb593c6377017445904ff912530e067748a0466719076e11d831cdec3b
+Description: preferences manager for Openbox window manager
+ ObConf is a small graphical utility which configures the window manager
+ Openbox' preferences and configuration settings on the fly.
+ .
+ If you are an Openbox user, you may want this package.
+
+Package: openbox
+Priority: optional
+Section: x11
+Installed-Size: 1420
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: amd64
+Version: 3.5.2-6~petra
+Recommends: obconf, python-xdg
+Suggests: menu, fonts-dejavu, python, libxml2-dev, tint2, openbox-menu, openbox-gnome-session (= 3.5.2-6~petra), openbox-kde-session (= 3.5.2-6~petra)
+Provides: x-session-manager, x-window-manager
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.35.9), libice6 (>= 1:1.0.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libsm6, libstartup-notification0 (>= 0.7), libx11-6, libxau6, libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2
+Breaks: menu (<< 2.1.12)
+Filename: pool/main/o/openbox/openbox_3.5.2-6~petra_amd64.deb
+Size: 269600
+MD5sum: 72151c7616f7d6ecf7f9378335355f68
+SHA1: 0a76450957e6d5e30c783913c255936c63f8f975
+SHA256: 35d738c47998d661f5c6d4f5d3a9da515d207c0a1f7424af2bd4ac94e84f9ba5
+Description: standards-compliant, fast, light-weight and extensible window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ Some of the things to look for in Openbox are:
+ .
+ * ICCCM and EWMH compliance!
+ * Very fast
+ * Chainable key bindings
+ * Customizable mouse actions
+ * Window resistance
+ * Multi-head Xinerama support!
+ * Pipe menus
+
+Package: synaptic
+Priority: optional
+Section: admin
+Installed-Size: 7671
+Maintainer: Michael Vogt <mvo@debian.org>
+Architecture: amd64
+Version: 0.80.4~petra
+Recommends: gksu | kdebase-bin | policykit-1, libgtk2-perl (>= 1:1.130), rarian-compat
+Suggests: dwww, menu, deborphan, apt-xapian-index, tasksel, software-properties-gtk
+Depends: libapt-inst1.5 (>= 0.8.16~exp12), libapt-pkg4.12 (>= 0.8.16~exp12), libc6 (>= 2.14), libept1.4.12 (>= 1.0.9), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.14.0), libgtk-3-0 (>= 3.0.0), libpango-1.0-0 (>= 1.14.0), libstdc++6 (>= 4.6), libvte-2.90-9 (>= 1:0.27.2), libx11-6, libxapian22, hicolor-icon-theme
+Conflicts: menu (<< 2.1.11)
+Filename: pool/main/s/synaptic/synaptic_0.80.4~petra_amd64.deb
+Size: 2668204
+MD5sum: 2bc283454b7f4b36e23e0c848497e246
+SHA1: 05f360bf10dd661e1cf6d952991ab7770e780830
+SHA256: 4116b7a9d501236f1cf83c584f28344b3195ff710f4d33060ce6ecd98ae46475
+Description: Graphical package manager
+ Synaptic is a graphical package management tool based on GTK+ and APT.
+ Synaptic enables you to install, upgrade and remove software packages in
+ a user friendly way.
+ .
+ Besides these basic functions the following features are provided:
+ * Search and filter the list of available packages
+ * Perform smart system upgrades
+ * Fix broken package dependencies
+ * Edit the list of used repositories (sources.list)
+ * Download the latest changelog of a package
+ * Configure packages through the debconf system
+ * Browse all available documentation related to a package (dwww is required)
+
+Package: vlc
+Priority: optional
+Section: video
+Installed-Size: 3765
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Recommends: vlc-plugin-notify (= 2.1.0-2~petra), vlc-plugin-pulse (= 2.1.0-2~petra), xdg-utils
+Replaces: vlc-data (<< 1.1.5), vlc-nox (<< 2.0.2)
+Suggests: videolan-doc
+Provides: mp3-decoder
+Depends: fonts-freefont-ttf, vlc-nox (= 2.1.0-2~petra), libaa1 (>= 1.4p5), libc6 (>= 2.15), libcaca0 (>= 0.99.beta17-1), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libsdl-image1.2 (>= 1.2.10), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 4.6), libtar0, libva-x11-1 (>> 1.1.0~), libva1 (>> 1.1.0~), libvlccore7 (>= 2.1.0), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.3.9), libxcb-randr0 (>= 1.1), libxcb-shm0, libxcb-xv0 (>= 1.2), libxcb1 (>= 1.6), libxext6, libxinerama1, libxpm4, zlib1g (>= 1:1.2.3.3)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc-data (<< 1.1.5), vlc-nox (<< 2.0.2)
+Filename: pool/main/v/vlc/vlc_2.1.0-2~petra_amd64.deb
+Size: 1212286
+MD5sum: 2166af9deafc621dcb939e6400b2e927
+SHA1: 9d3939ee6f1ce0f6774ae6434a4bd6c954d4d777
+SHA256: a8e42eaf5f3476a581031634fe834c501fd6b993ba801911af99a13c23447604
+Description: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added
+ by installing additional audio plugins (vlc-plugin-pulse, vlc-plugin-sdl)
+ or video plugins (vlc-plugin-sdl).
+
+Package: vlc-plugin-sdl
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 59
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.3.4), libsdl1.2debian (>= 1.2.11), libvlccore7 (>= 2.1.0), libx11-6
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-sdl_2.1.0-2~petra_amd64.deb
+Size: 7916
+MD5sum: 9598403cea82e6b61a9ccee139ff56d6
+SHA1: 9f5d24b8a80262b9468beea025c5655d2bf2a3aa
+SHA256: ef46fe20d7c0e418f67f5e435b0c4ad84e73e7175e1771e48d5592d52a41078d
+Description: SDL video and audio output plugin for VLC
+ This plugin adds support for the Simple DirectMedia Layer library to
+ the VLC media player. To activate it, use the `--vout sdl' or
+ `--aout sdl' flags or select the `sdl' video or audio output plugin
+ from the preferences menu.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: xterm
+Priority: optional
+Section: x11
+Installed-Size: 1668
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: amd64
+Version: 300-1~petra
+Recommends: x11-utils
+Suggests: xfonts-cyrillic
+Provides: x-terminal-emulator
+Depends: xbitmaps, libc6 (>= 2.15), libfontconfig1 (>= 2.9.0), libice6 (>= 1:1.0.0), libtinfo5, libutempter0 (>= 1.1.5), libx11-6, libxaw7, libxft2 (>> 2.1.1), libxmu6, libxpm4, libxt6
+Filename: pool/main/x/xterm/xterm_300-1~petra_amd64.deb
+Size: 689872
+MD5sum: 26ede3a06d64e6ccda6b21396bfffa8e
+SHA1: ddb34da54b175481417a5409d68f90301cc04958
+SHA256: dd136474435c2b83f78dd762610dd2b26141dac5e6af44cd9f4e01fcc3403463
+Description: X terminal emulator
+ xterm is a terminal emulator for the X Window System.  It provides DEC VT102
+ and Tektronix 4014 compatible terminals for programs that cannot use the
+ window system directly.  This version implements ISO/ANSI colors and most of
+ the control sequences used by DEC VT220 terminals.
+ .
+ This package provides four commands: xterm, which is the traditional
+ terminal emulator; uxterm, which is a wrapper around xterm that is
+ intelligent about locale settings (especially those which use the UTF-8
+ character encoding), but which requires the luit program from the x11-utils
+ package; koi8rxterm, a wrapper similar to uxterm for locales that use the
+ KOI8-R character set; and lxterm, a simple wrapper that chooses which of the
+ previous commands to execute based on the user's locale settings.
+ .
+ A complete list of control sequences supported by the X terminal emulator
+ is provided in /usr/share/doc/xterm.
+ .
+ The xterm program uses bitmap images provided by the xbitmaps package.
+ .
+ Those interested in using koi8rxterm will likely want to install the
+ xfonts-cyrillic package as well.
+Multi-Arch: foreign
+
+Package: xserver-xorg-video-dummy
+Priority: optional
+Section: x11
+Installed-Size: 67
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: amd64
+Version: 1:0.3.7-1~petra
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.2.5), xorg-video-abi-14, xserver-xorg-core (>= 2:1.14.2.901-2ubuntu4~)
+Filename: pool/main/x/xserver-xorg-video-dummy/xserver-xorg-video-dummy_0.3.7-1~petra_amd64.deb
+Size: 11152
+MD5sum: c02186058d8c85db764e1197104a8060
+SHA1: 3a542a96526cc1bcc527d089f313b7df909841b6
+SHA256: 8c9813620307ca7a5697805a8261f4fcb2850dec097c600ac42a84f344d75684
+Description: X.Org X server -- dummy display driver
+ This package provides a 'dummy' display driver, which does not actually
+ display anything.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xf86-video-dummy driver module.
+
+Package: vlc-nox
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 8390
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Recommends: libdvdcss2
+Replaces: vlc (<< 2.1.0)
+Provides: mp3-decoder
+Depends: liba52-0.7.4, libasound2 (>= 1.0.27), libass4 (>= 0.9.7), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libavc1394-0 (>= 0.5.3), libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.9), libavformat53 (>= 6:0.8.3-1~) | libavformat-extra-53 (>= 6:0.8.9), libavutil51 (>= 6:0.8.3-1~) | libavutil-extra-51 (>= 6:0.8.9), libbasicusageenvironment0, libbluray1, libc6 (>= 2.16), libcddb2, libcdio13 (>= 0.83), libchromaprint0 (>= 0.2), libcrystalhd3, libdbus-1-3 (>= 1.2.16), libdc1394-22, libdca0, libdirac-encoder0, libdirectfb-1.2-9, libdvbpsi8 (>= 1.0.0), libdvdnav4 (>= 4.2.0+20120524), libdvdread4, libebml3, libfaad2 (>= 2.7), libflac8 (>= 1.3.0), libfontconfig1 (>= 2.9.0), libfreerdp1 (>= 1.0.1), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgcrypt11 (>= 1.4.5), libgnutls28 (>= 3.2.3-0), libgpg-error0 (>= 1.10), libgroupsock0, libkate1 (>= 0.3.0), liblircclient0, liblivemedia7, liblua5.2-0, libmad0 (>= 0.15.1b-3), libmatroska5, libmodplug1, libmpcdec6 (>= 1:0.1~r435), libmpeg2-4, libmtp9 (>= 1.1.0), libncursesw5 (>= 5.6+20070908), libogg0 (>= 1.1.0), libopus0, libpng12-0 (>= 1.2.13-4), libpostproc52 (>= 6:0.8.3-1~) | libpostproc-extra-52 (>= 6:0.8.9), libraw1394-11, libresid-builder0c2a, libsamplerate0 (>= 0.1.7), libschroedinger-1.0-0 (>= 1.0.10), libshout3, libsidplay2, libsmbclient (>= 3.0.24), libspeex1 (>= 1.2~beta3-1), libspeexdsp1 (>= 1.2~beta3.2-1), libssh2-1 (>= 1.2), libstdc++6 (>= 4.6), libswscale2 (>= 6:0.8.3-1~) | libswscale-extra-2 (>= 6:0.8.9), libtag1c2a (>= 1.7), libtheora0 (>= 1.0), libtinfo5, libtwolame0, libudev1 (>= 183), libupnp6 (>= 1.4.3), libusageenvironment0, libvcdinfo0 (>= 0.7.21), libvlc5 (>= 2.1.0), libvlccore7 (>= 2.1.0), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libx264-123, libxml2 (>= 2.7.4), libzvbi0 (>= 0.2.11), zlib1g (>= 1:1.2.0.2)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc (<< 2.1.0)
+Filename: pool/main/v/vlc/vlc-nox_2.1.0-2~petra_amd64.deb
+Size: 2259656
+MD5sum: 693367ae250ead5e67de7cd8c767e349
+SHA1: 6e095d7172706d1dafeb4180148c760cd5dd4b51
+SHA256: 15f66939d4e28051723b69433d8da396fba8af37010e76719615e96ca7aee03f
+Description: multimedia player and streamer (without X support)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added
+ by installing additional audio plugins (vlc-plugin-pulse, vlc-plugin-sdl,
+ vlc-plugin-jack) or video plugins (vlc-plugin-sdl).
+ .
+ This package contains a version of VLC that does not require X and that is
+ thus suitable for headless servers.
+
+Package: pcmanfm
+Priority: optional
+Section: utils
+Installed-Size: 1732
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Recommends: gvfs-backends, gvfs-fuse, lxde-icon-theme | gnome-icon-theme | oxygen-icon-theme | tango-icon-theme
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 1.2.0-0linuxmint1), libfm4 (>= 1.2.0-0linuxmint1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libpango-1.0-0 (>= 1.20.0), libpangocairo-1.0-0 (>= 1.14.0), libx11-6
+Filename: pool/main/p/pcmanfm/pcmanfm_1.2.0-0linuxmint1_amd64.deb
+Size: 258538
+MD5sum: 5c496ecf4d4a1b33ffaac02dd18eeb6c
+SHA1: bacc74e35e6f5dd4c725168524b2e09a61292385
+SHA256: cad3476e255e8ea975583983dd63199cbed9a29ab4522d39e9311ab8b5dec565
+Description: extremely fast and lightweight file manager
+ PCMan File Manager is a GTK+ based file manager, featuring:
+ .
+ * Extremly fast and lightweight
+ * Can be started in one second on normal machine
+ * Tabbed browsing (similar to Firefox)
+ * Drag & Drop support
+ * Files can be dragged among tabs
+ * Load large directories in reasonable time
+ * File association support (Default application)
+ * Basic thumbnail support
+ * Bookmarks support
+ * Handles non-UTF-8 encoded filenames correctly
+ * Provide icon view and detailed list view
+ * Standard compliant (Follows FreeDesktop.org)
+ * Clean and user-friendly interface (GTK+ 2)
+ * Support GVFS for auto-mount handling on removable devices
+
+Package: openbox-dev
+Source: openbox
+Priority: optional
+Section: libdevel
+Installed-Size: 412
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: amd64
+Version: 3.5.2-6~petra
+Depends: libobrender29 (= 3.5.2-6~petra), libobt2 (= 3.5.2-6~petra), libxml2-dev, libglib2.0-dev, libpango1.0-dev, libimlib2-dev, librsvg2-dev
+Filename: pool/main/o/openbox/openbox-dev_3.5.2-6~petra_amd64.deb
+Size: 87822
+MD5sum: c44758d25deeecc5c206f148a15c992d
+SHA1: 6dce14d7012c545c7be75c8ef985a6b407b01651
+SHA256: 64718a819c47d06aedcb3c427dee5333915b81295f694d2e6884cfbba2e1a1cc
+Description: development files for the openbox window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the development headers for building openbox stuff.
+
+Package: terminator
+Priority: optional
+Section: misc
+Installed-Size: 2275
+Maintainer: Nicolas Valcárcel Scerpella <nvalcarcel@canonical.com>
+Architecture: all
+Version: 0.97+bzr1481-0linuxmint1
+Recommends: xdg-utils, python-gnome2, python-keybinder
+Provides: x-terminal-emulator
+Depends: python (>= 2.5), python-support (>= 0.90.0), python-vte, python-gobject, python-gtk2 (>= 2.14.0), gconf2, libgtk2.0-bin, hicolor-icon-theme
+Filename: pool/main/t/terminator/terminator_0.97+bzr1481-0linuxmint1_all.deb
+Size: 388416
+MD5sum: 0d9790f37e64519c9285051fd18214f0
+SHA1: d429239ef50f21722ed09d3dabf470c1eb5ed75b
+SHA256: df3e8dd06940d5a3b10d4e1eb9595db591e332387f645472c0ab243338623756
+Description: multiple GNOME terminals in one window
+ Terminator is a little project to produce an efficient way of
+ filling a large area of screen space with terminals.
+ .
+ The user can have multiple terminals in one window and use
+ key bindings to switch between them. See the manpage for
+ details.
+
+Package: vlc-plugin-jack
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 73
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.4), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116, libvlccore7 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-jack_2.1.0-2~petra_amd64.deb
+Size: 10648
+MD5sum: 1d848a48ccdcc54928245a234ee8c9ab
+SHA1: 447e1b9b85afb052ce56c2fd362251f4e068be78
+SHA256: b459a737efafe9a37ae1fd135a09a1764536dbd76f41692cbf74ad78d9b1f665
+Description: Jack audio plugins for VLC
+ These plugins add support for JACK to the VLC media player. To
+ activate the audio output module, use the `--aout jack' flag or
+ select the `jack' audio output plugin from the preferences menu.
+ For the jack input, use `vlc jack://channels=...:ports=...'
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: gpicview
+Priority: optional
+Section: graphics
+Installed-Size: 851
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 0.2.4-1~petra
+Recommends: xdg-utils
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.20.0), libjpeg8 (>= 8c), libx11-6
+Filename: pool/main/g/gpicview/gpicview_0.2.4-1~petra_amd64.deb
+Size: 128370
+MD5sum: 75e81c1f43e2b0f82b83d08c0648c7f1
+SHA1: a84692ef5f1bdb48e131ba89ee693ec82de2bb3f
+SHA256: 04615d75592776f81f5459a4b00c9e2b47a98f89f56fc71c97a124abd7f99a3d
+Description: lightweight image viewer
+ GPicView is a lightweight GTK+ 2.x based image viewer with following features:
+ .
+ * Extremely lightweight and fast with low memory usage
+ * Very suitable for default image viewer of desktop system
+ * Simple and intuitive interface
+ * Minimal lib dependency: Only pure GTK+ is used
+ * Desktop independent: Doesn't require any specific desktop environment
+
+Package: xserver-xorg-video-nouveau
+Priority: optional
+Section: x11
+Installed-Size: 301
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:1.0.10-1ubuntu1~petra
+Recommends: libgl1-mesa-dri (>= 9.0)
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.15), libdrm-nouveau2 (>= 2.4.38), libdrm2 (>= 2.4.25), libudev1 (>= 183), xorg-video-abi-14, xserver-xorg-core (>= 2:1.14.2.901-2ubuntu4~)
+Filename: pool/main/x/xserver-xorg-video-nouveau/xserver-xorg-video-nouveau_1.0.10-1ubuntu1~petra_amd64.deb
+Size: 129638
+MD5sum: 06df8250b60a2cd34c83438bae4fdd0f
+SHA1: c21fa9c6c294479b690c653f3c208ce2349f69c3
+SHA256: dbe9c9f18bcf4b491c31a31eb3f3993c9cc59cbd6a83f79d02334f15f0c61f08
+Description: X.Org X server -- Nouveau display driver
+ This driver for the X.Org X server (see xserver-xorg for a further description)
+ provides support for NVIDIA Riva, TNT, GeForce, and Quadro cards.
+ .
+ This package provides 2D support including EXA acceleration, Xv and
+ RandR.  3D functionality is provided by the libgl1-mesa-dri package.
+ .
+ This package is built from the FreeDesktop.org xf86-video-nouveau driver.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: libphonon-dev
+Source: phonon
+Priority: optional
+Section: libdevel
+Installed-Size: 493
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Depends: libphonon4 (= 4:4.7.0.0-2~petra), phonon-backend-null | phonon, libqt4-dev (>= 4:4.8.1), libc6 (>= 2.14), libqt4-designer (>= 4:4.8.1), libqtcore4 (>= 4:4.8.1), libqtgui4 (>= 4:4.8.1), libstdc++6 (>= 4.1.1)
+Filename: pool/main/p/phonon/libphonon-dev_4.7.0.0-2~petra_amd64.deb
+Size: 86208
+MD5sum: 383bac1014ed054fd13bcda93e907671
+SHA1: 0e247d519c6e067495b4785f2b2a56e3cd43971f
+SHA256: 153fbe4cccd5aca3aa32eaffc910a2fdb3c4c7c9ea4735ba7c0d1021ce3c9ae7
+Description: multimedia framework from KDE - development files
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains the development files needed to build Qt 4 applications
+ using the Phonon cross-platform multimedia framework.
+
+Package: libphonon4
+Source: phonon
+Priority: optional
+Section: libs
+Installed-Size: 582
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Depends: libc6 (>= 2.14), libpulse-mainloop-glib0 (>= 1:0.99.1), libpulse0 (>= 1:0.99.1), libqt4-dbus (>= 4:4.8.1), libqtcore4 (>= 4:4.8.1), libqtgui4 (>= 4:4.8.1), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Breaks: phonon-backend-xine (<< 4:4.6.0really4.3.80)
+Filename: pool/main/p/phonon/libphonon4_4.7.0.0-2~petra_amd64.deb
+Size: 154048
+MD5sum: 22adc87f73ecf8f929693a06fbb41b8b
+SHA1: 7a3b9d9c25fcdc66a34fdb4d16c10214c9790ac5
+SHA256: 7654f99aaedc2d8a011747aca63aaa334f21bed677db9d32635ea561d64a5a4b
+Description: multimedia framework from KDE - core library
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains the core library of the Phonon cross-platform multimedia
+ framework from KDE. It is required to run applications that use Phonon.
+Multi-Arch: same
+
+Package: vlc-dbg
+Source: vlc
+Priority: extra
+Section: debug
+Installed-Size: 25714
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: vlc-nox (= 2.1.0-2~petra)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-dbg_2.1.0-2~petra_amd64.deb
+Size: 23249968
+MD5sum: d9904ee866ba2e35442fe5411c20f610
+SHA1: 6eb80d19c6480e7b034179c0a5553d1bb6ba8c59
+SHA256: 4c1943d4536f54869df92930ff489ec80d94ae20a971a90fe361d1b893978905
+Description: debugging symbols for vlc
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the debugging symbols for vlc.
+
+Package: vlc-plugin-pulse
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 124
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.14), libpulse0 (>= 1:1.0), libvlccore7 (>= 2.1.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-pulse_2.1.0-2~petra_amd64.deb
+Size: 16806
+MD5sum: 4165557f5bdd7180d1930a7cbf337002
+SHA1: 7baf3b93549e1049b533d5de82cd8c7c224eda77
+SHA256: 9a245be5f1686a2d66bcd1eced4a82a2de9327ac6ce986ed396e74dcc0c824c7
+Description: PulseAudio plugin for VLC
+ This plugin adds support for PulseAudio to the VLC media player. To
+ activate the audio output module, use the `--aout pulse' flag or
+ select the `pulse' audio output plugin from the preferences menu.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: lxtask
+Priority: optional
+Section: x11
+Installed-Size: 600
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1.4-3.1+petra
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.14.0), libgtk2.0-0 (>= 2.14.0)
+Filename: pool/main/l/lxtask/lxtask_0.1.4-3.1+petra_amd64.deb
+Size: 43788
+MD5sum: c85eb44e5e0b74dbbe05eeaa6e20754b
+SHA1: 6fb43d099577f9b527e5133ea3cdfa8639a1a4d8
+SHA256: 37eaceadf81eba39bb50a7dcef1d31e3d4c56687e6ec792c4c010cd8f1e0e199
+Description: LXDE task manager
+ LXTask is a GUI application for the Lightweight X11 Desktop Environment (LXDE).
+ .
+ It allows monitoring and controlling of running processes.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxappearance
+Priority: optional
+Section: x11
+Installed-Size: 869
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.5.5-0ubuntu1~petra1
+Recommends: gtk2-engines
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.14.0), libx11-6
+Filename: pool/main/l/lxappearance/lxappearance_0.5.5-0ubuntu1~petra1_amd64.deb
+Size: 74494
+MD5sum: 1dfbd8dd4b40b3c92b70a535618fe117
+SHA1: af47c4b210715b23fa8b97833c8224a24884b83e
+SHA256: 46720a9655e003ad339779e29ea36d1cd532380a6355e0df00480bc89b7a5c6d
+Description: LXDE GTK+ theme switcher
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It is a new feature-rich GTK+ theme switcher able to change GTK+ themes, icon
+ themes, and fonts used by applications. GNOME/KDE/Xfce user may use build-in
+ theme, this works for GTK+ based lightweight desktop Environment.
+ .
+ Features:
+ .
+ * Choose GTK+ theme
+ * Choose icon theme
+ * Install new icon theme
+ * Choose their favorite font
+ * Choose toolbar style
+ * See changes immediately in preview area
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: phonon-backend-null
+Source: phonon
+Priority: optional
+Section: sound
+Installed-Size: 56
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Provides: phonon-backend
+Depends: libphonon4, debconf (>= 0.5) | debconf-2.0
+Conflicts: phonon-backend
+Filename: pool/main/p/phonon/phonon-backend-null_4.7.0.0-2~petra_amd64.deb
+Size: 16124
+MD5sum: c0d2576201fd346a253a70be9c0be983
+SHA1: 58f11bb4e62f9ef0ef94acb6476d6ee8a68979d8
+SHA256: f3ed005f9b8b5756e254c4a73aa40b08575ab87e1c1a131527fa1a887f21e545
+Description: multimedia framework from KDE - null back-end (no real back-end)
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package does not provide any real Phonon back-end. It can be used to
+ disable Phonon audio/video capabilities. Please note that Phonon behavior
+ with this package installed has not been well tested.
+Multi-Arch: same
+
+Package: phonon-dbg
+Source: phonon
+Priority: extra
+Section: debug
+Installed-Size: 9055
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Suggests: libphononexperimental4 (= 4:4.7.0.0-2~petra)
+Depends: libphonon4 (= 4:4.7.0.0-2~petra)
+Filename: pool/main/p/phonon/phonon-dbg_4.7.0.0-2~petra_amd64.deb
+Size: 1914208
+MD5sum: fe211486e0f1a099c31d17ae5d414a48
+SHA1: 8a9171ff3232a65e1993d77a03b8e968eca1e2a0
+SHA256: 8364cdb4c539ecb8608f8c6217d43fc3a198b0c62071037c38b65140778b9377
+Description: multimedia framework from KDE - debugging symbols
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains debugging symbols for the Phonon library and its main
+ back-ends. Install it if you want to report a crash or debug a problem with
+ Phonon or its back-ends.
+Multi-Arch: same
+
+Package: phonon
+Priority: optional
+Section: sound
+Installed-Size: 55
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Suggests: phonon-backend-gstreamer, phonon-backend-mplayer, phonon-backend-vlc
+Depends: libphonon4 (>= 4:4.7.0.0-2~petra), debconf (>= 0.5) | debconf-2.0, phonon-backend-vlc | phonon-backend
+Breaks: phonon-backend-xine (<< 4:4.6.0.0)
+Filename: pool/main/p/phonon/phonon_4.7.0.0-2~petra_amd64.deb
+Size: 15552
+MD5sum: 3d931c01078b74f4e68b81cc7dd2a9c4
+SHA1: edd6927a4cb07d8f17c2bd29ba8ca8d0d304c988
+SHA256: d9e5f6fb248e4d91cfba9aec562af159640be9399adb30594f6b56eaab81b2b0
+Description: multimedia framework from KDE - metapackage
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This metapackage ensures that the system has a working Phonon configuration
+ installed (the core library and at least one back-end).
+Multi-Arch: same
+
+Package: mc-dbg
+Source: mc
+Priority: extra
+Section: debug
+Installed-Size: 1485
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: amd64
+Version: 3:4.8.11-1~petra
+Suggests: gdb
+Depends: mc (= 3:4.8.11-1~petra)
+Filename: pool/main/m/mc/mc-dbg_4.8.11-1~petra_amd64.deb
+Size: 1333412
+MD5sum: 8e8d3b4e14742d7c4bd00474a79f5188
+SHA1: 2e23ed3d14ec57fbe029f696de151d661800c77b
+SHA256: 9e2d3217923d2fb34712bdb5d433bc690f75f7cd57afd0d88b7c2e4085a7fea3
+Description: Midnight Commander - a powerful file manager - debug package
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+ .
+ This package contains debugging information for mc.
+
+Package: abiword-plugin-grammar
+Source: abiword
+Priority: optional
+Section: editors
+Installed-Size: 124
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 3.0.0-4~petra
+Depends: libabiword-3.0 (>= 3.0.0), libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), liblink-grammar4 (>= 4.2.2), libstdc++6 (>= 4.1.1), abiword (= 3.0.0-4~petra)
+Filename: pool/main/a/abiword/abiword-plugin-grammar_3.0.0-4~petra_amd64.deb
+Size: 46544
+MD5sum: c0059bcd6ed58028cd74b86446e41dca
+SHA1: 1ca14f22c8ef3c6ea2f361de418e7903a1414d1e
+SHA256: b02fd51322a981f813791cc6e98eb392259d4d0dd2cb2091c1ede18544514a52
+Description: grammar checking plugin for AbiWord
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains an in-line grammar checking system for AbiWord
+ documents.
+
+Package: abiword-plugin-mathview
+Source: abiword
+Priority: optional
+Section: editors
+Installed-Size: 480
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 3.0.0-4~petra
+Depends: libabiword-3.0 (>= 3.0.0), libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), libgtkmathview0c2a, libstdc++6 (>= 4.1.1), abiword (= 3.0.0-4~petra), fonts-lyx
+Filename: pool/main/a/abiword/abiword-plugin-mathview_3.0.0-4~petra_amd64.deb
+Size: 123422
+MD5sum: b6d6dfcf87669650858ee881003e1b59
+SHA1: 8756cb5aa818a042db972a067849a13d6a3f8279
+SHA256: cef3110eefa8eb7c1e5b41c344e9bb659b303010cf771ff0f2a5caafbcc793b3
+Description: equation editor plugin for AbiWord
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains an equation editing system for AbiWord
+ documents.
+
+Package: sakura
+Priority: optional
+Section: x11
+Installed-Size: 378
+Maintainer: Andrew Starr-Bochicchio <asb@debian.org>
+Architecture: amd64
+Version: 3.1.3-1~petra
+Provides: x-terminal-emulator
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk-3-0 (>= 3.3.16), libpango-1.0-0 (>= 1.14.0), libvte-2.90-9 (>= 1:0.27.90)
+Filename: pool/main/s/sakura/sakura_3.1.3-1~petra_amd64.deb
+Size: 67060
+MD5sum: ab40ca4aa929cda4c41848d54ed07341
+SHA1: 367b8050e58d50870d41aeab35c9170e5df51d3f
+SHA256: 56a0f86a276fba28addb6aa33f44bbd1e8381c5c2581d8262d0937b6a83b3219
+Description: simple but powerful libvte-based terminal emulator
+ Sakura is a terminal emulator based on GTK+ and VTE. It's a
+ terminal emulator with few dependencies, so you don't need a
+ full GNOME desktop installed to have a decent terminal emulator.
+
+Package: libvlccore-dev
+Source: vlc
+Priority: optional
+Section: libdevel
+Installed-Size: 626
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: libvlccore7 (= 2.1.0-2~petra), pkg-config
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlccore-dev_2.1.0-2~petra_amd64.deb
+Size: 113812
+MD5sum: 3a05afc79e3ada0c8b29d8b589001b55
+SHA1: 744374b27775246690df996063677b3dd9fad8a8
+SHA256: b98f68d2ce6831f02155cda0d15957d2ec2042d3897e9b8b3f435e8e5dd6d1aa
+Description: development files for libvlccore
+ This package contains headers and a static library required to build plugins
+ for VLC.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlc-dev
+Source: vlc
+Priority: optional
+Section: libdevel
+Installed-Size: 179
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Replaces: libvlc0-dev
+Depends: libvlc5 (= 2.1.0-2~petra), pkg-config
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlc-dev_2.1.0-2~petra_amd64.deb
+Size: 25300
+MD5sum: e9870b1e48a8391d49fa2c7b008b45da
+SHA1: d30c6c99a032ea510eb403c78704f691b3dcb5e8
+SHA256: e75b60ddd3c22c0a42ef41cb15993b5aa7f0d09b56c6b6434616237206e23fa7
+Description: development files for libvlc
+ This package contains headers and a static library required to build
+ standalone applications that use VLC features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-data
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 29576
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 2.1.0-2~petra
+Replaces: mozilla-plugin-vlc (<< 0.9.2-1), vlc (<< 0.9.2-1), vlc-nox (<< 2.0.1-3)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc-nox (<< 2.0.1-3)
+Filename: pool/main/v/vlc/vlc-data_2.1.0-2~petra_all.deb
+Size: 5085530
+MD5sum: 7b2cb89d1823c9fc4de38d246cac3427
+SHA1: e5a65cb795d39ae55f612c9f69110c86d2ff1de1
+SHA256: 00e96f4cf038b62fe9d16f0b66f872923423b60d5690ac9170960846d3abffc8
+Description: Common data for VLC
+ Localisations, HTTP interface files, Lua scripts for VLC media player
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libmenu-cache-dev
+Source: menu-cache
+Priority: optional
+Section: libdevel
+Installed-Size: 86
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 0.5.1-0linuxmint1
+Depends: libmenu-cache3 (= 0.5.1-0linuxmint1)
+Filename: pool/main/m/menu-cache/libmenu-cache-dev_0.5.1-0linuxmint1_amd64.deb
+Size: 13540
+MD5sum: c1fa6b279244f7f6f2187d95337e8e8c
+SHA1: eb5d9bca4b866e39525ffe0fe0ea66756e58733f
+SHA256: d8599b03361961ac28be8e6b43a12816154c945ed7b71bb916dce3e409cf7a77
+Description: LXDE implementation of the freedesktop Menu specification (devel)
+ Libmenu-cache is a library creating and utilizing caches to speed up
+ the manipulation for freedesktop.org defined application menus.
+ .
+ This package contains the development files.
+
+Package: phonon-backend-vlc
+Priority: optional
+Section: sound
+Installed-Size: 348
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 0.7.0-1~petra
+Recommends: vlc
+Provides: phonon-backend
+Depends: libc6 (>= 2.14), libphonon4 (>= 4:4.7.0.0), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.6.0), libstdc++6 (>= 4.1.1), libvlc5 (>= 2.1.0), libvlccore7 (>= 2.0.0), vlc-nox
+Pre-Depends: multiarch-support
+Filename: pool/main/p/phonon-backend-vlc/phonon-backend-vlc_0.7.0-1~petra_amd64.deb
+Size: 86574
+MD5sum: 26f001861472b8b452addedf1a1b15ce
+SHA1: 37fd10a93dd78b5faecd1a1e0c99879303075e5b
+SHA256: 6d19801f766d41ae4acbd4cad2d048a5f7e0739d38f87d39a685bb808a7d717c
+Description: Phonon VLC backend
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains VLC backend for Phonon.
+Multi-Arch: same
+
+Package: phonon-backend-vlc-dbg
+Source: phonon-backend-vlc
+Priority: extra
+Section: debug
+Installed-Size: 1455
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 0.7.0-1~petra
+Depends: phonon-backend-vlc (= 0.7.0-1~petra)
+Filename: pool/main/p/phonon-backend-vlc/phonon-backend-vlc-dbg_0.7.0-1~petra_amd64.deb
+Size: 1366064
+MD5sum: 8b4b7d3f8ded98ffa2fac482e77e7c84
+SHA1: 211c7c23351d70a45ffd9de311457ee615fa5389
+SHA256: 6b4091a84ceb007dcc3df572bf7b9a25a88832f1047a1e760a32767709991baf
+Description: Phonon VLC backend debugging symbols
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains the debugging symbols for the VLC Phonon backend.
+Multi-Arch: same
+
+Package: libfm-dev
+Source: libfm
+Priority: optional
+Section: libdevel
+Installed-Size: 282
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Suggests: libfm-doc
+Depends: libfm4 (= 1.2.0-0linuxmint1), libfm-extra4 (= 1.2.0-0linuxmint1)
+Filename: pool/main/libf/libfm/libfm-dev_1.2.0-0linuxmint1_amd64.deb
+Size: 44466
+MD5sum: ab66e5421ce265fbad7ff6921a75329c
+SHA1: 2217bc575ae8110d4e66975e6d710dfa8df09b63
+SHA256: 55fc103a6d5ebb7e02f83a7b4fe41ee04a1a7cddbc33f10655bff7e7b74af673
+Description: file management support (core development files)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development files for GUI-independent build.
+
+Package: vlc-plugin-svg
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 55
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.3.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), librsvg2-2 (>= 2.14.4), libvlccore7 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-svg_2.1.0-2~petra_amd64.deb
+Size: 6012
+MD5sum: 8be67f2a283bc059560ad55f62ffe3a7
+SHA1: a6f176dee05646d7b3a9551d04a89de7ed520b78
+SHA256: e0750d347edf58885419f27b8d5d7b2b3de33ceaa5c1dc2e16dd7ccc832eee4e
+Description: SVG plugin for VLC
+ This plugin allows you to render SVG graphics on top of the video. It is a text
+ renderer, and must be activated through the '--text-renderer svg' option. When
+ sent non-SVG data, it will convert it to SVG using a template that can be
+ specified by the svg-template-file option.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlc5
+Source: vlc
+Priority: optional
+Section: libs
+Installed-Size: 145
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Replaces: vlc (<< 0.8.6.c-6)
+Depends: libc6 (>= 2.14), libvlccore7 (>= 2.1.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlc5_2.1.0-2~petra_amd64.deb
+Size: 39768
+MD5sum: 8165df39519daea311e0e50c7da08a8f
+SHA1: 59feb995cf0b3f1366abf583be62a2dbc5eeaf69
+SHA256: eb9687f181838a3f7335560c4a68a0d1202eb266e4a05f212e494602db895f75
+Description: multimedia player and streamer library
+ This package contains the shared library required by applications using VLC
+ features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: deadbeef
+Priority: extra
+Section: sound
+Installed-Size: 7379
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 0.6.0~beta7-1
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.9), libavformat53 (>= 6:0.8.3-1~) | libavformat-extra-53 (>= 6:0.8.9), libavutil51 (>= 6:0.8.3-1~) | libavutil-extra-51 (>= 6:0.8.9), libc6 (>= 2.15), libcairo2 (>= 1.2.4), libcddb2, libcdio13 (>= 0.83), libcurl3-gnutls (>= 7.16.2), libdbus-1-3 (>= 1.0.2), libfaad2 (>= 2.7), libflac8 (>= 1.3.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libimlib2, libmad0 (>= 0.15.1b-3), libpango-1.0-0 (>= 1.18.0), libpangocairo-1.0-0 (>= 1.14.0), libpulse0 (>= 1:0.99.1), libsamplerate0 (>= 0.1.7), libsndfile1 (>= 1.0.20), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwavpack1 (>= 4.40.0), libx11-6, libzip2 (>= 0.10), zlib1g (>= 1:1.1.4)
+Filename: pool/main/d/deadbeef/deadbeef_0.6.0~beta7-1_amd64.deb
+Size: 2223830
+MD5sum: 5643135dd603785481f1e0eaef7531d0
+SHA1: 2976d72ec7c48f41354b677e56acc69ef1c550d3
+SHA256: dcae2d2150b7410a0d26631a139966b80362753fd05b0b245669391e7316c2fc
+Description: Ultimate music player for GNU/Linux systems
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
+ .
+ Features:
+ .
+ * mp3, ogg vorbis, flac, ape, wv, wav
+ * ID3v1, ID3v2.2, ID3v2.3, ID3v2.4, APEv2, xing/info tags support
+ * character set detection for non-unicode ID3 tags - supports cp1251 and
+ iso8859-1
+ * unicode tags are fully supported as well (both utf8 and ucs2)
+ * cuesheet support for mp3, ogg, flac, ape
+ * autodetection of utf8/cp1251/iso8859-1 charsets in cuesheets
+ * sid and some popular chiptune formats like nsf
+ * tracker modules like mod, s3m, it, xm, etc
+ * HVSC song length database support for sid
+ * gtk2 interface with custom highly speed/memory optimized widgets
+ * no GNOME or KDE dependencies - just gtk2 and several small libraries
+ * minimize to tray, with scrollwheel volume control
+ * drag and drop, both inside of playlist, and from filemanagers and such
+ * control playback from command line (allows global hotkeys using xbindkeys)
+ * seeking works in all supported formats
+ * plugin support; ships with several standard plugins, such as global
+ hotkeys and last.fm scrobbler; sdk is included
+ * duration calculation is as precise as possible for vbr mp3
+ files (with and without xing/info tags)
+
+Package: deadbeef-plugins-dev
+Source: deadbeef
+Priority: extra
+Section: libdevel
+Installed-Size: 99
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.6.0~beta7-1
+Filename: pool/main/d/deadbeef/deadbeef-plugins-dev_0.6.0~beta7-1_all.deb
+Size: 18720
+MD5sum: 5d8732a5cb29ef03fd6c5c715e5db9cc
+SHA1: bfea7580fed0dca2fb3e81a145cc39e349ef7ae9
+SHA256: 9d98b9d5f78442a66eecf8b6237b8dbcb2422809f0c84ca8d6c3cf55b300b0e1
+Description: Ultimate music player for GNU/Linux systems - development files
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
+ .
+ This package contains all supplementary files you need to develop your plugins
+ for DeaDBeeF audio player.
+
+Package: autopoint
+Source: gettext
+Priority: optional
+Section: devel
+Installed-Size: 442
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.18.3.1-1ubuntu1~petra
+Replaces: gettext (<= 0.17-11)
+Depends: xz-utils
+Filename: pool/main/g/gettext/autopoint_0.18.3.1-1ubuntu1~petra_all.deb
+Size: 395940
+MD5sum: 99d62304d1acd971045e3655e7867d9b
+SHA1: 2b695e2546ae2d52ca1baabae87e53281911f8d9
+SHA256: 1beb67f460944504d773780f6cc0aa7818635168519dc2b1c1a78d46f2bebf72
+Description: The autopoint program from GNU gettext
+ The `autopoint' program copies standard gettext infrastructure files
+ into a source package.  It extracts from a macro call of the form
+ `AM_GNU_GETTEXT_VERSION(VERSION)', found in the package's
+ `configure.in' or `configure.ac' file, the gettext version used by the
+ package, and copies the infrastructure files belonging to this version
+ into the package.
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: pcmanfm-dbg
+Source: pcmanfm
+Priority: extra
+Section: debug
+Installed-Size: 393
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: pcmanfm (= 1.2.0-0linuxmint1)
+Filename: pool/main/p/pcmanfm/pcmanfm-dbg_1.2.0-0linuxmint1_amd64.deb
+Size: 307438
+MD5sum: 9d5066081ad99190f5ca1d3068c152b5
+SHA1: 087b2953f07f466c4501969665d8e0b151cca702
+SHA256: 08a06094dba14e228de68d361d94346502fd49a61f5ea73131ee5fa8e7b8547b
+Description: extremely fast and lightweight file manager (debug)
+ PCMan File Manager is a GTK+ based file manager. It is a primary file
+ manager for the LXDE but can be used in any other desktop environment.
+ .
+ This package contains the debugging symbols.
+
+Package: xserver-xorg-video-nouveau-dbg
+Source: xserver-xorg-video-nouveau
+Priority: extra
+Section: debug
+Installed-Size: 2197
+Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
+Architecture: amd64
+Version: 1:1.0.10-1ubuntu1~petra
+Depends: xserver-xorg-video-nouveau (= 1:1.0.10-1ubuntu1~petra)
+Filename: pool/main/x/xserver-xorg-video-nouveau/xserver-xorg-video-nouveau-dbg_1.0.10-1ubuntu1~petra_amd64.deb
+Size: 724020
+MD5sum: 2fc9c80f84c3c53d9e710288a72631ae
+SHA1: b44e4e8f110da70dd8181bc4e3964b252f4eb078
+SHA256: 9a603b3941b187deb0925ef530616ec7845caa96cfa4050fdf9d54115e3bfa7c
+Description: X.Org X server -- Nouveau display driver (debug symbols)
+ This driver for the X.Org X server (see xserver-xorg for a further description)
+ provides support for NVIDIA Riva, TNT, GeForce, and Quadro cards.
+ .
+ This package provides 2D support including EXA acceleration, Xv and
+ RandR.  3D functionality is provided by the libgl1-mesa-dri package.
+ .
+ This package provides debugging symbols for this Xorg X driver.
+Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+
+Package: vlc-plugin-fluidsynth
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 55
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: fluid-soundfont-gm | musescore-soundfont-gm, vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.2.5), libfluidsynth1, libvlccore7 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-fluidsynth_2.1.0-2~petra_amd64.deb
+Size: 5456
+MD5sum: b7b81040f05bfb289c4f79f40583d806
+SHA1: 2cb3786e34c9202e5739180b69e7617d251e2740
+SHA256: f3b1a7942e801868e8dc511be21c20313b3594a158fdb4d15df7f058e0b47820
+Description: FluidSynth plugin for VLC
+ This plugin adds support for playing MIDI file via the FluidSynth software
+ synthesizer to the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-zvbi
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 59
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.4), libvlccore7 (>= 2.0.0), libzvbi0 (>= 0.2.11)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-zvbi_2.1.0-2~petra_amd64.deb
+Size: 8342
+MD5sum: e6c96d377380fd9b7f5ef14cf7023f88
+SHA1: 5c351536f8e6c26e4db77c1eacb88f2762104b49
+SHA256: b76e1fb1c5bf3f8d2bc4da4b4439e3277d96460930de29be606b0ae0976aa88c
+Description: VBI teletext plugin for VLC
+ This plugin adds support for VBI teletext to the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-notify
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 55
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Replaces: vlc-nox (<< 1.1.2)
+Depends: vlc-nox (= 2.1.0-2~petra), libc6 (>= 2.8), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libnotify4 (>= 0.7.0), libvlccore7 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc-nox (<< 1.1.2)
+Filename: pool/main/v/vlc/vlc-plugin-notify_2.1.0-2~petra_amd64.deb
+Size: 5230
+MD5sum: c752b03ea78af0f82703ccec000641fc
+SHA1: 7843864425bc89ac6a809a2723ef49e1f46a623d
+SHA256: 7688bdaf8de612908f53aafd2c08774bc32525e14bdb01e90b8936a998650959
+Description: LibNotify plugin for VLC
+ This plugin adds support for libnotify track change notification to the
+ VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: lxappearance-dbg
+Source: lxappearance
+Priority: extra
+Section: debug
+Installed-Size: 127
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.5.5-0ubuntu1~petra1
+Depends: lxappearance (= 0.5.5-0ubuntu1~petra1)
+Filename: pool/main/l/lxappearance/lxappearance-dbg_0.5.5-0ubuntu1~petra1_amd64.deb
+Size: 75460
+MD5sum: 0f8907d5dd6410dc553cd87d290a8fa3
+SHA1: 8ff0f7f86e9a4ffebb7df9128dcfdca90a026f08
+SHA256: a60391228f93e5649e03258c707992a6a40a58ddfe49b0e3a3630f0096fcd575
+Description: LXDE GTK+ theme switcher (debug)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: deadbeef-dbg
+Source: deadbeef
+Priority: extra
+Section: debug
+Installed-Size: 5479
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 0.6.0~beta7-1
+Depends: deadbeef (= 0.6.0~beta7-1)
+Filename: pool/main/d/deadbeef/deadbeef-dbg_0.6.0~beta7-1_amd64.deb
+Size: 4638236
+MD5sum: d2fdedf5e9f8ff9d8e348b10877cc89f
+SHA1: efb63b246a53f68ed9f8047509766f71f455ebd2
+SHA256: 258899d5252fd48f2f2fe77c4b67f0c1f8e160cfa92da0b7f3579f53869b7938
+Description: Ultimate music player for GNU/Linux systems - debug files
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
+ .
+ This package contains gdb debugging symbols for the deadbeef package.
+
+Package: lxappearance-obconf
+Priority: optional
+Section: x11
+Installed-Size: 1087
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.2.2~git20131220-0linuxmint1
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.35.9), libgtk2.0-0 (>= 2.12.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libx11-6, libxml2 (>= 2.7.4)
+Filename: pool/main/l/lxappearance-obconf/lxappearance-obconf_0.2.2~git20131220-0linuxmint1_amd64.deb
+Size: 126676
+MD5sum: a7fe336a1d5be6603e8ee32b9e9deb4f
+SHA1: 1342bc2d1e046349092bc28701c107add1e76d5a
+SHA256: d1f8b630001c3232e5fa6da8a8f7beb710e86417761e1658e3ca709fd214a9d7
+Description: LXDE GTK+ theme switcher (plugin)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the ObConf plugin.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxappearance-obconf-dbg
+Source: lxappearance-obconf
+Priority: extra
+Section: debug
+Installed-Size: 118
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.2.2~git20131220-0linuxmint1
+Filename: pool/main/l/lxappearance-obconf/lxappearance-obconf-dbg_0.2.2~git20131220-0linuxmint1_amd64.deb
+Size: 68186
+MD5sum: 51e8def77a117811b217624fb949b028
+SHA1: be7bca5698e407e279371c76f1b95edc4b441d42
+SHA256: 38626b4a2fcb6a85669f9d39ebad58d6dc155c37c3049ed0f234bb21e7c89970
+Description: LXDE GTK+ theme switcher (plugin - debug)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols for the ObConf plugin.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libphononexperimental4
+Source: phonon
+Priority: optional
+Section: libs
+Installed-Size: 159
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Replaces: libphonon4 (<< 4:4.6.0really4.3.80)
+Provides: phononexperimental-abi-1
+Depends: libc6 (>= 2.2.5), libphonon4 (= 4:4.7.0.0-2~petra), libqtcore4 (>= 4:4.8.1), libqtgui4 (>= 4:4.8.1), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Breaks: libphonon4 (<< 4:4.6.0really4.3.80)
+Filename: pool/main/p/phonon/libphononexperimental4_4.7.0.0-2~petra_amd64.deb
+Size: 36290
+MD5sum: 513bff3f6adcf1209410e086b766339d
+SHA1: 2bb08972c703ef8496c0b9965b18a74bad32a7a1
+SHA256: 1433455a2f89c4bbfcc69da88185bff398e5b5bc7aabb1327536b351dc879033
+Description: multimedia framework from KDE - experimental library (internal)
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains the Phonon-Experimental library, which might be needed
+ by Phonon back-ends or other internal applications. Third-party applications
+ should not depend on this library. Please read README.Debian before using this
+ library.
+Multi-Arch: same
+
+Package: inxi
+Priority: extra
+Section: misc
+Installed-Size: 443
+Maintainer: Unit 193 <unit193@ubuntu.com>
+Architecture: all
+Version: 1.9.17-1~petra
+Recommends: dmidecode, file, hddtemp, iproute2, lm-sensors, mesa-utils, module-init-tools, net-tools, sudo, usbutils, x11-utils, x11-xserver-utils
+Depends: bash (>= 3.0), gawk, pciutils, procps
+Filename: pool/main/i/inxi/inxi_1.9.17-1~petra_all.deb
+Size: 129334
+MD5sum: 297fa0229bf3707a489b5f4b48c0384b
+SHA1: 0a4230198e60d3082c44465b2c60743ce5656742
+SHA256: cbfa36153a4115593096e528e9d244f9990d7a5446d83084fec90b43744d31b0
+Description: full featured system information script
+ Inxi is a system information script that can display various things about
+ your hardware and software to users in an IRC chatroom or support forum.
+ It runs with the /exec command in most IRC clients.
+
+Package: libphononexperimental-dev
+Source: phonon
+Priority: optional
+Section: libdevel
+Installed-Size: 146
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: amd64
+Version: 4:4.7.0.0-2~petra
+Replaces: libphonon-dev (<< 4:4.6.0really4.4.4)
+Depends: libphononexperimental4 (= 4:4.7.0.0-2~petra), libqt4-dev (>= 4:4.8.1)
+Breaks: libphonon-dev (<< 4:4.6.0really4.4.4)
+Filename: pool/main/p/phonon/libphononexperimental-dev_4.7.0.0-2~petra_amd64.deb
+Size: 21916
+MD5sum: e7ec690e14605722be9f0f194fa2a66d
+SHA1: 7e6b7cec766a66a76eb68b19438540181a1a7912
+SHA256: 9c96b52f70eeef8c935c21b0abcd313b9c65213c4d0b1d6311cb48b5a979fef2
+Description: multimedia framework from KDE - experimental development files
+ Phonon is the Qt 4 multimedia API, which provides a task-oriented abstraction
+ layer for capturing, mixing, processing, and playing audio and video content.
+ .
+ This package contains the development files needed to build Phonon back-ends
+ or internal applications which need the Phonon-Experimental library.
+ Third-party applications should not depend on this library. Please read
+ README.Debian if you are considering a build-dependency on this package.
+
+Package: gnome-panel-control
+Source: openbox
+Priority: optional
+Section: x11
+Installed-Size: 63
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: amd64
+Version: 3.5.2-6~petra
+Replaces: openbox (<< 3.4.11.2)
+Depends: libc6 (>= 2.4), libx11-6
+Breaks: openbox (<< 3.4.11.2)
+Filename: pool/main/o/openbox/gnome-panel-control_3.5.2-6~petra_amd64.deb
+Size: 19464
+MD5sum: 2d3ba61195e29e814d7ac580eac13069
+SHA1: d4094b6ba849eb76c728ced6d41a9ec60ebe94c0
+SHA256: 6bf638ccc08adc0f92ddc031f8e80df3f51cb53f25b9a763a22e828ee5c842a5
+Description: command line utility to invoke GNOME panel run dialog/menu
+ gnome-panel-control can be used to invoke the GNOME panel run or main
+ menu from the command line. This is originally a helper utility of openbox
+ since gnome-panel is no longer managing its own key bindings.
+
+Package: libfm-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 1656
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0-0linuxmint1
+Replaces: libfm0, libfm1
+Breaks: libfm0, libfm1
+Filename: pool/main/libf/libfm/libfm-data_1.2.0-0linuxmint1_all.deb
+Size: 203268
+MD5sum: 01a68e3c176c0eb01368df578eecb42e
+SHA1: 3dfa62911daf89a89d5d1efe657effbdc6335520
+SHA256: 0dc6a843fe3d28631c9d93bd84996b32fde2ebee2a11cdf0a9cd0097996ab847
+Description: file management support (common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the core library.
+
+Package: libfm-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 1536
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0~git20131221-0linuxmint1
+Replaces: libfm0, libfm1
+Breaks: libfm0, libfm1
+Filename: pool/main/libf/libfm/libfm-data_1.2.0~git20131221-0linuxmint1_all.deb
+Size: 182042
+MD5sum: 505fef0094873e8c8d76876d84e56964
+SHA1: 62558dbd8cbe98bccaa6eb3bbbe28e467e094b6c
+SHA256: fb9bb932d205a1bc9c85d216009e444cbafdd6ea16062157297f23eea05f0c5d
+Description: file management support (common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the core library.
+
+Package: libfm-gtk-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 166
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0-0linuxmint1
+Replaces: libfm-gtk0
+Breaks: libfm-gtk-bin (<< 1.2~), libfm-gtk0
+Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.0-0linuxmint1_all.deb
+Size: 20304
+MD5sum: 89e1e0edb0cca1bc57d76378b1311c2d
+SHA1: 783c0cdacdae12167eee51bdfb2d6b9e05560ffe
+SHA256: 8bda9821fac41bd995e97cbd45d785ebf9948b3c280a35565fdea4f55976b3d8
+Description: file management support (GTK+ library common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the GTK+ library.
+
+Package: libfm-gtk-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 153
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0~git20131221-0linuxmint1
+Replaces: libfm-gtk0
+Breaks: libfm-gtk-bin (<< 1.0), libfm-gtk0
+Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.0~git20131221-0linuxmint1_all.deb
+Size: 15182
+MD5sum: 7b63d5d33f49ebf30e3a0c773d292057
+SHA1: 355c18ab000550de6ecd3472f7b8ee8f73a76f55
+SHA256: a704bd40acbe88450bd1497dbe9debf3af3ff6187d87cb34c3aa6d9f63ec1a72
+Description: file management support (GTK+ library common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the GTK+ library.
+
+Package: abiword-dbg
+Source: abiword
+Priority: extra
+Section: debug
+Installed-Size: 32068
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 3.0.0-4~petra
+Depends: abiword (= 3.0.0-4~petra)
+Filename: pool/main/a/abiword/abiword-dbg_3.0.0-4~petra_amd64.deb
+Size: 30294874
+MD5sum: d798959f26d7aaa5cfdb2123d7408743
+SHA1: d022d6f00d73c503cd489ff8681efef2329632b1
+SHA256: 21988a9f6b7f3672d2d958c3c30a58293a68e50943bff616e3fc942712ae98a9
+Description: debugging symbols for abiword word processor
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package includes many of the available import/export plugins allowing
+ AbiWord to interact with ODT, WordPerfect, and other formats.  It also
+ includes tools plugins, offering live collaboration with AbiWord users
+ on Linux and Windows (using TCP or Jabber/XMPP), web translation and
+ dictionary support, and more.
+ .
+ This package contains debugging symbols needed for debugging abiword.
+
+Package: mc-data
+Source: mc
+Priority: optional
+Section: utils
+Installed-Size: 5351
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 3:4.8.11-1~petra
+Replaces: mc (<< 3:4.8.1)
+Breaks: mc (<< 3:4.8.1)
+Filename: pool/main/m/mc/mc-data_4.8.11-1~petra_all.deb
+Size: 1180510
+MD5sum: e4e5e6da203bb7be7637ee132e11d8cb
+SHA1: 61304c874fc0941aae7da1562a3afb73ac0245e9
+SHA256: 726961375de7f10fd5c90a24dd441b682528197070a1d2f3b675aff3de73ea58
+Description: Midnight Commander - a powerful file manager -- data files
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+ .
+ This package provides architecture independent files
+Multi-Arch: foreign
+
+Package: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 1009
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: amd64
+Version: 0.4.9-1~saucy1
+Recommends: qpdfview-djvu-plugin (= 0.4.9-1~saucy1), qpdfview-ps-plugin (= 0.4.9-1~saucy1), qpdfview-translations (= 0.4.9-1~saucy1)
+Depends: libc6 (>= 2.14), libcups2 (>= 1.4.0), libgcc1 (>= 1:4.1.1), libmagic1, libpoppler-qt4-4 (>= 0.22.1), libqt4-dbus (>= 4:4.5.3), libqt4-sql (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.2.3.4), libqt4-sql-sqlite, libqt4-svg
+Filename: pool/main/q/qpdfview/qpdfview_0.4.9-1~saucy1_amd64.deb
+Size: 362186
+MD5sum: c731cfed227a4d2d958a2468abf18776
+SHA1: 59b0f3aa135080d72268c4e88ef397657ce726ed
+SHA256: 7bd9015700a1ac9a9e065243423f6afcecd8e4f6a01deecc044df0234a381298
+Description: tabbed document viewer
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ Current features include:
+ - Outline, properties and thumbnail panes
+ - Scale, rotate and fit
+ - Fullscreen and presentation views
+ - Continuous and multi-page layouts
+ - Search for text (PDF and DjVu only)
+ - Configurable toolbars
+ - SyncTeX support (PDF only)
+ - Partial annotation support (PDF only, Poppler version 0.20.1 or newer)
+ - Partial form support (PDF only)
+ - Persistent per-file settings
+ - Support for DjVu and PostScript documents via plugins
+
+Package: libfm-gtk-bin
+Source: libfm
+Priority: extra
+Section: oldlibs
+Installed-Size: 33
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: libfm-tools (= 1.2.0-0linuxmint1)
+Filename: pool/main/libf/libfm/libfm-gtk-bin_1.2.0-0linuxmint1_amd64.deb
+Size: 7276
+MD5sum: 612b733fe4bb0b56c39105257c22af10
+SHA1: df89e9ba79d4077dd0d73f5334807d9090e237cc
+SHA256: f3620f8e50cc625fd3c5d7dfc6f92aa820e4604839bca4e6d9d69dd6035c57f0
+Description: transitional package for libfm-tools
+ This is transitional package for libfm-tools, and can be safely removed
+ after the installation is complete.
+
+Package: lxtask-dbg
+Source: lxtask
+Priority: extra
+Section: debug
+Installed-Size: 112
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.1.4-3.1+petra
+Depends: lxtask
+Filename: pool/main/l/lxtask/lxtask-dbg_0.1.4-3.1+petra_amd64.deb
+Size: 60644
+MD5sum: 4f0178eb4e76cff214f5798d854f81df
+SHA1: 4075ec92fcec6bd81d4e128dfe2d189c385912ca
+SHA256: 74a4dabaef51852694e8ec9085e67083a0a29747827990ce5a094e1bfd6a12b8
+Description: LXDE task manager (debug)
+ LXTask is a GUI application for the Lightweight X11 Desktop Environment (LXDE).
+ .
+ This package contains the debugging symbols.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: gpicview-dbg
+Source: gpicview
+Priority: extra
+Section: debug
+Installed-Size: 223
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 0.2.4-1~petra
+Depends: gpicview (= 0.2.4-1~petra)
+Filename: pool/main/g/gpicview/gpicview-dbg_0.2.4-1~petra_amd64.deb
+Size: 164602
+MD5sum: cfb906d7e10c21883ea0a6ed9bc958e9
+SHA1: ed01d6eba93775a332ef4ca318e375553cdaf9c8
+SHA256: 62fc3c792e6baf7822bf4849821fd3fcbf46f663a4828d4bcd35c51e64fa538b
+Description: lightweight image viewer (debug)
+ GPicView is a lightweight GTK+ 2.x based image viewer.
+ .
+ This package contains the debugging symbols.
+
+Package: nyancat
+Priority: extra
+Section: misc
+Installed-Size: 79
+Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
+Architecture: amd64
+Version: 1.2.2-1~petra
+Depends: libc6 (>= 2.11)
+Filename: pool/main/n/nyancat/nyancat_1.2.2-1~petra_amd64.deb
+Size: 14326
+MD5sum: 688b3d8661295eaed8f08906e9b55087
+SHA1: 8c46a500dfa93333d30e9934410f2f8c28511415
+SHA256: 053a2c1e2e634d21438f31f6a254e15d5b2c6e6e480f9f49b46772b6e50d8ae2
+Description: Animated terminal Nyancat
+ nyancat is a program to display an animated poptart cat in your terminal.
+ .
+ This is a standalone program only. To serve nyancat to many users, the
+ nyancat-server package is required.
+
+Package: nyancat-server
+Source: nyancat
+Priority: extra
+Section: misc
+Installed-Size: 45
+Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
+Architecture: all
+Version: 1.2.2-1~petra
+Depends: nyancat (>= 1.2.2-1~petra), openbsd-inetd | inet-superserver, reconf-inetd
+Conflicts: telnetd
+Filename: pool/main/n/nyancat/nyancat-server_1.2.2-1~petra_all.deb
+Size: 4446
+MD5sum: dd431b13a1844b612a5a770caaf37118
+SHA1: 1a6e5ec1aabb4fafdd5d8f0d191e525af4275133
+SHA256: b176e9c52a4fddaedefe9417c702d8e24708d006bb61155ce3b302ff9f6e8030
+Description: Animated terminal Nyancat server configurations
+ nyancat-server contains the configuations required to quickly set up a nyancat
+ server. This allows the animated poptart cat to be served to many users via
+ telnet.
+ .
+ Installing this package will automatically configure and activate a nyancat
+ telnet server.
+
+Package: libasprintf0c2
+Source: gettext
+Priority: standard
+Section: libs
+Installed-Size: 72
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 0.18.3.1-1ubuntu1~petra
+Replaces: gettext-base (<< 0.18.1.1-6)
+Depends: libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Breaks: gettext-base (<< 0.18.1.1-6)
+Filename: pool/main/g/gettext/libasprintf0c2_0.18.3.1-1ubuntu1~petra_amd64.deb
+Size: 33214
+MD5sum: 5a8a1128e23338a8b16c087a43b5a0e7
+SHA1: 2ccb79b767be68731dfa5737aa46776ef4ad236b
+SHA256: e57c4a3de690265add5e0b4d213f96daf684bba4c7679dbde1cd39e5136442a4
+Description: GNU library to use fprintf and friends in C++
+ This package contains the libasprintf shared library which makes the
+ C formatted output routines (fprintf et al.) usable in C++ programs,
+ for use with the <string> strings and the <iostream> streams.
+Multi-Arch: same
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+
+Package: libfm3
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 352
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0~git20131221-0linuxmint1
+Depends: libc6 (>= 2.14), libdbus-glib-1-2 (>= 0.78), libexif12, libglib2.0-0 (>= 2.37.3), libmenu-cache3, libfm-data (>= 1.0.2~), lxmenu-data
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm3_1.2.0~git20131221-0linuxmint1_amd64.deb
+Size: 115482
+MD5sum: 8b0c54ec62efa3e6d07154b2ae870527
+SHA1: 39a7b491229ca78bcce063ae689478e49d53f1a8
+SHA256: 3c6203fb46ca1532d39a5415269d5da912db2a1a8f02b57d1e6f9292b5a3235b
+Description: file management support (core library)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ Some features:
+ * Desktop-independent, following FreeDesktop standards;
+ * Fast, light on memory usage, and responsive - well suited to
+ less powerful hardware such as netbooks and thin clients;
+ * Uses GIO/GVFS (like Nautilus) for Trash support and access to
+ remote file systems (FTP, SFTP, WebDAV, Windows shares, etc.);
+ * Clipboard operations are compatible with GTK+/GNOME and Qt/KDE;
+ * Supports both Drag-and-Drop, and the X Direct Save protocol;
+ * Reusable design with the core functions separated out to
+ simplify porting to other GUIs.
+ .
+ This package contains the core library.
+
+Package: libfm-gtk3
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 697
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0~git20131221-0linuxmint1
+Suggests: libfm-tools
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfm3 (= 1.2.0~git20131221-0linuxmint1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libmenu-cache3, libpango-1.0-0 (>= 1.20.0), libfm-gtk-data (>= 1.0.2~)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-gtk3_1.2.0~git20131221-0linuxmint1_amd64.deb
+Size: 196670
+MD5sum: 151d9d76a91cf80fb0584e3aae0303ac
+SHA1: 392846aefefa3da0b527a6a2e383cce56fc07a20
+SHA256: a1af06cca586f92196eef27539a53da2db5ade9829d5ff3cde242fbc4bf7e088
+Description: file management support (GTK+ 2.0 GUI library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains the GTK+ version 2.0 GUI.
+
+Package: compton
+Priority: extra
+Section: x11
+Installed-Size: 253
+Maintainer: Scott Leggett <scott@sl.id.au>
+Architecture: amd64
+Version: 0.1~beta2-1+petra
+Replaces: compton-git
+Depends: libc6 (>= 2.15), libconfig9, libdbus-1-3 (>= 1.1.1), libgl1-mesa-glx | libgl1, libpcre3 (>= 8.10), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1, libxrandr2 (>= 4.3), libxrender1
+Conflicts: compton-git
+Breaks: compton-git
+Filename: pool/main/c/compton/compton_0.1~beta2-1+petra_amd64.deb
+Size: 101242
+MD5sum: e42f58102dade1da9416d21e806e4ce1
+SHA1: 6e3077fc46468b1c159b2bab79620054df76e9ba
+SHA256: fa6efdb517e51dbe76844ddac80ce4bd0279d28ce8a3fa9ca79f048f0f52e270
+Description: compositor for X11, based on xcompmgr
+ compton is a compositor for X11, based on xcompmgr. In addition to shadows,
+ fading and translucency, compton implements window frame opacity control,
+ inactive window transparency, and shadows on argb windows.
+
+Package: libfm-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 515
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Replaces: libfm1-dbg
+Depends: libfm4 (= 1.2.0-0linuxmint1), libfm-extra4 (= 1.2.0-0linuxmint1)
+Breaks: libfm1-dbg
+Filename: pool/main/libf/libfm/libfm-dbg_1.2.0-0linuxmint1_amd64.deb
+Size: 404460
+MD5sum: 16a0b1a6a8ce39b6675cac8b74f24078
+SHA1: 23db717a8703f15117f2a6eca5a23393b19f5fd7
+SHA256: 563098d0aa17773078e47482d8cd845c6da2b38b0a1b1efd72882492bc9163bc
+Description: file management support (libfm debug)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the debugging symbols for GUI independent library.
+
+Package: libfm-tools
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 82
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Replaces: libfm-gtk-bin (<< 1.1.1), lxshortcut
+Provides: libfm-gtk-bin, lxshortcut
+Depends: libc6 (>= 2.2.5), libfm-gtk4 (>= 1.2.0-0linuxmint1), libfm4 (>= 0.1.99), libglib2.0-0 (>= 2.28.0), libgtk2.0-0 (>= 2.12.0)
+Conflicts: lxshortcut
+Breaks: libfm-gtk-bin (<< 1.1.1)
+Filename: pool/main/libf/libfm/libfm-tools_1.2.0-0linuxmint1_amd64.deb
+Size: 17778
+MD5sum: f6ca59e6ad46d9d35b5fed4692ff27b2
+SHA1: 4ddd20401a9ca3e0fbdd38aa0981dd4449bff058
+SHA256: 1efad16cfbc6d0becf5107e37e8c9ba8f8b1f57d6efec4082588988609f644a7
+Description: file management support (utilities)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains applications libfm-pref-apps and lxshortcut.
+
+Package: libfm-doc
+Source: libfm
+Priority: optional
+Section: doc
+Installed-Size: 2143
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0-0linuxmint1
+Recommends: libglib2.0-doc, libgtk-3-doc
+Filename: pool/main/libf/libfm/libfm-doc_1.2.0-0linuxmint1_all.deb
+Size: 141464
+MD5sum: 8634f94e16a80fc583ff820ca2291a8b
+SHA1: 925bc2bf349294c974cb9b457dfa9b24dac0019d
+SHA256: 99a9afa7b4b69b0f840c112906f1981ebbe226630baf888186f8bd3ed82e02bf
+Description: file management support (development documentation)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development HTML documentation.
+
+Package: libfm-doc
+Source: libfm
+Priority: optional
+Section: doc
+Installed-Size: 2107
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0~git20131221-0linuxmint1
+Recommends: libglib2.0-doc, libgtk-3-doc
+Filename: pool/main/libf/libfm/libfm-doc_1.2.0~git20131221-0linuxmint1_all.deb
+Size: 139900
+MD5sum: 0f0d6f63cf5417008490b47d71cde999
+SHA1: bbb0b37419a2b0fa34b5e5e3f818b162a7dcafb0
+SHA256: 664f49f2c2767bb941eb497fc7b91360e4317063f07dbf2524f72672f7dabd01
+Description: file management support (development documentation)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development HTML documentation.
+
+Package: libfm4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 349
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Recommends: libfm-modules
+Replaces: libfm3
+Depends: libc6 (>= 2.14), libdbus-glib-1-2 (>= 0.78), libexif12, libglib2.0-0 (>= 2.37.3), libmenu-cache3, libfm-data (>= 1.2.0~), lxmenu-data
+Pre-Depends: multiarch-support
+Breaks: libfm3
+Filename: pool/main/libf/libfm/libfm4_1.2.0-0linuxmint1_amd64.deb
+Size: 117034
+MD5sum: a95a8060fe608fba7185e56abea5c975
+SHA1: 0b49e35dd1e50c55e6e9244a576cf4ff3387b940
+SHA256: 9e4ce6f12eac689ff5bb57e5cb00d7b2a47ddaff4b827405f3e43694f4689f9a
+Description: file management support (core library)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ Some features:
+ * Desktop-independent, following FreeDesktop standards;
+ * Fast, light on memory usage, and responsive - well suited to
+ less powerful hardware such as netbooks and thin clients;
+ * Uses GIO/GVFS (like Nautilus) for Trash support and access to
+ remote file systems (FTP, SFTP, WebDAV, Windows shares, etc.);
+ * Clipboard operations are compatible with GTK+/GNOME and Qt/KDE;
+ * Supports both Drag-and-Drop, and the X Direct Save protocol;
+ * Reusable design with the core functions separated out to
+ simplify porting to other GUIs.
+ .
+ This package contains the core library.
+
+Package: libfm-gtk4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 532
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Replaces: libfm-gtk3
+Suggests: libfm-tools
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfm4 (= 1.2.0-0linuxmint1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.24.0), libmenu-cache3, libpango-1.0-0 (>= 1.20.0), libfm-gtk-data (>= 1.2.0~)
+Pre-Depends: multiarch-support
+Breaks: libfm-gtk3
+Filename: pool/main/libf/libfm/libfm-gtk4_1.2.0-0linuxmint1_amd64.deb
+Size: 162738
+MD5sum: f09485ae7daceeb3863ee8509336f488
+SHA1: 6f5e05348c228ceb3c09c5e3af83712a5c9d3843
+SHA256: 7b3a468f1bde86c9a57a0d85a1c990ec27de4c4ea85bbec887b5a7c0939687f4
+Description: file management support (GTK+ 2.0 GUI library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains the GTK+ version 2.0 GUI.
+
+Package: mint-lxde-default-settings
+Priority: required
+Section: admin
+Installed-Size: 288
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 16.0.0
+Recommends: scrot, compton, openbox
+Depends: mintsystem, pcmanfm | spacefm, lxpanel, mint-artwork-lxde, lxsession, terminator, fonts-liberation, lxsession-logout
+Filename: pool/main/m/mint-lxde-default-settings/mint-lxde-default-settings_16.0.0_all.deb
+Size: 29706
+MD5sum: 672758f8812e31ff00ac7f4b339b1520
+SHA1: de053fcd849d86a4bc6bb503a406640c1be1b0af
+SHA256: 1092bdcadc2fa6738bc5cc0664e8458c38564dc352e831dc371c642b3fa206e8
+Description: This Package contains the default system settings for Linux Mint LXDE Edition.
+
+Package: mint-artwork-lxde
+Priority: optional
+Section: x11
+Installed-Size: 5337
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 16.0.0
+Depends: mint-backgrounds-maya, shimmer-themes
+Filename: pool/main/m/mint-artwork-lxde/mint-artwork-lxde_16.0.0_all.deb
+Size: 5159478
+MD5sum: 2a01a32ff61d5234553b88d0055f13d4
+SHA1: 284593cab9ee0f980478afc4729a8d1427953956
+SHA256: 06656ffc464e66230b3b7c77c70cdd7eebcb0bf51152e199a7c20e0c3214e78c
+Description: Artwork for Linux Mint LXDE
+ Artwork for Linux Mint LXDE, contained the wallpaper and others specific images and
+ logos.
+
+Package: gir1.2-gnumeric
+Source: gnumeric
+Priority: optional
+Section: introspection
+Installed-Size: 2171
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 1.12.6-2~petra
+Filename: pool/main/g/gnumeric/gir1.2-gnumeric_1.12.6-2~petra_amd64.deb
+Size: 217654
+MD5sum: b311a1a35d194db3711cbf0c567f3627
+SHA1: a4d317fb4acb8afdae7ad167b44d9024e8de55c5
+SHA256: 50c4250de527e863c77b5e378ef2c48d777d4e881ad1201eab097788bbb1dbc6
+Description: GObject introspection data for the Gnumeric spreadsheet
+ This package contains introspection data for the Gnumeric spreadsheet.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: mint-info-cinnamon
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: amd64
+Version: 2013.11.10+nmu1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-cinnamon_2013.11.10+nmu1_amd64.deb
+Size: 2234
+MD5sum: 99003eacd5f684ed4ceef9f3d9c8928d
+SHA1: fa3942bd73bfdc8a56a3c2034719796717c10c55
+SHA256: 0e30f354992b72ed6fcb69125ea81cbf45ff940c5fa24c45367a74e0b54401bd
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-mate
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: amd64
+Version: 2013.11.10+nmu1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-mate_2013.11.10+nmu1_amd64.deb
+Size: 2228
+MD5sum: f77e8ba28f056ec71da7dc8e9c13d215
+SHA1: 3aec4f2f3cad224172b2dc354f7a723cee4762b0
+SHA256: feb2326cf123d974a66300c9a6f42d354be81f1da1012dbe20f737dcbba3f0f6
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-kde
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: amd64
+Version: 2013.11.10+nmu1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-kde_2013.11.10+nmu1_amd64.deb
+Size: 2222
+MD5sum: 388e7822132b58faff96f188e709b85a
+SHA1: 15107502faa3155fdb98cb9795b73f9905a2266d
+SHA256: 695a5d9cb552646e623b2944d6cc0dabb400972e2e013450ad9e5878fc968852
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-xfce
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: amd64
+Version: 2013.11.10+nmu1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-xfce_2013.11.10+nmu1_amd64.deb
+Size: 2226
+MD5sum: 3686366b5de360846a913537ce36508a
+SHA1: 06a17ea293cc7a0126ef3bead95e8a779c08fd7d
+SHA256: 82c2988773aa5b241f94310b5f8c1dd3696589b10dc6e3641c582ecccf4750b2
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-lxde
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 26
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: amd64
+Version: 2013.11.10+nmu1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-lxde_2013.11.10+nmu1_amd64.deb
+Size: 1960
+MD5sum: b1f3d1fc7306d934fa806ab4223086ce
+SHA1: 813120c7c512c9b59fb4beeb9648e111b96121ba
+SHA256: 076500f9ea410c749c12ca55d2121babf2b3a5ded45df8dc1ce3a692d337789a
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: qpdfview-djvu-plugin
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 109
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: amd64
+Version: 0.4.9-1~saucy1
+Depends: libc6 (>= 2.14), libdjvulibre21 (>= 3.5.25.4), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.1.1), qpdfview (= 0.4.9-1~saucy1)
+Filename: pool/main/q/qpdfview/qpdfview-djvu-plugin_0.4.9-1~saucy1_amd64.deb
+Size: 33796
+MD5sum: 82b8d2c74a4613531c82eff967f5540c
+SHA1: c04388c434cc5c941c75ff80b16605023b7319c3
+SHA256: f5d7fb8b6e5b92b519d9f50d9b8da3198eb3ccc886fffe8d355c913a13600278
+Description: tabbed document viewer - DjVu plugin
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This plugin adds support for the DjVu format.
+
+Package: qpdfview-ps-plugin
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 100
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: amd64
+Version: 0.4.9-1~saucy1
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.5.3), libspectre1 (>= 0.2.3), libstdc++6 (>= 4.1.1), qpdfview (= 0.4.9-1~saucy1)
+Filename: pool/main/q/qpdfview/qpdfview-ps-plugin_0.4.9-1~saucy1_amd64.deb
+Size: 27936
+MD5sum: 2140dc8ea0023095735730c043ed0f0a
+SHA1: 5634af8ebce65ed9615446164318f54bd45b10d1
+SHA256: 7640902301d9548061da47b6c8c06d0b5196db0aa0fe24df0ce238b1cb7f06f6
+Description: tabbed document viewer - PostScript plugin
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This plugin adds support for the PostScript format.
+
+Package: libabiword-3.0
+Source: abiword
+Priority: optional
+Section: libs
+Installed-Size: 7575
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 3.0.0-4~petra
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.14), libcairo2 (>= 1.10.0), libchamplain-0.12-0 (>= 0.11.0), libchamplain-gtk-0.12-0 (>= 0.11.0), libclutter-1.0-0 (>= 1.10.0), libclutter-gtk-1.0-0 (>= 0.91.8), libebook-contacts-1.2-0 (>= 3.7.90), libenchant1c2a (>= 1.6.0), libfontconfig1 (>= 2.9.0), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.37.3), libgoffice-0.10-10 (>= 0.9.0), libgsf-1-114 (>= 1.14.9), libgtk-3-0 (>= 3.3.16), libical1 (>= 1.0), libjpeg8 (>= 8c), libpango-1.0-0 (>= 1.22.0), libpangocairo-1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), librdf0 (>= 1.0.17), librsvg2-2 (>= 2.14.4), libstdc++6 (>= 4.6), libwv-1.2-4 (>= 1.2.9), libx11-6, libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/a/abiword/libabiword-3.0_3.0.0-4~petra_amd64.deb
+Size: 1979424
+MD5sum: 63043c41b89d0b1794027f3c950e7423
+SHA1: c92548bde366f8ac0f8ba5089b0517045382ad56
+SHA256: 33065a6f26a3ef5e46d04affc60b86880b2f5c17da3b200a800614df04419cd0
+Description: efficient, featureful word processor with collaboration -- shared library
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains the shared library, enabling other applications to
+ integrate AbiWord functionality.
+Multi-Arch: same
+
+Package: libabiword-3.0-dev
+Source: abiword
+Priority: optional
+Section: libdevel
+Installed-Size: 127
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: amd64
+Version: 3.0.0-4~petra
+Depends: libabiword-3.0 (= 3.0.0-4~petra), libcairo-dev | libcairo2-dev, libebook1.2-dev, libenchant-dev, libecal1.2-dev, libfribidi-dev, libglib2.0-dev, libgoffice-0.10-dev, libgsf-1-dev, libgtk-3-dev, libical-dev (>= 0.46), libpango1.0-dev, librasqal3-dev, librdf0-dev, librsvg2-dev, libwv-dev, libx11-dev, libxslt-dev | libxslt1-dev
+Filename: pool/main/a/abiword/libabiword-3.0-dev_3.0.0-4~petra_amd64.deb
+Size: 42902
+MD5sum: 60582103c9200170c30803eb12b363a1
+SHA1: a5c4d01fb9c245c3fa2201c38d7451b55f3f0238
+SHA256: 655e212ae4a702d98a20168365bd0eb474e4b68bcef66aeaf6764393b01427e4
+Description: efficient, featureful word processor with collaboration -- development files
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains development files for software linking against
+ libabiword-3.0.
+
+Package: libfm-extra4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 71
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.37.3)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-extra4_1.2.0-0linuxmint1_amd64.deb
+Size: 18132
+MD5sum: 7aff4088a87c760b0f9a971cb450f410
+SHA1: 2109f9e6990cb04bde0fb55d6d62fa7bbf4cf3eb
+SHA256: 3f0ded227c9e392280da79d13e546d4c06228eee8fe4a67bea77058ffdad2a46
+Description: file management support (extra library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains standalone library which extends libfm.
+
+Package: libfm-modules
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 180
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: libc6 (>= 2.7), libfm-extra4, libfm4 (>= 1.0.2), libglib2.0-0 (>= 2.37.3), libgtk2.0-0 (>= 2.18.0), libmenu-cache3
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-modules_1.2.0-0linuxmint1_amd64.deb
+Size: 38368
+MD5sum: b243680408d32cb0924c74283c1d83d1
+SHA1: dce9e3629a77a0e3f8b739f63b9709698fd8e8a8
+SHA256: e133ea828e37945ac439c10832225e38c56a2ec20ece90c788bc003806d4cfc4
+Description: file management support (loadable modules for library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains loadable modules used by libfm* libraries.
+
+Package: libmenu-cache3
+Source: menu-cache
+Priority: optional
+Section: libs
+Installed-Size: 197
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 0.5.1-0linuxmint1
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.31.8)
+Conflicts: libmenu-cache1
+Pre-Depends: multiarch-support
+Filename: pool/main/m/menu-cache/libmenu-cache3_0.5.1-0linuxmint1_amd64.deb
+Size: 53874
+MD5sum: 0abe5702fc35df9ccac2a75dc6c3e41e
+SHA1: 14d39247db526d169415458d41aea103d3e60587
+SHA256: 882b39f1269f63146ab4cbdaec1291727c07e3d06233f317e04f1ec75b85e1d1
+Description: LXDE implementation of the freedesktop Menu specification
+ Libmenu-cache is a library creating and utilizing caches to speed up
+ the manipulation for freedesktop.org defined application menus.
+ .
+ It can be used as a replacement of libgnome-menu of gnome-menus:
+ .
+ * Shorten time for loading menu entries.
+ * Ease of use (API is very similar to that of libgnome-menu).
+ * Lightweight runtime library (parsing of the menu definition files
+ are done by menu-cache-gen when the menus are really changed).
+ * Less unnecessary and complicated file monitoring.
+ * Heavily reduced disk I/O.
+
+Package: libfm-gtk-dev
+Source: libfm
+Priority: optional
+Section: libdevel
+Installed-Size: 46
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: libfm-dev (= 1.2.0-0linuxmint1), libfm-gtk4 (= 1.2.0-0linuxmint1)
+Breaks: libfm-dev (<< 1.0.2)
+Filename: pool/main/libf/libfm/libfm-gtk-dev_1.2.0-0linuxmint1_amd64.deb
+Size: 7814
+MD5sum: fc7ed2340349ffe0a4d343a75ac6cbe3
+SHA1: 5452c68342db301b7a1828d08d3167b16490e98e
+SHA256: 1d3c082ff73b4576feeefc758970355d0541628fa62972e6320823b7fa9f5822
+Description: file management support (GTK+ GUI development files)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development files for builds using GTK library.
+
+Package: libfm-gtk-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 803
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: libfm-gtk4 (= 1.2.0-0linuxmint1)
+Breaks: libfm-dbg (<< 1.0.2)
+Filename: pool/main/libf/libfm/libfm-gtk-dbg_1.2.0-0linuxmint1_amd64.deb
+Size: 670188
+MD5sum: 6dfb001223bf343166d031a16f08e1f0
+SHA1: 1882a64e8f6d197c83fd62a20d87e523dde6f12e
+SHA256: d6ae39ce5c75989c01f01c9c62966cad8ece10cbe24972997dfee55e15d95076
+Description: file management support (libfm-gtk debug)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the debugging symbols for GTK+ library.
+
+Package: libobt2
+Source: openbox
+Priority: optional
+Section: libs
+Installed-Size: 118
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: amd64
+Version: 3.5.2-6~petra
+Replaces: libobparser15, libobparser16
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.35.9), libx11-6, libxext6, libxinerama1, libxml2 (>= 2.7.4), libxrandr2
+Conflicts: libobparser15, libobparser16
+Filename: pool/main/o/openbox/libobt2_3.5.2-6~petra_amd64.deb
+Size: 39526
+MD5sum: 63ec8280bd730655ac4b273429301254
+SHA1: 78f40774f7b183cd509d55fc7909565e880e641c
+SHA256: 40a74a800c6dba607ab5d38af289ee7927e7a4e5f65d7e3c8826bcb69ca26ecb
+Description: parsing library for openbox
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobt library files used by openbox
+ to load and parse configuration and theme files of openbox.
+
+Package: libobrender29
+Source: openbox
+Priority: optional
+Section: libs
+Installed-Size: 164
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: amd64
+Version: 3.5.2-6~petra
+Replaces: libobrender15, libobrender16
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.35.9), libimlib2, libobt2 (>= 3.5.2), libpango-1.0-0 (>= 1.18.0), libpangoxft-1.0-0 (>= 1.14.0), librsvg2-2 (>= 2.14.4), libx11-6, libxft2 (>> 2.1.1)
+Conflicts: libobrender15, libobrender16
+Filename: pool/main/o/openbox/libobrender29_3.5.2-6~petra_amd64.deb
+Size: 51174
+MD5sum: c37ae671224603e6ff31ea27d678f8de
+SHA1: 2285ee285f0ea154d2c349ae828023d9910a9853
+SHA256: 6b5151d1ab2c67b9a105dcad4d56010365e91cb01f40ef9af84e65d9306b35e7
+Description: rendering library for openbox themes
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobrender library files used by openbox
+ for theme rendering.
+
+Package: qpdfview-translations
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 1216
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: amd64
+Version: 0.4.9-1~saucy1
+Replaces: qpdfview-languages
+Depends: qpdfview (= 0.4.9-1~saucy1)
+Filename: pool/main/q/qpdfview/qpdfview-translations_0.4.9-1~saucy1_amd64.deb
+Size: 297156
+MD5sum: e1c5999d8cb5528a8fd1595ddc0c99c2
+SHA1: a851fb253cda74c6b219307a397d28e43cefcac3
+SHA256: 0ff7e7620468bd1f0f2d3814dc018c5fce03c9e77a45bfb216b36569cac2f3fe
+Description: tabbed document viewer - translations
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This package contains all translations.
+
+Package: libvlccore7
+Source: vlc
+Priority: optional
+Section: libs
+Installed-Size: 956
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: amd64
+Version: 2.1.0-2~petra
+Depends: libproxy-tools, vlc-data (= 2.1.0-2~petra), libc6 (>= 2.15), libdbus-1-3 (>= 1.0.2), libidn11 (>= 1.13)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlccore7_2.1.0-2~petra_amd64.deb
+Size: 341224
+MD5sum: 47a3e53e2e16536092b66c9deada4e11
+SHA1: aa1f928df9357cdd33d603c6ba91f3a58a908af9
+SHA256: 0bd1fab21fa98c33fd8de743ad8a654125b9616910d3ce8feb06637e928c97c9
+Description: base library for VLC and its modules
+ This package contains the shared library required by VLC modules and libvlc.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: openbox-gnome-session
+Source: openbox
+Priority: optional
+Section: x11
+Installed-Size: 74
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 3.5.2-6~petra
+Replaces: openbox (<< 3.5.2-5)
+Depends: openbox (>= 3.5.2-6~petra), gnome-session-bin, gconf2, x11-utils
+Enhances: gnome-session
+Breaks: openbox (<< 3.5.2-5)
+Filename: pool/main/o/openbox/openbox-gnome-session_3.5.2-6~petra_all.deb
+Size: 16296
+MD5sum: 38590cd5f0a7778e0999a941563244a1
+SHA1: 229ff657d18e695568cd7c114f5aa75ccfd00cd2
+SHA256: 5510987fdc9c8c62a66e94272042e5d759fc70ee3c7d9bb295f408605947264a
+Description: command line utility to run Openbox as GNOME session
+ openbox-gnome-session can provide GNOME session with openbox as
+ a default window manager. It can replace the original window manager
+ in GNOME Shell and GNOME Fallback sessions.
+
+Package: openbox-kde-session
+Source: openbox
+Priority: optional
+Section: x11
+Installed-Size: 56
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 3.5.2-6~petra
+Replaces: openbox (<< 3.5.2-5)
+Depends: openbox (>= 3.5.2-6~petra), kde-workspace-bin, x11-utils
+Enhances: kde-workspace
+Breaks: openbox (<< 3.5.2-5)
+Filename: pool/main/o/openbox/openbox-kde-session_3.5.2-6~petra_all.deb
+Size: 15266
+MD5sum: 0c3c1b8d75f5247b4f8aeeb0231c7306
+SHA1: 668ce7037b18220a41514199f4085a2ad12e20c0
+SHA256: 5dca4d2d8baad4d2db144897c3a49130b6c78fdeb4a18d93a0e0e013e494db84
+Description: command line utility to run Openbox as KDE SC session
+ openbox-kde-session can provide KDE SC session with openbox as
+ a default window manager. Can replace the original window manager
+ called KWin.
+
+Package: libfm-modules-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 245
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: amd64
+Version: 1.2.0-0linuxmint1
+Depends: libfm-modules (= 1.2.0-0linuxmint1)
+Filename: pool/main/libf/libfm/libfm-modules-dbg_1.2.0-0linuxmint1_amd64.deb
+Size: 137554
+MD5sum: 6d7bbf2c91a53aa613e0a9705bbde771
+SHA1: 702159a647a4510b9f2cf482af309eb878025242
+SHA256: d103f0e53f5f55f962946e4120a0fdc31e24f17492cba50ce6a2fda9de95e08b
+Description: file management support (libfm-modules debug)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the debugging symbols for libfm modules.
+

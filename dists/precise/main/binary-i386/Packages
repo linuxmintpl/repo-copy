@@ -1,0 +1,4557 @@
+Package: abiword
+Priority: optional
+Section: editors
+Installed-Size: 4482
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 3.0.0-1~maya
+Recommends: abiword-plugin-grammar, abiword-plugin-mathview, aspell-en | aspell-dictionary, poppler-utils, fonts-liberation
+Depends: libabiword-3.0 (>= 3.0.0), libc6 (>= 2.7), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libgcc1 (>= 1:4.1.1), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.16.0), libgnutls26 (>= 2.12.6.1-0), libgoffice-0.10-10 (>= 0.10.2), libgsf-1-114 (>= 1.14.9), libgtk-3-0 (>= 3.0.0), libjpeg8 (>= 8c), libloudmouth1-0 (>= 1.3.3), libots0, libpng12-0 (>= 1.2.13-4), librdf0 (>= 1.0.14), libreadline6 (>= 6.0), libsoup2.4-1 (>= 2.4.0), libstdc++6 (>= 4.6), libtelepathy-glib0 (>= 0.13.0), libtidy-0.99-0, libwmf0.2-7 (>= 0.2.8.4), libwpd-0.9-9, libwpg-0.2-2, libwps-0.2-2, libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), abiword-common (>= 3.0.0-1~maya), gsfonts
+Filename: pool/main/a/abiword/abiword_3.0.0-1~maya_i386.deb
+Size: 1193628
+MD5sum: 69245ecfa9eaccced57cbbd2c6650cdd
+SHA1: ecb76fd4372d8f76982d6e9e67848c6c59eeb193
+SHA256: fba20bcd2563f1c265b7636b40d7d4598516d8cc3a19298a4ba279572b66310a
+Description: efficient, featureful word processor with collaboration
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package includes many of the available import/export plugins allowing
+ AbiWord to interact with ODT, WordPerfect, and other formats.  It also
+ includes tools plugins, offering live collaboration with AbiWord users
+ on Linux and Windows (using TCP or Jabber/XMPP), web translation and
+ dictionary support, and more.
+ .
+ Additional plugins that require significant amounts of extra software to
+ function are in the various abiword-plugin-* packages.
+
+Package: abiword-common
+Source: abiword
+Priority: optional
+Section: editors
+Installed-Size: 10905
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 3.0.0-1~maya
+Filename: pool/main/a/abiword/abiword-common_3.0.0-1~maya_all.deb
+Size: 1661988
+MD5sum: 43f526ff96519d289a10eb91fb93a998
+SHA1: 455ad52217595f4e7c4eb0ea0ea7b2a7ed2e9708
+SHA256: 742b30734fb87323b40080f0d48d1248dccd15b391d4c610e98e97a44ec5ab8b
+Description: efficient, featureful word processor with collaboration -- common files
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains the common files that are used on all architectures
+ without modification.
+
+Package: autoconf
+Priority: optional
+Section: devel
+Installed-Size: 1889
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.69-1ubuntu1~maya
+Recommends: automake | automaken
+Suggests: autoconf2.13, autoconf-archive, gnu-standards, autoconf-doc, libtool, gettext
+Depends: perl (>> 5.005), m4 (>= 1.4.13), debianutils (>= 1.8)
+Breaks: autoconf2.13 (<< 2.13-47), gettext (<< 0.10.39), pkg-config (<< 0.25-1.1)
+Filename: pool/main/a/autoconf/autoconf_2.69-1ubuntu1~maya_all.deb
+Size: 582500
+MD5sum: 14c693425c08586ad409d423f74b3888
+SHA1: 317a0f02d1ddcfcd3e27868720a60d29433221ad
+SHA256: 0d35400714a6b9a388427eef81d9c910f76a5a0d21f7732b8ce8d7b4f578bc63
+Description: automatic configure script builder
+ The standard for FSF source packages.  This is only useful if you
+ write your own programs or if you extensively modify other people's
+ programs.
+ .
+ For an extensive library of additional Autoconf macros, install the
+ `autoconf-archive' package.
+ .
+ This version of autoconf is not compatible with scripts meant for
+ Autoconf 2.13 or earlier.  If you need support for such scripts,
+ you must also install the autoconf2.13 package.
+Original-Maintainer: Ben Pfaff <pfaffben@debian.org>
+
+Package: automake
+Source: automake-1.14
+Priority: optional
+Section: devel
+Installed-Size: 1493
+Maintainer: Eric Dorland <eric@debian.org>
+Architecture: all
+Version: 1:1.14-1~maya
+Provides: automake-1.14, automaken
+Depends: autoconf (>= 2.65), autotools-dev (>= 20020320.1), dpkg (>= 1.15.4) | install-info
+Conflicts: automake (<< 1:1.4-p5-1), automake1.10-doc, automake1.5 (<< 1.5-2), automake1.6 (<< 1.6.1-4)
+Filename: pool/main/a/automake-1.14/automake_1.14-1~maya_all.deb
+Size: 582076
+MD5sum: fdf660385d00b6371971673195be2469
+SHA1: 1cb007e3a8578aa3d7f42d79046ae42694be58f6
+SHA256: cb8dcaddd5f905e7669275f5f6109e8e895e421e487b329968c27529b1e51345
+Description: Tool for generating GNU Standards-compliant Makefiles
+ Automake is a tool for automatically generating `Makefile.in's from
+ files called `Makefile.am'.
+ .
+ The goal of Automake is to remove the burden of Makefile maintenance
+ from the back of the individual GNU maintainer (and put it on the back
+ of the Automake maintainer).
+ .
+ The `Makefile.am' is basically a series of `make' macro definitions
+ (with rules being thrown in occasionally).  The generated
+ `Makefile.in's are compliant with the GNU Makefile standards.
+ .
+ Automake 1.14 fails to work in a number of situations that Automake
+ 1.4, 1.6, 1.7, 1.8, 1.9, 1.10 and 1.11 did, so previous versions are
+ available as separate packages.
+Multi-Arch: foreign
+
+Package: gimp
+Priority: optional
+Section: graphics
+Installed-Size: 15012
+Maintainer: Ari Pollak <ari@debian.org>
+Architecture: i386
+Version: 2.8.6-1~maya
+Recommends: ghostscript
+Replaces: gimp-plugin-registry (<< 4.20120506)
+Suggests: gimp-help-en | gimp-help, gimp-data-extras, gvfs-backends, libasound2
+Provides: gimp-helpbrowser, gimp-python
+Depends: libgimp2.0 (>= 2.8.6), libgimp2.0 (<= 2.8.6-z), gimp-data (>= 2.8.6), gimp-data (<= 2.8.6-z), python-gtk2 (>= 2.8.0), libgdk-pixbuf2.0-0 (>= 2.24.1), libaa1 (>= 1.4p5), libbabl-0.1-0 (>= 0.1.10), libbz2-1.0, libc6 (>= 2.15), libcairo2 (>= 1.10.2), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libexif12, libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgegl-0.2-0 (>= 0.2.0), libglib2.0-0 (>= 2.31.8), libgs9 (>= 8.61.dfsg.1), libgtk2.0-0 (>= 2.24.10), libgudev-1.0-0 (>= 147), libjasper1, libjpeg8 (>= 8c), liblcms1 (>= 1.15-1), libmng1 (>= 1.0.10), libpango1.0-0 (>= 1.29.4), libpng12-0 (>= 1.2.13-4), libpoppler-glib8 (>= 0.18), librsvg2-2 (>= 2.14.4), libtiff4, libwebkitgtk-1.0-0 (>= 1.3.10), libwmf0.2-7 (>= 0.2.8.4), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxfixes3, libxmu6, libxpm4, zlib1g (>= 1:1.1.4), python (>= 2.7.1-0ubuntu2), python2.7
+Breaks: gimp-plugin-registry (<< 4.20120506)
+Filename: pool/main/g/gimp/gimp_2.8.6-1~maya_i386.deb
+Size: 6069424
+MD5sum: 95e87896e7569359876e12b71ee9fdd2
+SHA1: 64ef2b3e41d8f01cc23053273f7002be3df8984f
+SHA256: 1535e823491d7e6a899bd9adec721a02dffdbfb44076c4b70c340f07b965b36f
+Description: The GNU Image Manipulation Program
+ GIMP is an advanced picture editor. You can use it to edit, enhance, and
+ retouch photos and scans, create drawings, and make your own images.
+ It has a large collection of professional-level editing tools and
+ filters, similar to the ones you might find in Photoshop. Numerous
+ fine-control settings and features like layers, paths, masks, and
+ scripting give you total control over your images.
+ .
+ Many image file formats are supported, including JPEG, Photoshop (.psd),
+ and Paint Shop Pro (.psp) files. It can also be used to scan and print
+ photos.
+ .
+ To open files remotely (like over HTTP), install the gvfs-backends
+ package.
+ .
+ To use a MIDI device (like a musical keyboard) as an input controller in GIMP,
+ install libasound2 and read the how-to at /usr/share/doc/gimp/README.MIDI
+
+Package: gimp-data
+Source: gimp
+Priority: optional
+Section: graphics
+Installed-Size: 42815
+Maintainer: Ari Pollak <ari@debian.org>
+Architecture: all
+Version: 2.8.6-1~maya
+Recommends: gimp
+Replaces: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
+Conflicts: gimp (<< 2.4.0~rc2-2), gimp-python (<< 2.6.0)
+Filename: pool/main/g/gimp/gimp-data_2.8.6-1~maya_all.deb
+Size: 14688388
+MD5sum: ce931222cf3be06db61b42addb122bba
+SHA1: d5a713f3fff53bd37c9f8f61edced7b6140c77ce
+SHA256: 2205da3f945fac789b41586df0a3e49515c510715f158240ac24a3fff5cad9e8
+Description: Data files for GIMP
+ This package contains architecture-independent supporting data files
+ for use with GIMP.
+
+Package: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 6427
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.12.9-1~maya
+Recommends: gnumeric-doc (>= 1.12.9-1~maya), evince | evince-gtk, lp-solve
+Replaces: gnumeric-common (<< 1.12.2)
+Suggests: gnumeric-plugins-extra, fonts-liberation | ttf-mscorefonts-installer
+Depends: gnumeric-common (= 1.12.9-1~maya), debconf (>= 0.5) | debconf-2.0, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.30.0), libgoffice-0.10-10 (>= 0.10.9), libgsf-1-114 (>= 1.14.24), libgtk-3-0 (>= 3.2.1), libpango1.0-0 (>= 1.22.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), gsfonts, procps
+Pre-Depends: debconf
+Breaks: gnumeric-common (<< 1.12.2), gnumeric-doc (<< 1.12.9-1~maya)
+Filename: pool/main/g/gnumeric/gnumeric_1.12.9-1~maya_i386.deb
+Size: 2129150
+MD5sum: 85a31467bed7bf47bd809ea0a9b64fd0
+SHA1: 2bec036cb2b69faed8a3051ce221fdcd8f49e69b
+SHA256: 60f5cc0705637796e622b50dd2e8c216b82cceb5803cdd245999211fde81b31d
+Description: spreadsheet application for GNOME - main program
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ The following formats can be imported and exported:
+ - Microsoft Excel 97/2000/XP (.xls);
+ - Microsoft Excel 95 (.xls);
+ - OASIS XML, OpenOffice.org XML, StarOffice (.sxc);
+ - Comma/Character Separated Values (.csv);
+ - Data Interchange Format (.dif);
+ - Applix version 4 (.as).
+ .
+ Additionally, the following formats can be imported:
+ - GNU Oleo (.oleo);
+ - Linear and integer program expression format (.mps);
+ - Lotus 1-2-3 (.wks, .wk1);
+ - MS MultiPlan SYLK (.sylk);
+ - WordPerfect family "Plan Perfect" (.pln);
+ - Quattro Pro (tm);
+ - XSpread or SC;
+ - XBase (.dbf).
+ .
+ Gnumeric can export to LaTeX 2e (.tex), TROFF (.me) and HTML as well.
+ .
+ Gnumeric should be easy to use, in particular for users familiar with
+ Excel.
+ .
+ Gnumeric is a GNOME application. GNOME (GNU Network Object Model Environment)
+ is a user-friendly set of applications and desktop tools to be used in
+ conjunction with a window manager for the X Window System.
+
+Package: gnumeric-common
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 14879
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.9-1~maya
+Replaces: gnumeric (<= 1.2.6-1)
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: pool/main/g/gnumeric/gnumeric-common_1.12.9-1~maya_all.deb
+Size: 2254990
+MD5sum: 99160708b8e241a01fb45de48c8183a5
+SHA1: 4c16160854337e8ffbf7ae24de5d5f7cfc5608ec
+SHA256: 8bd926e83b50d9e2e651cd3890e9828ba031b0835f180209d8fdb0458fbadee0
+Description: spreadsheet application for GNOME - common files
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ This package contains architecture-independent data files needed by
+ gnumeric.
+
+Package: gnumeric-doc
+Source: gnumeric
+Priority: optional
+Section: doc
+Installed-Size: 12633
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.12.9-1~maya
+Recommends: gnome-desktop-data
+Replaces: docbook-xsl, gnumeric (<< 1.2.9-1)
+Suggests: gnumeric (>= 1.12.9-1~maya), docbook-xsl
+Depends: yelp
+Breaks: gnumeric (<< 1.2.9-1)
+Filename: pool/main/g/gnumeric/gnumeric-doc_1.12.9-1~maya_all.deb
+Size: 10422284
+MD5sum: b80d0b2bf87210d17691f8512b0210d8
+SHA1: 54a128b42a04a8fcdf48012365dc3586a2e02cba
+SHA256: d54665177b3328427b2d34b85a865aee50dfc12618c4d5f98724f3bdc1035309
+Description: spreadsheet application for GNOME - documentation
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ This package provides the user manual in GNOME Help
+ (DocBook XML) format.
+
+Package: gnumeric-plugins-extra
+Source: gnumeric
+Priority: optional
+Section: math
+Installed-Size: 296
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.12.9-1~maya
+Replaces: gnumeric (<= 1.3.92-1)
+Depends: gnumeric (= 1.12.9-1~maya), libc6 (>= 2.4), libglib2.0-0 (>= 2.28.0), libperl5.14 (>= 5.14.2), libpython2.7 (>= 2.7), pxlib1 (>= 0.5.0), perl, python-gtk2
+Breaks: gnumeric (<= 1.3.92-1)
+Filename: pool/main/g/gnumeric/gnumeric-plugins-extra_1.12.9-1~maya_i386.deb
+Size: 84998
+MD5sum: 5065865547e4c1e0093ae42f0188f808
+SHA1: 04c62bfa83b3a6af65dc25bc37f629c876876cec
+SHA256: 3b7e304d82523cf2cde7a87a05ef0fc28e5ace6d73b650151e39d013ec3561f1
+Description: spreadsheet application for GNOME - additional plugins
+ Gnumeric is a spreadsheet application that interoperates well
+ with other spreadsheets. It comes with plugins that enable it to deal with
+ commonly used spreadsheet file formats.
+ .
+ Some plugins shipped with gnumeric require additional packages to those
+ required by the main gnumeric program. These plugins are therefore
+ packaged separately.
+ .
+ This includes:
+ - Perl plugin;
+ - Python plugin;
+ - Python plugin loader;
+ - additional Python functions;
+ - GNOME glossary.
+
+Package: htop
+Priority: optional
+Section: utils
+Installed-Size: 185
+Maintainer: Eugene V. Lyubimkin <jackyf@debian.org>
+Architecture: i386
+Version: 1.0.2-1+maya3
+Suggests: strace, ltrace
+Depends: libc6 (>= 2.15), libncursesw5 (>= 5.6+20070908), libtinfo5
+Filename: pool/main/h/htop/htop_1.0.2-1+maya3_i386.deb
+Size: 70990
+MD5sum: 45a4aee5476e3b4b7991f310f434bcb6
+SHA1: e35815107b8421545261f6251bb5d1a1edb579d6
+SHA256: 1648a8e48c4d912c2493d4d0c66422f3982419144b900dd0ba8a7df318734f31
+Description: interactive processes viewer
+ Htop is an ncursed-based process viewer similar to top, but it
+ allows one to scroll the list vertically and horizontally to see
+ all processes and their full command lines.
+ .
+ Tasks related to processes (killing, renicing) can be done without
+ entering their PIDs.
+
+Package: libdvdcss-dev
+Source: libdvdcss
+Priority: extra
+Section: libdevel
+Installed-Size: 48
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.13-0.0linuxmint1
+Depends: libdvdcss2 (= 1.2.13-0.0linuxmint1)
+Filename: pool/main/libd/libdvdcss/libdvdcss-dev_1.2.13-0.0linuxmint1_i386.deb
+Size: 5852
+MD5sum: e18b5e79afe051ccfc23c0da01fe15a4
+SHA1: 2d5a1a65cf53022c598f85691db988726f73565f
+SHA256: 8312a91bb4b0d6aff227fce2e327f838b4c980d27de2b59824229ba26cdeb60f
+Description: library designed for accessing DVDs
+ libdvdcss is a simple library designed for accessing DVDs like a
+ block device without having to bother about the decryption.
+ .
+ This package provides the development files.
+Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
+
+Package: libdvdcss2
+Source: libdvdcss
+Priority: extra
+Section: libs
+Installed-Size: 64
+Maintainer: Kubuntu Developers <kubuntu-devel@lists.ubuntu.com>
+Architecture: i386
+Version: 1.2.13-0.0linuxmint1
+Depends: libc6 (>= 2.7)
+Filename: pool/main/libd/libdvdcss/libdvdcss2_1.2.13-0.0linuxmint1_i386.deb
+Size: 19432
+MD5sum: 444da526ddc32443c7e1de15fecdfaf7
+SHA1: 2df347cbc49264d3afdb8549192da5245c8d9236
+SHA256: 59c6311a7eebd06c2e3c730acaee9aab8ce1fee1718651ec290b47e5d8ac9f97
+Description: library designed for accessing DVDs
+ libdvdcss is a simple library designed for accessing DVDs like a
+ block device without having to bother about the decryption.
+Original-Maintainer: Jonathan Riddell <jriddell@ubuntu.com>
+
+Package: libgimp2.0
+Source: gimp
+Priority: optional
+Section: libs
+Installed-Size: 5077
+Maintainer: Ari Pollak <ari@debian.org>
+Architecture: i386
+Version: 2.8.6-1~maya
+Recommends: gimp-data (>= 2.8.6), gimp-data (<= 2.8.6-z)
+Depends: libc6 (>= 2.15), libcairo2 (>= 1.10.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.30.2), libgtk2.0-0 (>= 2.24.10), libpango1.0-0 (>= 1.29.4)
+Filename: pool/main/g/gimp/libgimp2.0_2.8.6-1~maya_i386.deb
+Size: 2077004
+MD5sum: 31a6a2a194cb036624fd3b99003b2a12
+SHA1: 2d5bff5060b1858c1650722df191529bf7469f56
+SHA256: 8e40bcc10b6ff7dbef3cd2b97fbef738ca0720c6492900fcd319d1de7efe2961
+Description: Libraries for the GNU Image Manipulation Program
+ This package includes the libgimp libraries, which are
+ necessary to run GIMP and third-party GIMP plugins.
+
+Package: libgimp2.0-dev
+Source: gimp
+Priority: optional
+Section: libdevel
+Installed-Size: 1695
+Maintainer: Ari Pollak <ari@debian.org>
+Architecture: i386
+Version: 2.8.6-1~maya
+Suggests: libgimp2.0-doc
+Depends: libc6 (>= 2.4), libgimp2.0 (= 2.8.6-1~maya), libglib2.0-0 (>= 2.30.2), libgtk2.0-dev (>= 2.12.5), pkg-config
+Filename: pool/main/g/gimp/libgimp2.0-dev_2.8.6-1~maya_i386.deb
+Size: 952218
+MD5sum: 55dfe4a29b1422976d394a101b9f38be
+SHA1: 80352d6431f014b7835af3a065ff2667a2423bb9
+SHA256: 51354592f722bcc8f298e99226391526932cff7360bb024717e1cf35892dc036
+Description: Headers and other files for compiling plugins for GIMP
+ This package contains the header files for the GNU Image Manipulation
+ Program, along with the static versions of libgimp.
+ It also includes the gimptool-2.0 utility.
+ .
+ Install this package if you wish to compile your own plugins,
+ or if you wish to develop packages that use libgimp.
+
+Package: libgimp2.0-doc
+Source: gimp
+Priority: optional
+Section: doc
+Installed-Size: 7061
+Maintainer: Ari Pollak <ari@debian.org>
+Architecture: all
+Version: 2.8.6-1~maya
+Depends: lynx | www-browser
+Filename: pool/main/g/gimp/libgimp2.0-doc_2.8.6-1~maya_all.deb
+Size: 1411296
+MD5sum: 14f245f93756eb1e2e2327a104674977
+SHA1: cc384a33af678df78ec67584100441cd05d8f8c1
+SHA256: 8df6aa4ccdaf2275c16affe5a1851652e491bccaff01d0a9c1a0adeb0201a3b6
+Description: Developers' Documentation for the GIMP library
+ This package contains the HTML documentation for the GIMP library in
+ /usr/share/gtk-doc/html/ .
+
+Package: libgsf-1-dev
+Source: libgsf
+Priority: optional
+Section: libdevel
+Installed-Size: 1510
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.14.28-1~maya
+Recommends: pkg-config
+Replaces: gir1.2-libgsf-1, libgsf-gnome-1-dev (<= 1.14.8-1)
+Depends: libgsf-1-114 (= 1.14.28-1~maya), gir1.2-gsf-1 (= 1.14.28-1~maya), libbz2-dev, libglib2.0-dev, libxml2-dev
+Conflicts: gir1.2-libgsf-1
+Filename: pool/main/libg/libgsf/libgsf-1-dev_1.14.28-1~maya_i386.deb
+Size: 203974
+MD5sum: 6df9bdeda58a509acb13835f3ee58349
+SHA1: e5ee30161efe1fc011c58e33f8112fc9631156ee
+SHA256: cc41a5f6b986a26df3d20b414eeb24aeabb5459c30eee61bd78af98846dbc40e
+Description: Structured File Library - development files
+ This package contains the development files used in building applications
+ that use the GNOME Structured File Library.
+ .
+ The GNOME Structured File Library aims to provide an efficient
+ extensible I/O abstraction for dealing with different structured file
+ formats. It is actively being developed and its API is still likely to
+ undergo significant changes (in particular, extensions).
+
+Package: librsvg2-2
+Source: librsvg
+Priority: optional
+Section: libs
+Installed-Size: 415
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: i386
+Version: 2.36.4-2~maya
+Recommends: librsvg2-common
+Suggests: librsvg2-bin
+Depends: libc6 (>= 2.7), libcairo2 (>= 1.2.4), libcroco3 (>= 0.6.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.18.0), libxml2 (>= 2.7.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/libr/librsvg/librsvg2-2_2.36.4-2~maya_i386.deb
+Size: 260652
+MD5sum: 7085ab1caa1c81c6771529a093bf6453
+SHA1: 5498657d15045b36532a4a6657c5234334e0b934
+SHA256: 31770b20c5ff207f436a5d9a37a46e4c4a081cdb9e7b9ef31d922c48318a8442
+Description: SAX-based renderer library for SVG files (runtime)
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package contains the runtime library, necessary to run
+ applications using librsvg.
+Multi-Arch: same
+
+Package: librsvg2-bin
+Source: librsvg
+Priority: optional
+Section: graphics
+Installed-Size: 231
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: i386
+Version: 2.36.4-2~maya
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.24.0), libgtk-3-0 (>= 3.0.0), librsvg2-2 (>= 2.36.4-2~maya)
+Filename: pool/main/libr/librsvg/librsvg2-bin_2.36.4-2~maya_i386.deb
+Size: 177756
+MD5sum: 3985310db6bd88def6f8532ff68c5758
+SHA1: 4a8fad3b04b2fb2bbb972740c4cf1ebcde405e4e
+SHA256: 4627dc0107084ef44174b5a73958f94e78f86bbf518777f8a2d684ff80d75e56
+Description: command-line and graphical viewers for SVG files
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package includes a command-line utility to convert the SVG files
+ to the PNG format and a graphical SVG viewer.
+Multi-Arch: foreign
+
+Package: librsvg2-common
+Source: librsvg
+Priority: optional
+Section: libs
+Installed-Size: 208
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: i386
+Version: 2.36.4-2~maya
+Depends: libc6 (>= 2.3.6-6~), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), librsvg2-2 (= 2.36.4-2~maya)
+Breaks: libgdk-pixbuf2.0-0 (<< 2.23.5-2), libgtk2.0-0 (<< 2.24.5-4)
+Filename: pool/main/libr/librsvg/librsvg2-common_2.36.4-2~maya_i386.deb
+Size: 164822
+MD5sum: 4f57023410fbb4a57c7fd266084be2a7
+SHA1: 8f0987f346d98c819a2ae19aede1c7380239a79f
+SHA256: 342e74a26a1cd297bbf1fe658afaa71d7d804f928fdca2df6214d4e33bb2e8be
+Description: SAX-based renderer library for SVG files (extra runtime)
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package includes the gdk-pixbuf loader allowing
+ to load SVG images transparently inside GTK+ applications.
+Multi-Arch: same
+
+Package: librsvg2-dev
+Source: librsvg
+Priority: optional
+Section: libdevel
+Installed-Size: 568
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: i386
+Version: 2.36.4-2~maya
+Suggests: librsvg2-doc
+Depends: librsvg2-2 (= 2.36.4-2~maya), librsvg2-common (= 2.36.4-2~maya), gir1.2-rsvg-2.0 (= 2.36.4-2~maya), libglib2.0-dev (>= 2.24.0), libgdk-pixbuf2.0-dev (>= 2.23.5-2), libcairo2-dev (>= 1.2.0)
+Filename: pool/main/libr/librsvg/librsvg2-dev_2.36.4-2~maya_i386.deb
+Size: 282464
+MD5sum: 793c93a2fa7a0d7af2503cfdb36216bd
+SHA1: 56165b03ff3f0e997077cb6fe5569aa64041a8cb
+SHA256: 713e8bd85a1b52e8c03680db32721b72fdc3d4d379b56f5d5360fef2c57da1ea
+Description: SAX-based renderer library for SVG files (development)
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package provides the necessary development libraries and include
+ files to allow you to develop with librsvg.
+
+Package: links
+Source: links2
+Priority: optional
+Section: web
+Installed-Size: 1093
+Maintainer: Axel Beckert <abe@debian.org>
+Architecture: i386
+Version: 2.8-1~maya
+Provides: www-browser
+Depends: libbz2-1.0, libc6 (>= 2.15), libgpm2 (>= 1.20.4), liblzma5 (>= 5.1.1alpha+20110809), libssl1.0.0 (>= 1.0.0), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/links2/links_2.8-1~maya_i386.deb
+Size: 480596
+MD5sum: dfed0831f2b49510e46b5f7ec0a0e947
+SHA1: e09025c0a60f09e1778848bcf529f0bcabd6934d
+SHA256: adf18d4a7f661533cdb98b7cda7538b427e1c0cfef5e912c24e8b775f778f088
+Description: Web browser running in text mode
+ Links is a text mode WWW browser, similar to Lynx. It displays tables,
+ frames, downloads on background, uses HTTP/1.1 keepalive connections.
+ .
+ This version is compiled without graphics mode. See the package
+ links2 for a version with graphics support compiled in.
+
+Package: links2
+Priority: optional
+Section: web
+Installed-Size: 3002
+Maintainer: Axel Beckert <abe@debian.org>
+Architecture: i386
+Version: 2.8-1~maya
+Provides: www-browser
+Depends: libbz2-1.0, libc6 (>= 2.15), libdirectfb-1.2-9, libgpm2 (>= 1.20.4), libjpeg8 (>= 8c), liblzma5 (>= 5.1.1alpha+20110809), libpng12-0 (>= 1.2.13-4), libssl1.0.0 (>= 1.0.0), libtiff4, libx11-6, zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/links2/links2_2.8-1~maya_i386.deb
+Size: 2051662
+MD5sum: a72c8f7b5368b34c5371a9fa4b3b8c21
+SHA1: da3d187cd636cb9da76cf5ac2b8c141b8c4e2ab4
+SHA256: e3f29c1a124dc83c6c682f8930ab48a19161e507abf3cfbdac1f8e7995465ba8
+Description: Web browser running in both graphics and text mode
+ Links is a graphics and text mode WWW browser, similar to Lynx. It displays
+ tables, frames, downloads on background, uses HTTP/1.1 keepalive connections.
+ In graphics mode it displays PNG, JPEG, GIF, TIFF, and XBM pictures, runs
+ external bindings on other types, and features anti-aliased font, smooth
+ image zooming, 48-bit dithering, and gamma and aspect ratio correction.
+
+Package: mc
+Priority: optional
+Section: utils
+Installed-Size: 1436
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 3:4.8.11-1~maya
+Recommends: mime-support, perl, unzip
+Suggests: arj, bzip2, catdvi | texlive-binaries, dbview, djvulibre-bin, file, genisoimage, gv, imagemagick, links | w3m | lynx, odt2txt, poppler-utils, python, python-boto, python-tz, xpdf | pdf-viewer, zip
+Provides: mcedit
+Depends: e2fslibs (>= 1.41.99), libc6 (>= 2.15), libglib2.0-0 (>= 2.28.0), libgpm2 (>= 1.20.4), libslang2 (>= 2.0.7-1), libssh2-1 (>= 1.2.5), mc-data (= 3:4.8.11-1~maya)
+Filename: pool/main/m/mc/mc_4.8.11-1~maya_i386.deb
+Size: 510008
+MD5sum: 353a1b0577abd05c8bda092a4bac6626
+SHA1: 28684869870876e520016e6818d4a303d21c0d05
+SHA256: a090a0501208a0173538dc23a6dc86458a65490b37b46a6715840b7b695a8329
+Description: Midnight Commander - a powerful file manager
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+
+Package: obconf
+Priority: optional
+Section: x11
+Installed-Size: 1110
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 1:2.0.4-2~maya
+Recommends: openbox
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.24.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libstartup-notification0 (>= 0.2), libx11-6, libxml2 (>= 2.7.4)
+Filename: pool/main/o/obconf/obconf_2.0.4-2~maya_i386.deb
+Size: 169378
+MD5sum: e5477245dd371f2e0ff0b31c78cfc5c2
+SHA1: 425a89da354de1e01b1db176681aa5085f97568e
+SHA256: 3943a19d4132c05e5b48aefeee5ec14fae0f1feb2f1e2304c78cf2388f2a691e
+Description: preferences manager for Openbox window manager
+ ObConf is a small graphical utility which configures the window manager
+ Openbox' preferences and configuration settings on the fly.
+ .
+ If you are an Openbox user, you may want this package.
+
+Package: openbox
+Priority: optional
+Section: x11
+Installed-Size: 1425
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 3.5.2-6~maya
+Recommends: obconf, python-xdg
+Suggests: menu, fonts-dejavu, python, libxml2-dev, tint2, openbox-menu, openbox-gnome-session (= 3.5.2-6~maya), openbox-kde-session (= 3.5.2-6~maya)
+Provides: x-session-manager, x-window-manager
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libsm6, libstartup-notification0 (>= 0.7), libx11-6, libxau6, libxext6, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2
+Pre-Depends: dpkg (>= 1.15.7.2)
+Breaks: menu (<< 2.1.12)
+Filename: pool/main/o/openbox/openbox_3.5.2-6~maya_i386.deb
+Size: 268816
+MD5sum: aa4d07691c24396c0907217c80db4359
+SHA1: 31927c852b140fbca89e67c7b60ab60e8154dfb7
+SHA256: c522e7ab39b913213c14b050dae084d65ad7a261cd2bb6b7b5a3adcc65f4a7d1
+Description: standards-compliant, fast, light-weight and extensible window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ Some of the things to look for in Openbox are:
+ .
+ * ICCCM and EWMH compliance!
+ * Very fast
+ * Chainable key bindings
+ * Customizable mouse actions
+ * Window resistance
+ * Multi-head Xinerama support!
+ * Pipe menus
+
+Package: ttf-freefont
+Source: fonts-freefont
+Priority: extra
+Section: oldlibs
+Installed-Size: 32
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 20120503-1+maya1
+Depends: fonts-freefont-ttf
+Filename: pool/main/f/fonts-freefont/ttf-freefont_20120503-1+maya1_all.deb
+Size: 8310
+MD5sum: a2675c4d2f6c66698109d30fa9813db0
+SHA1: 0cd3ef8bc0d90001dc0d3edb409e97f9b5ebac34
+SHA256: b9e937b696ee4d8ea4090d84a938a62a411f0aad5dec1fa9b8e95d87f264a0eb
+Description: transitional dummy package
+ This package is a dummy transitional package. It can be safely removed.
+
+Package: vlc
+Priority: optional
+Section: video
+Installed-Size: 3400
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Recommends: vlc-plugin-notify (= 2.0.8-1~maya), vlc-plugin-pulse (= 2.0.8-1~maya), xdg-utils
+Replaces: vlc-data (<< 1.1.5), vlc-nox (<< 2.0.2)
+Suggests: videolan-doc
+Provides: mp3-decoder
+Depends: fonts-freefont-ttf, vlc-nox (= 2.0.8-1~maya), libaa1 (>= 1.4p5), libavcodec53 (>= 4:0.8-1~) | libavcodec-extra-53 (>= 4:0.8-1~), libavutil51 (>= 4:0.8-1~) | libavutil-extra-51 (>= 4:0.8-1~), libc6 (>= 2.15), libcaca0 (>= 0.99.beta17-1), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.7.0~beta1), libsdl-image1.2 (>= 1.2.10), libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.6), libtar0, libva-x11-1 (>> 1.0.15~), libva1 (>> 1.0.15~), libvlccore5 (>= 2.0.0), libx11-6, libxcb-composite0, libxcb-keysyms1 (>= 0.3.8), libxcb-randr0 (>= 1.1), libxcb-shm0, libxcb-xv0 (>= 1.2), libxcb1 (>= 1.6), libxext6, libxinerama1, libxpm4, zlib1g (>= 1:1.2.3.3.dfsg)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc-data (<< 1.1.5), vlc-nox (<< 2.0.2)
+Filename: pool/main/v/vlc/vlc_2.0.8-1~maya_i386.deb
+Size: 1090102
+MD5sum: 6852deb6c6d9a5d00ab584a7efb85253
+SHA1: 669bc55c18d5e9d0a1caeb9f269d7714796ce974
+SHA256: 034b9cf23b487ee64adc2fb2a575010fafc2db604a17640f031f6f64ecfe1455
+Description: multimedia player and streamer
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added
+ by installing additional audio plugins (vlc-plugin-pulse, vlc-plugin-sdl)
+ or video plugins (vlc-plugin-sdl).
+
+Package: vlc-plugin-sdl
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 58
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.3.4), libsdl1.2debian (>= 1.2.10-1), libvlccore5 (>= 2.0.0), libx11-6
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-sdl_2.0.8-1~maya_i386.deb
+Size: 8876
+MD5sum: 26ca3b0f93a701edce0b81ae3aeef188
+SHA1: 6accbfbb46a2c0900d0b9ad3a857b4867fb8c59f
+SHA256: f369601fd8cbb201aee00c2473f448a26f0b3f0ba265a8fff94b714c377cc79c
+Description: SDL video and audio output plugin for VLC
+ This plugin adds support for the Simple DirectMedia Layer library to
+ the VLC media player. To activate it, use the `--vout sdl' or
+ `--aout sdl' flags or select the `sdl' video or audio output plugin
+ from the preferences menu.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: w32codecs
+Priority: optional
+Section: graphics
+Installed-Size: 65253
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Architecture: i386
+Version: 1:20110131-0.2linuxmint1
+Replaces: divx-codecs, libaviplay (<= 0.50-0.3)
+Depends: libc6 (>= 2.0)
+Conflicts: divx-codecs, libaviplay (<= 0.50-0.3), qt6codecs, w32codecs-lite
+Filename: pool/main/w/w32codecs/w32codecs_20110131-0.2linuxmint1_i386.deb
+Size: 18103864
+MD5sum: 421dd47733a9b234510ea90c4ee62b74
+SHA1: 7b9d98cc08f97d9f97ab8d30889a3974e1e56d07
+SHA256: 1c73fff0bd15893bfa3a9b6ee07c4e41d8e2071a2c2b053ddd7689b2e9a2d14e
+Description: win32 binary codecs
+ This package contain video codecs for popular proprietary formats not
+ natively supported by mplayer.
+ .
+ ATI VCR-2 video codec.
+ Cinepak video codec
+ DivX ;-) video codec, ver. 3.11
+ DivX ;-) video codec, ver. 4.x
+ Indeo Video 3.2/4.1/5.0/4.1 quick/5.0 quick codecs.
+ Intel 263 video codec.
+ Microsoft MPEG-4 video codec, beta version 3.0.0.2700
+ Morgan Multimedia Motion JPEG video codec.
+ QuickTime
+ RealAudio
+ RealVideo 8
+ RealVideo 9
+ Windows Media Video 9
+ .
+ And more...
+Multi-Arch: same
+Bugs: mailto:marillat@deb-multimedia.org
+
+Package: xterm
+Priority: optional
+Section: x11
+Installed-Size: 1620
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Version: 300-1~maya
+Recommends: x11-utils
+Suggests: xfonts-cyrillic
+Provides: x-terminal-emulator
+Depends: xbitmaps, libc6 (>= 2.15), libfontconfig1 (>= 2.8.0), libice6 (>= 1:1.0.0), libtinfo5, libutempter0 (>= 1.1.5), libx11-6, libxaw7, libxft2 (>> 2.1.1), libxmu6, libxpm4, libxt6
+Filename: pool/main/x/xterm/xterm_300-1~maya_i386.deb
+Size: 675280
+MD5sum: 9602bcfbc26265066d4da9b42b01f0e5
+SHA1: 87edb3eb6fd56f6194e616d5bde6293889404a85
+SHA256: eca47ddca1fbf2437ed93bf5584d22b91367c8882a98160b2cda8382cfeedd28
+Description: X terminal emulator
+ xterm is a terminal emulator for the X Window System.  It provides DEC VT102
+ and Tektronix 4014 compatible terminals for programs that cannot use the
+ window system directly.  This version implements ISO/ANSI colors and most of
+ the control sequences used by DEC VT220 terminals.
+ .
+ This package provides four commands: xterm, which is the traditional
+ terminal emulator; uxterm, which is a wrapper around xterm that is
+ intelligent about locale settings (especially those which use the UTF-8
+ character encoding), but which requires the luit program from the x11-utils
+ package; koi8rxterm, a wrapper similar to uxterm for locales that use the
+ KOI8-R character set; and lxterm, a simple wrapper that chooses which of the
+ previous commands to execute based on the user's locale settings.
+ .
+ A complete list of control sequences supported by the X terminal emulator
+ is provided in /usr/share/doc/xterm.
+ .
+ The xterm program uses bitmap images provided by the xbitmaps package.
+ .
+ Those interested in using koi8rxterm will likely want to install the
+ xfonts-cyrillic package as well.
+Multi-Arch: foreign
+
+Package: libcairo2
+Source: cairo
+Priority: optional
+Section: libs
+Installed-Size: 1699
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.12.16-0ubuntu1~maya1
+Depends: libc6 (>= 2.11), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.3.5), libpixman-1-0 (>= 0.21.6), libpng12-0 (>= 1.2.13-4), libx11-6, libxcb-render0, libxcb-shm0, libxcb1 (>= 1.6), libxext6, libxrender1, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Breaks: iceape-browser (<= 2.0.3-3), libgtk-directfb-2.0-0, xulrunner-1.9, xulrunner-1.9.1 (<= 1.9.1.8-3)
+Filename: pool/main/c/cairo/libcairo2_1.12.16-0ubuntu1~maya1_i386.deb
+Size: 1070220
+MD5sum: fdd0b7812992f4c569f7cff0ac83611e
+SHA1: 0c816c3efe5cd508f164bca79ffdbc8c6f868e80
+SHA256: 17863b20091dd13d15923aad94241fb4f0646da8b84f83e00bb8f1f251b46914
+Description: The Cairo 2D vector graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends. Paths consist
+ of line segments and cubic splines and can be rendered at any width
+ with various join and cap styles. All colors may be specified with
+ optional translucence (opacity/alpha) and combined using the
+ extended Porter/Duff compositing algebra as found in the X Render
+ Extension.
+ .
+ Cairo exports a stateful rendering API similar in spirit to the path
+ construction, text, and painting operators of PostScript, (with the
+ significant addition of translucence in the imaging model). When
+ complete, the API is intended to support the complete imaging model of
+ PDF 1.4.
+ .
+ This package contains the shared libraries.
+Multi-Arch: same
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: libcairo2-dev
+Source: cairo
+Priority: optional
+Section: libdevel
+Installed-Size: 2532
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.12.16-0ubuntu1~maya1
+Suggests: libcairo2-doc
+Provides: libcairo-dev
+Depends: libcairo2 (= 1.12.16-0ubuntu1~maya1), libcairo-gobject2 (= 1.12.16-0ubuntu1~maya1), libcairo-script-interpreter2 (= 1.12.16-0ubuntu1~maya1), libfontconfig1-dev (>= 2.2.95), libfreetype6-dev (>= 2.1.10), libx11-dev, libxrender-dev (>= 0.6), libpng-dev, libsm-dev, libpixman-1-dev (>= 0.22.0), libxcb1-dev (>= 1.6), libxcb-render0-dev (>= 1.6), libxcb-shm0-dev, libxext-dev, libglib2.0-dev
+Filename: pool/main/c/cairo/libcairo2-dev_1.12.16-0ubuntu1~maya1_i386.deb
+Size: 1277326
+MD5sum: 30f640daa1587b5d10072ab1caa42c8b
+SHA1: 82d5569fafb9f35018c7209746790378ed2fbcf2
+SHA256: e076f8ba8c3a734aaac21e28ea80565a51f11142cc59f134a818f1767da954ee
+Description: Development files for the Cairo 2D graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the development libraries, header files needed by
+ programs that want to compile with Cairo.
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: libcairo2-doc
+Source: cairo
+Priority: optional
+Section: doc
+Installed-Size: 2278
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.12.16-0ubuntu1~maya1
+Recommends: lynx | www-browser
+Filename: pool/main/c/cairo/libcairo2-doc_1.12.16-0ubuntu1~maya1_all.deb
+Size: 725904
+MD5sum: dd794a619b03ff741c9998ca99765ce6
+SHA1: e89755a26f593746a3d013e3dae9fc9f56eee2a1
+SHA256: 5c5bce9b467400095f1887d65e89bc5b3aae8cddc1e182e122511e4ae47df7d3
+Description: Documentation for the Cairo Multi-platform 2D graphics library
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the HTML documentation for the Cairo library
+ in /usr/share/gtk-doc/html/cairo/.
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: casper
+Priority: extra
+Section: misc
+Installed-Size: 272
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.315.1linuxmint4
+Depends: libc6 (>= 2.8), libplymouth2 (>= 0.8.0~-13~ppa1), initramfs-tools (>= 0.92bubuntu55), busybox-initramfs (>= 1:1.1.3-4ubuntu3), dmsetup, user-setup, sudo, eject, uuid-runtime, localechooser-data (>= 2.03ubuntu1), util-linux (>= 2.15-1), file, lzma, udev (>= 174)
+Conflicts: live-initramfs, usplash (<< 0.4-43)
+Breaks: genext2fs (<< 1.4.1)
+Filename: pool/main/c/casper/casper_1.315.1linuxmint4_i386.deb
+Size: 93522
+MD5sum: 2f0d9f4d583adb12ac35007575edc072
+SHA1: bcbe82c91265a8c35289f33feb6861675bbac1a2
+SHA256: b097b489cc17b1672a71541b3053329e3114315026908674da006c75f5582b27
+Description: Run a "live" preinstalled system from read-only media
+Tag: admin::boot, admin::filesystem, implemented-in::shell, protocol::smb, role::plugin, scope::utility, special::completely-tagged, works-with-format::iso9660
+
+Package: gimp-dbg
+Source: gimp
+Priority: extra
+Section: debug
+Installed-Size: 36531
+Maintainer: Ari Pollak <ari@debian.org>
+Architecture: i386
+Version: 2.8.6-1~maya
+Depends: gimp (= 2.8.6-1~maya) | libgimp2.0 (= 2.8.6-1~maya)
+Filename: pool/main/g/gimp/gimp-dbg_2.8.6-1~maya_i386.deb
+Size: 15565410
+MD5sum: 6011947755749bcfee4442cf8d59ff9f
+SHA1: 54eb149a632ac1a62903f908772703e14405886f
+SHA256: f28dea7a88ac5365145ea89bf76f0aeeb5a57aa2840772fe16ccbe151d9c3620
+Description: Debugging symbols for GIMP
+ This package includes the debugging symbols useful for debugging
+ GIMP and its libraries, contained in the gimp and libgimp2.0 packages.
+ The debugging symbols are used for execution tracing and core dump
+ analysis.
+
+Package: libgsf-1-common
+Source: libgsf
+Priority: optional
+Section: libs
+Installed-Size: 683
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 1.14.28-1~maya
+Replaces: libgsf-1 (<= 1.12.3-4)
+Filename: pool/main/libg/libgsf/libgsf-1-common_1.14.28-1~maya_all.deb
+Size: 80918
+MD5sum: 33084325fecf099de7d8e3a4ee42a85a
+SHA1: 1bec404b0508e7d8675521adc3ad0f4b89ad9f29
+SHA256: 2763d3bdb6252d267f31abaf23894e593c6d89f84dd7a09b09cd430df6427a36
+Description: Structured File Library - common files
+ The GNOME Structured File Library aims to provide an efficient
+ extensible I/O abstraction for dealing with different structured file
+ formats.
+ .
+ These are the architecture independent files that are part of libgsf,
+ like translations of messages.
+
+Package: libgsf-bin
+Source: libgsf
+Priority: optional
+Section: gnome
+Installed-Size: 89
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.14.28-1~maya
+Replaces: libgsf-1 (<= 1.12.3-3), libgsf-gnome-1 (<= 1.12.3-4)
+Suggests: imagemagick
+Depends: libc6 (>= 2.3.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgsf-1-114 (>= 1.14.27)
+Filename: pool/main/libg/libgsf/libgsf-bin_1.14.28-1~maya_i386.deb
+Size: 28732
+MD5sum: 35e913562de0584eaf9724a22171d1b3
+SHA1: 298cec0a7475f61360f01d20da20a25d20327526
+SHA256: f7f8c04ba5d71c6013437fd36ce56c5bd744bbe00e3c2327f80ac0e3382e61cf
+Description: Structured File Library - programs
+ The GNOME Structured File Library aims to provide an efficient
+ extensible I/O abstraction for dealing with different structured file
+ formats.
+ .
+ These are the programs that are shipped as part of libgsf. They include
+ a thumbnail generator, a tar-like archiver application and a VBA macro
+ extractor.
+
+Package: autoconf-doc
+Source: autoconf
+Priority: optional
+Section: doc
+Installed-Size: 4272
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 2.69-1ubuntu1~maya
+Depends: dpkg (>= 1.15.4) | install-info, gnu-standards
+Filename: pool/main/a/autoconf/autoconf-doc_2.69-1ubuntu1~maya_all.deb
+Size: 2935198
+MD5sum: 64f498b98218c45c291ac366e6c517b0
+SHA1: e7af680c13897abd55ba405b30706108ecb28397
+SHA256: 1ea62c8c058a1bfce2924cbe9e37eb9f41515407df7159c512d241394d4afb9b
+Description: automatic configure script builder documentation
+ GNU Autoconf is a package for creating scripts to configure source code
+ packages using templates and an M4 macro package.  This package contains
+ the manual for GNU Autoconf.  It documents the current version; if you
+ are using Autoconf 2.13 instead, install the autoconf2.13 package.
+Original-Maintainer: Ben Pfaff <pfaffben@debian.org>
+
+Package: ubiquity-casper
+Source: casper
+Priority: optional
+Section: misc
+Installed-Size: 89
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 1.315.1linuxmint4
+Replaces: espresso-casper
+Depends: laptop-detect, sudo
+Conflicts: espresso-casper
+Enhances: ubiquity
+Filename: pool/main/c/casper/ubiquity-casper_1.315.1linuxmint4_all.deb
+Size: 47190
+MD5sum: d2909d04ac5286f776e3234a1854452e
+SHA1: 1ccc00ea21d9373c7f8e1e4a843bb6d2c6f38b3e
+SHA256: 823b30c210e2dd1a365cc85826a0053b2a7a2d270a09195b7a9734916a8fcfdd
+Description: Configuration hooks for live installer
+ This package provides hook scripts for the Ubiquity live installer that
+ repeat some pieces of configuration done by the live system boot process in
+ the system installed by Ubiquity.
+Tag: admin::boot, admin::filesystem, implemented-in::shell, protocol::smb, role::plugin, scope::utility, special::completely-tagged, works-with-format::iso9660
+
+Package: libgsf-1-114-dbg
+Source: libgsf
+Priority: extra
+Section: debug
+Installed-Size: 351
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.14.28-1~maya
+Depends: libgsf-1-114 (= 1.14.28-1~maya)
+Filename: pool/main/libg/libgsf/libgsf-1-114-dbg_1.14.28-1~maya_i386.deb
+Size: 251620
+MD5sum: 68cc4c151a04f1bbe1ace5d07438b6c2
+SHA1: 516f7d3cfc27469b39256d3c357bfee39dfecf91
+SHA256: c64a7b53b87cc34bb3a21606a7aa877139636945fb2affaf23ffcfef60af078a
+Description: Structured File Library - debugging files (basic version)
+ This package contains the files for debugging (applications that use the)
+ the core parts of the GNOME Structured File Library.
+
+Package: libgsf-1-114
+Source: libgsf
+Priority: optional
+Section: libs
+Installed-Size: 319
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.14.28-1~maya
+Depends: libgsf-1-common (>= 1.14.28-1~maya), libbz2-1.0, libc6 (>= 2.7), libglib2.0-0 (>= 2.31.8), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Filename: pool/main/libg/libgsf/libgsf-1-114_1.14.28-1~maya_i386.deb
+Size: 111386
+MD5sum: 75c798e5f0367691161fd4d9feb8927f
+SHA1: 3b0e418c307421b6126020bc43eecedcbffc24ea
+SHA256: 67be0ad2bc5a63900480e2615e94cedf97ade6006ffb77e5e6ce860bb95afb4c
+Description: Structured File Library - runtime version
+ The GNOME Structured File Library aims to provide an efficient
+ extensible I/O abstraction for dealing with different structured file
+ formats.
+
+Package: xserver-xorg-video-dummy
+Priority: optional
+Section: x11
+Installed-Size: 66
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: i386
+Version: 1:0.3.7-1mint2
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.1.3), xorg-video-abi-11, xserver-xorg-core (>= 2:1.10.99.901)
+Filename: pool/main/x/xserver-xorg-video-dummy/xserver-xorg-video-dummy_0.3.7-1mint2_i386.deb
+Size: 11200
+MD5sum: 37770284ad03335ddfb908ecf1eaa02b
+SHA1: b9572b7d4cff19a0446c8189cdeb13b4d48b82b9
+SHA256: f78f9a9526caea855d39f8f28b692349274baca75604d8d91cf02b03b897bafd
+Description: X.Org X server -- dummy display driver
+ This package provides a 'dummy' display driver, which does not actually
+ display anything.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xf86-video-dummy driver module.
+
+Package: vlc-nox
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 8484
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Replaces: vlc (<< 1.1.0)
+Provides: mp3-decoder
+Depends: liba52-0.7.4, libasound2 (>= 1.0.23), libass4 (>= 0.9.7), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libavc1394-0 (>= 0.5.3), libavcodec53 (>= 4:0.8-1~) | libavcodec-extra-53 (>= 4:0.8-1~), libavformat53 (>= 4:0.8-1~) | libavformat-extra-53 (>= 4:0.8-1~), libavutil51 (>= 4:0.8-1~) | libavutil-extra-51 (>= 4:0.8-1~), libbluray1, libc6 (>= 2.15), libcddb2, libcdio13, libcrystalhd3, libdbus-1-3 (>= 1.2.16), libdc1394-22, libdca0, libdirac-encoder0, libdirectfb-1.2-9, libdvbpsi7 (>= 0.2.0), libdvdnav4, libdvdread4, libebml3, libfaad2, libflac8 (>= 1.2.1), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgcrypt11 (>= 1.4.5), libgnutls26 (>= 2.12.6.1-0), libgpg-error0 (>= 1.10), libkate1 (>= 0.3.0), liblircclient0, liblua5.1-0, libmad0 (>= 0.15.1b-3), libmatroska5, libmodplug1, libmpcdec6 (>= 1:0.1~r435), libmpeg2-4, libmtp9 (>= 1.1.0), libncursesw5 (>= 5.6+20070908), libogg0 (>= 1.1.0), libopus0, libpng12-0 (>= 1.2.13-4), libpostproc52 (>= 4:0.8-1~) | libpostproc-extra-52 (>= 4:0.8-1~), libproxy1 (>= 0.4.7), libraw1394-11, libresid-builder0c2a, libsamplerate0 (>= 0.1.7), libschroedinger-1.0-0 (>= 1.0.10), libshout3, libsidplay2, libsmbclient (>= 3.0.24), libspeex1 (>= 1.2~beta3-1), libspeexdsp1 (>= 1.2~beta3.2-1), libssh2-1 (>= 1.2), libstdc++6 (>= 4.6), libswscale2 (>= 4:0.8-1~) | libswscale-extra-2 (>= 4:0.8-1~), libtag1c2a (>= 1.7), libtheora0 (>= 1.0), libtinfo5, libtwolame0, libudev0 (>= 147), libupnp3 (>= 1.4.3), libv4l-0 (>= 0.5.0), libvcdinfo0 (>> 0.7.23), libvlc5 (>= 2.0.0), libvlccore5 (>= 2.0.2), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libx264-120, libxml2 (>= 2.7.4), libzvbi0 (>= 0.2.11), zlib1g (>= 1:1.2.0.2)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-nox_2.0.8-1~maya_i386.deb
+Size: 2293276
+MD5sum: b8b1704f2596337f680948c3a1ade26a
+SHA1: c46c74a1397b02e0b9fb1ce3defae204a917a11f
+SHA256: 6218ac906fa2018ef36d24b5eacb2eb0c8972df248d3e729fa687d91bd3cf189
+Description: multimedia player and streamer (without X support)
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ VLC can also be used as a streaming server that duplicates the stream it
+ reads and multicasts them through the network to other clients, or serves
+ them through HTTP.
+ .
+ VLC has support for on-the-fly transcoding of audio and video formats, either
+ for broadcasting purposes or for movie format transformations. Support for
+ most output methods is provided by this package, but features can be added
+ by installing additional audio plugins (vlc-plugin-pulse, vlc-plugin-sdl,
+ vlc-plugin-jack) or video plugins (vlc-plugin-sdl).
+ .
+ This package contains a version of VLC that does not require X and that is
+ thus suitable for headless servers.
+
+Package: pcmanfm
+Priority: optional
+Section: utils
+Installed-Size: 1716
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Recommends: gvfs-backends, gvfs-fuse, lxde-icon-theme | gnome-icon-theme | oxygen-icon-theme | tango-icon-theme
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libfm-gtk4 (>= 1.2.0-0linuxmint1~maya), libfm4 (>= 1.2.0-0linuxmint1~maya), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.28.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.20.0), libx11-6
+Filename: pool/main/p/pcmanfm/pcmanfm_1.2.0-0linuxmint1~maya_i386.deb
+Size: 258802
+MD5sum: b8107ba46fa4cccc434ea989d5c87bf6
+SHA1: 6abc38beac483e414b5d5760ed552337e0b47eb7
+SHA256: 4fa4f54a7f68b1bae6eaf07a1658ca4b626e3c6df36a0f6cf2878c1ad3898315
+Description: extremely fast and lightweight file manager
+ PCMan File Manager is a GTK+ based file manager, featuring:
+ .
+ * Extremly fast and lightweight
+ * Can be started in one second on normal machine
+ * Tabbed browsing (similar to Firefox)
+ * Drag & Drop support
+ * Files can be dragged among tabs
+ * Load large directories in reasonable time
+ * File association support (Default application)
+ * Basic thumbnail support
+ * Bookmarks support
+ * Handles non-UTF-8 encoded filenames correctly
+ * Provide icon view and detailed list view
+ * Standard compliant (Follows FreeDesktop.org)
+ * Clean and user-friendly interface (GTK+ 2)
+ * Support GVFS for auto-mount handling on removable devices
+
+Package: kadu-themes
+Source: kadu
+Priority: optional
+Section: net
+Installed-Size: 18097
+Maintainer: Patryk Cisek <patryk@debian.org>
+Architecture: all
+Version: 0.12.3-2~maya
+Recommends: kadu
+Filename: pool/main/k/kadu/kadu-themes_0.12.3-2~maya_all.deb
+Size: 7724656
+MD5sum: cdbd38a6e6cdd19d6f3e05381c8aa4af
+SHA1: 237845fc7aed82e9f8f5ff4b810a42edc68f4994
+SHA256: 691467e4e8bdff381bd215e7141c8b4a2816530bd1113daf4ec1104d5087e76c
+Description: Additional icons and emoticons for Kadu
+ Gadu-Gadu is a Windows instant messenger, very popular in Poland.
+ Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
+ .
+ This package provides additional icons, sounds and emoticons themes for
+ Kadu.
+
+Package: kadu
+Priority: optional
+Section: net
+Installed-Size: 10540
+Maintainer: Patryk Cisek <patryk@debian.org>
+Architecture: i386
+Version: 0.12.3-2~maya
+Recommends: kadu-external-modules (>= 0.10.0-2)
+Replaces: kadu-external-modules (<< 0.10.0-2)
+Suggests: kadu-themes
+Depends: kadu-common (= 0.12.3-2~maya), libqca2-plugin-ossl, libqt4-sql-sqlite, libqt4-svg, libc6 (>= 2.4), libenchant1c2a (>= 1.6), libgadu3 (>= 1:1.11.0), libgcc1 (>= 1:4.1.1), libidn11 (>= 1.13), libindicate-qt1 (>= 0.2.5), libmpdclient2 (>= 2.1), libphonon4 (>= 4:4.2.0), libqca2 (>= 2.0.2), libqt4-dbus (>= 4:4.6.1), libqt4-network (>= 4:4.7.0~beta1), libqt4-script (>= 4:4.5.3), libqt4-sql (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqt4-xmlpatterns (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libqtwebkit4 (>= 2.2~2011week36), libstdc++6 (>= 4.6), libx11-6, libxext6, libxfixes3, libxss1, phonon, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Breaks: kadu-external-modules (<< 0.10.0-2)
+Filename: pool/main/k/kadu/kadu_0.12.3-2~maya_i386.deb
+Size: 4225266
+MD5sum: ee248ab0ceccd245f54b6307fc380e53
+SHA1: d5aa7c5b0159cebf8669a9508310201c5b290bb9
+SHA256: 92a0e1741807c403f6c0599b79f040a6e3d7061731dc69dbe95a5106686c300d
+Description: Gadu-Gadu/XMPP client for X11
+ Gadu-Gadu is a Windows instant messenger, very popular in Poland.
+ Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
+ .
+ This package provides Kadu along with plugins developed by Kadu developers.
+
+Package: kadu-dev
+Source: kadu
+Priority: optional
+Section: net
+Installed-Size: 2175
+Maintainer: Patryk Cisek <patryk@debian.org>
+Architecture: all
+Version: 0.12.3-2~maya
+Filename: pool/main/k/kadu/kadu-dev_0.12.3-2~maya_all.deb
+Size: 296076
+MD5sum: e01d03fc22ef2e418fdef464512185a1
+SHA1: d890da2fa05ec76dfedafb430d050ce747d18db7
+SHA256: 860f355ee2cf51efabe30afc789e5f739de0ed4c4dd9d9edafbd191d5fa0e72c
+Description: Development files needed to compile plugins for kadu
+ Gadu-Gadu is a Windows instant messenger, very popular in Poland.
+ Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
+ .
+ This package provides development files needed to compile plugins for Kadu.
+
+Package: kadu-external-modules
+Source: kadu
+Priority: optional
+Section: net
+Installed-Size: 2021
+Maintainer: Patryk Cisek <patryk@debian.org>
+Architecture: i386
+Version: 0.12.3-2~maya
+Replaces: kadu (<< 0.10.0-2), kadu-common (<< 0.10.0-2)
+Depends: kadu (>= 0.10.0-2), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libqt4-script (>= 4:4.5.3), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Breaks: kadu (<< 0.10.0-2), kadu-common (<< 0.10.0-2)
+Filename: pool/main/k/kadu/kadu-external-modules_0.12.3-2~maya_i386.deb
+Size: 785540
+MD5sum: 2458b451a699cac65a19a8d4360cf98d
+SHA1: 44cb53d78faf2f30b2326e2a648b87e036ecd6eb
+SHA256: 09a4ad2e7fb59bbca6ac2cf58f122f68581732a4b17b267008a1f580aba18138
+Description: Additional plugins for Kadu
+ Gadu-Gadu is a Windows instant messenger, very popular in Poland.
+ Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
+ .
+ This package provides additional packages developed by external developers.
+ See README.Debian for more details.
+
+Package: kbuild
+Priority: extra
+Section: devel
+Installed-Size: 2301
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 1:0.1.9998svn2577+dfsg-3~maya
+Depends: libc6 (>= 2.11)
+Filename: pool/main/k/kbuild/kbuild_0.1.9998svn2577+dfsg-3~maya_i386.deb
+Size: 715274
+MD5sum: e8c81915b4ec117443d89166e86bf95a
+SHA1: c96b5fa1e8364f1588c64eabefb90df2b66d9b77
+SHA256: b78b6626de7ece1c0d549269c07f32b6fdb1fcac4dc62c2862eb41b637d255f3
+Description: framework for writing simple makefiles for complex tasks
+ The goals of the kBuild framework:
+ - Similar behavior cross all supported platforms.
+ - Flexibility, don't create unnecessary restrictions preventing ad-hoc
+ solutions.
+ - Makefile can very simple to write and maintain.
+ .
+ There are four concepts being tried out in the current kBuild incaration:
+ - One configuration file for a subtree automatically included.
+ - Target configuration templates as the primary mechanism for makefile
+ simplification.
+ - Tools and SDKs for helping out the templates with flexibility.
+ - Non-recursive makefile method by using sub-makefiles.
+ .
+ kBuild does not provide any facilities for checking compiler/library/header
+ configurations, that's not in its scope. If this is important for your
+ project, check out the autoconf tool in the GNU build system. It is possible
+ to use kBuild together with autoconf if you like, but you might just as well
+ use the full GNU package.
+
+Package: openbox-dev
+Source: openbox
+Priority: optional
+Section: libdevel
+Installed-Size: 362
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 3.5.2-6~maya
+Depends: libobrender29 (= 3.5.2-6~maya), libobt2 (= 3.5.2-6~maya), libxml2-dev, libglib2.0-dev, libpango1.0-dev, libimlib2-dev, librsvg2-dev
+Filename: pool/main/o/openbox/openbox-dev_3.5.2-6~maya_i386.deb
+Size: 88386
+MD5sum: b07de0e38af1b4bc41cc9bbea75ad3f0
+SHA1: de68d8867c5704d250ad25115c734a890a12f6cf
+SHA256: d2f0e49e578caf82e50ccb44f63503e426b26c7d0a44d24c1a77c314ab2d000a
+Description: development files for the openbox window manager
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the development headers for building openbox stuff.
+
+Package: valac
+Source: vala-0.20
+Priority: optional
+Section: devel
+Installed-Size: 152
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.20.1-2~maya
+Depends: valac-0.20
+Filename: pool/main/v/vala-0.20/valac_0.20.1-2~maya_all.deb
+Size: 127946
+MD5sum: 31cffd5e7bbf215d506ff1fd69852ba1
+SHA1: 53ea025117d43b9808e54768e0ee10eabca3fc66
+SHA256: 07cbd80a57d36e7973ecda7537fcde9d325676192cf4fbae5bca08c6bd6c2ac0
+Description: C# like language for the GObject system
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ valac, the Vala compiler, is a self-hosting compiler that translates
+ Vala source code into C source and header files.  It uses the GObject
+ type system to create classes and interfaces declared in the Vala
+ source code. This package also contains the vala-gen-introspect and
+ vapigen binaries that will automatically generate Vala bindings.
+ .
+ This package always depends on the currently supported version
+ of valac but doesn't have any content by itself.
+
+Package: virtualbox
+Priority: optional
+Section: misc
+Installed-Size: 50309
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.2.16-dfsg-3~maya
+Recommends: virtualbox-dkms (= 4.2.16-dfsg-3~maya) | virtualbox-source (= 4.2.16-dfsg-3~maya), virtualbox-qt (= 4.2.16-dfsg-3~maya), libgl1-mesa-glx | libgl1, libqt4-opengl (>= 4:4.5.3), libqtcore4 (>= 4:4.5.3), libqtgui4 (>= 4:4.5.3)
+Suggests: virtualbox-guest-additions-iso, vde2
+Depends: libc6 (>= 2.15), libcurl3 (>= 7.16.2-1), libgcc1 (>= 1:4.1.1), libgsoap1, libpng12-0 (>= 1.2.13-4), libpython2.7 (>= 2.7), libsdl1.2debian (>= 1.2.10-1), libssl1.0.0 (>= 1.0.0), libstdc++6 (>= 4.6), libvncserver0, libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxml2 (>= 2.7.4), libxmu6, libxt6, zlib1g (>= 1:1.1.4), python2.7, python (>= 2.7.1-0ubuntu2), python (<< 2.8), adduser
+Conflicts: virtualbox-2.0, virtualbox-2.1, virtualbox-2.2, virtualbox-3.0
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox_4.2.16-dfsg-3~maya_i386.deb
+Size: 14041620
+MD5sum: fa3209c12eaadd07659e50119015b8d3
+SHA1: bab3940cb7e311ee6f25f92994b486ebfa16a508
+SHA256: fa0f839b3a2a376b8d9db2667d30b6a383226ec01cb8f4e0ef5df53a377c92d2
+Description: x86 virtualization solution - base binaries
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the binaries for VirtualBox. Either the virtualbox-dkms
+ or the virtualbox-source package is also required in order to compile the
+ kernel modules needed for virtualbox. A graphical user interface for
+ VirtualBox is provided by the package virtualbox-qt.
+
+Package: virtualbox-source
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 711
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.2.16-dfsg-3~maya
+Recommends: module-assistant
+Depends: build-essential, debhelper (>= 5), bzip2, kbuild
+Filename: pool/main/v/virtualbox/virtualbox-source_4.2.16-dfsg-3~maya_all.deb
+Size: 635932
+MD5sum: 4600f7f46afb2556263a014de97754ae
+SHA1: 852253fbbf074b3d220b45e9d67ff2f343d72620
+SHA256: b1ea93c47ee2183ca726227b0545cb2055e7236da4a49b2a73b46471dbe5ea2a
+Description: x86 virtualization solution - kernel module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox kernel module.
+ The virtualbox package is also required in order to make use of these
+ modules. Kernel sources or headers are required to compile this module.
+
+Package: terminator
+Priority: optional
+Section: misc
+Installed-Size: 2275
+Maintainer: Nicolas Valcárcel Scerpella <nvalcarcel@canonical.com>
+Architecture: all
+Version: 0.97+1481~ubuntu12.04.1
+Recommends: xdg-utils, python-gnome2, python-keybinder
+Provides: x-terminal-emulator
+Depends: python (>= 2.5), python-support (>= 0.90.0), python-vte, python-gobject, python-gtk2 (>= 2.14.0), gconf2, libgtk2.0-bin, hicolor-icon-theme
+Filename: pool/main/t/terminator/terminator_0.97+1481~ubuntu12.04.1_all.deb
+Size: 393254
+MD5sum: 00c6ce568b36fb82d790e6c127adbf4f
+SHA1: 394f12226a43c6f75c967c20e2597c853f83e9d5
+SHA256: fae9ab23453e720f0e2b56331f0baf00e1a2c01f37b023919f41fe6c8f4cb9ea
+Description: multiple GNOME terminals in one window
+ Terminator is a little project to produce an efficient way of
+ filling a large area of screen space with terminals.
+ .
+ The user can have multiple terminals in one window and use
+ key bindings to switch between them. See the manpage for
+ details.
+
+Package: gegl
+Priority: optional
+Section: libs
+Installed-Size: 198
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.2.0-2+nmu1maya1
+Depends: libc6 (>= 2.4), libgegl-0.2-0, libglib2.0-0 (>= 2.28.0), libspiro0
+Filename: pool/main/g/gegl/gegl_0.2.0-2+nmu1maya1_i386.deb
+Size: 160482
+MD5sum: cb80e7247d8c8efd93b3ce9f45cbf890
+SHA1: 5ec73db9e593561745d4b19f70933d62cb0c3eac
+SHA256: 8d9bf2a60f8ce02d90e32de7a99be8ba30b10aaf8dce0d14abb43cabc20ec83b
+Description: Generic Graphics Library Test Program
+ GEGL (Generic Graphics Library) is a graph based image processing
+ framework.
+ .
+ GEGLs original design was made to scratch GIMPs itches for a new
+ compositing and processing core. This core is being designed to have
+ minimal dependencies and a simple well defined API.
+ .
+ This package contains a test program.
+
+Package: vlc-plugin-jack
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 71
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.4), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116, libvlccore5 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-jack_2.0.8-1~maya_i386.deb
+Size: 10362
+MD5sum: 0acc06726c7c9a5164b61e21dd4352ec
+SHA1: 202cd3e9512f4e83bb7ed6f803f1ee707f1a4254
+SHA256: 8e43e564a6e9bc55ad93535fc5cbb64c5eb5960f32d11894f5cf9d2fd34e69b1
+Description: Jack audio plugins for VLC
+ These plugins add support for JACK to the VLC media player. To
+ activate the audio output module, use the `--aout jack' flag or
+ select the `jack' audio output plugin from the preferences menu.
+ For the jack input, use `vlc jack://channels=...:ports=...'
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: gpicview
+Priority: optional
+Section: graphics
+Installed-Size: 844
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.2.4-1~maya
+Recommends: xdg-utils
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.14.0), libgtk2.0-0 (>= 2.20.0), libjpeg8 (>= 8c), libx11-6
+Filename: pool/main/g/gpicview/gpicview_0.2.4-1~maya_i386.deb
+Size: 128106
+MD5sum: f3a0d129d5e9f41097f865ab3fe24462
+SHA1: 55e46562f1074d5ab9dfef7a23811744ac3d5408
+SHA256: 46ef965f1a57beafde23e12c9fd7a6fe89f15ba683753b4fc8c98e867809a8c5
+Description: lightweight image viewer
+ GPicView is a lightweight GTK+ 2.x based image viewer with following features:
+ .
+ * Extremely lightweight and fast with low memory usage
+ * Very suitable for default image viewer of desktop system
+ * Simple and intuitive interface
+ * Minimal lib dependency: Only pure GTK+ is used
+ * Desktop independent: Doesn't require any specific desktop environment
+
+Package: vlc-dbg
+Source: vlc
+Priority: extra
+Section: debug
+Installed-Size: 45908
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-nox (= 2.0.8-1~maya)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-dbg_2.0.8-1~maya_i386.deb
+Size: 11227668
+MD5sum: cdac51eacc545f70f5d3404aa6cefe3f
+SHA1: 3d2d0752d1302d95bc406b293a46e2e293573650
+SHA256: 84fd97f9cbd050ddedd8001a35e0e865e4179e8bb3edb4c1a0b41d9659a4ec94
+Description: debugging symbols for vlc
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+ .
+ This package contains the debugging symbols for vlc.
+
+Package: libcairo2-dbg
+Source: cairo
+Priority: extra
+Section: debug
+Installed-Size: 4363
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.12.16-0ubuntu1~maya1
+Suggests: libcairo-gobject2 (= 1.12.16-0ubuntu1~maya1), libcairo-script-interpreter2 (= 1.12.16-0ubuntu1~maya1), cairo-perf-utils (= 1.12.16-0ubuntu1~maya1)
+Depends: libcairo2 (= 1.12.16-0ubuntu1~maya1)
+Filename: pool/main/c/cairo/libcairo2-dbg_1.12.16-0ubuntu1~maya1_i386.deb
+Size: 2082984
+MD5sum: 63f076476aacc3d5c9249df66712a110
+SHA1: 5e4afa5a14585e18cfa155cda6028f0262cf6a37
+SHA256: e0c3a2395c7eb0a57bec57dcc5a45c46238dc52f05c917c3b0373b18da0e0337
+Description: The Cairo 2D vector graphics library (debugging symbols)
+ Debugging symbols for the Cairo 2D vector graphics library. This is
+ needed to debug programs linked against libcairo2.
+Multi-Arch: same
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: vlc-plugin-pulse
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 121
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.8), libpulse0 (>= 1:1.0), libvlccore5 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-pulse_2.0.8-1~maya_i386.deb
+Size: 19050
+MD5sum: ffd7e363c871b0f5ea3ea4efd7412d31
+SHA1: a010eb78267f2e52f6fcb2042b28a263d8606351
+SHA256: 9da94c801abab129199f44b5ccd5cf99fa7360fcef23d71c6ca6e3997dd34792
+Description: PulseAudio plugin for VLC
+ This plugin adds support for PulseAudio to the VLC media player. To
+ activate the audio output module, use the `--aout pulse' flag or
+ select the `pulse' audio output plugin from the preferences menu.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: kadu-common
+Source: kadu
+Priority: optional
+Section: net
+Installed-Size: 4073
+Maintainer: Patryk Cisek <patryk@debian.org>
+Architecture: all
+Version: 0.12.3-2~maya
+Recommends: kadu-external-modules (>= 0.10.0-2)
+Replaces: kadu-external-modules (<< 0.10.0-2)
+Suggests: kadu-themes
+Breaks: kadu-external-modules (<< 0.10.0-2)
+Filename: pool/main/k/kadu/kadu-common_0.12.3-2~maya_all.deb
+Size: 1384766
+MD5sum: 7f12e28867a2c1464fbfe88ac7c0e62a
+SHA1: 295e6ea156f3a5ce702376fc0ae632cac48dedcb
+SHA256: 1df2a477322e00f15b6d531a0e79144dd5196015052d27c4f598ffcddf8278ad
+Description: Gadu-Gadu/XMPP client for X11
+ Gadu-Gadu is a Windows instant messenger, very popular in Poland.
+ Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
+ .
+ This package provides data common for all architectures.
+
+Package: lxpanel
+Priority: optional
+Section: x11
+Installed-Size: 3303
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.6.1-0ubuntu1~maya
+Recommends: xterm | pavucontrol | gnome-alsamixer
+Suggests: lxsession | menu, iceweasel | www-browser
+Depends: libasound2 (>= 1.0.23), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libiw30 (>= 30~pre1), libmenu-cache3, libwnck22 (>= 1:2.22), libx11-6, lxmenu-data
+Filename: pool/main/l/lxpanel/lxpanel_0.6.1-0ubuntu1~maya_i386.deb
+Size: 1129822
+MD5sum: b7d91878f3e0bfbd443ae759ba290796
+SHA1: 9d50c95eff8b2fc3d7b1fd0e152765de785a698b
+SHA256: d86569c01c8e8deeeadc7b153217b1160ef3ae052fd5173a7314c64ad44ec2e2
+Description: LXDE panel
+ LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It is derived from fbpanel and includes the following features:
+ .
+ * User-friendly application menu automatically generated from .desktop
+ files on the system
+ * Launcher bar (small icons clicked to launch apps)
+ * Task bar supporting ICCCM/EWMH `urgency' hint (Pidgin IM windows
+ can flash on new incoming messages)
+ * Run dialog (type a command to run, without opening a terminal)
+ * Net status icon plug-in (optional).
+ * Volume control plug-in (optional).
+ * Notification area (system tray).
+ * Digital clock.
+ * Keyboard LEDs plug-in (display caps/num locks).
+ * lxpanelctl: control lxpanel from other programs.
+ For example, "lxpanelctl run" will show the Run dialog in lxpanel,
+ and "lxpanelctl menu" will show the application menu. This is
+ useful in combination with window manager key bindings.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxsession
+Priority: optional
+Section: x11
+Installed-Size: 379
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.4.9.2-0ubuntu6~maya
+Recommends: openbox | x-window-manager, openssh-client | rsh-client | ssh-client
+Replaces: lxde-settings-daemon, lxsession-lite
+Suggests: gpicview, lxde-common, lxpanel, pcmanfm
+Provides: lxsession-lite, policykit-1-gnome, x-session-manager
+Depends: libc6 (>= 2.4), libdbus-glib-1-2 (>= 0.78), libgee2 (>= 0.5.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libpolkit-agent-1-0 (>= 0.94), libpolkit-gobject-1-0 (>= 0.94), libx11-6, lxsession-data, lxsession-logout
+Conflicts: lxde-common (<= 0.4.2-3), lxde-settings-daemon, lxsession-lite
+Breaks: lxpolkit (<< 0.4.9.2-0ubuntu5)
+Filename: pool/main/l/lxsession/lxsession_0.4.9.2-0ubuntu6~maya_i386.deb
+Size: 120496
+MD5sum: a2934f7d12cc67b43f0f67a000d202f8
+SHA1: 1bd5707cdcbb11d00bedab243d6a273364d73d4a
+SHA256: 29e5158ed29b7290f72365a84ae87d882d96cfd2da5e7d1d9a13f5bd57804a7f
+Description: default session manager for LXDE
+ LXSession is a lightweight X11 session manager with fewer dependencies,
+ designed for use with the LXDE(Lightweight X11 Desktop Environment).
+ It derived from XSM and have following differences:
+ * Removed the session dialog from xsm.
+ * Stripped down without session restore function.
+ * Automaticlly restart specific program if crashes happened.
+ * Use better configuration.
+ * Provide a nice logout-dialog with the ability to
+ shutdown/reboot/suspend/hibernate via HAL or gdm
+ * Support halt/reboot LTSP thin clients,
+ and more....
+ .
+ It's desktop-independent and can be used with any window manager.
+ .
+ As "session manager" lxsession used to automatically start a set of
+ applications and set up a working desktop environment
+ .
+ LXSession has also a built-in lightweight Xsettings daemon, which can
+ configure GTK+ themes, keyboard, and mouse for you on session startup.
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: lxlauncher
+Priority: optional
+Section: x11
+Installed-Size: 707
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.2.2-3ubuntu2~maya
+Recommends: gnome-icon-theme
+Depends: libc6 (>= 2.3.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libmenu-cache3, libstartup-notification0 (>= 0.4), libx11-6, lxmenu-data
+Filename: pool/main/l/lxlauncher/lxlauncher_0.2.2-3ubuntu2~maya_i386.deb
+Size: 41850
+MD5sum: 83aaadef46887fef15150774115ddc58
+SHA1: 02bcf3295e9789880ff85d044d4cf21cc286b00d
+SHA256: a05086aa23db482ff4001ccedd9e08943ae6b99db91f93a626872090e6fff544
+Description: LXDE launcher for netbooks
+ LXLauncher is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It is a Easy-Mode launcher for netbooks and subnotebooks like the EeePC.
+ It's standard-compliant and desktop-independent. It follows freedesktop.org
+ specs, so newly added applications will automatically show up in the launcher,
+ and vice versa for the removed ones.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxappearance
+Priority: optional
+Section: x11
+Installed-Size: 864
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.5.5-0ubuntu1~maya1
+Recommends: gtk2-engines
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.14.0), libx11-6
+Filename: pool/main/l/lxappearance/lxappearance_0.5.5-0ubuntu1~maya1_i386.deb
+Size: 73676
+MD5sum: 2c34050093a564e15cc10ed56c62ec00
+SHA1: b3916f9924bbb9121824d89d1ee0f272432cf51f
+SHA256: 6e55b5094e1cc3cf6404107bc0520f4a6363468549ccbae39f65d68f5e1c2e3e
+Description: LXDE GTK+ theme switcher
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It is a new feature-rich GTK+ theme switcher able to change GTK+ themes, icon
+ themes, and fonts used by applications. GNOME/KDE/Xfce user may use build-in
+ theme, this works for GTK+ based lightweight desktop Environment.
+ .
+ Features:
+ .
+ * Choose GTK+ theme
+ * Choose icon theme
+ * Install new icon theme
+ * Choose their favorite font
+ * Choose toolbar style
+ * See changes immediately in preview area
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: mc-dbg
+Source: mc
+Priority: extra
+Section: debug
+Installed-Size: 1196
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 3:4.8.11-1~maya
+Suggests: gdb
+Depends: mc (= 3:4.8.11-1~maya)
+Filename: pool/main/m/mc/mc-dbg_4.8.11-1~maya_i386.deb
+Size: 1046244
+MD5sum: 05294a9fb683265c2983bdc9ec7e0720
+SHA1: d362f9862d63e45a8eaa97c34c5716fd5dacda25
+SHA256: 21b8c7441616af4e3089368cea2e888eb1a05dde6b8530ad7a17096416eb3e50
+Description: Midnight Commander - a powerful file manager - debug package
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+ .
+ This package contains debugging information for mc.
+
+Package: abiword-plugin-grammar
+Source: abiword
+Priority: optional
+Section: editors
+Installed-Size: 119
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 3.0.0-1~maya
+Depends: libabiword-3.0 (>= 3.0.0), libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), liblink-grammar4 (>= 4.2.2), libstdc++6 (>= 4.1.1), abiword (= 3.0.0-1~maya)
+Filename: pool/main/a/abiword/abiword-plugin-grammar_3.0.0-1~maya_i386.deb
+Size: 46426
+MD5sum: d5214e7fe2737b23b45bd2c215c1c10e
+SHA1: 16f2f9b0a88cd9c554e006b71f4d1d10deea8edd
+SHA256: d55518af2835814aa9054b8a333e75310d3dae0861cb6d5c95f4236cd7923077
+Description: grammar checking plugin for AbiWord
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains an in-line grammar checking system for AbiWord
+ documents.
+
+Package: abiword-plugin-mathview
+Source: abiword
+Priority: optional
+Section: editors
+Installed-Size: 383
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 3.0.0-1~maya
+Depends: libabiword-3.0 (>= 3.0.0), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libglib2.0-0 (>= 2.12.0), libgtkmathview0c2a, libstdc++6 (>= 4.1.1), abiword (= 3.0.0-1~maya), fonts-lyx
+Filename: pool/main/a/abiword/abiword-plugin-mathview_3.0.0-1~maya_i386.deb
+Size: 114502
+MD5sum: d05467fccc8394529ae1467214cdc23f
+SHA1: 7aef3ff8d6b1a18bf1f7825a35a3698b735ee61f
+SHA256: 6afd692fbdcb4f8b7228fdee49342f32ff205ce37a2adb5af6f8119f6600e7e4
+Description: equation editor plugin for AbiWord
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains an equation editing system for AbiWord
+ documents.
+
+Package: libgoffice-dbg
+Source: goffice
+Priority: extra
+Section: debug
+Installed-Size: 2286
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.9-1~maya
+Depends: libgoffice-0.10-10 (= 0.10.9-1~maya)
+Filename: pool/main/g/goffice/libgoffice-dbg_0.10.9-1~maya_i386.deb
+Size: 1923310
+MD5sum: f6be73795b8b21ffa9d6b59773227441
+SHA1: 1b272d2f4745429dddaeab0ec87f0f645b9afeed
+SHA256: b6bb576ca94f6d46511f1a471c808722663ca64107f81bc3356ac6fdc3ac8477
+Description: Document centric objects library - debugging files
+ GOffice is a library of document centric objects and utilities building on
+ top of GLib and Gtk+.
+ .
+ These are the files used to debug (applications that use) the GOffice
+ library.
+
+Package: libvlccore-dev
+Source: vlc
+Priority: optional
+Section: libdevel
+Installed-Size: 2007
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: libvlccore5 (= 2.0.8-1~maya), pkg-config
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlccore-dev_2.0.8-1~maya_i386.deb
+Size: 523688
+MD5sum: da604cac5b119080338382c22860574f
+SHA1: 3f199c6cb3abe8d42de936afdaa1d899f19558c6
+SHA256: 6780a200baa6a97c23202dcb8258d0ea8849ca6f262590b88b9280c1fd8c9885
+Description: development files for libvlccore
+ This package contains headers and a static library required to build plugins
+ for VLC.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlc-dev
+Source: vlc
+Priority: optional
+Section: libdevel
+Installed-Size: 305
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Replaces: libvlc0-dev
+Depends: libvlc5 (= 2.0.8-1~maya), pkg-config
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlc-dev_2.0.8-1~maya_i386.deb
+Size: 60448
+MD5sum: 24615c50936580202d29786597b9e2ad
+SHA1: 9229f5318b609a0c7be2e233247c5f30e53f429f
+SHA256: 4dfa22a7d1919bd0aa5996714a5045a7ba6dc5e99537f895bf78be5c514c1366
+Description: development files for libvlc
+ This package contains headers and a static library required to build
+ standalone applications that use VLC features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-data
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 29726
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 2.0.8-1~maya
+Replaces: mozilla-plugin-vlc (<< 0.9.2-1), vlc (<< 0.9.2-1), vlc-nox (<< 2.0.1-3)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc-nox (<< 2.0.1-3)
+Filename: pool/main/v/vlc/vlc-data_2.0.8-1~maya_all.deb
+Size: 5176618
+MD5sum: 670738c0af6a24690a991dbf687e75c0
+SHA1: 8612ef22c131e0defd79f0f0a77a350fcbdb8303
+SHA256: 5d0a0270a4cd6d3e8f95c148cde98151a371c8ff9baea72baa6463fe960a4b6d
+Description: Common data for VLC
+ Localisations, HTTP interface files, Lua scripts for VLC media player
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: librsvg2-dbg
+Source: librsvg
+Priority: extra
+Section: debug
+Installed-Size: 1011
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: i386
+Version: 2.36.4-2~maya
+Depends: librsvg2-2 (= 2.36.4-2~maya)
+Filename: pool/main/libr/librsvg/librsvg2-dbg_2.36.4-2~maya_i386.deb
+Size: 517790
+MD5sum: ceb0b2666615e47e5028b0a914489e53
+SHA1: 289baac2981a51f8906822f560db4d5709a32aa3
+SHA256: 8c8d788b6d7f84ee1642d5dfbffb073aa05b574a485c9892032efc0554801970
+Description: SAX-based renderer library for SVG files (debug)
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package contains the debugging symbols.
+
+Package: bleachbit
+Priority: optional
+Section: admin
+Installed-Size: 1891
+Maintainer: Luca Falavigna <dktrkranz@debian.org>
+Architecture: all
+Version: 0.9.6-1~maya
+Recommends: python-notify
+Depends: python (>= 2.7.1-0ubuntu2), python-gtk2 (>= 2.14), menu
+Filename: pool/main/b/bleachbit/bleachbit_0.9.6-1~maya_all.deb
+Size: 364854
+MD5sum: 9438c197e05a6bdfee91f35d6d412778
+SHA1: 94c6e36652e609e26352f29fa7f1019ddbb1326b
+SHA256: a55e0fbd36dd2fbc9cfb76bae19b7da2df7220cf2dbd7d2e616b054ac500fee1
+Description: delete unnecessary files from the system
+ BleachBit deletes unnecessary files to free valuable disk space, maintain
+ privacy, and remove junk. It removes cache, Internet history, temporary files,
+ cookies, and broken shortcuts.
+ .
+ It handles cleaning of Adobe Reader, Bash, Beagle, Epiphany, Firefox, Flash,
+ GIMP, Google Earth, Java, KDE, OpenOffice.org, Opera, RealPlayer, rpmbuild,
+ Second Life Viewer, VIM, XChat, and more.
+ .
+ Beyond simply erasing junk files, BleachBit wipes free disk space (to hide
+ previously deleted files for privacy and to improve compression of images),
+ vacuums Firefox databases (to improve performance without deleting data), and
+ securely shreds arbitrary files.
+
+Package: lxsession-edit
+Source: lxsession
+Priority: optional
+Section: x11
+Installed-Size: 80
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.4.9.2-0ubuntu6~maya
+Depends: libc6 (>= 2.3.6-6~), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.12.0), lxsession-data
+Filename: pool/main/l/lxsession/lxsession-edit_0.4.9.2-0ubuntu6~maya_i386.deb
+Size: 17602
+MD5sum: 66ba821f465038d86a2381d7616c16e7
+SHA1: ef7974eb6a217025187f796c9fdc628f3b5fb6d4
+SHA256: f1a328f3ac52bd36e56508c7528573960a0b55beea336612ef39cc1f0985e705
+Description: configure what application start up automaticlly in LXDE
+ LXSession-Edit is a simple session editor GUI for lxsession-lite which
+ follows autostart specs from FreeDesktop.Org
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: libbabl-0.1-0
+Source: babl
+Priority: optional
+Section: libs
+Installed-Size: 289
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.1.10-1maya1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/b/babl/libbabl-0.1-0_0.1.10-1maya1_i386.deb
+Size: 110474
+MD5sum: c737fc3894dbd274d66891c74800124c
+SHA1: de8835a189fd872a4b8dbe82392707b0abd77db6
+SHA256: f02d625a01b00ef2361296154a8f4aa964457b4d01304e2bd994dd5a888d8445
+Description: Dynamic, any to any, pixel format conversion library
+ Babl is a dynamic, any to any, pixel format conversion library. It
+ provides conversions between the myriad of buffer types images can be
+ stored in. Babl doesn't only help with existing pixel formats, but
+ also facilitates creation of new and uncommon ones.
+Multi-Arch: same
+
+Package: libbabl-0.1-0-dbg
+Source: babl
+Priority: extra
+Section: debug
+Installed-Size: 509
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.1.10-1maya1
+Depends: libbabl-0.1-0 (= 0.1.10-1maya1)
+Filename: pool/main/b/babl/libbabl-0.1-0-dbg_0.1.10-1maya1_i386.deb
+Size: 188198
+MD5sum: 382bd4635f4515dc6c2edda270af64e0
+SHA1: 5a3e5c2a34389e605a483db03ace735ea01ccf2d
+SHA256: 95509c258d85d376afebf46867cb1d9cc7560a023d7950ec342b6be6b0320c5a
+Description: Dynamic, any to any, pixel format conversion library (debugging symbols)
+ Babl is a dynamic, any to any, pixel format conversion library. It
+ provides conversions between the myriad of buffer types images can be
+ stored in. Babl doesn't only help with existing pixel formats, but
+ also facilitates creation of new and uncommon ones.
+ .
+ This package contains the debugging symbols.
+Multi-Arch: same
+
+Package: libmenu-cache-dev
+Source: menu-cache
+Priority: optional
+Section: libdevel
+Installed-Size: 79
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.5.0-1~maya
+Depends: libmenu-cache3 (= 0.5.0-1~maya)
+Filename: pool/main/m/menu-cache/libmenu-cache-dev_0.5.0-1~maya_i386.deb
+Size: 13424
+MD5sum: 497770b1663082f14eed6654c3883398
+SHA1: 74301f2121a9ef85c4dd2d5dc8635bd49e31ac8e
+SHA256: 3d8bc9431ecbc6ff54f19f26094e5eeeabe1c3a0028a7e29f70ab78c4623338b
+Description: LXDE implementation of the freedesktop Menu specification (devel)
+ Libmenu-cache is a library creating and utilizing caches to speed up
+ the manipulation for freedesktop.org defined application menus.
+ .
+ This package contains the development files.
+
+Package: mdm
+Priority: optional
+Section: gnome
+Installed-Size: 14810
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 1.0.8+maya1
+Recommends: whiptail | dialog, zenity, mdm-themes, xserver-xephyr | xnest, xserver-xorg
+Suggests: locales, pm-utils, libpam-gnome-keyring
+Provides: x-display-manager
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libdmx1, libgdk-pixbuf2.0-0 (>= 2.22.0), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.24.0), libgnomecanvas2-0 (>= 2.11.1), libgtk2.0-0 (>= 2.24.0), libpam0g (>= 0.99.7.1), libpango1.0-0 (>= 1.14.0), librsvg2-2 (>= 2.14.4), libselinux1 (>= 1.32), libwrap0 (>= 7.6-4~), libx11-6, libxau6, libxdmcp6, libxi6, libxinerama1, libxml2 (>= 2.7.4), debconf (>= 0.5) | debconf-2.0, adduser, libpam-modules (>= 0.72-1), libpam-runtime (>= 0.76-13.1), gnome-session | x-session-manager | x-window-manager | x-terminal-emulator, gksu (>= 1.0.7), lsb-base (>= 3.2-14), librsvg2-common
+Conflicts: fast-user-switch-applet (<< 2.17.4), gdm, gdm3, gnome-panel (<< 2.19.2), gnome-screensaver (<< 2.17.7), gnome-session (<< 2.19.2)
+Filename: pool/main/m/mdm/mdm_1.0.8+maya1_i386.deb
+Size: 4414534
+MD5sum: f2973c9f0332d6bda3ffd749c6d2f5ba
+SHA1: 9cce38f65d67e731bd1f06b627e3a2f35bf6c9ae
+SHA256: cde7a4ce0bda7fa15fb43648fe5355ac0bf96ef9011d4d7309cea98d98f9fd3a
+Description: GNOME Display Manager
+ mdm provides the equivalent of a "login:" prompt for X displays- it
+ pops up a login window and starts an X session.
+ .
+ It provides all the functionality of xdm, including XDMCP support for
+ managing remote displays.
+ .
+ The greeting window is written using the GNOME libraries and hence
+ looks like a GNOME application- even to the extent of supporting
+ themes! By default, the greeter is run as an unprivileged user for
+ security.
+
+Package: libfm-dev
+Source: libfm
+Priority: optional
+Section: libdevel
+Installed-Size: 282
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Suggests: libfm-doc
+Depends: libfm4 (= 1.2.0-0linuxmint1~maya), libfm-extra4 (= 1.2.0-0linuxmint1~maya)
+Filename: pool/main/libf/libfm/libfm-dev_1.2.0-0linuxmint1~maya_i386.deb
+Size: 44526
+MD5sum: a18e2f8beac1f9a80ccff270e545356a
+SHA1: b502fd27b3eed5c798681829aab0ea09a32c53c6
+SHA256: 98ac8d73ff6bd6c554046ac79ea25d771b15df14ee30c1067bfb78a2788ede1c
+Description: file management support (core development files)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development files for GUI-independent build.
+
+Package: vlc-plugin-svg
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 54
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.3.6-6~), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), librsvg2-2 (>= 2.14.4), libvlccore5 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-svg_2.0.8-1~maya_i386.deb
+Size: 6506
+MD5sum: 77500f31eaf6572c07d6e6702214f343
+SHA1: b0a3e3475dc26d65601c1b0318ad35c35835d4c0
+SHA256: db123ac64c6e67db303164ea990d240f9404e6e1a4c43436e5b10c30c041597b
+Description: SVG plugin for VLC
+ This plugin allows you to render SVG graphics on top of the video. It is a text
+ renderer, and must be activated through the '--text-renderer svg' option. When
+ sent non-SVG data, it will convert it to SVG using a template that can be
+ specified by the svg-template-file option.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libvlc5
+Source: vlc
+Priority: optional
+Section: libs
+Installed-Size: 144
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Replaces: vlc (<< 0.8.6.c-6)
+Depends: libc6 (>= 2.8), libvlccore5 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlc5_2.0.8-1~maya_i386.deb
+Size: 42088
+MD5sum: 911f76c15857d9dabb68ab3468eb3667
+SHA1: 858690f62ed64c4c251a2b268bcfa0819e890a6e
+SHA256: db5e463738be265863985965eec579809638ba6452042d6052b9eef7cb01bbe6
+Description: multimedia player and streamer library
+ This package contains the shared library required by applications using VLC
+ features.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: otf-freefont
+Source: fonts-freefont
+Priority: extra
+Section: oldlibs
+Installed-Size: 32
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 20120503-1+maya1
+Depends: fonts-freefont-otf
+Filename: pool/main/f/fonts-freefont/otf-freefont_20120503-1+maya1_all.deb
+Size: 8312
+MD5sum: c81313be041c9bed42b027f42b7aa819
+SHA1: 226b6ee85db8f0c904e536b9fb484e47e7415570
+SHA256: f4fdad7ffb93c23f53338e3e2bbdb0ee019282c31f7a0c69b6f120b98c750d84
+Description: transitional dummy package
+ This package is a dummy transitional package. It can be safely removed.
+
+Package: deadbeef
+Priority: optional
+Section: sound
+Installed-Size: 6799
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 0.5.6-1
+Recommends: libzip1, libavformat53 | libavformat-extra-53, libavcodec53 | libavcodec-extra-53, libavutil51 | libavutil-extra-51, libcdio10
+Depends: libasound2 (>= 1.0.23), libatk1.0-0 (>= 1.12.4), libc6 (>= 2.15), libcairo2 (>= 1.2.4), libcddb2, libcdio13, libcurl3-gnutls (>= 7.16.2-1), libdbus-1-3 (>= 1.0.2), libfaad2, libflac8 (>= 1.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libice6 (>= 1:1.0.0), libimlib2, libmad0 (>= 0.15.1b-3), libogg0 (>= 1.0rc3), libpango1.0-0 (>= 1.18.0), libpulse0 (>= 1:0.99.1), libsamplerate0 (>= 0.1.7), libsm6, libsndfile1 (>= 1.0.20), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), libwavpack1 (>= 4.40.0), libx11-6, libzip2 (>= 0.10), zlib1g (>= 1:1.1.4)
+Filename: pool/main/d/deadbeef/deadbeef_0.5.6-1_i386.deb
+Size: 2765094
+MD5sum: 608bb570311f115692acc58522390100
+SHA1: b57c0840948d1c6e9bad93c5a85513c0161c56a7
+SHA256: bcdf3196ad10075d77aab3b6a4819e04641051ef55d062833b5253e0ecb99ad0
+Description: ultimate music player for GNU/Linux systems
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
+ .
+ Features:
+ .
+ * mp3, ogg vorbis, flac, ape, wv, wav
+ * ID3v1, ID3v2.2, ID3v2.3, ID3v2.4, APEv2, xing/info tags support
+ * character set detection for non-unicode ID3 tags - supports cp1251
+ and iso8859-1
+ * unicode tags are fully supported as well (both utf8 and ucs2)
+ * cuesheet support for mp3, ogg, flac, ape
+ * autodetection of utf8/cp1251/iso8859-1 charsets in cuesheets
+ * sid and some popular chiptune formats like nsf
+ * tracker modules like mod, s3m, it, xm, etc
+ * HVSC song length database support for sid
+ * gtk2 interface with custom highly speed/memory optimized widgets
+ * no GNOME or KDE dependencies - just gtk2 and several small libraries
+ * minimize to tray, with scrollwheel volume control
+ * drag and drop, both inside of playlist, and from filemanagers and such
+ * control playback from command line (allows global hotkeys using xbindkeys)
+ * seeking works in all supported formats
+ * plugin support; ships with several standard plugins, such as global hotkeys
+ and last.fm scrobbler; sdk is included
+ * duration calculation is as precise as possible for vbr mp3
+ files (with and without xing/info tags)
+
+Package: deadbeef-plugins-dev
+Source: deadbeef
+Priority: optional
+Section: libdevel
+Installed-Size: 83
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 0.5.6-1
+Depends: deadbeef (= 0.5.6-1)
+Filename: pool/main/d/deadbeef/deadbeef-plugins-dev_0.5.6-1_all.deb
+Size: 16726
+MD5sum: 7e0a6730b4defa45a166c49f107c8a04
+SHA1: b5d4ce4a7c1cc7837cfaf3aa69f8dc665b572f3f
+SHA256: f4936c89b49f2ea8c72874228de8c3fc54ed3baf310fe231fd10c7ec924f204a
+Description: DeaDBeeF plugins development files
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
+ .
+ This package contains all supplementary files you need to develop your plugins
+ for DeaDBeeF audio player.
+
+Package: libvlccore5
+Source: vlc
+Priority: optional
+Section: libs
+Installed-Size: 1055
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-data (= 2.0.8-1~maya), libc6 (>= 2.15), libdbus-1-3 (>= 1.0.2)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/libvlccore5_2.0.8-1~maya_i386.deb
+Size: 384972
+MD5sum: 3098e6719e78a8265490441e74ccfe8e
+SHA1: 13ccbb8dd2098a36108cad1358dc84acde4217a7
+SHA256: 86f6ceb47ad9afdcb8540ab077bb340affff0abc4903251399f01ea5d4e06871
+Description: base library for VLC and its modules
+ This package contains the shared library required by VLC modules and libvlc.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: pcmanfm-dbg
+Source: pcmanfm
+Priority: extra
+Section: debug
+Installed-Size: 309
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: pcmanfm (= 1.2.0-0linuxmint1~maya)
+Filename: pool/main/p/pcmanfm/pcmanfm-dbg_1.2.0-0linuxmint1~maya_i386.deb
+Size: 232990
+MD5sum: fd98e39de2510bfd2c48bb4b9c868fc8
+SHA1: dc21c8b10bfaabc18232d9858f779be2f2571814
+SHA256: c910eedc18eb151e91cac612de1348bfb502bcebd263f3a6757b1c3b7c5af16f
+Description: extremely fast and lightweight file manager (debug)
+ PCMan File Manager is a GTK+ based file manager. It is a primary file
+ manager for the LXDE but can be used in any other desktop environment.
+ .
+ This package contains the debugging symbols.
+
+Package: lxpanel-indicator-applet-plugin
+Source: lxpanel
+Priority: optional
+Section: x11
+Installed-Size: 76
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.6.1-0ubuntu1~maya
+Suggests: indicator-application-gtk2, indicator-messages-gtk2, indicator-sound-gtk2
+Provides: indicator-renderer
+Depends: lxpanel, libc6 (>= 2.4), libglib2.0-0 (>= 2.22.0), libgtk2.0-0 (>= 2.18.0), libindicator7 (>= 0.4.90)
+Filename: pool/main/l/lxpanel/lxpanel-indicator-applet-plugin_0.6.1-0ubuntu1~maya_i386.deb
+Size: 19580
+MD5sum: c71a50ef43e092f0bb42b8166f04f9a3
+SHA1: 105ed9ec5f207a5b807bbae76ca69b8b0310febc
+SHA256: b3e49756a1a25bff1616f9636cd42e5702e16e505ec7d9ec0d01da4773284c9e
+Description: lxpanel indicator applet
+ lxpanel-indicator-applet-plugin is an applet to display information from
+ various applications consistently in the LXPanel.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: vlc-plugin-fluidsynth
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 54
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: fluid-soundfont-gm | musescore-soundfont-gm, vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.2), libfluidsynth1, libvlccore5 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-fluidsynth_2.0.8-1~maya_i386.deb
+Size: 6024
+MD5sum: 86672d079dfdd9bfc9e4c8be65234dfa
+SHA1: d9bd3c2c5c14f8daa0d8e177d35b0d389c13b7fb
+SHA256: 6667c301ca8b88ee6e63ad7d141dfc0d3fdc9cc88ddd83e4f9fd328920d41f48
+Description: FluidSynth plugin for VLC
+ This plugin adds support for playing MIDI file via the FluidSynth software
+ synthesizer to the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: vlc-plugin-zvbi
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 58
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Depends: vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.4), libvlccore5 (>= 2.0.0), libzvbi0 (>= 0.2.11)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/vlc/vlc-plugin-zvbi_2.0.8-1~maya_i386.deb
+Size: 8598
+MD5sum: ee003f4481a6e2b71d2378e4bd1bb31b
+SHA1: 6f93800158c88656905a88c66c0f8c91b748438d
+SHA256: 206a97db0942de0d6d8f38c26cbeb9f37d3c36ddf7ac64f8b990b22bd59b520e
+Description: VBI teletext plugin for VLC
+ This plugin adds support for VBI teletext to the VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: simpleburn
+Priority: extra
+Section: utils
+Installed-Size: 333
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 1.6.5-1~maya
+Recommends: mplayer-nogui | mplayer | gmplayer | mplayer2, mencoder, normalize-audio, mpg123, vorbis-tools, flac
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.12.0), xorriso, libcdio-utils, cdrskin, cdrdao
+Filename: pool/main/s/simpleburn/simpleburn_1.6.5-1~maya_i386.deb
+Size: 64058
+MD5sum: c999aa11821df6c0f7207d41e57173a9
+SHA1: 01c44a93a7bce2151a6e203125a9eec1993407ed
+SHA256: 544559444417b344171030552c611c496321bd1b056f8b3c9c1f18ab116eb150
+Description: Minimalistic application for burning and extracting CDs and DVDs
+ Features are:
+ - CD / DVD ISO image extraction and burning,
+ - audio CD extraction and burning,
+ - data directory burning on CD / DVD,
+ - rewritable CD / DVD blanking,
+ - CD / DVD copy,
+ - video DVD ripping,
+ - languages: cs, de, en, es, fr, hu, it, pl, sv, ru,
+ - multiple media and devices detection methods supported (Udev, HAL or
+ LibCDIO),
+ - multiple burning suite supported (CDRTools, CDRKit, LibBurnia +
+ CDParanoia / LibCDIO + CDRDAO).
+ .
+ SimpleBurn is free software licensed under the Cecill-2 license.
+
+Package: vlc-plugin-notify
+Source: vlc
+Priority: optional
+Section: video
+Installed-Size: 54
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 2.0.8-1~maya
+Replaces: vlc-nox (<< 1.1.2)
+Depends: vlc-nox (= 2.0.8-1~maya), libc6 (>= 2.8), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.8.0), libnotify4 (>= 0.7.0), libvlccore5 (>= 2.0.0)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: vlc-nox (<< 1.1.2)
+Filename: pool/main/v/vlc/vlc-plugin-notify_2.0.8-1~maya_i386.deb
+Size: 5810
+MD5sum: 8e0c9a06f6134777151305b0995fbece
+SHA1: 1f09347456ab6d69243733112b9244200d603fae
+SHA256: a67ef8340ea0a910278d58dfb595052e28e5606a2845e39e9192a012576f08d2
+Description: LibNotify plugin for VLC
+ This plugin adds support for libnotify track change notification to the
+ VLC media player.
+ .
+ VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
+ DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
+ podcasts, and multimedia streams from various network sources.
+
+Package: libcairo-script-interpreter2
+Source: cairo
+Priority: optional
+Section: libs
+Installed-Size: 697
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.12.16-0ubuntu1~maya1
+Depends: libc6 (>= 2.11), libcairo2 (>= 1.12.0), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), liblzo2-2, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/c/cairo/libcairo-script-interpreter2_1.12.16-0ubuntu1~maya1_i386.deb
+Size: 586950
+MD5sum: 7fad3a3a94b5b4d021a78c435732b703
+SHA1: 190b80770d168e59c7226c7c8164b4402933f264
+SHA256: 8230aab57532297d27b485cd3e41d843acc74036b32712739f163e8b6c1b3f46
+Description: The Cairo 2D vector graphics library (script interpreter)
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the script interpreter for executing and manipulating
+ cairo execution traces.
+Multi-Arch: same
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: cairo-perf-utils
+Source: cairo
+Priority: optional
+Section: misc
+Installed-Size: 2148
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.12.16-0ubuntu1~maya1
+Depends: libc6 (>= 2.4), libcairo-script-interpreter2 (>= 1.10.0), libcairo2 (>= 1.12.0), libfontconfig1 (>= 2.8.0), libpixman-1-0 (>= 0.10.0), libx11-6, libxcb-render0, libxcb1, libxrender1, zlib1g (>= 1:1.1.4)
+Filename: pool/main/c/cairo/cairo-perf-utils_1.12.16-0ubuntu1~maya1_i386.deb
+Size: 1038748
+MD5sum: 1343f8a56a2bf2c0363fa6b80cd898ca
+SHA1: fbaf95c7bc45bb1c44b26310989efa586bd6fe9c
+SHA256: 3fdfd1a2e10c48c630be6a36dbea24e1782aabfae6b2159b4439b36b0f0a4a12
+Description: The Cairo 2D vector graphics library performance utilities
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains a set of utilities for capturing and replaying cairo
+ execution traces using various backends, in order to be able to measure the
+ performance of cairo for real-world applications in a reproducible way.
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: lxappearance-dbg
+Source: lxappearance
+Priority: extra
+Section: debug
+Installed-Size: 104
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.5.5-0ubuntu1~maya1
+Depends: lxappearance (= 0.5.5-0ubuntu1~maya1)
+Filename: pool/main/l/lxappearance/lxappearance-dbg_0.5.5-0ubuntu1~maya1_i386.deb
+Size: 54988
+MD5sum: 8106c9ae238ca6a591076f624feeb8fa
+SHA1: 997b470e44f55121552e808df4f195d090a11c48
+SHA256: 3d3713f233b9afc73468573749941fd4b9d501eb188f30f44795cc3c3997976f
+Description: LXDE GTK+ theme switcher (debug)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: libcairo-gobject2
+Source: cairo
+Priority: optional
+Section: libs
+Installed-Size: 595
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 1.12.16-0ubuntu1~maya1
+Depends: libc6 (>= 2.1.3), libcairo2 (>= 1.10.0), libglib2.0-0 (>= 2.14.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/c/cairo/libcairo-gobject2_1.12.16-0ubuntu1~maya1_i386.deb
+Size: 541264
+MD5sum: 2b91179fe9c4e661d3e263fb4be5eb20
+SHA1: b3d0c3000b69044c4cbb017c71a969c5b4fc586d
+SHA256: eaf242ebdbb8a06908f081b67a554c458546098b246bd184dcfa01e27035d33c
+Description: The Cairo 2D vector graphics library (GObject library)
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the GObject library, providing wrapper GObject types
+ for all cairo types.
+Multi-Arch: same
+Original-Maintainer: Dave Beckett <dajobe@debian.org>
+
+Package: lxsession-dbg
+Source: lxsession
+Priority: extra
+Section: debug
+Installed-Size: 850
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.4.9.2-0ubuntu6~maya
+Depends: lxsession (= 0.4.9.2-0ubuntu6~maya)
+Filename: pool/main/l/lxsession/lxsession-dbg_0.4.9.2-0ubuntu6~maya_i386.deb
+Size: 578790
+MD5sum: a17dd163bb80ada66ac021d82392867b
+SHA1: 780f239448947ac101e4c17a8cf61cbf8f1d6d7b
+SHA256: 05c84f83c469a7b612ef457f04f34a299c9fb2cba92ee5c3004578dd7ef81518
+Description: default session manager for LXDE - debug package
+ This package provide debug symbols for lxsession.
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: deadbeef-dbg
+Source: deadbeef
+Priority: extra
+Section: debug
+Installed-Size: 9016
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 0.5.6-1
+Depends: deadbeef (= 0.5.6-1)
+Filename: pool/main/d/deadbeef/deadbeef-dbg_0.5.6-1_i386.deb
+Size: 3759060
+MD5sum: bfe0252646b57168d85d7ae64d64e086
+SHA1: 122397ec28d80ec8bca6ac34fcdf3d06b2ea1038
+SHA256: 2d636d094c0bbd8f515b63c3a74008f2ed30ae7071b196c16984ac4786e5e25a
+Description: ultimate music player for GNU/Linux systems
+ DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
+ .
+ This package contains gdb debugging symbols for the deadbeef package.
+
+Package: lxappearance-obconf
+Priority: optional
+Section: x11
+Installed-Size: 924
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.2.2~git20131220-0linuxmint1~maya
+Depends: libc6 (>= 2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.18.0), libgtk2.0-0 (>= 2.12.0), libobrender29 (>= 3.5.2), libobt2 (>= 3.5.2), libx11-6, libxml2 (>= 2.7.4)
+Filename: pool/main/l/lxappearance-obconf/lxappearance-obconf_0.2.2~git20131220-0linuxmint1~maya_i386.deb
+Size: 112730
+MD5sum: 2b3f7d5308a2a3e9bc58d5595a189617
+SHA1: 090de3fb4bef53cf146704a18c68d03e309ffc44
+SHA256: 9a48615d2a3899666f904f606e84bda7d740ee8bbd659d189077dd2590cd8b76
+Description: LXDE GTK+ theme switcher (plugin)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the ObConf plugin.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxappearance-obconf-dbg
+Source: lxappearance-obconf
+Priority: extra
+Section: debug
+Installed-Size: 102
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.2.2~git20131220-0linuxmint1~maya
+Filename: pool/main/l/lxappearance-obconf/lxappearance-obconf-dbg_0.2.2~git20131220-0linuxmint1~maya_i386.deb
+Size: 53966
+MD5sum: 2957344e36af294f9ec981d8ebc717d6
+SHA1: a9e57fd66093ee81e6cd9e79a0e0be907ee55422
+SHA256: fc4b7c57a73c32a3df5a553ed7491d5b393a8f8dabe634e224ea946ef5398d06
+Description: LXDE GTK+ theme switcher (plugin - debug)
+ LXAppearance is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols for the ObConf plugin.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: lxpanel-dbg
+Source: lxpanel
+Priority: extra
+Section: debug
+Installed-Size: 827
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.6.1-0ubuntu1~maya
+Depends: lxpanel (= 0.6.1-0ubuntu1~maya)
+Filename: pool/main/l/lxpanel/lxpanel-dbg_0.6.1-0ubuntu1~maya_i386.deb
+Size: 622666
+MD5sum: 90f92a5190c760de2e88a66f0048ee4c
+SHA1: a42a11f85aa2bad4db2bc4b412b75da385dcad8c
+SHA256: eeed5e041944a2b4672c7cd1eef2233274d94b848ffeec5f3152cab118a68bd0
+Description: LXDE panel (debug)
+ LXPanel is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: inxi
+Priority: extra
+Section: misc
+Installed-Size: 443
+Maintainer: Unit 193 <unit193@ubuntu.com>
+Architecture: all
+Version: 1.9.17-1~maya
+Recommends: dmidecode, file, hddtemp, iproute2, lm-sensors, mesa-utils, module-init-tools, net-tools, sudo, usbutils, x11-utils, x11-xserver-utils
+Depends: bash (>= 3.0), gawk, pciutils, procps
+Filename: pool/main/i/inxi/inxi_1.9.17-1~maya_all.deb
+Size: 129390
+MD5sum: f4ea1149bf34cd6d18a25ce62d42324b
+SHA1: f692dafe6b2bbed4eb865b6a0e849da9a1f1cf4a
+SHA256: f744417e0c136f49bfcbeecbf34a5b418a0c861c6ff889198c8ad38491a1ac51
+Description: full featured system information script
+ Inxi is a system information script that can display various things about
+ your hardware and software to users in an IRC chatroom or support forum.
+ It runs with the /exec command in most IRC clients.
+
+Package: virtualbox-qt
+Source: virtualbox
+Priority: optional
+Section: misc
+Installed-Size: 20597
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.2.16-dfsg-3~maya
+Replaces: virtualbox (<< 4.1.6-dfsg-2~)
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqt4-network (>= 4:4.5.3), libqt4-opengl (>= 4:4.7.2), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.6), libx11-6, libxcursor1 (>> 1.1.2), libxext6, libxinerama1, virtualbox (= 4.2.16-dfsg-3~maya)
+Pre-Depends: dpkg (>= 1.15.6~)
+Breaks: virtualbox (<< 4.1.6-dfsg-2~)
+Filename: pool/main/v/virtualbox/virtualbox-qt_4.2.16-dfsg-3~maya_i386.deb
+Size: 4635752
+MD5sum: cc17c4325e349564fa5b4925e7cd08b7
+SHA1: c2c7549783c66db58fa2582c98d0d7df1bd3bcff
+SHA256: f339eff08f311663f0cbc12d40610a6b6ea35915bc0e7a26ab9c52f127af8c86
+Description: x86 virtualization solution - Qt based user interface
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the Qt based graphical user interface for VirtualBox.
+
+Package: virtualbox-dbg
+Source: virtualbox
+Priority: extra
+Section: debug
+Installed-Size: 228851
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.2.16-dfsg-3~maya
+Depends: virtualbox (= 4.2.16-dfsg-3~maya) | virtualbox-guest-utils (= 4.2.16-dfsg-3~maya)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-dbg_4.2.16-dfsg-3~maya_i386.deb
+Size: 46592844
+MD5sum: 2eea07269eab3e0da72e84383d265842
+SHA1: 6434a00385210e9b8265c3d96bfff296b6bd9fc6
+SHA256: 0fb215b9244ceb051a1dd5e99d7b4217ea59efe5f5cf346bd4b773146c71bcf3
+Description: x86 virtualization solution - debugging symbols
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the debugging symbols for VirtualBox.
+
+Package: virtualbox-dkms
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 4044
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.2.16-dfsg-3~maya
+Depends: dkms (>= 2.1.0.0), virtualbox (>= 4.2.16-dfsg-3~maya)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-dkms_4.2.16-dfsg-3~maya_all.deb
+Size: 532834
+MD5sum: bf22805631df21e4ddd569b20d428042
+SHA1: 2c18ce765715ecd86aa83059b66b7596dd9e8db5
+SHA256: c0e99c64565ba39bceae58d32e5d9c84ea5b24b852b057d3c7615500cea25e1c
+Description: x86 virtualization solution - kernel module sources for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox kernel module to be
+ build with dkms. Kernel sources or headers are required to compile this
+ module.
+
+Package: virtualbox-guest-dkms
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 3393
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.2.16-dfsg-3~maya
+Depends: dkms (>= 2.1.0.0), virtualbox-guest-utils (>= 4.2.16-dfsg-3~maya)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-dkms_4.2.16-dfsg-3~maya_all.deb
+Size: 453426
+MD5sum: 340b3e50707e3b3be8170e8de47de295
+SHA1: 5e7227c16ee457cb8666cef9ccf36aa42b757280
+SHA256: c0b7c42d4639ca88b6ca34fed71450dffe9ab6fab67f639b3c44524cf8815af6
+Description: x86 virtualization solution - guest addition module source for dkms
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules to be build with dkms. Kernel sources or headers are required to
+ compile these modules.
+Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
+
+Package: virtualbox-guest-x11
+Source: virtualbox
+Priority: optional
+Section: x11
+Installed-Size: 5752
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.2.16-dfsg-3~maya
+Provides: xorg-driver-video
+Depends: libc6 (>= 2.15), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxmu6, libxrandr2, libxt6, xorg-video-abi-11, xserver-xorg-core (>= 2:1.10.99.901), virtualbox-guest-utils (= 4.2.16-dfsg-3~maya)
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-x11_4.2.16-dfsg-3~maya_i386.deb
+Size: 932470
+MD5sum: d7a3d687258588d2591e973a0151fd6f
+SHA1: 6888fadfcab1db8f52d55059afa189bd6b93efab
+SHA256: 6ad06959668da9faf33c0ffc44207ec2bdbcb4f4d144a42e92752c6df59f4e47
+Description: x86 virtualization solution - X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the X11 guest utilities for VirtualBox. These utilities
+ are meant to be run inside the virtual machine.
+ They provide closer integration and improve the interactive performance.
+
+Package: virtualbox-guest-utils
+Source: virtualbox
+Priority: optional
+Section: misc
+Installed-Size: 1668
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: i386
+Version: 4.2.16-dfsg-3~maya
+Recommends: virtualbox-guest-dkms (= 4.2.16-dfsg-3~maya) | virtualbox-guest-source (= 4.2.16-dfsg-3~maya), virtualbox-guest-x11 (= 4.2.16-dfsg-3~maya)
+Depends: libc6 (>= 2.15), libpam0g (>= 0.99.7.1), adduser, pciutils
+Pre-Depends: dpkg (>= 1.15.6~)
+Filename: pool/main/v/virtualbox/virtualbox-guest-utils_4.2.16-dfsg-3~maya_i386.deb
+Size: 361342
+MD5sum: 14f36830863b6fa04008219875534332
+SHA1: 347ea747c6ecbbb409f19e039238485a75a0b268
+SHA256: ef56252a4c9c56a65376dbb921d7f447b13f2f7bf2fcbab0066d3113f8b66f8b
+Description: x86 virtualization solution - non-X11 guest utilities
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the non-X11 guest utilities for VirtualBox. These
+ utilities are meant to be run inside the virtual machine.
+ They provide closer integration and allow to share data through shared folders
+ between the host system and the virtual machine.
+
+Package: gnome-panel-control
+Source: openbox
+Priority: optional
+Section: x11
+Installed-Size: 62
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 3.5.2-6~maya
+Replaces: openbox (<< 3.4.11.2)
+Depends: libc6 (>= 2.4), libx11-6
+Breaks: openbox (<< 3.4.11.2)
+Filename: pool/main/o/openbox/gnome-panel-control_3.5.2-6~maya_i386.deb
+Size: 19424
+MD5sum: 38a03aac8db72d2f0407fbbf6b30c794
+SHA1: 3c6864e823e11d7043ae0a1bee56fdea72ed0027
+SHA256: 5421ac034ccec2a9041686e9e59d191dca9caeade29a717c067b4e6d1e69810e
+Description: command line utility to invoke GNOME panel run dialog/menu
+ gnome-panel-control can be used to invoke the GNOME panel run or main
+ menu from the command line. This is originally a helper utility of openbox
+ since gnome-panel is no longer managing its own key bindings.
+
+Package: virtualbox-guest-source
+Source: virtualbox
+Priority: optional
+Section: kernel
+Installed-Size: 634
+Maintainer: Debian Virtualbox Team <pkg-virtualbox-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 4.2.16-dfsg-3~maya
+Recommends: module-assistant
+Depends: build-essential, debhelper (>= 5), bzip2, kbuild
+Filename: pool/main/v/virtualbox/virtualbox-guest-source_4.2.16-dfsg-3~maya_all.deb
+Size: 556636
+MD5sum: ceaf2a49faba654af8d5bbda66589d66
+SHA1: 86f42381bdccd928d53cba81462eab0dad2044dd
+SHA256: def949a580731a13167bd8d24a21c2fc83eb229739decdd020c44cf55a56cfbe
+Description: x86 virtualization solution - guest addition module source
+ VirtualBox is a free x86 virtualization solution allowing a wide range
+ of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
+ Linux system.
+ .
+ This package provides the source code for the virtualbox guest addition kernel
+ modules. The virtualbox-guest-utils package is also required in order to
+ make use of these modules. Kernel sources or headers are required to compile
+ these modules.
+
+Package: libfm-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 1656
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0-0linuxmint1~maya
+Replaces: libfm0, libfm1
+Breaks: libfm0, libfm1
+Filename: pool/main/libf/libfm/libfm-data_1.2.0-0linuxmint1~maya_all.deb
+Size: 203282
+MD5sum: a7ce1dc735cd90986d4c613c21f7ff5b
+SHA1: 77c72a17ec7a1a48f14aa683352d7218e271b425
+SHA256: 0e728454560e747f5ba6138b8bfbe4c779170c50c4f8625230f9532529a5d3b8
+Description: file management support (common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the core library.
+
+Package: libfm-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 1537
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0~git20131221-0linuxmint1~maya
+Replaces: libfm0, libfm1
+Breaks: libfm0, libfm1
+Filename: pool/main/libf/libfm/libfm-data_1.2.0~git20131221-0linuxmint1~maya_all.deb
+Size: 182258
+MD5sum: 900cb08638d9735c09ec1fb555c869a3
+SHA1: 122734d539f13fb43942bcc16c614e600863a183
+SHA256: 904c549da8eae8a69270fc98271d8f3258363908658d01a5417aef8dd33c158d
+Description: file management support (common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the core library.
+
+Package: libfm-gtk-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 166
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0-0linuxmint1~maya
+Replaces: libfm-gtk0
+Breaks: libfm-gtk-bin (<< 1.2~), libfm-gtk0
+Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.0-0linuxmint1~maya_all.deb
+Size: 20378
+MD5sum: 3ebc6364f9ab2f9e8d7578730d47acc4
+SHA1: 669990d10edb52e139c9181d83abccf4ad8c0709
+SHA256: e380698fe04d5e8bb32dd86ed1a8223d3e8f8c3f92fbfab53bf6089fd7d30eb6
+Description: file management support (GTK+ library common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the GTK+ library.
+
+Package: libfm-gtk-data
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 153
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0~git20131221-0linuxmint1~maya
+Replaces: libfm-gtk0
+Breaks: libfm-gtk-bin (<< 1.0), libfm-gtk0
+Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.0~git20131221-0linuxmint1~maya_all.deb
+Size: 15292
+MD5sum: 3a6c07ed624af20aac37adc9e04aeff1
+SHA1: ef6587deede4072cc8f60de4880ff49366360d07
+SHA256: 6888ba7bb1c7debac170ac829db36ebd30754a5cb30cbcfc24f96d10d419b011
+Description: file management support (GTK+ library common data)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the common data of the GTK+ library.
+
+Package: gir1.2-rsvg-2.0
+Source: librsvg
+Priority: optional
+Section: introspection
+Installed-Size: 195
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: i386
+Version: 2.36.4-2~maya
+Depends: gir1.2-freedesktop, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, librsvg2-2 (>= 2.35.2)
+Filename: pool/main/libr/librsvg/gir1.2-rsvg-2.0_2.36.4-2~maya_i386.deb
+Size: 163354
+MD5sum: 50ae615b8c8bb7dde0a45c8645424d02
+SHA1: 1facc611732e41e60bb1ec2120299e4d3691ff1c
+SHA256: 862f730b56a4176de961aaf44de14e7f8631dcfc0f38e7e628a079cd3035099f
+Description: gir files for renderer library for SVG files
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package contains gobject introspection information.
+
+Package: abiword-dbg
+Source: abiword
+Priority: extra
+Section: debug
+Installed-Size: 27002
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 3.0.0-1~maya
+Depends: abiword (= 3.0.0-1~maya)
+Filename: pool/main/a/abiword/abiword-dbg_3.0.0-1~maya_i386.deb
+Size: 25333810
+MD5sum: 3e41cc111883cc1411b0ba460df27be2
+SHA1: 5dad1873f2f42ab56201e12a4fdc231d98d24074
+SHA256: 52fb8bc0bf86cadcd210682a85af04feaaae7a9b08799dbf3c2de3fa266b8f4d
+Description: debugging symbols for abiword word processor
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package includes many of the available import/export plugins allowing
+ AbiWord to interact with ODT, WordPerfect, and other formats.  It also
+ includes tools plugins, offering live collaboration with AbiWord users
+ on Linux and Windows (using TCP or Jabber/XMPP), web translation and
+ dictionary support, and more.
+ .
+ This package contains debugging symbols needed for debugging abiword.
+
+Package: shimmer-themes
+Priority: optional
+Section: x11
+Installed-Size: 780
+Maintainer: Xubuntu Developers <xubuntu-devel@lists.ubuntu.com>
+Architecture: all
+Version: 1.3.0-0ubuntu1+linuxmint2
+Replaces: murrines-themes (<= 0.98.3), xubuntu-artwork (<= 11.10.0)
+Suggests: xfwm4 | metacity, xfce4-notifyd, shimmer-wallpapers
+Depends: gtk2-engines-murrine (>= 0.98), gtk3-engines-unico (>= 1.0.1)
+Breaks: murrines-themes (<= 0.98.3), xubuntu-artwork (<= 11.10.0)
+Filename: pool/main/s/shimmer-themes/shimmer-themes_1.3.0-0ubuntu1+linuxmint2_all.deb
+Size: 154424
+MD5sum: 2048a675c31d0f18e043449447c7dfb2
+SHA1: 6bd4b7360b619416180b6902ba6527ab07c421c6
+SHA256: 0b2d9f4aeb3b8e070192c1d924af20915b196c03dd90f8cda85bf00eee81ca07
+Description: Gtk+ themes from Shimmer Project
+ This package contains all the desktop suites by Shimmer Project.
+ .
+ * Albatross, a dark and light theme that was originally designed for
+ Xubuntu 9.10. Albatross is designed to be smooth: no rough borders,
+ no contrasted edges, no violent contrasts, a soft blue colour.
+ * Bluebird is the colorful successor to Albatross originally designed
+ for Xubuntu 10.10. Bluebird is the only way to go if you love blue!
+ * Greybird is the more conservative but at the same time modern variant
+ of Bluebird. Greybird contains a lot of improvements over Bluebird;
+ amongst other things, full GTK3 support.
+
+Package: shimmer-wallpapers
+Source: shimmer-themes
+Priority: optional
+Section: x11
+Installed-Size: 11396
+Maintainer: Xubuntu Developers <xubuntu-devel@lists.ubuntu.com>
+Architecture: all
+Version: 1.3.0-0ubuntu1+linuxmint2
+Filename: pool/main/s/shimmer-themes/shimmer-wallpapers_1.3.0-0ubuntu1+linuxmint2_all.deb
+Size: 9068400
+MD5sum: 26814f06bdf07a4c3e9b74123d43a182
+SHA1: d440c4a2031e78e20304664e6de05d60124fa494
+SHA256: de5bc43cecca42abcf7d83614956e479f35ee4823a5f55f6ea75c6cab611bdc5
+Description: Wallpapers from Shimmer Project
+ This package contains wallpapers assorted to each desktop theme from
+ Shimmer Project.
+
+Package: mc-data
+Source: mc
+Priority: optional
+Section: utils
+Installed-Size: 5351
+Maintainer: Debian MC Packaging Group <pkg-mc-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 3:4.8.11-1~maya
+Replaces: mc (<< 3:4.8.1)
+Breaks: mc (<< 3:4.8.1)
+Filename: pool/main/m/mc/mc-data_4.8.11-1~maya_all.deb
+Size: 1180432
+MD5sum: ea3ada4a319b302724aabe250a9e5472
+SHA1: b4bf5f02f3ccf4e71c5dd7ebf511b567631b0af9
+SHA256: 03c04713dd98daad0772081854de24cf107c8e89a4f3d6ea9aac83826be62a30
+Description: Midnight Commander - a powerful file manager -- data files
+ GNU Midnight Commander is a text-mode full-screen file manager. It
+ uses a two panel interface and a subshell for command execution. It
+ includes an internal editor with syntax highlighting and an internal
+ viewer with support for binary files. Also included is Virtual
+ Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
+ servers) and files inside archives to be manipulated like real files.
+ .
+ This package provides architecture independent files
+Multi-Arch: foreign
+
+Package: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 979
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~precise1
+Recommends: qpdfview-djvu-plugin (= 0.4.9-1~precise1), qpdfview-ps-plugin (= 0.4.9-1~precise1), qpdfview-translations (= 0.4.9-1~precise1)
+Depends: libc6 (>= 2.3.6-6~), libcups2 (>= 1.4.0), libgcc1 (>= 1:4.1.1), libmagic1, libpoppler-qt4-3 (>= 0.18), libqt4-dbus (>= 4:4.5.3), libqt4-sql (>= 4:4.5.3), libqt4-xml (>= 4:4.5.3), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.8.0), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.2.3.3.dfsg), libqt4-sql-sqlite, libqt4-svg
+Filename: pool/main/q/qpdfview/qpdfview_0.4.9-1~precise1_i386.deb
+Size: 372226
+MD5sum: 20fa510d97c91c723285744efa78fbb9
+SHA1: b94bd38feb13386c56886e8f6d513202bbf6b628
+SHA256: ce9fd1f79e00b2a985a00655e06cdf328f00116ec6f6b917bc0dd20e632880b3
+Description: tabbed document viewer
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ Current features include:
+ - Outline, properties and thumbnail panes
+ - Scale, rotate and fit
+ - Fullscreen and presentation views
+ - Continuous and multi-page layouts
+ - Search for text (PDF and DjVu only)
+ - Configurable toolbars
+ - SyncTeX support (PDF only)
+ - Partial annotation support (PDF only, Poppler version 0.20.1 or newer)
+ - Partial form support (PDF only)
+ - Persistent per-file settings
+ - Support for DjVu and PostScript documents via plugins
+
+Package: libbabl-doc
+Source: babl
+Priority: optional
+Section: doc
+Installed-Size: 1930
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: all
+Version: 0.1.10-1maya1
+Replaces: libbabl-0.0-doc
+Breaks: libbabl-0.0-doc
+Filename: pool/main/b/babl/libbabl-doc_0.1.10-1maya1_all.deb
+Size: 141850
+MD5sum: 70b90473de224026f938c5abbf5e2b2c
+SHA1: 72a4c4d634a2fb6b780792a706a6bdef14e9debf
+SHA256: feee88f58dd858795d1a6ba6162e6017a03d644e7dd1042472c115985330cf8a
+Description: Dynamic, any to any, pixel format conversion library (documentation)
+ Babl is a dynamic, any to any, pixel format conversion library. It
+ provides conversions between the myriad of buffer types images can be
+ stored in. Babl doesn't only help with existing pixel formats, but
+ also facilitates creation of new and uncommon ones.
+ .
+ This package contains the API documentation.
+Multi-Arch: foreign
+
+Package: libbabl-dev
+Source: babl
+Priority: optional
+Section: libdevel
+Installed-Size: 92
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.1.10-1maya1
+Replaces: libbabl-0.0-0-dev
+Provides: libbabl-0.0-0-dev
+Depends: libbabl-0.1-0 (= 0.1.10-1maya1)
+Breaks: libbabl-0.0-0-dev
+Filename: pool/main/b/babl/libbabl-dev_0.1.10-1maya1_i386.deb
+Size: 35512
+MD5sum: 01dc41e341c4e5103797612271a831af
+SHA1: 817504c05d2ce423339e0d6a3182e3fab608cdae
+SHA256: a06723b1f7db61dff73baeba2257c79038997e5652de93b044f5f036cb961db5
+Description: Dynamic, any to any, pixel format conversion library (development files)
+ Babl is a dynamic, any to any, pixel format conversion library. It
+ provides conversions between the myriad of buffer types images can be
+ stored in. Babl doesn't only help with existing pixel formats, but
+ also facilitates creation of new and uncommon ones.
+ .
+ This package contains the development files.
+Multi-Arch: same
+
+Package: libgegl-0.2-0
+Source: gegl
+Priority: optional
+Section: libs
+Installed-Size: 2145
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.2.0-2+nmu1maya1
+Depends: libavcodec53 (>= 4:0.8-1~) | libavcodec-extra-53 (>= 4:0.8-1~), libavformat53 (>= 4:0.8-1~) | libavformat-extra-53 (>= 4:0.8-1~), libbabl-0.1-0, libc6 (>= 2.7), libcairo2 (>= 1.2.4), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libjasper1, libjpeg8 (>= 8c), libopenexr6 (>= 1.6.1), libopenraw1 (>= 0.0.4), libpango1.0-0 (>= 1.14.0), libpng12-0 (>= 1.2.13-4), librsvg2-2 (>= 2.14.4), libsdl1.2debian (>= 1.2.10-1), libstdc++6 (>= 4.1.1), libumfpack5.4.0 (>= 1:3.4.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/g/gegl/libgegl-0.2-0_0.2.0-2+nmu1maya1_i386.deb
+Size: 717902
+MD5sum: 25ba7e2df4e8470af3bbcecbd8845531
+SHA1: b7d8386be06286139a887f5c6239292749af6bae
+SHA256: 97ea9a462767f6ac35096ac1e2ac8cf807927d5aa183618e6fac0804bbdeca0e
+Description: Generic Graphics Library
+ GEGL (Generic Graphics Library) is a graph based image processing
+ framework.
+ .
+ GEGLs original design was made to scratch GIMPs itches for a new
+ compositing and processing core. This core is being designed to have
+ minimal dependencies and a simple well defined API.
+Multi-Arch: same
+
+Package: libgegl-dev
+Source: gegl
+Priority: optional
+Section: libdevel
+Installed-Size: 536
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.2.0-2+nmu1maya1
+Replaces: libgegl-0.0-dev
+Provides: libgegl-0.0-dev
+Depends: libbabl-dev (>= 0.1.10), libgegl-0.2-0 (= 0.2.0-2+nmu1maya1), libglib2.0-dev (>= 2.16.1)
+Breaks: libgegl-0.0-dev
+Filename: pool/main/g/gegl/libgegl-dev_0.2.0-2+nmu1maya1_i386.deb
+Size: 214114
+MD5sum: 9e5e92359e9219533f82444f18a9475b
+SHA1: 82baade00fe751c708fa411a4a8238f0b2f2cef6
+SHA256: ec70aec780bbd51b5120999b470892788735f7af313f7dd29f1557b35c3dc7fb
+Description: Generic Graphics Library (development files)
+ GEGL (Generic Graphics Library) is a graph based image processing
+ framework.
+ .
+ GEGLs original design was made to scratch GIMPs itches for a new
+ compositing and processing core. This core is being designed to have
+ minimal dependencies and a simple well defined API.
+ .
+ This package contains the development files.
+Multi-Arch: same
+
+Package: libgegl-0.2-0-dbg
+Source: gegl
+Priority: extra
+Section: debug
+Installed-Size: 4060
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: i386
+Version: 0.2.0-2+nmu1maya1
+Replaces: libgegl-0.0-dbg, libgegl-0.1-0-dbg
+Depends: libgegl-0.2-0 (= 0.2.0-2+nmu1maya1)
+Breaks: libgegl-0.0-dbg, libgegl-0.1-0-dbg
+Filename: pool/main/g/gegl/libgegl-0.2-0-dbg_0.2.0-2+nmu1maya1_i386.deb
+Size: 1527308
+MD5sum: e4d2a386ce74063aded903b8ae6db30d
+SHA1: 32fca4c5202233837a56c4e52beb96fcaf262d72
+SHA256: e91d3b806b6a956d86147abadace7150007d9d8e4f0fcbb145823763cd83b61c
+Description: Generic Graphics Library (debugging symbols)
+ GEGL (Generic Graphics Library) is a graph based image processing
+ framework.
+ .
+ GEGLs original design was made to scratch GIMPs itches for a new
+ compositing and processing core. This core is being designed to have
+ minimal dependencies and a simple well defined API.
+ .
+ This package contains the debugging symbols.
+
+Package: libgegl-doc
+Source: gegl
+Priority: optional
+Section: doc
+Installed-Size: 2469
+Maintainer: Matteo F. Vescovi <mfv.debian@gmail.com>
+Architecture: all
+Version: 0.2.0-2+nmu1maya1
+Replaces: libgegl-0.0-doc
+Breaks: libgegl-0.0-doc
+Filename: pool/main/g/gegl/libgegl-doc_0.2.0-2+nmu1maya1_all.deb
+Size: 1461220
+MD5sum: 07ab13b5e9cb2a8eb2c98613508bcc07
+SHA1: 5fc10f142edb28607b101cb436fc6e79f5178b08
+SHA256: 5aa6f124a9feb4cb696793437ca4682b48f18dab2ae9bc4ca08dfa531b67d6d4
+Description: Generic Graphics Library (documentation)
+ GEGL (Generic Graphics Library) is a graph based image processing
+ framework.
+ .
+ GEGLs original design was made to scratch GIMPs itches for a new
+ compositing and processing core. This core is being designed to have
+ minimal dependencies and a simple well defined API.
+ .
+ This package contains the documentation.
+Multi-Arch: foreign
+
+Package: lxpolkit
+Source: lxsession
+Priority: optional
+Section: x11
+Installed-Size: 50
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.4.9.2-0ubuntu6~maya
+Provides: policykit-1-gnome
+Depends: libc6 (>= 2.3.6-6~), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.12.0), libpolkit-agent-1-0 (>= 0.94), libpolkit-gobject-1-0 (>= 0.94), lxsession-data
+Filename: pool/main/l/lxsession/lxpolkit_0.4.9.2-0ubuntu6~maya_i386.deb
+Size: 13684
+MD5sum: 6482ab089e132afd847e33505ffd46f0
+SHA1: d31fca33bcdc5edf660140ba47ffed56f4296461
+SHA256: aa761d7d7314bc23c2868e1b70fced9d5cfc6ca41bfca80c32811dca96e2756a
+Description: LXDE PolicyKit authentication agent
+ LXPolkit is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ It's a simple PolicyKit authentication agent.
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: librsvg2-doc
+Source: librsvg
+Priority: optional
+Section: doc
+Installed-Size: 396
+Maintainer: Josselin Mouette <joss@debian.org>
+Architecture: all
+Version: 2.36.4-2~maya
+Replaces: librsvg2-dev (<< 2.34.2-2)
+Suggests: devhelp
+Breaks: librsvg2-dev (<< 2.34.2-2)
+Filename: pool/main/libr/librsvg/librsvg2-doc_2.36.4-2~maya_all.deb
+Size: 186472
+MD5sum: 73d4041ed562b46214b1caa167ea8111
+SHA1: 761fc8a9a2d83721893905b0bdeaa4b21567921e
+SHA256: 9adcc3f8427be17fe41f563895ad8e416431d3ca2be54aa1811ca488b7c3c0bc
+Description: SAX-based renderer library for SVG files (documentation)
+ The rsvg library is an efficient renderer for Scalable Vector Graphics
+ (SVG) pictures.
+ .
+ This package provides the API documentation.
+
+Package: libfm-gtk-bin
+Source: libfm
+Priority: extra
+Section: oldlibs
+Installed-Size: 33
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: libfm-tools (= 1.2.0-0linuxmint1~maya)
+Filename: pool/main/libf/libfm/libfm-gtk-bin_1.2.0-0linuxmint1~maya_i386.deb
+Size: 7320
+MD5sum: 3a68530cc4d801dbbd9e576fc34dc848
+SHA1: d2d5055ab7c55168e951800bb10671f323736dcb
+SHA256: f76595188196d9623b04f59cefe46b1759a99f75a1564d7985aaec6506d7d1a6
+Description: transitional package for libfm-tools
+ This is transitional package for libfm-tools, and can be safely removed
+ after the installation is complete.
+
+Package: lxlauncher-dbg
+Source: lxlauncher
+Priority: extra
+Section: debug
+Installed-Size: 113
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.2.2-3ubuntu2~maya
+Depends: lxlauncher (= 0.2.2-3ubuntu2~maya)
+Filename: pool/main/l/lxlauncher/lxlauncher-dbg_0.2.2-3ubuntu2~maya_i386.deb
+Size: 62270
+MD5sum: 4576f265cfbcc0a31db1bf7dc42e3654
+SHA1: 513dc16efc43e9af614850d0c0fa0a5330ce1eb0
+SHA256: f7547c390ac57bd8a36601bdcd9c432fcb77f868e8ba1550254f442cd83ab5f5
+Description: LXDE launcher for netbooks (debug)
+ LXLauncher is a GUI application for the Lightweight X11 Desktop Environment
+ (LXDE).
+ .
+ This package contains the debugging symbols.
+Original-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+
+Package: gpicview-dbg
+Source: gpicview
+Priority: extra
+Section: debug
+Installed-Size: 189
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.2.4-1~maya
+Depends: gpicview (= 0.2.4-1~maya)
+Filename: pool/main/g/gpicview/gpicview-dbg_0.2.4-1~maya_i386.deb
+Size: 134946
+MD5sum: 6263672655924e05fd9b01f008b00f22
+SHA1: d2e3a87b0f2c43688dab49766012588fc8a7b8ce
+SHA256: f55a5f62a0802c7d0a1f9ba09e553caa9d716970b14fa1a755dfd287f4e2c36e
+Description: lightweight image viewer (debug)
+ GPicView is a lightweight GTK+ 2.x based image viewer.
+ .
+ This package contains the debugging symbols.
+
+Package: nyancat
+Priority: extra
+Section: misc
+Installed-Size: 71
+Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
+Architecture: i386
+Version: 1.2.2-1~maya
+Depends: libc6 (>= 2.11)
+Filename: pool/main/n/nyancat/nyancat_1.2.2-1~maya_i386.deb
+Size: 13806
+MD5sum: ca16367b2f6ae8663bf302cc7dc866cb
+SHA1: 00d1ccd13971f5e185f78df5f172c0eef2e64024
+SHA256: f51839e328445ee2cea5ed0b8221009f41176c22f839bec4a761b88763b2f9ce
+Description: Animated terminal Nyancat
+ nyancat is a program to display an animated poptart cat in your terminal.
+ .
+ This is a standalone program only. To serve nyancat to many users, the
+ nyancat-server package is required.
+
+Package: nyancat-server
+Source: nyancat
+Priority: extra
+Section: misc
+Installed-Size: 45
+Maintainer: Jonathan McCrohan <jmccrohan@gmail.com>
+Architecture: all
+Version: 1.2.2-1~maya
+Depends: nyancat (>= 1.2.2-1~maya), openbsd-inetd | inet-superserver, reconf-inetd
+Conflicts: telnetd
+Filename: pool/main/n/nyancat/nyancat-server_1.2.2-1~maya_all.deb
+Size: 4450
+MD5sum: 18217034eac6951e2eff360523980179
+SHA1: 4b1a0164c006a8b65eb956479a8dabac93354ac8
+SHA256: 0c5aeb70162110bdf0e3b9a4d7566b1c0c8b45f201225c99985cf51888e35fe2
+Description: Animated terminal Nyancat server configurations
+ nyancat-server contains the configuations required to quickly set up a nyancat
+ server. This allows the animated poptart cat to be served to many users via
+ telnet.
+ .
+ Installing this package will automatically configure and activate a nyancat
+ telnet server.
+
+Package: libopus0
+Source: opus
+Priority: optional
+Section: libs
+Installed-Size: 306
+Maintainer: Ron Lee <ron@debian.org>
+Architecture: i386
+Version: 1.1~alpha+20130512-1~maya
+Suggests: opus-tools
+Depends: libc6 (>= 2.4)
+Filename: pool/main/o/opus/libopus0_1.1~alpha+20130512-1~maya_i386.deb
+Size: 162470
+MD5sum: 6841aa7ad2f15a828ca35f8068bfb86f
+SHA1: a4eee9a94574d4ff573979f2a9c52a9ea7a0fd9b
+SHA256: 85490dbdf5b94c402b5f3f38a6d51fd41ead2565db17b6fbd6cf8db47e68a0c1
+Description: Opus codec runtime library
+ The Opus codec is designed for interactive speech and audio transmission over
+ the Internet. It is designed by the IETF Codec Working Group and incorporates
+ technology from Skype's SILK codec and Xiph.Org's CELT codec.
+ .
+ It is intended to suit a wide range of interactive audio applications,
+ including Voice over IP, videoconferencing, in-game chat, and even remote live
+ music performances.  It can scale from low bit-rate narrowband speech to very
+ high quality stereo music. The current features are:
+ .
+ Bit-rates from 6 kb/s 510 kb/s
+ Sampling rates from 8 to 48 kHz
+ Frame sizes from 2.5 ms to 60 ms
+ Support for both constant bit-rate (CBR) and variable bit-rate (VBR)
+ Audio bandwidth from narrowband to full-band
+ Support for speech and music
+ Support for mono and stereo
+ Support for up to 255 channels (multistream frames)
+ Dynamically adjustable bitrate, audio bandwidth, and frame size
+ Good loss robustness and packet loss concealment (PLC)
+ Floating point and fixed-point implementation
+ .
+ This package provides the Opus runtime library.
+
+Package: libopus-dev
+Source: opus
+Priority: optional
+Section: libdevel
+Installed-Size: 583
+Maintainer: Ron Lee <ron@debian.org>
+Architecture: i386
+Version: 1.1~alpha+20130512-1~maya
+Depends: libopus0 (= 1.1~alpha+20130512-1~maya)
+Filename: pool/main/o/opus/libopus-dev_1.1~alpha+20130512-1~maya_i386.deb
+Size: 212890
+MD5sum: 690c0a335a583dc4b15e98e04f2e53d6
+SHA1: d0c70f07eebb32443c809f003e19f003b80411f4
+SHA256: 0eaa2c1cb6e41f219b04394286c9aafcfabbc3c98cfda5c54d1411bfd7bf7e99
+Description: Opus codec library development files
+ The Opus codec is designed for interactive speech and audio transmission over
+ the Internet. It is designed by the IETF Codec Working Group and incorporates
+ technology from Skype's SILK codec and Xiph.Org's CELT codec.
+ .
+ It is intended to suit a wide range of interactive audio applications,
+ including Voice over IP, videoconferencing, in-game chat, and even remote live
+ music performances.  It can scale from low bit-rate narrowband speech to very
+ high quality stereo music. The current features are:
+ .
+ Bit-rates from 6 kb/s 510 kb/s
+ Sampling rates from 8 to 48 kHz
+ Frame sizes from 2.5 ms to 60 ms
+ Support for both constant bit-rate (CBR) and variable bit-rate (VBR)
+ Audio bandwidth from narrowband to full-band
+ Support for speech and music
+ Support for mono and stereo
+ Support for up to 255 channels (multistream frames)
+ Dynamically adjustable bitrate, audio bandwidth, and frame size
+ Good loss robustness and packet loss concealment (PLC)
+ Floating point and fixed-point implementation
+ .
+ This package provides the Opus library headers and development files.
+
+Package: libopus-dbg
+Source: opus
+Priority: extra
+Section: debug
+Installed-Size: 885
+Maintainer: Ron Lee <ron@debian.org>
+Architecture: i386
+Version: 1.1~alpha+20130512-1~maya
+Depends: libopus0 (= 1.1~alpha+20130512-1~maya)
+Filename: pool/main/o/opus/libopus-dbg_1.1~alpha+20130512-1~maya_i386.deb
+Size: 310846
+MD5sum: f4fded2221f41e051335227c21ce8c9e
+SHA1: 438b06b1b89985937e81bc9712205423b1ee1c58
+SHA256: 5c12a0a709f8e6f56843887709f374519fa4d4418632697a929fc257787e2146
+Description: debugging symbols for libopus
+ This package provides the detached debug symbols for libopus.
+
+Package: libopus-doc
+Source: opus
+Priority: optional
+Section: doc
+Installed-Size: 950
+Maintainer: Ron Lee <ron@debian.org>
+Architecture: all
+Version: 1.1~alpha+20130512-1~maya
+Filename: pool/main/o/opus/libopus-doc_1.1~alpha+20130512-1~maya_all.deb
+Size: 161910
+MD5sum: e8dbbebbbdb9eebff5c83a2dd3d4af4c
+SHA1: 4357aae5d53e6c0f986c594db6c6b804c009dbf4
+SHA256: 58ad2bd03a575a29ee2c555dbe8cc0128e4084b7c85d22b8492d2765266844ad
+Description: libopus API documentation
+ This package contains the developer documentation for libopus.
+
+Package: fonts-freefont-ttf
+Source: fonts-freefont
+Priority: optional
+Section: fonts
+Installed-Size: 10613
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 20120503-1+maya1
+Replaces: ttf-freefont (<< 20120503-1)
+Provides: ttf-freefont
+Breaks: ttf-freefont (<< 20120503-1)
+Filename: pool/main/f/fonts-freefont/fonts-freefont-ttf_20120503-1+maya1_all.deb
+Size: 5914086
+MD5sum: ae0f73113618e18b6ba8ecb19b264ba8
+SHA1: 1f557a74c153e1522a2fc169e4886d27bf010edf
+SHA256: 0e615dde2ef0dac8a0b393f40e6ffaf4a0ed9e3dbe5327284cf858e82258afec
+Description: Freefont Serif, Sans and Mono Truetype fonts
+ Freefont is a set of free high-quality TrueType fonts covering the UCS
+ character set. These fonts are similar to the widely known Helvetica,
+ Times and Courier fonts.
+
+Package: fonts-freefont-otf
+Source: fonts-freefont
+Priority: optional
+Section: fonts
+Installed-Size: 6855
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Version: 20120503-1+maya1
+Replaces: otf-freefont (<< 20120503-1)
+Provides: otf-freefont
+Breaks: otf-freefont (<< 20120503-1)
+Filename: pool/main/f/fonts-freefont/fonts-freefont-otf_20120503-1+maya1_all.deb
+Size: 4318126
+MD5sum: aae52fac4665f42238b6231bee7d38d6
+SHA1: a6a140be02fab530f0075aa9ff6be41724d1ee08
+SHA256: f543ef0d322f19ad3fa5ca63e5519717bc3a34e5a720884ca467f1740e0b2311
+Description: Freefont Serif, Sans and Mono OpenType fonts
+ Freefont is a set of free high-quality OpenType fonts covering the UCS
+ character set. These fonts are similar to the widely known Helvetica,
+ Times and Courier fonts.
+
+Package: libfm3
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 357
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0~git20131221-0linuxmint1~maya
+Depends: libc6 (>= 2.7), libdbus-glib-1-2 (>= 0.78), libexif12, libglib2.0-0 (>= 2.31.8), libmenu-cache3, libfm-data (>= 1.0.2~), lxmenu-data
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm3_1.2.0~git20131221-0linuxmint1~maya_i386.deb
+Size: 118058
+MD5sum: f820cf0fb27be0e137b206ae933564e6
+SHA1: afeaa9b691a004020aad0445eb64730ed50aeb09
+SHA256: 1e2daf41c7113dd54c77f294d0a3323f2aa6b6d96389319792a11da6aa483bbf
+Description: file management support (core library)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ Some features:
+ * Desktop-independent, following FreeDesktop standards;
+ * Fast, light on memory usage, and responsive - well suited to
+ less powerful hardware such as netbooks and thin clients;
+ * Uses GIO/GVFS (like Nautilus) for Trash support and access to
+ remote file systems (FTP, SFTP, WebDAV, Windows shares, etc.);
+ * Clipboard operations are compatible with GTK+/GNOME and Qt/KDE;
+ * Supports both Drag-and-Drop, and the X Direct Save protocol;
+ * Reusable design with the core functions separated out to
+ simplify porting to other GUIs.
+ .
+ This package contains the core library.
+
+Package: libfm-gtk3
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 664
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0~git20131221-0linuxmint1~maya
+Suggests: libfm-tools
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfm3 (= 1.2.0~git20131221-0linuxmint1~maya), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libmenu-cache3, libpango1.0-0 (>= 1.20.0), libfm-gtk-data (>= 1.0.2~)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-gtk3_1.2.0~git20131221-0linuxmint1~maya_i386.deb
+Size: 197652
+MD5sum: 874c17de5db347ab343a933c8567a1e9
+SHA1: 5002f45b46a5e9411f51800c9fd16efd26d9db7a
+SHA256: 76cd324dfca534ec1207a02a7dc09a0f6582ee5f83f323bf1310cd4ad104a816
+Description: file management support (GTK+ 2.0 GUI library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains the GTK+ version 2.0 GUI.
+
+Package: lxsession-data
+Source: lxsession
+Priority: optional
+Section: x11
+Installed-Size: 694
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: all
+Version: 0.4.9.2-0ubuntu6~maya
+Replaces: lxsession (<< 0.4.7)
+Filename: pool/main/l/lxsession/lxsession-data_0.4.9.2-0ubuntu6~maya_all.deb
+Size: 55310
+MD5sum: ec170911df3fd556f17007b5703cace2
+SHA1: 0ac94027c217d2c40f29e566feb335af1415a978
+SHA256: 6594bd056af31f8c66fbbf1fcd2cc35d5927d60349a776deaf347e88d372c9c5
+Description: Common files for lxsession
+ This package provide common files for lxsession.
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: libfm-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 388
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Replaces: libfm1-dbg
+Depends: libfm4 (= 1.2.0-0linuxmint1~maya), libfm-extra4 (= 1.2.0-0linuxmint1~maya)
+Breaks: libfm1-dbg
+Filename: pool/main/libf/libfm/libfm-dbg_1.2.0-0linuxmint1~maya_i386.deb
+Size: 291608
+MD5sum: 37d9cd88fbd345cb339542c10417b635
+SHA1: ea4728e0f0e3ec6b475f5b9246d71f282fbf233f
+SHA256: f5101c2cd68993c73f1ce2941c0c48b7796efee9427e45ec80ffadd18d7f34f3
+Description: file management support (libfm debug)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the debugging symbols for GUI independent library.
+
+Package: gir1.2-gsf-1
+Source: libgsf
+Priority: optional
+Section: introspection
+Installed-Size: 85
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.14.28-1~maya
+Replaces: gir1.2-libgsf-1
+Depends: gir1.2-freedesktop, gir1.2-glib-2.0, libgsf-1-114 (>= 1.14.27)
+Conflicts: gir1.2-libgsf-1
+Filename: pool/main/libg/libgsf/gir1.2-gsf-1_1.14.28-1~maya_i386.deb
+Size: 26210
+MD5sum: 373bb62195d67f1be3f1c132b196c444
+SHA1: ceba86ca9b4c05dd829c378f10fb896c0833b42c
+SHA256: 5415f7800b76c60e0ea729927b5c1f4438e639f7717f18621469f4f918ab7e57
+Description: GObject introspection data for the Structured File Library
+ This package contains introspection data for the Structured File Library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: compton-git
+Priority: optional
+Section: x11
+Installed-Size: 233
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 20130828-1~maya1
+Depends: libc6 (>= 2.15), libconfig8 (>= 1.3.2-2), libdbus-1-3 (>= 1.1.1), libgl1-mesa-glx | libgl1, libpcre3 (>= 8.10), libx11-6, libxcomposite1 (>= 1:0.3-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxinerama1, libxrandr2 (>= 4.3), libxrender1
+Filename: pool/main/c/compton-git/compton-git_20130828-1~maya1_i386.deb
+Size: 94178
+MD5sum: ba1415995df9204828362d9b6791f1fa
+SHA1: e9d720e4ba4e9f5d2a902771cac66c03efde2d81
+SHA256: d35e0f70e7a5c4c81b1e5892237697f43a1827ebcf14761746da5f2df4074ddd
+Description: X composition manager
+ Compton is a compositor for X, and a fork of xcompmgr-dana.
+
+Package: valac-0.20-vapi
+Source: vala-0.20
+Priority: optional
+Section: devel
+Installed-Size: 6020
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.20.1-2~maya
+Filename: pool/main/v/vala-0.20/valac-0.20-vapi_0.20.1-2~maya_all.deb
+Size: 979368
+MD5sum: 4dde30e609713fbbbd5042fd3984ea65
+SHA1: 1659d4de8a8feb18dbc9fea33c3f65fbca6be3a6
+SHA256: c8f8519a42261a08c2356b3d317cc5a30abe04454b657094baa1c3bb9dc81829
+Description: C# like language for the GObject system - vapi files
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ valac, the Vala compiler, is a self-hosting compiler that translates
+ Vala source code into C source and header files.  It uses the GObject
+ type system to create classes and interfaces declared in the Vala
+ source code. This package also contains the vala-gen-introspect and
+ vapigen binaries that will automatically generate Vala bindings.
+ .
+ This package contains the bundled vapi files, which make some
+ common libraries available for vala development.
+
+Package: vala-0.20-doc
+Source: vala-0.20
+Priority: optional
+Section: doc
+Installed-Size: 201
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.20.1-2~maya
+Suggests: valac, devhelp
+Provides: vala-doc
+Filename: pool/main/v/vala-0.20/vala-0.20-doc_0.20.1-2~maya_all.deb
+Size: 136618
+MD5sum: 985569135b59af199fa66a48eca620cb
+SHA1: 6a4b937f3ec84dab8665d6462139d7431c614d5e
+SHA256: 4b967033f72008a5469222b04e3622b227ff433f06ac5dc9b40a37d3026e0092
+Description: C# like language for the GObject system - documentation
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ This package contains the Vala Reference Manual.
+Multi-Arch: foreign
+
+Package: valac-0.20
+Source: vala-0.20
+Priority: optional
+Section: devel
+Installed-Size: 584
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.20.1-2~maya
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.26), libvala-0.20-0 (= 0.20.1-2~maya), libglib2.0-dev (>= 2.26), valac-0.20-vapi
+Filename: pool/main/v/vala-0.20/valac-0.20_0.20.1-2~maya_i386.deb
+Size: 298464
+MD5sum: 5c9e73bc136bc3bf912278477c4379c5
+SHA1: c81acf90b44393e84d9d2621bd67378597331634
+SHA256: d4ded29d0724f42abf7eac1da0b3c66736382ed4501ac7bed2e8fe7584261c22
+Description: C# like language for the GObject system
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ valac, the Vala compiler, is a self-hosting compiler that translates
+ Vala source code into C source and header files.  It uses the GObject
+ type system to create classes and interfaces declared in the Vala
+ source code. This package also contains the vala-gen-introspect and
+ vapigen binaries that will automatically generate Vala bindings.
+
+Package: libvala-0.20-0
+Source: vala-0.20
+Priority: optional
+Section: libs
+Installed-Size: 2873
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.20.1-2~maya
+Depends: libc6 (>= 2.3.4), libglib2.0-0 (>= 2.26)
+Pre-Depends: multiarch-support
+Filename: pool/main/v/vala-0.20/libvala-0.20-0_0.20.1-2~maya_i386.deb
+Size: 1094620
+MD5sum: 5065c365cd00d5fabb55b9a587f349d9
+SHA1: 6d4946b421a728bb24e243f4cd2af74b26e04a85
+SHA256: d40b1919075fbefefa27ab26aad8f38fba2ef9442bf43c7e2cba7093f68ba968
+Description: C# like language for the GObject system - library
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ This library contains the parser used by valac. It can be used for
+ building tools arround Vala.
+Multi-Arch: same
+
+Package: libvala-0.20-dev
+Source: vala-0.20
+Priority: optional
+Section: libdevel
+Installed-Size: 655
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.20.1-2~maya
+Replaces: libvala-0.10-dev, libvala-0.12-dev
+Provides: libvala-dev
+Depends: libvala-0.20-0 (= 0.20.1-2~maya), libglib2.0-dev (>= 2.26)
+Filename: pool/main/v/vala-0.20/libvala-0.20-dev_0.20.1-2~maya_i386.deb
+Size: 183268
+MD5sum: e291cbe269cf5988bb900643a5ef6b07
+SHA1: 3e24e951ad28c0a5abc1c9073d98d499e4c66b3f
+SHA256: 256e8b0971ee1bdd0275586046dee9dd2c5f07aa859e142e4100fc000848988f
+Description: C# like language for the GObject system - development headers
+ Vala is a new programming language that aims to bring modern
+ programming language features to GNOME developers without imposing
+ any additional runtime requirements and without using a different ABI
+ compared to applications and libraries written in C.
+ .
+ This package has the development library and headers for valac. These
+ headers can be used for building tools around Vala.
+Multi-Arch: same
+
+Package: valac-0.20-dbg
+Source: vala-0.20
+Priority: extra
+Section: debug
+Installed-Size: 1337
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.20.1-2~maya
+Depends: valac-0.20 (= 0.20.1-2~maya)
+Filename: pool/main/v/vala-0.20/valac-0.20-dbg_0.20.1-2~maya_i386.deb
+Size: 569652
+MD5sum: 5e1d4fa2af0fd576ab7bfea78de7d4e9
+SHA1: af672fa2cdd9ef60113caa5b61d76fd1d4d70ffc
+SHA256: e1492728af21a8742fa0d13835866fcffa784bd2a21ad57ac695243c28d24ad5
+Description: C# like language for the GObject system - debug symbols
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ valac, the Vala compiler, is a self-hosting compiler that translates
+ Vala source code into C source and header files.  It uses the GObject
+ type system to create classes and interfaces declared in the Vala
+ source code. This package also contains the vala-gen-introspect and
+ vapigen binaries that will automatically generate Vala bindings.
+ .
+ This package contains the compiler debug symbols.
+
+Package: libvala-0.20-0-dbg
+Source: vala-0.20
+Priority: extra
+Section: debug
+Installed-Size: 10100
+Maintainer: Maintainers of Vala packages <pkg-vala-maintainers@lists.alioth.debian.org>
+Architecture: i386
+Version: 0.20.1-2~maya
+Depends: libvala-0.20-0 (= 0.20.1-2~maya)
+Filename: pool/main/v/vala-0.20/libvala-0.20-0-dbg_0.20.1-2~maya_i386.deb
+Size: 3726596
+MD5sum: 4f66c7dacbc7b9dce5818b0e7c04bb9a
+SHA1: d87156101dcc5e382e25083be9f41b32064c3a96
+SHA256: 6bc0b32f001b9c7a85fbea7c196d6bd894382133ae5b99c1cad9f5c5b2c38b28
+Description: C# like language for the GObject system - library symbols
+ Vala is a new programming language that aims to bring modern programming
+ language features to GNOME developers without imposing any additional
+ runtime requirements and without using a different ABI compared to
+ applications and libraries written in C.
+ .
+ This package contains the library debug symbols.
+Multi-Arch: same
+
+Package: libfm-tools
+Source: libfm
+Priority: optional
+Section: misc
+Installed-Size: 77
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Replaces: libfm-gtk-bin (<< 1.1.1), lxshortcut
+Provides: libfm-gtk-bin, lxshortcut
+Depends: libc6 (>= 2.3.6-6~), libfm-gtk4 (>= 1.2.0-0linuxmint1~maya), libfm4 (>= 0.1.99), libglib2.0-0 (>= 2.28.0), libgtk2.0-0 (>= 2.12.0)
+Conflicts: lxshortcut
+Breaks: libfm-gtk-bin (<< 1.1.1)
+Filename: pool/main/libf/libfm/libfm-tools_1.2.0-0linuxmint1~maya_i386.deb
+Size: 17540
+MD5sum: 73ee7fd79604c09715f8b5cb8cd81897
+SHA1: 7995f8e5b1c6f039923dfcdc069da323af15b315
+SHA256: c3a438c6e473c501ca214a0f8ca0a72928208464fe3d2c557c447e993ac3dcb2
+Description: file management support (utilities)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains applications libfm-pref-apps and lxshortcut.
+
+Package: libfm-doc
+Source: libfm
+Priority: optional
+Section: doc
+Installed-Size: 2112
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0-0linuxmint1~maya
+Recommends: libglib2.0-doc, libgtk-3-doc
+Filename: pool/main/libf/libfm/libfm-doc_1.2.0-0linuxmint1~maya_all.deb
+Size: 140010
+MD5sum: 9bcd9b186a9f1fb2eba47addcfe022df
+SHA1: 071a10df7d778aa02185ebd9242dc7f59e436b36
+SHA256: da24c57cf7359009edadcfd95d625d6f8cf0c34167dda28cec5e52a37d226a54
+Description: file management support (development documentation)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development HTML documentation.
+
+Package: libfm-doc
+Source: libfm
+Priority: optional
+Section: doc
+Installed-Size: 2084
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: all
+Version: 1.2.0~git20131221-0linuxmint1~maya
+Recommends: libglib2.0-doc, libgtk-3-doc
+Filename: pool/main/libf/libfm/libfm-doc_1.2.0~git20131221-0linuxmint1~maya_all.deb
+Size: 139644
+MD5sum: c9a6bf27cb6bd491f17e2fad79085f2c
+SHA1: 270776456331783b96cfab118c1db72d64cf3258
+SHA256: bde0df9b0caec84e92668e62e08185733116e545fb76d4a36a7282269e32d48f
+Description: file management support (development documentation)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development HTML documentation.
+
+Package: libfm4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 353
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Recommends: libfm-modules
+Replaces: libfm3
+Depends: libc6 (>= 2.7), libdbus-glib-1-2 (>= 0.78), libexif12, libglib2.0-0 (>= 2.31.8), libmenu-cache3, libfm-data (>= 1.2.0~), lxmenu-data
+Pre-Depends: multiarch-support
+Breaks: libfm3
+Filename: pool/main/libf/libfm/libfm4_1.2.0-0linuxmint1~maya_i386.deb
+Size: 119652
+MD5sum: 7cfd4471b78ebee5e85274840e210012
+SHA1: 2d8a32dd0553f0e509abfea19494a552340ed20e
+SHA256: 8ab5805e0f3f37312ca5948367fca1ccb52deb06b35f2ad17b574598c216b990
+Description: file management support (core library)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ Some features:
+ * Desktop-independent, following FreeDesktop standards;
+ * Fast, light on memory usage, and responsive - well suited to
+ less powerful hardware such as netbooks and thin clients;
+ * Uses GIO/GVFS (like Nautilus) for Trash support and access to
+ remote file systems (FTP, SFTP, WebDAV, Windows shares, etc.);
+ * Clipboard operations are compatible with GTK+/GNOME and Qt/KDE;
+ * Supports both Drag-and-Drop, and the X Direct Save protocol;
+ * Reusable design with the core functions separated out to
+ simplify porting to other GUIs.
+ .
+ This package contains the core library.
+
+Package: libfm-gtk4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 522
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Replaces: libfm-gtk3
+Suggests: libfm-tools
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.2.4), libfm4 (= 1.2.0-0linuxmint1~maya), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libmenu-cache3, libpango1.0-0 (>= 1.20.0), libfm-gtk-data (>= 1.2.0~)
+Pre-Depends: multiarch-support
+Breaks: libfm-gtk3
+Filename: pool/main/libf/libfm/libfm-gtk4_1.2.0-0linuxmint1~maya_i386.deb
+Size: 164700
+MD5sum: d252eaaa52fb3e06a5b5371f40f9d9e7
+SHA1: d155395e5f21f72d426b6f66c358810a3a8e629a
+SHA256: 3a7953178c432828d6a7d1aab5fdcd49b5360fdd9c70e442e19d203c32a197f1
+Description: file management support (GTK+ 2.0 GUI library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains the GTK+ version 2.0 GUI.
+
+Package: mint-lxde-default-settings
+Priority: required
+Section: admin
+Installed-Size: 288
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 13.2.3
+Recommends: scrot, compton-git, openbox
+Depends: mintsystem, pcmanfm | spacefm, lxpanel, mint-artwork-lxde, lxsession, terminator, fonts-liberation, lxsession-logout
+Filename: pool/main/m/mint-lxde-default-settings/mint-lxde-default-settings_13.2.3_all.deb
+Size: 29794
+MD5sum: e5d10d327050217993e16b66e8492d1e
+SHA1: 206f350da57939535edb2590be95e95049084ff9
+SHA256: 722bfaf8830fc05ce1dccdba298afbeacd0121f75489c71b6d59c2cc27d014d9
+Description: This Package contains the default system settings for Linux Mint LXDE Edition.
+
+Package: mint-artwork-lxde
+Priority: optional
+Section: x11
+Installed-Size: 5337
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 13.2.0
+Depends: mint-backgrounds-maya, shimmer-themes
+Filename: pool/main/m/mint-artwork-lxde/mint-artwork-lxde_13.2.0_all.deb
+Size: 5159218
+MD5sum: 2abf48e18f1956648632d782f23c8ba0
+SHA1: 8d90e7a3e406d32f5afb2130d171df2be864cf95
+SHA256: f201afb5a58a29a2158e896321dce4ae40e375404129cc0a8a139ff45a438839
+Description: Artwork for Linux Mint LXDE
+ Artwork for Linux Mint LXDE, contained the wallpaper and others specific images and
+ logos.
+
+Package: libgoffice-0.10-dev
+Source: goffice
+Priority: optional
+Section: libdevel
+Installed-Size: 4474
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.9-1~maya
+Suggests: libgoffice-0.10-doc
+Depends: gir1.2-goffice-0.10 (= 0.10.9-1~maya), libgoffice-0.10-10 (= 0.10.9-1~maya), libglib2.0-dev, libxml2-dev, libgtk-3-dev, libglade2-dev, libcairo2-dev, libgconf2-dev, libgsf-1-dev (>= 1.14.25-2)
+Filename: pool/main/g/goffice/libgoffice-0.10-dev_0.10.9-1~maya_i386.deb
+Size: 811580
+MD5sum: c13ea248274f92b7a264b59630c6c7b8
+SHA1: 3208a7dc5af9b33ed20ae33b0735a15725e64468
+SHA256: 6b33d2789418a19b34cfa4917789e985a84eb3447e15693122f66a7b8fe4636f
+Description: Document centric objects library - development files
+ GOffice is a library of document centric objects and utilities building on
+ top of GLib and Gtk+.
+ .
+ These are the files needed when building applications that use GOffice.
+
+Package: libgoffice-0.10-10
+Source: goffice
+Priority: optional
+Section: libs
+Installed-Size: 4802
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.9-1~maya
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.10.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.30.0), libgsf-1-114 (>= 1.14.23), libgtk-3-0 (>= 3.3.8), libpango1.0-0 (>= 1.18.0), librsvg2-2 (>= 2.14.4), libxml2 (>= 2.7.4), libgoffice-0.10-10-common (>= 0.10.9-1~maya)
+Filename: pool/main/g/goffice/libgoffice-0.10-10_0.10.9-1~maya_i386.deb
+Size: 1271176
+MD5sum: e87330d412582f3a47032a04346eab2c
+SHA1: cd74df05481d4941b49c65c42c8fd185dc4f0a86
+SHA256: 1539ee3a833e86f929a066648c2b06fc35037d84bb570a6da503b63fac643e8d
+Description: Document centric objects library - runtime files
+ GOffice is a library of document centric objects and utilities building on
+ top of GLib and Gtk+.
+ .
+ These are the files needed to run applications that use GOffice.
+
+Package: gir1.2-goffice-0.10
+Source: goffice
+Priority: optional
+Section: introspection
+Installed-Size: 281
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 0.10.9-1~maya
+Depends: gir1.2-atk-1.0, gir1.2-freedesktop, gir1.2-gdkpixbuf-2.0, gir1.2-glib-2.0, gir1.2-gsf-1, gir1.2-gtk-3.0, gir1.2-pango-1.0, libgoffice-0.10-10 (>= 0.10.9)
+Filename: pool/main/g/goffice/gir1.2-goffice-0.10_0.10.9-1~maya_i386.deb
+Size: 65936
+MD5sum: 191870f70d16d8a0c38e19625417684c
+SHA1: 519978ace602c86423395efe0832cd3ffadd4a30
+SHA256: 20738f7d1c2a84eb3a291a0ff145f2407f7ba2be47b3f79047ccdd24f908f463
+Description: GObject introspection data for the GOffice library
+ This package contains introspection data for the GOffice library.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: libgoffice-0.10-10-common
+Source: goffice
+Priority: optional
+Section: libs
+Installed-Size: 3787
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 0.10.9-1~maya
+Filename: pool/main/g/goffice/libgoffice-0.10-10-common_0.10.9-1~maya_all.deb
+Size: 567068
+MD5sum: 098f36abea0048b705e9297e32dca75a
+SHA1: ebaf890eb5c16974810192252270e7f057942793
+SHA256: d7e876fb32a84898aa09abcac90cea05c8ee7463d73131eda4af6ccbdbe9c10c
+Description: Document centric objects library - common files
+ GOffice is a library of document centric objects and utilities building on
+ top of GLib and Gtk+.
+ .
+ These are the architecture independent files that are part of GOffice, like
+ images and translations of messages.
+
+Package: gir1.2-gnumeric
+Source: gnumeric
+Priority: optional
+Section: introspection
+Installed-Size: 2000
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 1.12.9-1~maya
+Filename: pool/main/g/gnumeric/gir1.2-gnumeric_1.12.9-1~maya_i386.deb
+Size: 208392
+MD5sum: 65554a08bea2e5052091abd0b62d6082
+SHA1: 82efe5b4d23dea72e41907baee0b791937df4206
+SHA256: e9799b8e1c7da42b721fbe37b276bdaacb2c00b143c3af0b435f495d28dd76e4
+Description: GObject introspection data for the Gnumeric spreadsheet
+ This package contains introspection data for the Gnumeric spreadsheet.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+
+Package: mint-info-cinnamon
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2012.05.02-1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-cinnamon_2012.05.02-1_i386.deb
+Size: 2078
+MD5sum: 7c670ae684b4149a7c07045e828ac1e3
+SHA1: f41fffc38f6f5b11c55dc03d4f87544b5a4dfa71
+SHA256: b25b723f0a4a3e3314e3ca8a6da3bee4755ba1018a011a2ba29d1a5f8b6e881b
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-mate
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2012.05.02-1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-mate_2012.05.02-1_i386.deb
+Size: 2076
+MD5sum: 9fa39aef8522bbdce846b8c670b95e88
+SHA1: 9ed282c27659e55dfa419492fbe33e3770cc37f2
+SHA256: 8a7a1962ef895d4768a2767028c633c3d006b001a7147ba1bd36b6a3ae6991d5
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-kde
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2012.05.02-1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-kde_2012.05.02-1_i386.deb
+Size: 2076
+MD5sum: 9ea43c591a42f060dcb1df53e766c3bc
+SHA1: c084acd1d93fe73988a9d0b50a985f883e728ccf
+SHA256: a5a6b94e0584e4936074efd8a2a4abd166a683bb0f5338e1269fa9da807492a7
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-xfce
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2012.05.02-1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-xfce_2012.05.02-1_i386.deb
+Size: 2084
+MD5sum: 8131fa83605789beb728ee864f56f84b
+SHA1: 6741a49a7fb1e145f81708125b16eaf19196f82c
+SHA256: 3dd7471e6cc42be12c1d1da8be6a6dd439dea2093f44cf0b8adf49959b9ef560
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: mint-info-lxde
+Source: mint-info
+Priority: optional
+Section: admin
+Installed-Size: 34
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 2012.05.02-1
+Provides: mint-info
+Filename: pool/main/m/mint-info/mint-info-lxde_2012.05.02-1_i386.deb
+Size: 2080
+MD5sum: df3ae8d0537cf6cc22fed2e103f1389b
+SHA1: 901a899e8e727781b0e60869e2328e36e9a0182c
+SHA256: a41a31adca6582083af49cd50c1f656a386b4d8628d9d144943c769db051fa79
+Description: Necessary information about the Linux Mint release and edition.
+ Base package. This package is needed by the Mint tools and the system to uniquely identify the edition and release of Linux Mint you're using and to get information related to it.
+
+Package: qpdfview-djvu-plugin
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 104
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~precise1
+Depends: libc6 (>= 2.1.3), libdjvulibre21 (>= 3.5.24), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.1.1), qpdfview (= 0.4.9-1~precise1)
+Filename: pool/main/q/qpdfview/qpdfview-djvu-plugin_0.4.9-1~precise1_i386.deb
+Size: 35498
+MD5sum: dafd992fa8210a0fdb4fcf8fa7f61b71
+SHA1: c39e019f1a01145c41a759f52a611e35da012669
+SHA256: d8396434f6250fabd5bab2cfde1811c96b07b21f070614d75efbefc96427ae3c
+Description: tabbed document viewer - DjVu plugin
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This plugin adds support for the DjVu format.
+
+Package: qpdfview-ps-plugin
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 92
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~precise1
+Depends: libc6 (>= 2.1.3), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.8.0), libqtgui4 (>= 4:4.5.3), libspectre1 (>= 0.2.3), libstdc++6 (>= 4.1.1), qpdfview (= 0.4.9-1~precise1)
+Filename: pool/main/q/qpdfview/qpdfview-ps-plugin_0.4.9-1~precise1_i386.deb
+Size: 29130
+MD5sum: abc9b9b5a360a0d3a35666368069e2b8
+SHA1: 341e93bf4f46c3e53d2718a43efb68c649a120ff
+SHA256: 04dec5cbd08f995947a46bf60be1082cdc1a9fa01feb72bddee0ea54ee09903a
+Description: tabbed document viewer - PostScript plugin
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This plugin adds support for the PostScript format.
+
+Package: lxsession-logout
+Source: lxsession
+Priority: optional
+Section: x11
+Installed-Size: 58
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.4.9.2-0ubuntu6~maya
+Recommends: lsb-release
+Replaces: lxsession (<< 0.4.9.2)
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.24.0), libx11-6, lxsession-data, consolekit
+Filename: pool/main/l/lxsession/lxsession-logout_0.4.9.2-0ubuntu6~maya_i386.deb
+Size: 16454
+MD5sum: 80c456ff10ac1e713651934e764497e0
+SHA1: 24d9156f205c72552c731fdab160ea4229ee204c
+SHA256: b8f94478a16c5eb5136cf188359b93e2aae2b7d4a70a55d598049da056095934
+Description: utility to logout from a LXDE or an Openbox session
+ LXSession-Logout is a simple utility for stoping or loging out from a LXDE or
+ an Openbox session.
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: nsnake
+Priority: optional
+Section: games
+Installed-Size: 66
+Maintainer: Alexandre Dantas <alex.dantas92@gmail.com>
+Architecture: i386
+Version: 1.5-1~maya
+Depends: libc6 (>= 2.4), libncurses5 (>= 5.5-5~), libtinfo5
+Filename: pool/main/n/nsnake/nsnake_1.5-1~maya_i386.deb
+Size: 17042
+MD5sum: 95a777105f8cca6329cc7e5a717d4ba7
+SHA1: 8427d6723672a3f2db25b3d46776cf1ccda2b642
+SHA256: 66523ae67db23841553bb99ebae1f62b2e7bae863856cb17e7ad791ecd07f5f9
+Description: classic snake game with textual interface
+ nsnake is an implementation of the classic snake game with textual
+ interface. It is playable at command-line with ncurses-like graphics.
+ .
+ Features high-scores and two game modes - with and without borders.
+ .
+ Screenshot: http://alexdantas.net/nsnake-screenshot.png
+
+Package: lxsession-default-apps
+Source: lxsession
+Priority: optional
+Section: x11
+Installed-Size: 652
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: i386
+Version: 0.4.9.2-0ubuntu6~maya
+Recommends: lxsession
+Replaces: lxsession-edit
+Depends: libc6 (>= 2.3.6-6~), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.26.0), libgtk2.0-0 (>= 2.12.0)
+Breaks: lxsession (<< 0.4.9.2-0ubuntu3)
+Filename: pool/main/l/lxsession/lxsession-default-apps_0.4.9.2-0ubuntu6~maya_i386.deb
+Size: 82488
+MD5sum: d3c121785eddb1d1437329836b32a1b3
+SHA1: 21af24b2a9a5f596a1fa1bb90d744056b69d8015
+SHA256: d72ccdf5e05a2bbb824f139b158ee9f8c5903831701518fc63981357125653ac
+Description: utility to configure lxsession and its default applications
+ LXSession-Default-Apps is an utility to configure lxsession and its default
+ applications.
+Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
+
+Package: libabiword-3.0
+Source: abiword
+Priority: optional
+Section: libs
+Installed-Size: 6712
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 3.0.0-1~maya
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.7), libcairo2 (>= 1.10.0), libchamplain-0.12-0 (>= 0.11.0), libchamplain-gtk-0.12-0 (>= 0.11.0), libclutter-1.0-0 (>= 1.10.0), libclutter-gtk-1.0-0 (>= 0.91.8), libebook-1.2-12 (>= 3.2.3), libenchant1c2a (>= 1.6), libfontconfig1 (>= 2.8.0), libfribidi0 (>= 0.19.2), libgcc1 (>= 1:4.1.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgoffice-0.10-10 (>= 0.9.0), libgsf-1-114 (>= 1.14.9), libgtk-3-0 (>= 3.3.16), libical0 (>= 0.30), libjpeg8 (>= 8c), libpango1.0-0 (>= 1.22.0), libpng12-0 (>= 1.2.13-4), librdf0 (>= 1.0.14), librsvg2-2 (>= 2.14.4), libstdc++6 (>= 4.6), libwv-1.2-4 (>= 1.2.9), libx11-6, libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Filename: pool/main/a/abiword/libabiword-3.0_3.0.0-1~maya_i386.deb
+Size: 1963350
+MD5sum: e964ee4b4a83f9bc73a3bc45ac0a36c2
+SHA1: 1fa9a646086fa576fbafa4ce8febeafd13f091f8
+SHA256: 9d8a0a3fea31d45d415318ecfadd9565d5056fcddb5d1e1d6931fdc27060786e
+Description: efficient, featureful word processor with collaboration -- shared library
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains the shared library, enabling other applications to
+ integrate AbiWord functionality.
+Multi-Arch: same
+
+Package: libabiword-3.0-dev
+Source: abiword
+Priority: optional
+Section: libdevel
+Installed-Size: 127
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: i386
+Version: 3.0.0-1~maya
+Depends: libabiword-3.0 (= 3.0.0-1~maya), libcairo-dev | libcairo2-dev, libebook1.2-dev, libenchant-dev, libecal1.2-dev, libfribidi-dev, libglib2.0-dev, libgoffice-0.10-dev, libgsf-1-dev, libgtk-3-dev, libical-dev (>= 0.46), libpango1.0-dev, librasqal3-dev, librdf0-dev, librsvg2-dev, libwv-dev, libx11-dev, libxslt-dev | libxslt1-dev
+Filename: pool/main/a/abiword/libabiword-3.0-dev_3.0.0-1~maya_i386.deb
+Size: 42700
+MD5sum: d5b873eaad27946dd35b232b7e052777
+SHA1: 78feb55fe250d4781fd417f871f1dde7a758f2b4
+SHA256: 1249315fc90231cf1a9292d01ca8a9995a31764f7364ad4e3d1be43d8f4218e7
+Description: efficient, featureful word processor with collaboration -- development files
+ AbiWord is a full-featured, efficient word processing application.
+ It is suitable for a wide variety of word processing tasks, and
+ is extensible with a variety of plugins.
+ .
+ This package contains development files for software linking against
+ libabiword-3.0.
+
+Package: libfm-extra4
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 66
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.24.0)
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-extra4_1.2.0-0linuxmint1~maya_i386.deb
+Size: 18298
+MD5sum: 8cccb5455b87eea444efcca84e94a0a8
+SHA1: 0c384f7e41d110a3d3b9fb6635f645125b4bf05b
+SHA256: 651bec82b0bc36911795f3f8c8c03df2d965e01a0c725ac13402f5ca584b2be9
+Description: file management support (extra library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains standalone library which extends libfm.
+
+Package: libfm-modules
+Source: libfm
+Priority: optional
+Section: libs
+Installed-Size: 160
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: libc6 (>= 2.7), libfm-extra4, libfm4 (>= 1.0.2), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.18.0), libmenu-cache3
+Pre-Depends: multiarch-support
+Filename: pool/main/libf/libfm/libfm-modules_1.2.0-0linuxmint1~maya_i386.deb
+Size: 38136
+MD5sum: 9284e90d10fa56f4b93841c69bb113c6
+SHA1: 2f52ca872838d4ecb33221b22f7cf30ce5da249d
+SHA256: 0df8d03c07076c2e4a9a9ef3dfed0ab141c5cf3142ac6187e1429d8335b60a7b
+Description: file management support (loadable modules for library)
+ LibFM provides file management functions built on top of Glib/GIO
+ giving a convenient higher-level API.
+ .
+ This package contains loadable modules used by libfm* libraries.
+
+Package: libmenu-cache3
+Source: menu-cache
+Priority: optional
+Section: libs
+Installed-Size: 190
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 0.5.0-1~maya
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.31.8)
+Conflicts: libmenu-cache1
+Pre-Depends: multiarch-support
+Filename: pool/main/m/menu-cache/libmenu-cache3_0.5.0-1~maya_i386.deb
+Size: 53690
+MD5sum: 48d58d16c1e4d984368ee0b23d79ff75
+SHA1: 2c0660de802ddf3a8e69bcfa6fed7442ba34041d
+SHA256: 826ea4ee0afe1cc63b3d515e348928230a6a261eb951b463e46001cdc0484d34
+Description: LXDE implementation of the freedesktop Menu specification
+ Libmenu-cache is a library creating and utilizing caches to speed up
+ the manipulation for freedesktop.org defined application menus.
+ .
+ It can be used as a replacement of libgnome-menu of gnome-menus:
+ .
+ * Shorten time for loading menu entries.
+ * Ease of use (API is very similar to that of libgnome-menu).
+ * Lightweight runtime library (parsing of the menu definition files
+ are done by menu-cache-gen when the menus are really changed).
+ * Less unnecessary and complicated file monitoring.
+ * Heavily reduced disk I/O.
+
+Package: libfm-gtk-dev
+Source: libfm
+Priority: optional
+Section: libdevel
+Installed-Size: 46
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: libfm-dev (= 1.2.0-0linuxmint1~maya), libfm-gtk4 (= 1.2.0-0linuxmint1~maya)
+Breaks: libfm-dev (<< 1.0.2)
+Filename: pool/main/libf/libfm/libfm-gtk-dev_1.2.0-0linuxmint1~maya_i386.deb
+Size: 7856
+MD5sum: e0db832c8596fb531851e005fe848ab1
+SHA1: 3c1698c338685d471d6c19733699c8c7591e35b8
+SHA256: 0d948a1d5ad23a85d49ce56ba458891c31ad21dc72c4efce2f716ed03a7d3233
+Description: file management support (GTK+ GUI development files)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the development files for builds using GTK library.
+
+Package: libfm-gtk-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 611
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: libfm-gtk4 (= 1.2.0-0linuxmint1~maya)
+Breaks: libfm-dbg (<< 1.0.2)
+Filename: pool/main/libf/libfm/libfm-gtk-dbg_1.2.0-0linuxmint1~maya_i386.deb
+Size: 491850
+MD5sum: 8b62be4f42cb4dc2f74aabdbc0e31f8b
+SHA1: c13515e8ed58e4e8d3a30d6a2ef0be89d17b924a
+SHA256: 656f9ede9d00f4571ad3a3b5733325705ac12fb353b62fd8b5c7d50f4f97bc7c
+Description: file management support (libfm-gtk debug)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the debugging symbols for GTK+ library.
+
+Package: mint-local-repository
+Priority: optional
+Section: admin
+Installed-Size: 4580
+Maintainer: Clement Lefebvre <root@linuxmint.com>
+Architecture: i386
+Version: 1.0.7.1
+Filename: pool/main/m/mint-local-repository/mint-local-repository_1.0.7.1_i386.deb
+Size: 4619932
+MD5sum: aeba95507c2b35b1825066741e906a96
+SHA1: b992edb9f57241f0b2ea3eb6eff5993b02dd670a
+SHA256: 65a3325d593c693a79ff3e3fdff07c9359c80629ef077b013a7804f2da077007
+Description: Local repository for Linux Mint
+ This local repository contains packages which are not installed by default but which are present in the system from the start.
+
+Package: libgoffice-0.10-doc
+Source: goffice
+Priority: optional
+Section: doc
+Installed-Size: 3550
+Maintainer: Dmitry Smirnov <onlyjob@debian.org>
+Architecture: all
+Version: 0.10.9-1~maya
+Replaces: libgoffice-0.10-dev (<< 0.10.4)
+Breaks: libgoffice-0.10-dev (<< 0.10.4)
+Filename: pool/main/g/goffice/libgoffice-0.10-doc_0.10.9-1~maya_all.deb
+Size: 237338
+MD5sum: 839c17104427a958d4e5960c37244624
+SHA1: 04b6ea5fa428e35aa4b60cb3dddf17f5670f083a
+SHA256: 9d2bc347141adf4e249798f87fc889a6aa460cffda8897fa97965cf04992eae6
+Description: Document centric objects library - documentation
+ GOffice is a library of document centric objects and utilities building on
+ top of GLib and Gtk+.
+ This package contains HTML documentation for libgoffice-0.10.
+
+Package: libobt2
+Source: openbox
+Priority: optional
+Section: libs
+Installed-Size: 113
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 3.5.2-6~maya
+Replaces: libobparser15, libobparser16
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.24.0), libx11-6, libxext6, libxinerama1, libxml2 (>= 2.7.4), libxrandr2
+Conflicts: libobparser15, libobparser16
+Filename: pool/main/o/openbox/libobt2_3.5.2-6~maya_i386.deb
+Size: 39454
+MD5sum: bf62093429611766c90823a811475fde
+SHA1: d4d6563e06e59ee49cf1d58b6eecaad78261d4be
+SHA256: 1157db0915b7ef170cc42941996d53ead68a025d4c24a7f6d8cc492bf017f1f0
+Description: parsing library for openbox
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobt library files used by openbox
+ to load and parse configuration and theme files of openbox.
+
+Package: libobrender29
+Source: openbox
+Priority: optional
+Section: libs
+Installed-Size: 160
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: i386
+Version: 3.5.2-6~maya
+Replaces: libobrender15, libobrender16
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.2.4), libglib2.0-0 (>= 2.24.0), libimlib2, libobt2 (>= 3.5.2), libpango1.0-0 (>= 1.18.0), librsvg2-2 (>= 2.14.4), libx11-6, libxft2 (>> 2.1.1)
+Conflicts: libobrender15, libobrender16
+Filename: pool/main/o/openbox/libobrender29_3.5.2-6~maya_i386.deb
+Size: 51208
+MD5sum: cbe2a49ea982c4b875c357fbfc269b16
+SHA1: 58bb353c0444b3a7667335658b382692793f7106
+SHA256: 0f30f4b807809c8a1da04164a02b44737ed1bd71ca1760b07395867ed4ae66e3
+Description: rendering library for openbox themes
+ Openbox works with your applications, and makes your desktop easier to manage.
+ This is because the approach to its development was the opposite of what seems
+ to be the general case for window managers. Openbox was written first to
+ comply with standards and to work properly. Only when that was in place did
+ the team turn to the visual interface.
+ .
+ Openbox is fully functional as a stand-alone working environment, or can be
+ used as a drop-in replacement for the default window manager in the GNOME or
+ KDE desktop environments.
+ .
+ Openbox 3 is a completely new breed of window manager. It is not based upon
+ any existing code base, although the visual appearance has been based upon
+ that of Blackbox. Openbox 2 was based on the Blackbox 0.65.0 codebase.
+ .
+ This package contains the libobrender library files used by openbox
+ for theme rendering.
+
+Package: qpdfview-languages
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 675
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.5-1~precise3
+Depends: qpdfview (= 0.4.5-1~precise3)
+Filename: pool/main/q/qpdfview/qpdfview-languages_0.4.5-1~precise3_i386.deb
+Size: 148712
+MD5sum: 8d713ab9a6dd01f778819f1580ed4265
+SHA1: 5e4f168cb1f437b1108c482fb15fccc5b0d19521
+SHA256: 1f1c3e7335eb0275833e059a9eb982354164a72ae41d36e5830cc0f98500c918
+Description: tabbed document viewer - translations
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This package contains all translations.
+
+Package: qpdfview-translations
+Source: qpdfview
+Priority: optional
+Section: graphics
+Installed-Size: 1217
+Maintainer: Benjamin Eltzner <b.eltzner@gmx.de>
+Architecture: i386
+Version: 0.4.9-1~precise1
+Replaces: qpdfview-languages
+Depends: qpdfview (= 0.4.9-1~precise1)
+Filename: pool/main/q/qpdfview/qpdfview-translations_0.4.9-1~precise1_i386.deb
+Size: 326326
+MD5sum: 3d25244490ec5e0d593bd7454c3531af
+SHA1: 17ad37bd7ebf0a6d798fa4ee6d04f0fe94fca805
+SHA256: 7252f0385c5e8c3fee22fcaff6c308cf6a9fd710d61df447a76f748d7f133eae
+Description: tabbed document viewer - translations
+ qpdfview is a simple tabbed document viewer which uses the Poppler library for
+ PDF rendering and CUPS for printing and provides a clear and simple Qt
+ graphical user interface. Support for the DjVu and PostScript formats can be
+ added via plugins.
+ .
+ This package contains all translations.
+
+Package: openbox-gnome-session
+Source: openbox
+Priority: optional
+Section: x11
+Installed-Size: 74
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 3.5.2-6~maya
+Replaces: openbox (<< 3.5.2-5)
+Depends: openbox (>= 3.5.2-6~maya), gnome-session-bin, gconf2, x11-utils
+Enhances: gnome-session
+Breaks: openbox (<< 3.5.2-5)
+Filename: pool/main/o/openbox/openbox-gnome-session_3.5.2-6~maya_all.deb
+Size: 16314
+MD5sum: 90251daa840a7458f820646cdd86b1a7
+SHA1: b801d7c2302b5dc1f4aac681d6feceb04e5339fc
+SHA256: 4af3413635cafe47f89e47a8e4fe3c561c8f80619a43bca1c9960d72e0998555
+Description: command line utility to run Openbox as GNOME session
+ openbox-gnome-session can provide GNOME session with openbox as
+ a default window manager. It can replace the original window manager
+ in GNOME Shell and GNOME Fallback sessions.
+
+Package: openbox-kde-session
+Source: openbox
+Priority: optional
+Section: x11
+Installed-Size: 56
+Maintainer: Mateusz Łukasik <mati75@linuxmint.pl>
+Architecture: all
+Version: 3.5.2-6~maya
+Replaces: openbox (<< 3.5.2-5)
+Depends: openbox (>= 3.5.2-6~maya), kde-workspace-bin, x11-utils
+Enhances: kde-workspace
+Breaks: openbox (<< 3.5.2-5)
+Filename: pool/main/o/openbox/openbox-kde-session_3.5.2-6~maya_all.deb
+Size: 15286
+MD5sum: 2914d6fdc07929de44f30f86bbedaf4f
+SHA1: 527810025b468b517078987dbb3e17f7e6875817
+SHA256: f3af3e91e38205d071091f2c588990db9e9d9ffc9f5cbb2e99f64674e6385621
+Description: command line utility to run Openbox as KDE SC session
+ openbox-kde-session can provide KDE SC session with openbox as
+ a default window manager. Can replace the original window manager
+ called KWin.
+
+Package: libfm-modules-dbg
+Source: libfm
+Priority: extra
+Section: debug
+Installed-Size: 199
+Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
+Architecture: i386
+Version: 1.2.0-0linuxmint1~maya
+Depends: libfm-modules (= 1.2.0-0linuxmint1~maya)
+Filename: pool/main/libf/libfm/libfm-modules-dbg_1.2.0-0linuxmint1~maya_i386.deb
+Size: 105172
+MD5sum: c5406731ad90f535f72bc44567954774
+SHA1: 2c838876af3b21add222dd149e0bd3a7e42b7e9a
+SHA256: 7d96060a2d392125988643a445c1bf81c64b335c62d5fd0a9f3cb407da640312
+Description: file management support (libfm-modules debug)
+ LibFM provides file management functions built on top of Glib/GIO,
+ giving a convenient higher-level API.
+ .
+ This package contains the debugging symbols for libfm modules.
+
