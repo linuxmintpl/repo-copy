@@ -1,24 +1,3 @@
-Package: abiword-common
-Source: abiword
-Priority: optional
-Section: editors
-Installed-Size: 10905
-Maintainer: Dmitry Smirnov <onlyjob@debian.org>
-Architecture: all
-Version: 3.0.0-1~maya
-Filename: pool/main/a/abiword/abiword-common_3.0.0-1~maya_all.deb
-Size: 1661988
-MD5sum: 43f526ff96519d289a10eb91fb93a998
-SHA1: 455ad52217595f4e7c4eb0ea0ea7b2a7ed2e9708
-SHA256: 742b30734fb87323b40080f0d48d1248dccd15b391d4c610e98e97a44ec5ab8b
-Description: efficient, featureful word processor with collaboration -- common files
- AbiWord is a full-featured, efficient word processing application.
- It is suitable for a wide variety of word processing tasks, and
- is extensible with a variety of plugins.
- .
- This package contains the common files that are used on all architectures
- without modification.
-
 Package: autoconf
 Priority: optional
 Section: devel
@@ -36,16 +15,7 @@ MD5sum: 14c693425c08586ad409d423f74b3888
 SHA1: 317a0f02d1ddcfcd3e27868720a60d29433221ad
 SHA256: 0d35400714a6b9a388427eef81d9c910f76a5a0d21f7732b8ce8d7b4f578bc63
 Description: automatic configure script builder
- The standard for FSF source packages.  This is only useful if you
- write your own programs or if you extensively modify other people's
- programs.
- .
- For an extensive library of additional Autoconf macros, install the
- `autoconf-archive' package.
- .
- This version of autoconf is not compatible with scripts meant for
- Autoconf 2.13 or earlier.  If you need support for such scripts,
- you must also install the autoconf2.13 package.
+Description-md5: 4ce0439e1f4ccd6c825471aa546f1611
 Original-Maintainer: Ben Pfaff <pfaffben@debian.org>
 
 Package: automake
@@ -65,20 +35,7 @@ MD5sum: fdf660385d00b6371971673195be2469
 SHA1: 1cb007e3a8578aa3d7f42d79046ae42694be58f6
 SHA256: cb8dcaddd5f905e7669275f5f6109e8e895e421e487b329968c27529b1e51345
 Description: Tool for generating GNU Standards-compliant Makefiles
- Automake is a tool for automatically generating `Makefile.in's from
- files called `Makefile.am'.
- .
- The goal of Automake is to remove the burden of Makefile maintenance
- from the back of the individual GNU maintainer (and put it on the back
- of the Automake maintainer).
- .
- The `Makefile.am' is basically a series of `make' macro definitions
- (with rules being thrown in occasionally).  The generated
- `Makefile.in's are compliant with the GNU Makefile standards.
- .
- Automake 1.14 fails to work in a number of situations that Automake
- 1.4, 1.6, 1.7, 1.8, 1.9, 1.10 and 1.11 did, so previous versions are
- available as separate packages.
+Description-md5: c12e147d0e0aa5be7a2c5d8d77613ff5
 Multi-Arch: foreign
 
 Package: gimp-data
@@ -98,8 +55,7 @@ MD5sum: ce931222cf3be06db61b42addb122bba
 SHA1: d5a713f3fff53bd37c9f8f61edced7b6140c77ce
 SHA256: 2205da3f945fac789b41586df0a3e49515c510715f158240ac24a3fff5cad9e8
 Description: Data files for GIMP
- This package contains architecture-independent supporting data files
- for use with GIMP.
+Description-md5: f70d84aecd044d27d27535082275ce75
 
 Package: gnumeric-common
 Source: gnumeric
@@ -117,12 +73,7 @@ MD5sum: 99160708b8e241a01fb45de48c8183a5
 SHA1: 4c16160854337e8ffbf7ae24de5d5f7cfc5608ec
 SHA256: 8bd926e83b50d9e2e651cd3890e9828ba031b0835f180209d8fdb0458fbadee0
 Description: spreadsheet application for GNOME - common files
- Gnumeric is a spreadsheet application that interoperates well
- with other spreadsheets. It comes with plugins that enable it to deal with
- commonly used spreadsheet file formats.
- .
- This package contains architecture-independent data files needed by
- gnumeric.
+Description-md5: 3749931255266b5bbbc512b3833e7c03
 
 Package: gnumeric-doc
 Source: gnumeric
@@ -143,12 +94,7 @@ MD5sum: b80d0b2bf87210d17691f8512b0210d8
 SHA1: 54a128b42a04a8fcdf48012365dc3586a2e02cba
 SHA256: d54665177b3328427b2d34b85a865aee50dfc12618c4d5f98724f3bdc1035309
 Description: spreadsheet application for GNOME - documentation
- Gnumeric is a spreadsheet application that interoperates well
- with other spreadsheets. It comes with plugins that enable it to deal with
- commonly used spreadsheet file formats.
- .
- This package provides the user manual in GNOME Help
- (DocBook XML) format.
+Description-md5: 1a2c472dd4a01f8bf6179550d830e0b6
 
 Package: libgimp2.0-doc
 Source: gimp
@@ -165,8 +111,7 @@ MD5sum: 14f245f93756eb1e2e2327a104674977
 SHA1: cc384a33af678df78ec67584100441cd05d8f8c1
 SHA256: 8df6aa4ccdaf2275c16affe5a1851652e491bccaff01d0a9c1a0adeb0201a3b6
 Description: Developers' Documentation for the GIMP library
- This package contains the HTML documentation for the GIMP library in
- /usr/share/gtk-doc/html/ .
+Description-md5: 8acaa3767b69bc8f021740c983e4e23a
 
 Package: ttf-freefont
 Source: fonts-freefont
@@ -183,7 +128,7 @@ MD5sum: a2675c4d2f6c66698109d30fa9813db0
 SHA1: 0cd3ef8bc0d90001dc0d3edb409e97f9b5ebac34
 SHA256: b9e937b696ee4d8ea4090d84a938a62a411f0aad5dec1fa9b8e95d87f264a0eb
 Description: transitional dummy package
- This package is a dummy transitional package. It can be safely removed.
+Description-md5: d022b4cd65360a59d321e029d730c59e
 
 Package: libcairo2-doc
 Source: cairo
@@ -200,11 +145,7 @@ MD5sum: dd794a619b03ff741c9998ca99765ce6
 SHA1: e89755a26f593746a3d013e3dae9fc9f56eee2a1
 SHA256: 5c5bce9b467400095f1887d65e89bc5b3aae8cddc1e182e122511e4ae47df7d3
 Description: Documentation for the Cairo Multi-platform 2D graphics library
- Cairo is a multi-platform library providing anti-aliased
- vector-based rendering for multiple target backends.
- .
- This package contains the HTML documentation for the Cairo library
- in /usr/share/gtk-doc/html/cairo/.
+Description-md5: 4603e32e069e318a18ec80fe36526ad6
 Original-Maintainer: Dave Beckett <dajobe@debian.org>
 
 Package: libgsf-1-common
@@ -222,12 +163,7 @@ MD5sum: 33084325fecf099de7d8e3a4ee42a85a
 SHA1: 1bec404b0508e7d8675521adc3ad0f4b89ad9f29
 SHA256: 2763d3bdb6252d267f31abaf23894e593c6d89f84dd7a09b09cd430df6427a36
 Description: Structured File Library - common files
- The GNOME Structured File Library aims to provide an efficient
- extensible I/O abstraction for dealing with different structured file
- formats.
- .
- These are the architecture independent files that are part of libgsf,
- like translations of messages.
+Description-md5: 63c4e64ca9b6d79b4947e39b148fe3e7
 
 Package: autoconf-doc
 Source: autoconf
@@ -244,10 +180,7 @@ MD5sum: 64f498b98218c45c291ac366e6c517b0
 SHA1: e7af680c13897abd55ba405b30706108ecb28397
 SHA256: 1ea62c8c058a1bfce2924cbe9e37eb9f41515407df7159c512d241394d4afb9b
 Description: automatic configure script builder documentation
- GNU Autoconf is a package for creating scripts to configure source code
- packages using templates and an M4 macro package.  This package contains
- the manual for GNU Autoconf.  It documents the current version; if you
- are using Autoconf 2.13 instead, install the autoconf2.13 package.
+Description-md5: c941bf6d49c8e26e328c69ddd7cb39c1
 Original-Maintainer: Ben Pfaff <pfaffben@debian.org>
 
 Package: ubiquity-casper
@@ -268,9 +201,7 @@ MD5sum: d2909d04ac5286f776e3234a1854452e
 SHA1: 1ccc00ea21d9373c7f8e1e4a843bb6d2c6f38b3e
 SHA256: 823b30c210e2dd1a365cc85826a0053b2a7a2d270a09195b7a9734916a8fcfdd
 Description: Configuration hooks for live installer
- This package provides hook scripts for the Ubiquity live installer that
- repeat some pieces of configuration done by the live system boot process in
- the system installed by Ubiquity.
+Description-md5: c8d716f3fb782cd7e002d2b9dba298b2
 Tag: admin::boot, admin::filesystem, implemented-in::shell, protocol::smb, role::plugin, scope::utility, special::completely-tagged, works-with-format::iso9660
 
 Package: kadu-themes
@@ -288,11 +219,7 @@ MD5sum: cdbd38a6e6cdd19d6f3e05381c8aa4af
 SHA1: 237845fc7aed82e9f8f5ff4b810a42edc68f4994
 SHA256: 691467e4e8bdff381bd215e7141c8b4a2816530bd1113daf4ec1104d5087e76c
 Description: Additional icons and emoticons for Kadu
- Gadu-Gadu is a Windows instant messenger, very popular in Poland.
- Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
- .
- This package provides additional icons, sounds and emoticons themes for
- Kadu.
+Description-md5: 6bde25e8984f1ef903c7994380922d11
 
 Package: kadu-dev
 Source: kadu
@@ -308,10 +235,7 @@ MD5sum: e01d03fc22ef2e418fdef464512185a1
 SHA1: d890da2fa05ec76dfedafb430d050ce747d18db7
 SHA256: 860f355ee2cf51efabe30afc789e5f739de0ed4c4dd9d9edafbd191d5fa0e72c
 Description: Development files needed to compile plugins for kadu
- Gadu-Gadu is a Windows instant messenger, very popular in Poland.
- Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
- .
- This package provides development files needed to compile plugins for Kadu.
+Description-md5: a79579e32e04f89f5fe410d4ddf24736
 
 Package: valac
 Source: vala-0.20
@@ -328,19 +252,7 @@ MD5sum: 31cffd5e7bbf215d506ff1fd69852ba1
 SHA1: 53ea025117d43b9808e54768e0ee10eabca3fc66
 SHA256: 07cbd80a57d36e7973ecda7537fcde9d325676192cf4fbae5bca08c6bd6c2ac0
 Description: C# like language for the GObject system
- Vala is a new programming language that aims to bring modern programming
- language features to GNOME developers without imposing any additional
- runtime requirements and without using a different ABI compared to
- applications and libraries written in C.
- .
- valac, the Vala compiler, is a self-hosting compiler that translates
- Vala source code into C source and header files.  It uses the GObject
- type system to create classes and interfaces declared in the Vala
- source code. This package also contains the vala-gen-introspect and
- vapigen binaries that will automatically generate Vala bindings.
- .
- This package always depends on the currently supported version
- of valac but doesn't have any content by itself.
+Description-md5: f9d9283d952284bde9e56be7edbddfb9
 
 Package: virtualbox-source
 Source: virtualbox
@@ -358,13 +270,7 @@ MD5sum: 4600f7f46afb2556263a014de97754ae
 SHA1: 852253fbbf074b3d220b45e9d67ff2f343d72620
 SHA256: b1ea93c47ee2183ca726227b0545cb2055e7236da4a49b2a73b46471dbe5ea2a
 Description: x86 virtualization solution - kernel module source
- VirtualBox is a free x86 virtualization solution allowing a wide range
- of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
- Linux system.
- .
- This package provides the source code for the virtualbox kernel module.
- The virtualbox package is also required in order to make use of these
- modules. Kernel sources or headers are required to compile this module.
+Description-md5: acc86918ad52775dbe11e2ad558ba197
 
 Package: terminator
 Priority: optional
@@ -382,12 +288,7 @@ MD5sum: 00c6ce568b36fb82d790e6c127adbf4f
 SHA1: 394f12226a43c6f75c967c20e2597c853f83e9d5
 SHA256: fae9ab23453e720f0e2b56331f0baf00e1a2c01f37b023919f41fe6c8f4cb9ea
 Description: multiple GNOME terminals in one window
- Terminator is a little project to produce an efficient way of
- filling a large area of screen space with terminals.
- .
- The user can have multiple terminals in one window and use
- key bindings to switch between them. See the manpage for
- details.
+Description-md5: d70de009f48ea4b4f00e62329adb4f61
 
 Package: kadu-common
 Source: kadu
@@ -407,10 +308,7 @@ MD5sum: 7f12e28867a2c1464fbfe88ac7c0e62a
 SHA1: 295e6ea156f3a5ce702376fc0ae632cac48dedcb
 SHA256: 1df2a477322e00f15b6d531a0e79144dd5196015052d27c4f598ffcddf8278ad
 Description: Gadu-Gadu/XMPP client for X11
- Gadu-Gadu is a Windows instant messenger, very popular in Poland.
- Kadu is a Qt4 client of Gadu-Gadu and XMPP for *nix systems.
- .
- This package provides data common for all architectures.
+Description-md5: 4b21613fcee120b013ac4a06b19ddf14
 
 Package: vlc-data
 Source: vlc
@@ -429,11 +327,7 @@ MD5sum: 670738c0af6a24690a991dbf687e75c0
 SHA1: 8612ef22c131e0defd79f0f0a77a350fcbdb8303
 SHA256: 5d0a0270a4cd6d3e8f95c148cde98151a371c8ff9baea72baa6463fe960a4b6d
 Description: Common data for VLC
- Localisations, HTTP interface files, Lua scripts for VLC media player
- .
- VLC is the VideoLAN project's media player. It plays MPEG, MPEG-2, MPEG-4,
- DivX, MOV, WMV, QuickTime, WebM, FLAC, MP3, Ogg/Vorbis files, DVDs, VCDs,
- podcasts, and multimedia streams from various network sources.
+Description-md5: bccba58fb9840799ef3e1fbe272530f0
 
 Package: bleachbit
 Priority: optional
@@ -450,18 +344,7 @@ MD5sum: 9438c197e05a6bdfee91f35d6d412778
 SHA1: 94c6e36652e609e26352f29fa7f1019ddbb1326b
 SHA256: a55e0fbd36dd2fbc9cfb76bae19b7da2df7220cf2dbd7d2e616b054ac500fee1
 Description: delete unnecessary files from the system
- BleachBit deletes unnecessary files to free valuable disk space, maintain
- privacy, and remove junk. It removes cache, Internet history, temporary files,
- cookies, and broken shortcuts.
- .
- It handles cleaning of Adobe Reader, Bash, Beagle, Epiphany, Firefox, Flash,
- GIMP, Google Earth, Java, KDE, OpenOffice.org, Opera, RealPlayer, rpmbuild,
- Second Life Viewer, VIM, XChat, and more.
- .
- Beyond simply erasing junk files, BleachBit wipes free disk space (to hide
- previously deleted files for privacy and to improve compression of images),
- vacuums Firefox databases (to improve performance without deleting data), and
- securely shreds arbitrary files.
+Description-md5: a958efd51e414316ebd3cb47958129ea
 
 Package: otf-freefont
 Source: fonts-freefont
@@ -478,7 +361,7 @@ MD5sum: c81313be041c9bed42b027f42b7aa819
 SHA1: 226b6ee85db8f0c904e536b9fb484e47e7415570
 SHA256: f4fdad7ffb93c23f53338e3e2bbdb0ee019282c31f7a0c69b6f120b98c750d84
 Description: transitional dummy package
- This package is a dummy transitional package. It can be safely removed.
+Description-md5: d022b4cd65360a59d321e029d730c59e
 
 Package: deadbeef-plugins-dev
 Source: deadbeef
@@ -495,10 +378,7 @@ MD5sum: 7e0a6730b4defa45a166c49f107c8a04
 SHA1: b5d4ce4a7c1cc7837cfaf3aa69f8dc665b572f3f
 SHA256: f4936c89b49f2ea8c72874228de8c3fc54ed3baf310fe231fd10c7ec924f204a
 Description: DeaDBeeF plugins development files
- DeaDBeeF (as in 0xDEADBEEF) is an audio player for GNU/Linux systems with X11.
- .
- This package contains all supplementary files you need to develop your plugins
- for DeaDBeeF audio player.
+Description-md5: 507854658d50624cf56a72d95729eba8
 
 Package: inxi
 Priority: extra
@@ -515,9 +395,7 @@ MD5sum: f4ea1149bf34cd6d18a25ce62d42324b
 SHA1: f692dafe6b2bbed4eb865b6a0e849da9a1f1cf4a
 SHA256: f744417e0c136f49bfcbeecbf34a5b418a0c861c6ff889198c8ad38491a1ac51
 Description: full featured system information script
- Inxi is a system information script that can display various things about
- your hardware and software to users in an IRC chatroom or support forum.
- It runs with the /exec command in most IRC clients.
+Description-md5: 13277f07e950aaf291de2de69ab2684c
 
 Package: virtualbox-dkms
 Source: virtualbox
@@ -535,13 +413,7 @@ MD5sum: bf22805631df21e4ddd569b20d428042
 SHA1: 2c18ce765715ecd86aa83059b66b7596dd9e8db5
 SHA256: c0e99c64565ba39bceae58d32e5d9c84ea5b24b852b057d3c7615500cea25e1c
 Description: x86 virtualization solution - kernel module sources for dkms
- VirtualBox is a free x86 virtualization solution allowing a wide range
- of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
- Linux system.
- .
- This package provides the source code for the virtualbox kernel module to be
- build with dkms. Kernel sources or headers are required to compile this
- module.
+Description-md5: 4d42f0fe51c4a92f2aed5071f84524ae
 
 Package: virtualbox-guest-dkms
 Source: virtualbox
@@ -559,13 +431,7 @@ MD5sum: 340b3e50707e3b3be8170e8de47de295
 SHA1: 5e7227c16ee457cb8666cef9ccf36aa42b757280
 SHA256: c0b7c42d4639ca88b6ca34fed71450dffe9ab6fab67f639b3c44524cf8815af6
 Description: x86 virtualization solution - guest addition module source for dkms
- VirtualBox is a free x86 virtualization solution allowing a wide range
- of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
- Linux system.
- .
- This package provides the source code for the virtualbox guest addition kernel
- modules to be build with dkms. Kernel sources or headers are required to
- compile these modules.
+Description-md5: e15ead9377a7f1e325ded819d3cfaf8b
 Modaliases: vboxguest(pci:v000080EEd0000CAFEsv00000000sd00000000bc*sc*i*)
 
 Package: virtualbox-guest-source
@@ -584,14 +450,7 @@ MD5sum: ceaf2a49faba654af8d5bbda66589d66
 SHA1: 86f42381bdccd928d53cba81462eab0dad2044dd
 SHA256: def949a580731a13167bd8d24a21c2fc83eb229739decdd020c44cf55a56cfbe
 Description: x86 virtualization solution - guest addition module source
- VirtualBox is a free x86 virtualization solution allowing a wide range
- of x86 operating systems such as Windows, DOS, BSD or Linux to run on a
- Linux system.
- .
- This package provides the source code for the virtualbox guest addition kernel
- modules. The virtualbox-guest-utils package is also required in order to
- make use of these modules. Kernel sources or headers are required to compile
- these modules.
+Description-md5: fd60384a9f99f9f360a9dcc85b3fd6cc
 
 Package: libfm-data
 Source: libfm
@@ -609,31 +468,7 @@ MD5sum: a7ce1dc735cd90986d4c613c21f7ff5b
 SHA1: 77c72a17ec7a1a48f14aa683352d7218e271b425
 SHA256: 0e728454560e747f5ba6138b8bfbe4c779170c50c4f8625230f9532529a5d3b8
 Description: file management support (common data)
- LibFM provides file management functions built on top of Glib/GIO,
- giving a convenient higher-level API.
- .
- This package contains the common data of the core library.
-
-Package: libfm-data
-Source: libfm
-Priority: optional
-Section: misc
-Installed-Size: 1537
-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
-Architecture: all
-Version: 1.2.0~git20131221-0linuxmint1~maya
-Replaces: libfm0, libfm1
-Breaks: libfm0, libfm1
-Filename: pool/main/libf/libfm/libfm-data_1.2.0~git20131221-0linuxmint1~maya_all.deb
-Size: 182258
-MD5sum: 900cb08638d9735c09ec1fb555c869a3
-SHA1: 122734d539f13fb43942bcc16c614e600863a183
-SHA256: 904c549da8eae8a69270fc98271d8f3258363908658d01a5417aef8dd33c158d
-Description: file management support (common data)
- LibFM provides file management functions built on top of Glib/GIO,
- giving a convenient higher-level API.
- .
- This package contains the common data of the core library.
+Description-md5: b06249e439eae5ef0506c244cb25003f
 
 Package: libfm-gtk-data
 Source: libfm
@@ -651,31 +486,7 @@ MD5sum: 3ebc6364f9ab2f9e8d7578730d47acc4
 SHA1: 669990d10edb52e139c9181d83abccf4ad8c0709
 SHA256: e380698fe04d5e8bb32dd86ed1a8223d3e8f8c3f92fbfab53bf6089fd7d30eb6
 Description: file management support (GTK+ library common data)
- LibFM provides file management functions built on top of Glib/GIO,
- giving a convenient higher-level API.
- .
- This package contains the common data of the GTK+ library.
-
-Package: libfm-gtk-data
-Source: libfm
-Priority: optional
-Section: misc
-Installed-Size: 153
-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
-Architecture: all
-Version: 1.2.0~git20131221-0linuxmint1~maya
-Replaces: libfm-gtk0
-Breaks: libfm-gtk-bin (<< 1.0), libfm-gtk0
-Filename: pool/main/libf/libfm/libfm-gtk-data_1.2.0~git20131221-0linuxmint1~maya_all.deb
-Size: 15292
-MD5sum: 3a6c07ed624af20aac37adc9e04aeff1
-SHA1: ef6587deede4072cc8f60de4880ff49366360d07
-SHA256: 6888ba7bb1c7debac170ac829db36ebd30754a5cb30cbcfc24f96d10d419b011
-Description: file management support (GTK+ library common data)
- LibFM provides file management functions built on top of Glib/GIO,
- giving a convenient higher-level API.
- .
- This package contains the common data of the GTK+ library.
+Description-md5: 264dbbfbd5080fc520e27c05ae458939
 
 Package: shimmer-themes
 Priority: optional
@@ -694,16 +505,7 @@ MD5sum: 2048a675c31d0f18e043449447c7dfb2
 SHA1: 6bd4b7360b619416180b6902ba6527ab07c421c6
 SHA256: 0b2d9f4aeb3b8e070192c1d924af20915b196c03dd90f8cda85bf00eee81ca07
 Description: Gtk+ themes from Shimmer Project
- This package contains all the desktop suites by Shimmer Project.
- .
- * Albatross, a dark and light theme that was originally designed for
- Xubuntu 9.10. Albatross is designed to be smooth: no rough borders,
- no contrasted edges, no violent contrasts, a soft blue colour.
- * Bluebird is the colorful successor to Albatross originally designed
- for Xubuntu 10.10. Bluebird is the only way to go if you love blue!
- * Greybird is the more conservative but at the same time modern variant
- of Bluebird. Greybird contains a lot of improvements over Bluebird;
- amongst other things, full GTK3 support.
+Description-md5: 14030a094ac6d94860dd95bbef7ec0d0
 
 Package: shimmer-wallpapers
 Source: shimmer-themes
@@ -719,8 +521,7 @@ MD5sum: 26814f06bdf07a4c3e9b74123d43a182
 SHA1: d440c4a2031e78e20304664e6de05d60124fa494
 SHA256: de5bc43cecca42abcf7d83614956e479f35ee4823a5f55f6ea75c6cab611bdc5
 Description: Wallpapers from Shimmer Project
- This package contains wallpapers assorted to each desktop theme from
- Shimmer Project.
+Description-md5: 9b8b1f14a868b591af18956b0d3617f6
 
 Package: mc-data
 Source: mc
@@ -738,14 +539,7 @@ MD5sum: ea3ada4a319b302724aabe250a9e5472
 SHA1: b4bf5f02f3ccf4e71c5dd7ebf511b567631b0af9
 SHA256: 03c04713dd98daad0772081854de24cf107c8e89a4f3d6ea9aac83826be62a30
 Description: Midnight Commander - a powerful file manager -- data files
- GNU Midnight Commander is a text-mode full-screen file manager. It
- uses a two panel interface and a subshell for command execution. It
- includes an internal editor with syntax highlighting and an internal
- viewer with support for binary files. Also included is Virtual
- Filesystem (VFS), that allows files on remote systems (e.g. FTP, SSH
- servers) and files inside archives to be manipulated like real files.
- .
- This package provides architecture independent files
+Description-md5: a1815081eaa82c881147140e5d7479f3
 Multi-Arch: foreign
 
 Package: libbabl-doc
@@ -764,12 +558,7 @@ MD5sum: 70b90473de224026f938c5abbf5e2b2c
 SHA1: 72a4c4d634a2fb6b780792a706a6bdef14e9debf
 SHA256: feee88f58dd858795d1a6ba6162e6017a03d644e7dd1042472c115985330cf8a
 Description: Dynamic, any to any, pixel format conversion library (documentation)
- Babl is a dynamic, any to any, pixel format conversion library. It
- provides conversions between the myriad of buffer types images can be
- stored in. Babl doesn't only help with existing pixel formats, but
- also facilitates creation of new and uncommon ones.
- .
- This package contains the API documentation.
+Description-md5: 1843cc45fff811e1ae47f159d418f66d
 Multi-Arch: foreign
 
 Package: libgegl-doc
@@ -788,14 +577,7 @@ MD5sum: 07ab13b5e9cb2a8eb2c98613508bcc07
 SHA1: 5fc10f142edb28607b101cb436fc6e79f5178b08
 SHA256: 5aa6f124a9feb4cb696793437ca4682b48f18dab2ae9bc4ca08dfa531b67d6d4
 Description: Generic Graphics Library (documentation)
- GEGL (Generic Graphics Library) is a graph based image processing
- framework.
- .
- GEGLs original design was made to scratch GIMPs itches for a new
- compositing and processing core. This core is being designed to have
- minimal dependencies and a simple well defined API.
- .
- This package contains the documentation.
+Description-md5: 55c9429d61c63406180cddcb65b36001
 Multi-Arch: foreign
 
 Package: librsvg2-doc
@@ -815,10 +597,7 @@ MD5sum: 73d4041ed562b46214b1caa167ea8111
 SHA1: 761fc8a9a2d83721893905b0bdeaa4b21567921e
 SHA256: 9adcc3f8427be17fe41f563895ad8e416431d3ca2be54aa1811ca488b7c3c0bc
 Description: SAX-based renderer library for SVG files (documentation)
- The rsvg library is an efficient renderer for Scalable Vector Graphics
- (SVG) pictures.
- .
- This package provides the API documentation.
+Description-md5: 6df5f01db90053b5cc6ab1c054d5a182
 
 Package: nyancat-server
 Source: nyancat
@@ -836,12 +615,7 @@ MD5sum: 18217034eac6951e2eff360523980179
 SHA1: 4b1a0164c006a8b65eb956479a8dabac93354ac8
 SHA256: 0c5aeb70162110bdf0e3b9a4d7566b1c0c8b45f201225c99985cf51888e35fe2
 Description: Animated terminal Nyancat server configurations
- nyancat-server contains the configuations required to quickly set up a nyancat
- server. This allows the animated poptart cat to be served to many users via
- telnet.
- .
- Installing this package will automatically configure and activate a nyancat
- telnet server.
+Description-md5: 50a42e8462c50e577689ccf8ba6bfe45
 
 Package: libopus-doc
 Source: opus
@@ -857,7 +631,7 @@ MD5sum: e8dbbebbbdb9eebff5c83a2dd3d4af4c
 SHA1: 4357aae5d53e6c0f986c594db6c6b804c009dbf4
 SHA256: 58ad2bd03a575a29ee2c555dbe8cc0128e4084b7c85d22b8492d2765266844ad
 Description: libopus API documentation
- This package contains the developer documentation for libopus.
+Description-md5: e8454668869df187f002a25c8fcb9e59
 
 Package: fonts-freefont-ttf
 Source: fonts-freefont
@@ -876,9 +650,7 @@ MD5sum: ae0f73113618e18b6ba8ecb19b264ba8
 SHA1: 1f557a74c153e1522a2fc169e4886d27bf010edf
 SHA256: 0e615dde2ef0dac8a0b393f40e6ffaf4a0ed9e3dbe5327284cf858e82258afec
 Description: Freefont Serif, Sans and Mono Truetype fonts
- Freefont is a set of free high-quality TrueType fonts covering the UCS
- character set. These fonts are similar to the widely known Helvetica,
- Times and Courier fonts.
+Description-md5: bcd17b715258e4f7c257d125d8ee8d2c
 
 Package: fonts-freefont-otf
 Source: fonts-freefont
@@ -897,9 +669,7 @@ MD5sum: aae52fac4665f42238b6231bee7d38d6
 SHA1: a6a140be02fab530f0075aa9ff6be41724d1ee08
 SHA256: f543ef0d322f19ad3fa5ca63e5519717bc3a34e5a720884ca467f1740e0b2311
 Description: Freefont Serif, Sans and Mono OpenType fonts
- Freefont is a set of free high-quality OpenType fonts covering the UCS
- character set. These fonts are similar to the widely known Helvetica,
- Times and Courier fonts.
+Description-md5: 69de667c41c8b631f6a6c392e30f0c8c
 
 Package: lxsession-data
 Source: lxsession
@@ -916,7 +686,7 @@ MD5sum: ec170911df3fd556f17007b5703cace2
 SHA1: 0ac94027c217d2c40f29e566feb335af1415a978
 SHA256: 6594bd056af31f8c66fbbf1fcd2cc35d5927d60349a776deaf347e88d372c9c5
 Description: Common files for lxsession
- This package provide common files for lxsession.
+Description-md5: 71cf90de569405210b16970dada9479a
 Original-Maintainer: Debian LXDE Packaging Team <pkg-lxde-maintainers@lists.alioth.debian.org>
 
 Package: valac-0.20-vapi
@@ -933,19 +703,7 @@ MD5sum: 4dde30e609713fbbbd5042fd3984ea65
 SHA1: 1659d4de8a8feb18dbc9fea33c3f65fbca6be3a6
 SHA256: c8f8519a42261a08c2356b3d317cc5a30abe04454b657094baa1c3bb9dc81829
 Description: C# like language for the GObject system - vapi files
- Vala is a new programming language that aims to bring modern programming
- language features to GNOME developers without imposing any additional
- runtime requirements and without using a different ABI compared to
- applications and libraries written in C.
- .
- valac, the Vala compiler, is a self-hosting compiler that translates
- Vala source code into C source and header files.  It uses the GObject
- type system to create classes and interfaces declared in the Vala
- source code. This package also contains the vala-gen-introspect and
- vapigen binaries that will automatically generate Vala bindings.
- .
- This package contains the bundled vapi files, which make some
- common libraries available for vala development.
+Description-md5: 14e61d74db9df4b1edc860ca4ff8ade6
 
 Package: vala-0.20-doc
 Source: vala-0.20
@@ -963,12 +721,7 @@ MD5sum: 985569135b59af199fa66a48eca620cb
 SHA1: 6a4b937f3ec84dab8665d6462139d7431c614d5e
 SHA256: 4b967033f72008a5469222b04e3622b227ff433f06ac5dc9b40a37d3026e0092
 Description: C# like language for the GObject system - documentation
- Vala is a new programming language that aims to bring modern programming
- language features to GNOME developers without imposing any additional
- runtime requirements and without using a different ABI compared to
- applications and libraries written in C.
- .
- This package contains the Vala Reference Manual.
+Description-md5: de483b7159809ff1a4971ef10ee5d570
 Multi-Arch: foreign
 
 Package: libfm-doc
@@ -986,30 +739,7 @@ MD5sum: 9bcd9b186a9f1fb2eba47addcfe022df
 SHA1: 071a10df7d778aa02185ebd9242dc7f59e436b36
 SHA256: da24c57cf7359009edadcfd95d625d6f8cf0c34167dda28cec5e52a37d226a54
 Description: file management support (development documentation)
- LibFM provides file management functions built on top of Glib/GIO,
- giving a convenient higher-level API.
- .
- This package contains the development HTML documentation.
-
-Package: libfm-doc
-Source: libfm
-Priority: optional
-Section: doc
-Installed-Size: 2084
-Maintainer: Debian LXDE Maintainers <lxde-debian@lists.lxde.org>
-Architecture: all
-Version: 1.2.0~git20131221-0linuxmint1~maya
-Recommends: libglib2.0-doc, libgtk-3-doc
-Filename: pool/main/libf/libfm/libfm-doc_1.2.0~git20131221-0linuxmint1~maya_all.deb
-Size: 139644
-MD5sum: c9a6bf27cb6bd491f17e2fad79085f2c
-SHA1: 270776456331783b96cfab118c1db72d64cf3258
-SHA256: bde0df9b0caec84e92668e62e08185733116e545fb76d4a36a7282269e32d48f
-Description: file management support (development documentation)
- LibFM provides file management functions built on top of Glib/GIO,
- giving a convenient higher-level API.
- .
- This package contains the development HTML documentation.
+Description-md5: 7938076b0ea5a3c6d795f5f506fa27df
 
 Package: mint-lxde-default-settings
 Priority: required
@@ -1026,6 +756,7 @@ MD5sum: e5d10d327050217993e16b66e8492d1e
 SHA1: 206f350da57939535edb2590be95e95049084ff9
 SHA256: 722bfaf8830fc05ce1dccdba298afbeacd0121f75489c71b6d59c2cc27d014d9
 Description: This Package contains the default system settings for Linux Mint LXDE Edition.
+Description-md5: 074b94ca71f1dcf8821541ec02bdf6e2
 
 Package: mint-artwork-lxde
 Priority: optional
@@ -1041,8 +772,7 @@ MD5sum: 2abf48e18f1956648632d782f23c8ba0
 SHA1: 8d90e7a3e406d32f5afb2130d171df2be864cf95
 SHA256: f201afb5a58a29a2158e896321dce4ae40e375404129cc0a8a139ff45a438839
 Description: Artwork for Linux Mint LXDE
- Artwork for Linux Mint LXDE, contained the wallpaper and others specific images and
- logos.
+Description-md5: b13ff03f861bcfe3066ebc94edc74d5c
 
 Package: libgoffice-0.10-10-common
 Source: goffice
@@ -1058,11 +788,7 @@ MD5sum: 098f36abea0048b705e9297e32dca75a
 SHA1: ebaf890eb5c16974810192252270e7f057942793
 SHA256: d7e876fb32a84898aa09abcac90cea05c8ee7463d73131eda4af6ccbdbe9c10c
 Description: Document centric objects library - common files
- GOffice is a library of document centric objects and utilities building on
- top of GLib and Gtk+.
- .
- These are the architecture independent files that are part of GOffice, like
- images and translations of messages.
+Description-md5: 37455cde2fc87041c4adf8dabb4678de
 
 Package: libgoffice-0.10-doc
 Source: goffice
@@ -1080,9 +806,7 @@ MD5sum: 839c17104427a958d4e5960c37244624
 SHA1: 04b6ea5fa428e35aa4b60cb3dddf17f5670f083a
 SHA256: 9d2bc347141adf4e249798f87fc889a6aa460cffda8897fa97965cf04992eae6
 Description: Document centric objects library - documentation
- GOffice is a library of document centric objects and utilities building on
- top of GLib and Gtk+.
- This package contains HTML documentation for libgoffice-0.10.
+Description-md5: 9079a1cde8fb1913cecd8e3c58d95fb3
 
 Package: openbox-gnome-session
 Source: openbox
@@ -1102,9 +826,7 @@ MD5sum: 90251daa840a7458f820646cdd86b1a7
 SHA1: b801d7c2302b5dc1f4aac681d6feceb04e5339fc
 SHA256: 4af3413635cafe47f89e47a8e4fe3c561c8f80619a43bca1c9960d72e0998555
 Description: command line utility to run Openbox as GNOME session
- openbox-gnome-session can provide GNOME session with openbox as
- a default window manager. It can replace the original window manager
- in GNOME Shell and GNOME Fallback sessions.
+Description-md5: 2a9bbcdb426b9c980a758b893e537118
 
 Package: openbox-kde-session
 Source: openbox
@@ -1124,7 +846,5 @@ MD5sum: 2914d6fdc07929de44f30f86bbedaf4f
 SHA1: 527810025b468b517078987dbb3e17f7e6875817
 SHA256: f3af3e91e38205d071091f2c588990db9e9d9ffc9f5cbb2e99f64674e6385621
 Description: command line utility to run Openbox as KDE SC session
- openbox-kde-session can provide KDE SC session with openbox as
- a default window manager. Can replace the original window manager
- called KWin.
+Description-md5: c225f2cf8568cc9031fd39ad3e4174a9
 

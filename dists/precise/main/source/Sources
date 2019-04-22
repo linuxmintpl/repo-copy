@@ -1,36 +1,3 @@
-Package: abiword
-Binary: abiword-common, abiword, abiword-plugin-grammar, abiword-plugin-mathview, libabiword-3.0, libabiword-3.0-dev, abiword-dbg
-Version: 3.0.0-4~petra1
-Section: gnome
-Maintainer: Dmitry Smirnov <onlyjob@debian.org>
-Build-Depends: debhelper (>= 9), dh-autoreconf, quilt, imagemagick, bison, flex, libaiksaurus-1.2-dev, libaiksaurusgtk-1.2-dev, libasio-dev, libchamplain-gtk-0.12-dev, libebook1.2-dev, libecal1.2-dev, libenchant-dev, libfribidi-dev, libgoffice-0.10-dev, libgtk2.0-dev, libglib2.0-dev, libgtk-3-dev, libgtkmathview-dev, libjpeg8-dev, liblink-grammar4-dev, libloudmouth1-dev, libots-dev, libpng-dev, librdf0-dev, libreadline-dev, librsvg2-dev, libsoup2.4-dev, libtelepathy-glib-dev, libtidy-dev, libwmf-dev, libwpg-dev, libwps-dev, libwv-dev, libxslt-dev | libxslt1-dev, subversion, svn2cl | subversion-tools (<< 1.7.5), valgrind [amd64 armhf i386 powerpc]
-Architecture: any all
-Standards-Version: 3.9.4
-Format: 3.0 (quilt)
-Directory: pool/main/a/abiword
-Files:
- 8d9c41cff3a8fbef8d0c835c65600e65 10956892 abiword_3.0.0.orig.tar.gz
- bcb1defd446d20991dca692e9df265ed 44412 abiword_3.0.0-4~petra1.debian.tar.xz
- 149153ca11fddd885202abe867fc2bb3 2470 abiword_3.0.0-4~petra1.dsc
-Checksums-Sha1:
- 563126a052e346d39ef0c6133367e15028b23813 10956892 abiword_3.0.0.orig.tar.gz
- 92e3f9cb2f20863e5bf9c9a9d675bd16910ee0ea 44412 abiword_3.0.0-4~petra1.debian.tar.xz
- d302c5b0d14fd0d4e6ff2fd990a1fc6b08da6bf4 2470 abiword_3.0.0-4~petra1.dsc
-Checksums-Sha256:
- d17e318c00ff4eb353e0e7994b098b1d4f9ddd8712ac0261a0e38b89081fac01 10956892 abiword_3.0.0.orig.tar.gz
- bb71cba4f7667b2960de4d211b2804b7010d12da876b8d797cc0317426dc14ff 44412 abiword_3.0.0-4~petra1.debian.tar.xz
- 1a7191f255422c1f55f3f55a3a7f3c070d0e821940ab4455c4b8e152958e280a 2470 abiword_3.0.0-4~petra1.dsc
-Homepage: http://www.abisource.com/
-Package-List: abiword deb editors optional
- abiword-common deb editors optional
- abiword-dbg deb debug extra
- abiword-plugin-grammar deb editors optional
- abiword-plugin-mathview deb editors optional
- libabiword-3.0 deb libs optional
- libabiword-3.0-dev deb libdevel optional
-Vcs-Git: git://anonscm.debian.org/collab-maint/abiword.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/abiword.git
-
 Package: autoconf
 Binary: autoconf, autoconf-doc
 Version: 2.69-1ubuntu1~maya
@@ -122,6 +89,65 @@ Package-List: gir1.2-gnumeric deb introspection optional
  gnumeric-plugins-extra deb math optional
 Vcs-Git: git://anonscm.debian.org/collab-maint/gnumeric.git
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/gnumeric.git
+
+Package: texinfo
+Binary: texinfo, info, install-info
+Version: 5.2.0.dfsg.1-4~maya
+Section: doc
+Maintainer: Debian TeX maintainers <debian-tex-maint@lists.debian.org>
+Build-Depends: debhelper (>= 7.0.50~), libncurses5-dev | libncurses-dev, gettext, libtext-unidecode-perl, libintl-perl, help2man, autotools-dev
+Architecture: any
+Standards-Version: 3.9.5
+Format: 3.0 (quilt)
+Directory: pool/main/t/texinfo
+Files:
+ 43070c0814a015c617bf4e05067c35fb 3868664 texinfo_5.2.0.dfsg.1.orig.tar.xz
+ 6970568be4334457740fbb2bc71fe8d4 23096 texinfo_5.2.0.dfsg.1-4~maya.debian.tar.xz
+ dfb2f53cf5d8dd52d660bab695303a54 1809 texinfo_5.2.0.dfsg.1-4~maya.dsc
+Checksums-Sha1:
+ b04330d3763982eefa4c0cf06de4bff6cfe1ec4c 3868664 texinfo_5.2.0.dfsg.1.orig.tar.xz
+ 614cf9d2bd0e4091e22d8341a0a1fd74b5feff22 23096 texinfo_5.2.0.dfsg.1-4~maya.debian.tar.xz
+ 3b8a686b5e44af54109a106852f5581a7e40ef8e 1809 texinfo_5.2.0.dfsg.1-4~maya.dsc
+Checksums-Sha256:
+ 0d4125f943efcd3f61453578a4bc01138b117d620f3c00faf5037d5dc10e33a4 3868664 texinfo_5.2.0.dfsg.1.orig.tar.xz
+ 76a577d95ebd08d914a6528d1e9efddeeeef8ef6409fb37a82946d70143088f8 23096 texinfo_5.2.0.dfsg.1-4~maya.debian.tar.xz
+ 56d4b3d11fcf3f0e3aae769cbb6b2df5d1df241702fdf854a7bae90a222e355b 1809 texinfo_5.2.0.dfsg.1-4~maya.dsc
+Uploaders: Norbert Preining <preining@debian.org>, Frank Küster <frank@debian.org>
+Package-List: info deb doc important arch=any
+ install-info deb doc important arch=any
+ texinfo deb text optional arch=any
+Vcs-Git: git://anonscm.debian.org/debian-tex/texinfo.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=debian-tex/texinfo.git
+
+Package: libgpg-error
+Binary: libgpg-error-dev, libgpg-error0, libgpg-error0-udeb
+Version: 1.12-0.2ubuntu1~maya1
+Section: libs
+Maintainer: Jose Carlos Garcia Sogo <jsogo@debian.org>
+Build-Depends: dh-autoreconf, debhelper (>> 8.1.3~), autopoint
+Architecture: any
+Standards-Version: 3.9.4
+Format: 3.0 (quilt)
+Directory: pool/main/libg/libgpg-error
+Files:
+ 8f0eb41a344d19ac2aa9bd101dfb9ce6 489266 libgpg-error_1.12.orig.tar.bz2
+ 301d4dc40756d205812ecd796b5095e6 5920 libgpg-error_1.12-0.2ubuntu1~maya1.debian.tar.xz
+ 3e0e0d4faa31760bcc62009405a18500 1829 libgpg-error_1.12-0.2ubuntu1~maya1.dsc
+Checksums-Sha1:
+ 259f359cd1440b21840c3a78e852afd549c709b8 489266 libgpg-error_1.12.orig.tar.bz2
+ bd4e9aa5aa7d7630095f6ddbaba87e8bd066bf01 5920 libgpg-error_1.12-0.2ubuntu1~maya1.debian.tar.xz
+ 2b3dfea88ee95b30f2adbb310eb265dacc55a4cf 1829 libgpg-error_1.12-0.2ubuntu1~maya1.dsc
+Checksums-Sha256:
+ cafc9ed6a87c53a35175d5a1220a96ca386696eef2fa059cc0306211f246e55f 489266 libgpg-error_1.12.orig.tar.bz2
+ dce312e6a98d2a0bbc95349a9add59e5a912dc616b1cd5ba651193d2bffa0170 5920 libgpg-error_1.12-0.2ubuntu1~maya1.debian.tar.xz
+ 8d7b968573e4df8429023aea4298160cfcf40ecaf9973d1e8aa5a4cd72a965cf 1829 libgpg-error_1.12-0.2ubuntu1~maya1.dsc
+Homepage: http://www.gnupg.org/related_software/libgpg-error/
+Uploaders: Matthias Urlichs <smurf@debian.org>
+Vcs-Svn: svn://anonscm.debian.org/pkg-gnupg/libgpg-error/trunk/
+Package-List: libgpg-error-dev deb libdevel optional arch=any
+ libgpg-error0 deb libs standard arch=any
+ libgpg-error0-udeb udeb debian-installer optional arch=any
+Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-gnupg/libgpg-error/trunk/
 
 Package: libgsf
 Binary: gir1.2-gsf-1, libgsf-1-114, libgsf-1-114-dbg, libgsf-1-dev, libgsf-1-common, libgsf-bin
